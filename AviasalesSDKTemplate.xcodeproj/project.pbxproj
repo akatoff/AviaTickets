@@ -22,6 +22,18 @@
 		C60EC86417E848DB00C5D52E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C60EC86217E848DB00C5D52E /* InfoPlist.strings */; };
 		C60EC86617E848DB00C5D52E /* AviasalesSDKTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */; };
 		C62408D11848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */; };
+		C636CA49186099910073F5C7 /* AviasalesAirline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965D9186056B000446328 /* AviasalesAirline.h */; };
+		C636CA4A186099910073F5C7 /* AviasalesAirport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DA186056B000446328 /* AviasalesAirport.h */; };
+		C636CA4B186099910073F5C7 /* AviasalesFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DB186056B000446328 /* AviasalesFilter.h */; };
+		C636CA4C186099910073F5C7 /* AviasalesFiltersBoundary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DC186056B000446328 /* AviasalesFiltersBoundary.h */; };
+		C636CA4D186099910073F5C7 /* AviasalesFlight.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DD186056B000446328 /* AviasalesFlight.h */; };
+		C636CA4E186099910073F5C7 /* AviasalesGate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DE186056B000446328 /* AviasalesGate.h */; };
+		C636CA4F186099910073F5C7 /* AviasalesPrice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DF186056B000446328 /* AviasalesPrice.h */; };
+		C636CA50186099910073F5C7 /* AviasalesSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E0186056B000446328 /* AviasalesSDK.h */; };
+		C636CA51186099910073F5C7 /* AviasalesSearchParams.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E1186056B000446328 /* AviasalesSearchParams.h */; };
+		C636CA52186099910073F5C7 /* AviasalesSearchResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E2186056B000446328 /* AviasalesSearchResponse.h */; };
+		C636CA53186099910073F5C7 /* AviasalesTicket.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E3186056B000446328 /* AviasalesTicket.h */; };
+		C636CA54186099910073F5C7 /* ASTNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C660842E18463F37001E9712 /* ASTNavigationController.h */; };
 		C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */; };
 		C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */; };
 		C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F11817C778007A4F00 /* ASTFlightCell.m */; };
@@ -282,6 +294,18 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				C636CA49186099910073F5C7 /* AviasalesAirline.h in CopyFiles */,
+				C636CA4A186099910073F5C7 /* AviasalesAirport.h in CopyFiles */,
+				C636CA4B186099910073F5C7 /* AviasalesFilter.h in CopyFiles */,
+				C636CA4C186099910073F5C7 /* AviasalesFiltersBoundary.h in CopyFiles */,
+				C636CA4D186099910073F5C7 /* AviasalesFlight.h in CopyFiles */,
+				C636CA4E186099910073F5C7 /* AviasalesGate.h in CopyFiles */,
+				C636CA4F186099910073F5C7 /* AviasalesPrice.h in CopyFiles */,
+				C636CA50186099910073F5C7 /* AviasalesSDK.h in CopyFiles */,
+				C636CA51186099910073F5C7 /* AviasalesSearchParams.h in CopyFiles */,
+				C636CA52186099910073F5C7 /* AviasalesSearchResponse.h in CopyFiles */,
+				C636CA53186099910073F5C7 /* AviasalesTicket.h in CopyFiles */,
+				C636CA54186099910073F5C7 /* ASTNavigationController.h in CopyFiles */,
 				C6BA19C61827701000BAD465 /* ASTAirportPicker.h in CopyFiles */,
 				C6BA19C71827701000BAD465 /* ASTAirportPickerCell.h in CopyFiles */,
 				C6BA19C81827701000BAD465 /* ASTAirportPickerSearchingCell.h in CopyFiles */,
@@ -1536,8 +1560,8 @@
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					./AviasalesSDK,
-					"/Users/seva/Documents/Projects/Aviasales-iOS-SDK/AviasalesLib",
+					./AviasalesLib,
+					"$(SRCROOT)/AviasalesLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1554,8 +1578,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplateLibrary/AviasalesSDKTemplateLibrary-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
-					./AviasalesSDK,
-					"/Users/seva/Documents/Projects/Aviasales-iOS-SDK/AviasalesLib",
+					./AviasalesLib,
+					"$(SRCROOT)/AviasalesLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
