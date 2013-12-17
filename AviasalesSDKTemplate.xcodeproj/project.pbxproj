@@ -1453,8 +1453,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
-					"$(SRCROOT)/AviasalesSDK",
-					"/Users/seva/Documents/Projects/Aviasales-iOS-SDK/AviasalesLib",
+					"$(SRCROOT)/AviasalesLib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1474,8 +1473,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
-					"$(SRCROOT)/AviasalesSDK",
-					"/Users/seva/Documents/Projects/Aviasales-iOS-SDK/AviasalesLib",
+					"$(SRCROOT)/AviasalesLib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
