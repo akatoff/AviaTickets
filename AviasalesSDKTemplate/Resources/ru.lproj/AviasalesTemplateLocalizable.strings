@@ -1,0 +1,121 @@
+"AVIASALES_CLOSE_BUTTON" = "Закрыть";
+
+"AVIASALES_SEARCH_BUTTON" = "Искать";
+
+"AVIASALES_FORM_TITLE" = "Авиабилеты";
+
+"AVIASALES_ALERT_ERROR_TITLE" = "Ошибка";
+
+"AVIASALES_BACK" = "Назад";
+
+"AVIASALES_CANCEL" = "Отмена";
+
+"AVIASALES_ORIGIN" = "Город отправления";
+
+"AVIASALES_DESTINATION" = "Город назначения";
+
+"AVIASALES_DEPARTURE_DATE" = "Дата отправления";
+
+"AVIASALES_RETURN_DATE" = "Дата возвращения";
+
+"AVIASALES_RETURN_FLIGHT" = "Обратно";
+
+"AVIASALES_PICKER_ADULTS" = "> 12 лет";
+
+"AVIASALES_PICKER_CHILDREN" = "2 — 12 лет";
+
+"AVIASALES_PICKER_INFANTS" = "< 2 лет";
+
+"AVIASALES_TRAVEL_CLASS_0" = "Эконом класс";
+
+"AVIASALES_TRAVEL_CLASS_1" = "Бизнес класс";
+
+"AVIASALES_NEARBY" = "Ближайшие аэропорты";
+
+"AVIASALES_NEARBY_ERROR" = "Не найдено аэропортов рядом";
+
+"AVIASALES_SEARCH_HISTORY" = "Вы уже искали";
+
+"AVIASALES_ANY_AIRPORT" = "Любой аэропорт";
+
+"AVIASALES_SEARCHING_PROGRESS" = "Выполняется поиск...";
+
+"AVIASALES_FILTERS" = "Фильтры";
+
+"AVIASALES_FILTERS_EMPTY" = "По данным параметрам предложений не найдено";
+
+"AVIASALES_CURRENCY" = "Валюта";
+
+"AVIASALES_DURATION_FORMAT" = "%iч %iм";
+
+"AVIASALES_DURATION_FORMAT_LONG" = "%@ ч %@ мин";
+
+"AVIASALES_RESET" = "Сбросить";
+
+"AVIASALES_FILTER_NONSTOP" = "Без пересадок";
+
+"AVIASALES_FILTER_ONE_STOP" = "1 пересадка";
+
+"AVIASALES_FILTER_TWO_STOPS" = "2 пересадки";
+
+"AVIASALES_FILTER_NIGHT" = "Допустима ночная пересадка";
+
+"AVIASALES_FILTER_PRICE" = "Цена билета";
+
+"AVIASALES_FILTER_TOTAL_DURATION" = "Время в пути";
+
+"AVIASALES_FILTER_STOPOVER_DURATION" = "Время на пересадки";
+
+"AVIASALES_FILTER_DEPARTURE" = "Вылет";
+
+"AVIASALES_FILTER_ARRIVAL" = "Прибытие";
+
+"AVIASALES_FILTER_RETURN_DEPARTURE" = "Вылет обратно";
+
+"AVIASALES_FILTER_RETURN_ARRIVAL" = "Прибытие обратно";
+
+"AVIASALES_FILTER_AIRLINES" = "Авиакомпании";
+
+"AVIASALES_FILTER_ALL_AIRLINES" = "Все авиакомпании";
+
+"AVIASALES_FILTER_ALLIANCES" = "Альянсы";
+
+"AVIASALES_FILTER_ALL_ALLIANCES" = "Все альянсы";
+
+"AVIASALES_FILTER_AIRPORTS" = "Аэропорты";
+
+"AVIASALES_FILTER_ALL_AIRPORTS" = "Все аэропорты";
+
+"AVIASALES_FILTER_FROM" = "Откуда";
+
+"AVIASALES_FILTER_STOPOVERS" = "Пересадки";
+
+"AVIASALES_FILTER_TO" = "Куда";
+
+"AVIASALES_FILTER_AGENCIES" = "Агентства";
+
+"AVIASALES_FILTER_ALL_AGENCIES" = "Все агентства";
+
+"AVIASALES_FILTER_MOBILE" = "Агентства с мобильным интерфейсом";
+
+"AVIASALES_FILTER_FOUND" = "Найдено предложений";
+
+"AVIASALES_FILTER_FROM1" = "с";
+
+"AVIASALES_FILTER_FROM2" = "от";
+
+"AVIASALES_FILTER_UP_TO" = "до";
+
+"AVIASALES_TICKET" = "Билет";
+
+"AVIASALES_ONE_PASSENGER" = "пассажир";
+
+"AVIASALES_PASSENGERS1" = "пассажира";
+
+"AVIASALES_PASSENGERS2" = "пассажиров";
+
+"AVIASALES_BUY" = "Купить";
+
+"AVIASALES_FLIGHT" = "Рейс";
+
+"AVIASALES_STOPOVER" = "Пересадка";

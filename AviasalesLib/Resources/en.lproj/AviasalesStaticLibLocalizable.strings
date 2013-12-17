@@ -1,0 +1,37 @@
+"AVIASALES_LANG" = "en";
+
+"AVIASALES_REDIRECT_ERROR" = "Unable to proceed to purchase. Server error";
+
+"AVIASALES_REDIRECT_EXPIRED" = "Unable to proceed to purchase. Please try to make a new search request";
+
+"AVIASALES_SEARCH_RESULTS_EMPTY" = "No results found. Try changing search settings";
+
+"AVIASALES_SEARCH_RESULTS_ERROR" = "Sorry, service temporarily unavailable";
+
+"AVIASALES_OTHER_ALLIANCES" = "Other Airline Alliances";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Please select departure airport";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Please select destination airport";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "Incorrect Departure airport format (should be IATA-code)";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_FORMAT_ERROR" = "Incorrect Destination airport format (should be IATA-code)";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_SAME_AIRPORTS" = "Origin and destination can't be the same";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DEPARTURE_DATE_EMPTY" = "Field is required: Departure Date";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_RETURN_DATE_EMPTY" = "Field is required: Return Date";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EXPIRED_DATE" = "Departure date has passed";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EARLY_RETURN_DATE" = "Departure date is later than return date";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ONE_ADULT_REQUIRED" = "At least one adult must be among the passengers";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_PASSENGERS" = "Total number of adults and children shouldn't be more than 9";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_INFANTS" = "Total number of infants shouldn't be more than 9";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "Incorrect travel class";

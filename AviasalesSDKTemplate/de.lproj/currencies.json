@@ -1,0 +1,25 @@
+[{
+"code":"USD",
+"name":"US Dollar"
+},{
+"code":"EUR",
+"name":"Euro"
+},{
+"code":"GBP",
+"name":"British Pounds"
+},{
+"code":"AUD",
+"name":"Australian Dollars"
+},{
+"code":"CNY",
+"name":"Chinese Yuans"
+},{
+"code":"CAD",
+"name":"Canadian Dollars"
+},{
+"code":"INR",
+"name":"Indian Rupees"
+},{
+"code":"RUB",
+"name":"Russian Ruble"
+}]

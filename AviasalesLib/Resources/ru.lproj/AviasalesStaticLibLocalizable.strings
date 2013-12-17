@@ -1,0 +1,72 @@
+"AVIASALES_LANG" = "ru";
+
+"AVIASALES_REDIRECT_ERROR" = "Не удалось перейти к покупке. Ошибка сервера";
+
+
+
+"AVIASALES_REDIRECT_EXPIRED" = "Не удалось перейти к покупке. Попробуйте повторить поиск";
+
+
+
+"AVIASALES_SEARCH_RESULTS_EMPTY" = "Ничего не найдено. Попробуйте изменить параметры поиска";
+
+
+
+"AVIASALES_SEARCH_RESULTS_ERROR" = "Извините, сервис Aviasales временно недоступен";
+
+
+
+"AVIASALES_OTHER_ALLIANCES" = "Другие альянсы";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Не указан пункт отправления";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Не указан пункт назначения";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "Неверный формат пункта отправления";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_FORMAT_ERROR" = "Неверный формат пункта назначения";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_SAME_AIRPORTS" = "Пункт вылета и назначения совпадают";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DEPARTURE_DATE_EMPTY" = "Укажите, пожалуйста, дату отправления";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_RETURN_DATE_EMPTY" = "Укажите, пожалуйста, дату возвращения";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EXPIRED_DATE" = "Дата вылета уже прошла";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EARLY_RETURN_DATE" = "Дата вылета позже даты возвращения";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ONE_ADULT_REQUIRED" = "Среди пассажиров должен быть минимум один взрослый";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_PASSENGERS" = "Взрослых пассажиров и детей в сумме не может быть больше 9";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_INFANTS" = "Младенцев не может быть больше 9";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "Неподдерживаемый класс перелета";
+

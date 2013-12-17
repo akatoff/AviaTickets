@@ -1,0 +1,71 @@
+"AVIASALES_LANG" = "de";
+
+"AVIASALES_REDIRECT_ERROR" = "Leider ist Service vorübergehend nicht verfügbar";
+
+
+
+"AVIASALES_REDIRECT_EXPIRED" = "Die Suchergebnisse sind nicht mehr aktuell. Bitte versuchen Sie eine neue Suche";
+
+
+
+"AVIASALES_SEARCH_RESULTS_EMPTY" = "Keine passenden Flüge gefunden. Versuchen Sie nun mit anderen Reisedaten";
+
+
+
+"AVIASALES_SEARCH_RESULTS_ERROR" = "Leider ist Service vorübergehend nicht verfügbar";
+
+
+
+"AVIASALES_OTHER_ALLIANCES" = "Andere Allianze";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Sie haben keinen Abflughafen gewählt";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Sie haben keinen Zielflughafen gewählt";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "Falscher Abflughafen-Format (IATA-Code sein sollte)";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_FORMAT_ERROR" = "Falsche Zielflughafen Format (IATA-Code sollte sein)";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_SAME_AIRPORTS" = "Der Abflughafen sollte sich vom Zielflughafen unterscheiden";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DEPARTURE_DATE_EMPTY" = "Füllen Sie bitte das Feld: Abflugdatum";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_RETURN_DATE_EMPTY" = "Füllen Sie bitte das Feld: Rückflugdatum";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EXPIRED_DATE" = "Abreisedatum überschritten";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EARLY_RETURN_DATE" = "Abreisetag ist später als das Rückreisedatum";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ONE_ADULT_REQUIRED" = "Mindestens ein Erwachsener muss unter den Passagieren sein";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_PASSENGERS" = "Anzahl der Erwachsenen und Kinder sollten nicht mehr als 9 sein";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_INFANTS" = "Gesamtzahl der Kinder sollten nicht mehr als 9 sein";
+
+
+
+"AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "Falsche Reiseklasse";

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTTicketScreen">
+            <connections>
+                <outlet property="buyButton" destination="jwB-Ub-Ahm" id="AMd-rC-F5k"/>
+                <outlet property="mainGate" destination="kuh-mi-sJj" id="raY-qg-8hr"/>
+                <outlet property="passengersInfo" destination="FkR-Ut-nY1" id="BOP-Oy-8K3"/>
+                <outlet property="price" destination="n2x-Ep-eL6" id="DNN-TH-Khh"/>
+                <outlet property="tableView" destination="MGo-6E-JJg" id="uEx-4V-bee"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="waitingView" destination="79a-BO-AIu" id="5X2-xL-jr7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3x-bZ-pKv">
+                    <rect key="frame" x="0.0" y="64" width="320" height="59"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 пассажиров, Эконом" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkR-Ut-nY1">
+                            <rect key="frame" x="10" y="6" width="185" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="77 442 руб" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2x-Ep-eL6">
+                            <rect key="frame" x="221" y="6" width="99" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwB-Ub-Ahm">
+                            <rect key="frame" x="221" y="29" width="99" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="Купить">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buyBest:" destination="-1" eventType="touchUpInside" id="lrB-uf-7UZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuh-mi-sJj">
+                            <rect key="frame" x="10" y="29" width="185" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="OZON.Travel ▾">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showOtherAgencies:" destination="-1" eventType="touchDown" id="c4F-jb-W9q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="joq-Pi-duE"/>
+                        <constraint firstAttribute="width" constant="320" id="yQi-vU-XwP"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-6E-JJg">
+                    <rect key="frame" x="0.0" y="131" width="320" height="437"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="HGp-by-VCW"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gFE-xg-nIU"/>
+                        <outlet property="delegate" destination="-1" id="POz-YW-V8U"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="A3x-bZ-pKv" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="4vA-qo-aw1"/>
+                <constraint firstItem="MGo-6E-JJg" firstAttribute="top" secondItem="A3x-bZ-pKv" secondAttribute="bottom" constant="8" id="b8I-Xp-fab"/>
+                <constraint firstItem="A3x-bZ-pKv" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="bwN-oS-cJZ"/>
+                <constraint firstItem="MGo-6E-JJg" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tc3-4z-o4T"/>
+                <constraint firstAttribute="bottom" secondItem="MGo-6E-JJg" secondAttribute="bottom" id="zbx-Gs-r61"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="79a-BO-AIu">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRg-XF-rsY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Переход к покупке билета..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOj-kC-rgr">
+                    <rect key="frame" x="20" y="233" width="280" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WNZ-7D-6AI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2e6-bZ-DjO">
+                    <rect key="frame" x="141" y="266" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eOj-kC-rgr" secondAttribute="trailing" constant="20" symbolic="YES" id="CjY-Lj-aUO"/>
+                <constraint firstItem="rRg-XF-rsY" firstAttribute="top" secondItem="79a-BO-AIu" secondAttribute="top" id="Ese-xt-UUg"/>
+                <constraint firstItem="2e6-bZ-DjO" firstAttribute="top" secondItem="eOj-kC-rgr" secondAttribute="bottom" constant="12" id="KmP-FW-wRi"/>
+                <constraint firstItem="rRg-XF-rsY" firstAttribute="leading" secondItem="79a-BO-AIu" secondAttribute="leading" id="N1r-Yn-7Hg"/>
+                <constraint firstAttribute="centerX" secondItem="2e6-bZ-DjO" secondAttribute="centerX" id="Rtd-qZ-Zbi"/>
+                <constraint firstItem="eOj-kC-rgr" firstAttribute="leading" secondItem="79a-BO-AIu" secondAttribute="leading" constant="20" symbolic="YES" id="TeQ-bT-DGR"/>
+                <constraint firstItem="eOj-kC-rgr" firstAttribute="centerX" secondItem="rRg-XF-rsY" secondAttribute="centerX" id="lI1-gL-v7m"/>
+                <constraint firstAttribute="centerY" secondItem="2e6-bZ-DjO" secondAttribute="centerY" id="tjJ-jy-g2K"/>
+                <constraint firstItem="rRg-XF-rsY" firstAttribute="centerY" secondItem="2e6-bZ-DjO" secondAttribute="centerY" id="x1g-45-1Te"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

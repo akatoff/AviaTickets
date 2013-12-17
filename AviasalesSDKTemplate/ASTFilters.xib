@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTFilters">
+            <connections>
+                <outlet property="offersLabel" destination="pYo-1c-by5" id="BUF-I6-pF5"/>
+                <outlet property="price" destination="lBd-pf-32j" id="eBb-1W-t9h"/>
+                <outlet property="tableView" destination="hWb-6n-PXO" id="SgN-FM-Ha1"/>
+                <outlet property="view" destination="1" id="2Jf-jt-qsh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-6n-PXO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SQi-Uv-9lp"/>
+                        <outlet property="delegate" destination="-1" id="LSS-Kv-clX"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpl-PQ-aMy">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="BKK-pO-aPe"/>
+                        <barButtonItem title="  OK  " width="44" id="kDS-vh-wGC">
+                            <connections>
+                                <action selector="dismiss:" destination="-1" id="We4-eY-gYQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найдено 678 предложений от" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="pYo-1c-by5">
+                    <rect key="frame" x="11" y="528" width="241" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 567 руб" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBd-pf-32j">
+                    <rect key="frame" x="11" y="545" width="236" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mpl-PQ-aMy" secondAttribute="trailing" id="3Q7-rK-XIl"/>
+                <constraint firstItem="pYo-1c-by5" firstAttribute="leading" secondItem="lBd-pf-32j" secondAttribute="leading" id="3n1-eE-HrT"/>
+                <constraint firstAttribute="trailing" secondItem="lBd-pf-32j" secondAttribute="trailing" constant="73" id="BNE-ov-Vg4"/>
+                <constraint firstItem="lBd-pf-32j" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="11" id="E9W-yv-6dN"/>
+                <constraint firstAttribute="bottom" secondItem="lBd-pf-32j" secondAttribute="bottom" constant="3" id="FZ8-9g-mCL"/>
+                <constraint firstAttribute="trailing" secondItem="hWb-6n-PXO" secondAttribute="trailing" id="KhU-Kj-ARo"/>
+                <constraint firstItem="hWb-6n-PXO" firstAttribute="top" secondItem="1" secondAttribute="top" id="Njs-Ns-GIj"/>
+                <constraint firstAttribute="bottom" secondItem="mpl-PQ-aMy" secondAttribute="bottom" id="dvD-NS-dhi"/>
+                <constraint firstItem="mpl-PQ-aMy" firstAttribute="top" secondItem="hWb-6n-PXO" secondAttribute="bottom" id="fAq-zY-ZfK"/>
+                <constraint firstItem="mpl-PQ-aMy" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="foX-cR-xyg"/>
+                <constraint firstItem="pYo-1c-by5" firstAttribute="top" secondItem="hWb-6n-PXO" secondAttribute="bottom" constant="4" id="hJT-gn-m1O"/>
+                <constraint firstAttribute="trailing" secondItem="pYo-1c-by5" secondAttribute="trailing" constant="68" id="ppW-d4-eRS"/>
+                <constraint firstItem="hWb-6n-PXO" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="ydY-oP-2aj"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
