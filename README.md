@@ -1,7 +1,7 @@
 Aviasales-iOS-SDK
 =================
 
-Aviasales/Jetradar iOS SDK (Static Library + Template Project)
+[Aviasales](http://www.aviasales.ru)/[Jetradar](http://www.jetradar.com) iOS SDK (Static Library + Template Project)
 
 Фреймворк, который позволяет интегрировать поиск авиабилетов в iOS приложения.
 
@@ -9,6 +9,6 @@ Aviasales/Jetradar iOS SDK (Static Library + Template Project)
 * статическая библиотека, которая реализует логику взаимодействия с поисковым сервером и фильтрацию результатов.
 * шаблонный проект, в котором реализованы все основные экраны для выбора авиабилета.
  
-Чтобы начать работу, вам достаточно включить шаблонный проект в ваше приложение, указав необходимые параметры партнерской сети.
+Чтобы начать работу, вам достаточно включить шаблонный проект в ваше приложение, указав необходимые параметры партнерской сети [Travelpayouts](http://www.travelpayouts.com).
 
 [Более подробно о составе фреймворка и подключении к проекту](https://github.com/KosyanMedia/Aviasales-iOS-SDK/wiki)
