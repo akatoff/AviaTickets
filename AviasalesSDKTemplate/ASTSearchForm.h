@@ -24,10 +24,10 @@
 @property (nonatomic, strong) NSDate *departureDate;
 @property (nonatomic, strong) NSDate *returnDate;
 
-@property (nonatomic, assign) NSInteger adultsNumber;
-@property (nonatomic, assign) NSInteger childrenNumber;
-@property (nonatomic, assign) NSInteger infantsNumber;
-@property (nonatomic, assign) NSInteger travelClass;
+@property (nonatomic, assign) int adultsNumber;
+@property (nonatomic, assign) int childrenNumber;
+@property (nonatomic, assign) int infantsNumber;
+@property (nonatomic, assign) int travelClass;
 
 @property (nonatomic, assign) BOOL returnFlight;
 

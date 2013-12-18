@@ -170,9 +170,9 @@
 - (NSString *)makeHeaderDescription:(NSUInteger)excludedCount allCount:(NSUInteger)allCount {
     NSString *countString = @"";
     if (allCount) {
-        countString = [NSString stringWithFormat:@"%d", allCount];
+        countString = [NSString stringWithFormat:@"%lu", (unsigned long)allCount];
         if (excludedCount) {
-            countString = [NSString stringWithFormat:@"%d %@ %@", allCount - excludedCount, @"из", countString];
+            countString = [NSString stringWithFormat:@"%lu %@ %@", (unsigned long)(allCount - excludedCount), @"из", countString];
         }
     }
     return countString;
@@ -530,7 +530,7 @@
     } else {
         offersFrame.size.height = 17;
         [_offersLabel setFrame:offersFrame];
-        return [NSString stringWithFormat:@"%@: %d",AVIASALES_(@"AVIASALES_FILTER_FOUND") ,count];
+        return [NSString stringWithFormat:@"%@: %lu", AVIASALES_(@"AVIASALES_FILTER_FOUND"), (unsigned long)count];
     }
 }
 
@@ -805,7 +805,7 @@
     }
     if (info.type == ASFilterFlightTimeSliderCell) {
         [cell updateSingleSliderWithMinVal:_filter.response.filtersBoundary.minFlightDuration maxVal:_filter.response.filtersBoundary.maxFlightDuration val:_filter.currentMaxFlightDuration];
-        [cell.cellAttLabel setText:[NSString stringWithFormat:@"%@ %@", AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDuration:_filter.currentMaxFlightDuration]]];
+        [cell.cellAttLabel setText:[NSString stringWithFormat:@"%@ %@", AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDuration:(int)_filter.currentMaxFlightDuration]]];
     }
 }
 
@@ -824,7 +824,7 @@
     if (info.type == ASFilterFlightTimeSliderCell) {
         
         [_filter setCurrentMaxFlightDuration:[[NSNumber numberWithFloat:sender.value] integerValue]];
-        [cell.cellAttLabel setText:[NSString stringWithFormat:@"%@ %@", AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDuration:_filter.currentMaxFlightDuration]]];
+        [cell.cellAttLabel setText:[NSString stringWithFormat:@"%@ %@", AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDuration:(int)_filter.currentMaxFlightDuration]]];
         if (_statistics) {
             _timeInFlightStat = YES;
         }
@@ -844,7 +844,7 @@
     
     [cell.cellLabel setText:info.title];
     if (info.type == ASFilterOutboundDepartTimeSliderCell) {
-        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinOutboundDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxOutboundDepartTime]];
+        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinOutboundDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxOutboundDepartTime]];
         
         [cell updateTwoThumbsSliderWithMinVal:_filter.response.filtersBoundary.minOutboundDepartureTime
                                        maxVal:_filter.response.filtersBoundary.maxOutboundDepartureTime
@@ -853,7 +853,7 @@
                                          text:text];
     }
     if (info.type == ASFilterReturnDepartTimeSliderCell) {
-        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinReturnDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxReturnDepartTime]];
+        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinReturnDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxReturnDepartTime]];
         
         [cell updateTwoThumbsSliderWithMinVal:_filter.response.filtersBoundary.minReturnDepartureTime
                                        maxVal:_filter.response.filtersBoundary.maxReturnDepartureTime
@@ -862,7 +862,7 @@
                                          text:text];
     }
     if (info.type == ASFilterOutboundArrivalTimeSliderCell) {
-        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinOutboundArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxOutboundArrivalTime]];
+        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinOutboundArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxOutboundArrivalTime]];
         
         [cell updateTwoThumbsSliderWithMinVal:_filter.response.filtersBoundary.minOutboundArrivalTime
                                        maxVal:_filter.response.filtersBoundary.maxOutboundArrivalTime
@@ -871,7 +871,7 @@
                                          text:text];
     }
     if (info.type == ASFilterReturnArrivalTimeSliderCell) {
-        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinReturnArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxReturnArrivalTime]];
+        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinReturnArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxReturnArrivalTime]];
         
         [cell updateTwoThumbsSliderWithMinVal:_filter.response.filtersBoundary.minReturnArrivalTime
                                        maxVal:_filter.response.filtersBoundary.maxReturnArrivalTime
@@ -880,7 +880,7 @@
                                          text:text];
     }
     if (info.type ==  ASFilterDelayTimeSliderCell) {
-        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM2"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinStopFlightDuration], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxStopFlightDuration]];
+        NSString *text = [NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM2"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinStopFlightDuration], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxStopFlightDuration]];
         
         [cell updateTwoThumbsSliderWithMinVal:_filter.response.filtersBoundary.minStopDuration
                                        maxVal:_filter.response.filtersBoundary.maxStopDuration
@@ -897,7 +897,7 @@
     if (info.type == ASFilterOutboundDepartTimeSliderCell) {
         [_filter setCurrentMinOutboundDepartTime:[[NSNumber numberWithFloat:sender.lowerValue] integerValue]];
         [_filter setCurrentMaxOutboundDepartTime:[[NSNumber numberWithFloat:sender.upperValue] integerValue]];
-        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinOutboundDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxOutboundDepartTime]]];
+        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinOutboundDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxOutboundDepartTime]]];
         if (_statistics) {
             _departTimeStat = YES;
         }
@@ -905,7 +905,7 @@
     if (info.type == ASFilterReturnDepartTimeSliderCell) {
         [_filter setCurrentMinReturnDepartTime:[[NSNumber numberWithFloat:sender.lowerValue] integerValue]];
         [_filter setCurrentMaxReturnDepartTime:[[NSNumber numberWithFloat:sender.upperValue] integerValue]];
-        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinReturnDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxReturnDepartTime]]];
+        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinReturnDepartTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxReturnDepartTime]]];
         if (_statistics) {
             _returnTimeStat = YES;
         }
@@ -913,17 +913,17 @@
     if (info.type == ASFilterOutboundArrivalTimeSliderCell) {
         [_filter setCurrentMinOutboundArrivalTime:[[NSNumber numberWithFloat:sender.lowerValue] integerValue]];
         [_filter setCurrentMaxOutboundArrivalTime:[[NSNumber numberWithFloat:sender.upperValue] integerValue]];
-        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinOutboundArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxOutboundArrivalTime]]];
+        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinOutboundArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxOutboundArrivalTime]]];
     }
     if (info.type == ASFilterReturnArrivalTimeSliderCell) {
         [_filter setCurrentMinReturnArrivalTime:[[NSNumber numberWithFloat:sender.lowerValue] integerValue]];
         [_filter setCurrentMaxReturnArrivalTime:[[NSNumber numberWithFloat:sender.upperValue] integerValue]];
-        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinReturnArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxReturnArrivalTime]]];
+        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM1"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinReturnArrivalTime], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxReturnArrivalTime]]];
     }
     if (info.type == ASFilterDelayTimeSliderCell) {
         [_filter setCurrentMinStopFlightDuration:[[NSNumber numberWithFloat:sender.lowerValue] integerValue]];
         [_filter setCurrentMaxStopFlightDuration:[[NSNumber numberWithFloat:sender.upperValue] integerValue]];
-        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM2"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMinStopFlightDuration], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:_filter.currentMaxStopFlightDuration]]];
+        [cell.cellAccessoryLabel setText:[NSString stringWithFormat:@"%@ %@ %@ %@", AVIASALES_(@"AVIASALES_FILTER_FROM2"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMinStopFlightDuration], AVIASALES_(@"AVIASALES_FILTER_UP_TO"), [ASTFilters formatDurationForFilterWithSliders:(int)_filter.currentMaxStopFlightDuration]]];
         if (_statistics) {
             _timeInTransfersStat = YES;
         }

@@ -188,12 +188,12 @@ static NSDate *initialReturnDate = nil;
         _returnFlight = YES;
     }
     
-    int adultsNumber = [_searchParams.adultsNumber integerValue];
+    int adultsNumber = [_searchParams.adultsNumber intValue];
     
     _adultsNumber = adultsNumber > 0 ? adultsNumber : 1;
-    _childrenNumber = [_searchParams.childrenNumber integerValue];
-    _infantsNumber = [_searchParams.infantsNumber integerValue];
-    _travelClass = [_searchParams.travelClass integerValue];
+    _childrenNumber = [_searchParams.childrenNumber intValue];
+    _infantsNumber = [_searchParams.infantsNumber intValue];
+    _travelClass = [_searchParams.travelClass intValue];
     
     self.clearsSelectionOnViewWillAppear = NO;
     
@@ -536,7 +536,7 @@ static NSDate *initialReturnDate = nil;
 }
 
 - (void)travelClassSelected:(UISegmentedControl *)segmentedControl {
-    _travelClass = segmentedControl.selectedSegmentIndex;
+    _travelClass = (int)segmentedControl.selectedSegmentIndex;
     
     _searchParams.travelClass = @(_travelClass);
     [_searchParams save];

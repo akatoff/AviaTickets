@@ -66,7 +66,7 @@
 }
 
 - (NSString *)getPassengersInfoString {
-    NSInteger passengers = [_adultsNumber integerValue] + [_childrenNumber integerValue]  + [_infantsNumber integerValue];
+    int passengers = [_adultsNumber intValue] + [_childrenNumber intValue]  + [_infantsNumber intValue];
     NSString *passengersString = [ASTCommonFunctions choosePluralForNumber:passengers from:AVIASALES_(@"AVIASALES_ONE_PASSENGER") andFrom:AVIASALES_(@"AVIASALES_PASSENGERS1") andFrom:AVIASALES_(@"AVIASALES_PASSENGERS2")];
     
     NSString *travelClass = ([_travelClass integerValue] == 0) ? AVIASALES_(@"AVIASALES_TRAVEL_CLASS_0") : AVIASALES_(@"AVIASALES_TRAVEL_CLASS_1");

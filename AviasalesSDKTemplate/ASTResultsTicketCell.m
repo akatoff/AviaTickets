@@ -71,18 +71,18 @@
     _returnArrivalIATA.text = lastReturnFlight.destination.iata;
     _returnArrivalTime.text = [timeFormatter stringFromDate:lastReturnFlight.arrival];
     
-    int outboundFlightsCount = [ticket.outboundFlights count];
+    NSUInteger outboundFlightsCount = [ticket.outboundFlights count];
     if (outboundFlightsCount > 1) {
         _outboundFlightStopoversView.hidden = NO;
-        _outboundFlightStopoversNumber.text = [NSString stringWithFormat:@"%d",outboundFlightsCount-1];
+        _outboundFlightStopoversNumber.text = [NSString stringWithFormat:@"%du", (unsigned int)(outboundFlightsCount-1)];
     } else {
         _outboundFlightStopoversView.hidden = YES;
     }
     
-    int returnFlightsCount = [ticket.returnFlights count];
+    NSUInteger returnFlightsCount = [ticket.returnFlights count];
     if (returnFlightsCount > 1) {
         _returnFlightStopoversView.hidden = NO;
-        _returnFlightStopoversNumber.text = [NSString stringWithFormat:@"%d",returnFlightsCount-1];
+        _returnFlightStopoversNumber.text = [NSString stringWithFormat:@"%du", (unsigned int)(returnFlightsCount-1)];
     } else {
         _returnFlightStopoversView.hidden = YES;
     }
