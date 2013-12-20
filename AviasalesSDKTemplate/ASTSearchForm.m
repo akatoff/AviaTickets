@@ -111,11 +111,36 @@ BOOL isCompatible() {
     [[AviasalesSDK sharedInstance] setAPIToken:APIToken];
 }
 
+- (id)init {
+    if ([super init]) {
+        [self customInit];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if ([super initWithCoder:aDecoder]) {
+        [self customInit];
+    }
+    return self;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if ([super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self customInit];
+    }
+    return self;
+}
+
+- (void)customInit {
+    _searchParams = [ASTSearchParams sharedInstance];
+    _dateFormatter = [[NSDateFormatter alloc] init];
+    [_dateFormatter setDateFormat:@"d MMMM ‘yy"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _searchParams = [ASTSearchParams sharedInstance];
     
     _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     _tableView.dataSource = self;
@@ -125,8 +150,6 @@ BOOL isCompatible() {
     [self.view addSubview:_tableView];
     
     _datePickerState = ASTDatePickerHidden;
-    _dateFormatter = [[NSDateFormatter alloc] init];
-    [_dateFormatter setDateFormat:@"d MMMM ‘yy"];
     
     self.navigationItem.title = AST_SF_TITLE;
     
