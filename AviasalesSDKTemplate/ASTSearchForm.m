@@ -7,7 +7,6 @@
 //
 
 #import "ASTSearchForm.h"
-#import "ASTNavigationController.h"
 
 #import "ASTSearchFormDateCell.h"
 #import "ASTSearchFormOptionsCell.h"
@@ -57,6 +56,7 @@ typedef NS_ENUM(NSUInteger, ASTDatePickerState) {
 };
 
 @interface ASTSearchForm () {
+    UITableView *_tableView;
     UIDatePicker *_datePicker;
     ASTDatePickerState _datePickerState;
     NSDateFormatter *_dateFormatter;
@@ -65,37 +65,44 @@ typedef NS_ENUM(NSUInteger, ASTDatePickerState) {
     
     ASTSearchParams *_searchParams;
 }
+
+@property (nonatomic, assign) BOOL launchedModally;
+
 - (void)updateNearestAirport;
 - (void)updateAirportAtIndexPath:(NSIndexPath *)indexPath withIATA:(NSString *)IATA;
 @end
 
-@implementation ASTSearchForm
+BOOL isCompatible() {
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
+        NSLog(@"Aviasales SDK Search Form needs iOS7 and higher to work correctly.");
+        return NO;
+    }
+    return YES;
+}
 
-static NSString *initialOrigin = nil;
-static NSString *initialDestination = nil;
-static NSDate *initialDepartureDate = nil;
-static NSDate *initialReturnDate = nil;
+@implementation ASTSearchForm
 
 + (void)launchFromViewController:(UIViewController *)viewController withOriginIATA:(NSString *)originIATA destinationIATA:(NSString *)destinationIATA departureDate:(NSString *)departureDate returnDate:(NSString *)returnDate {
     
-    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
-        NSLog(@"Aviasales SDK Search Form needs iOS7 and higher to work correctly.");
+    if (!isCompatible) {
         return;
     }
-    
-    initialOrigin = originIATA;
-    initialDestination = destinationIATA;
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"d-MM-yyyy"];
     
-    initialDepartureDate = [formatter dateFromString:departureDate];
-    initialReturnDate = [formatter dateFromString:returnDate];
+    NSDate *initialDepartureDate = [formatter dateFromString:departureDate];
+    NSDate *initialReturnDate = [formatter dateFromString:returnDate];
     
     ASTSearchForm *searchForm = [[ASTSearchForm alloc] initWithNibName:@"ASTSearchForm" bundle:AVIASALES_BUNDLE];
-    ASTNavigationController *nav = [[ASTNavigationController alloc] initWithRootViewController:searchForm];
+    searchForm.launchedModally = YES;
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:searchForm];
     [viewController presentViewController:nav animated:YES completion:^{
-        
+        [searchForm updateOrigin:originIATA];
+        [searchForm updateDestination:destinationIATA];
+        [searchForm updateDepartureDate:initialDepartureDate];
+        [searchForm updateReturnDate:initialReturnDate];
     }];
 }
 
@@ -104,67 +111,29 @@ static NSDate *initialReturnDate = nil;
     [[AviasalesSDK sharedInstance] setAPIToken:APIToken];
 }
 
-
-
-- (id)init {
-    self = [super init];
-    if (self) {
-        [self customInit];
-    }
-    return self;
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self customInit];
-    }
-    return self;
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        [self customInit];
-    }
-    return self;
-}
-
-- (void)customInit {
-    _datePickerState = ASTDatePickerHidden;
-    _dateFormatter = [[NSDateFormatter alloc] init];
-    [_dateFormatter setDateFormat:@"d MMMM ‘yy"];
-    
-    _searchParams = [ASTSearchParams sharedInstance];
-    if (initialOrigin) {
-        _searchParams.originIATA = initialOrigin;
-    }
-    if (initialDestination) {
-        _searchParams.destinationIATA = initialDestination;
-    }
-    if (initialDepartureDate) {
-        _searchParams.departureDate = initialDepartureDate;
-    }
-    if ([_searchParams.departureDate timeIntervalSinceNow] < 0) {
-        _searchParams.departureDate = [NSDate date];
-    }
-    if (initialReturnDate) {
-        _searchParams.returnDate = initialReturnDate;
-    }
-    if ([_searchParams.returnDate timeIntervalSinceDate:_searchParams.departureDate] < 0) {
-        _searchParams.returnDate = [NSDate date];
-    }
-    [_searchParams save];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    _searchParams = [ASTSearchParams sharedInstance];
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    _tableView.scrollEnabled = NO;
+    _tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:_tableView];
+    
+    _datePickerState = ASTDatePickerHidden;
+    _dateFormatter = [[NSDateFormatter alloc] init];
+    [_dateFormatter setDateFormat:@"d MMMM ‘yy"];
+    
     self.navigationItem.title = AST_SF_TITLE;
     
-    UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithTitle:AST_SF_CLOSE_BUTTON_TEXT style:UIBarButtonItemStylePlain target:self action:@selector(dismiss)];
-    self.navigationItem.leftBarButtonItem = closeBtn;
+    if (self.launchedModally) {
+        UIBarButtonItem *closeBtn = [[UIBarButtonItem alloc] initWithTitle:AST_SF_CLOSE_BUTTON_TEXT style:UIBarButtonItemStylePlain target:self action:@selector(dismiss)];
+        self.navigationItem.leftBarButtonItem = closeBtn;
+    }
     
     UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc] initWithTitle:AST_SF_SEARCH_BUTTON_TEXT style:UIBarButtonItemStylePlain target:self action:@selector(showSearchResults)];
     self.navigationItem.rightBarButtonItem = searchBtn;
@@ -173,13 +142,13 @@ static NSDate *initialReturnDate = nil;
     _datePicker.datePickerMode = UIDatePickerModeDate;
     
     if (_searchParams.originIATA) {
-        [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DEPARTURE_AIRPORT withIATA:_searchParams.originIATA];
+        [self updateOrigin:_searchParams.originIATA];
     } else {
         [self updateNearestAirport];
     }
     
     if (_searchParams.destinationIATA) {
-        [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DESTINATION_AIRPORT withIATA:_searchParams.destinationIATA];
+        [self updateDestination:_searchParams.destinationIATA];
     }
     
     _departureDate = _searchParams.departureDate;
@@ -195,13 +164,11 @@ static NSDate *initialReturnDate = nil;
     _infantsNumber = [_searchParams.infantsNumber intValue];
     _travelClass = [_searchParams.travelClass intValue];
     
-    self.clearsSelectionOnViewWillAppear = NO;
-    
     UIButton *switcher = [UIButton buttonWithType:UIButtonTypeCustom];
     [switcher setFrame:CGRectMake(10.0f, 32.0f, 23.0f, 23.0f)];
     [switcher setImage:[UIImage imageWithContentsOfFile:[AVIASALES_BUNDLE pathForResource:@"switch_airports" ofType:@"png"]] forState:UIControlStateNormal];
     [switcher addTarget:self action:@selector(switchAirports) forControlEvents:UIControlEventTouchUpInside];
-    [self.tableView addSubview:switcher];
+    [_tableView addSubview:switcher];
     
 }
 
@@ -210,7 +177,7 @@ static NSDate *initialReturnDate = nil;
     
     if (_datePickerState != ASTDatePickerHidden) {
         _datePickerState = ASTDatePickerHidden;
-        [self.tableView reloadData];
+        [_tableView reloadData];
     }
 }
 
@@ -361,7 +328,7 @@ static NSDate *initialReturnDate = nil;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.section == AST_SF_SECTION_CITIES) {
         ASTAirportPicker *picker;
@@ -380,7 +347,7 @@ static NSDate *initialReturnDate = nil;
     
         if ([indexPath isEqual:AST_SF_INDEX_PATH_RETURN_DATE] && !_returnFlight) {
             _returnFlight = !_returnFlight;
-            [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
         
         NSInteger relatedState;
@@ -403,17 +370,17 @@ static NSDate *initialReturnDate = nil;
         
         if (_datePickerState == relatedState) {
             _datePickerState = ASTDatePickerHidden;
-            [self.tableView deleteRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [_tableView deleteRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
         } else if (_datePickerState == anotherState) {
             _datePickerState = ASTDatePickerHidden;
-            [self.tableView deleteRowsAtIndexPaths:@[anotherPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [_tableView deleteRowsAtIndexPaths:@[anotherPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             _datePickerState = relatedState;
-            [self.tableView insertRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            _visiblePickerCell = [self.tableView cellForRowAtIndexPath:relatedPickerIndexPath];
+            [_tableView insertRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            _visiblePickerCell = [_tableView cellForRowAtIndexPath:relatedPickerIndexPath];
         } else if (_datePickerState == ASTDatePickerHidden) {
             _datePickerState = relatedState;
-            [self.tableView insertRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            _visiblePickerCell = [self.tableView cellForRowAtIndexPath:relatedPickerIndexPath];
+            [_tableView insertRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            _visiblePickerCell = [_tableView cellForRowAtIndexPath:relatedPickerIndexPath];
         }
         
     }
@@ -432,9 +399,15 @@ static NSDate *initialReturnDate = nil;
     }
 }
 
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.1f;
+    if (section == AST_SF_SECTION_CITIES) {
+        return 0.1f;
+    } else {
+        return 7.0f;
+    }
 }
+
 
 #pragma mark - Date picker delegate
 
@@ -445,19 +418,9 @@ static NSDate *initialReturnDate = nil;
     }
     
     if (_datePickerState == ASTDatePickerDeparture) {
-        _departureDate = datePicker.date;
-        [_searchParams setDepartureDate:_departureDate];
-        
-        if ([_departureDate timeIntervalSinceDate:_returnDate] > 0) {
-            _returnDate = _departureDate;
-            [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationNone];
-        }
-        
-        [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_DATE] withRowAnimation:UITableViewRowAnimationNone];
+        [self updateDepartureDate:datePicker.date];
     } else {
-        _returnDate = datePicker.date;
-        [_searchParams setReturnDate:_returnDate];
-        [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationNone];
+        [self updateReturnDate:datePicker.date];
     }
     
     [_searchParams save];
@@ -473,10 +436,10 @@ static NSDate *initialReturnDate = nil;
     }
     [_searchParams save];
     
-    [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationAutomatic];
     if (_datePickerState == ASTDatePickerReturn && !_returnFlight) {
         _datePickerState = ASTDatePickerHidden;
-        [self.tableView deleteRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_PICKER] withRowAnimation:UITableViewRowAnimationFade];
+        [_tableView deleteRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_PICKER] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
@@ -486,11 +449,11 @@ static NSDate *initialReturnDate = nil;
     if (picker.pickerMode == ASTAirportPickerDeparture) {
         _origin = airport;
         _searchParams.originIATA = _origin.iata;
-        [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
     } else if (picker.pickerMode == ASTAirportPickerDestination) {
         _destination = airport;
         _searchParams.destinationIATA = _destination.iata;
-        [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DESTINATION_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
+        [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DESTINATION_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     
     [[AviasalesSDK sharedInstance] updateHistoryWithAirport:airport];
@@ -502,7 +465,7 @@ static NSDate *initialReturnDate = nil;
 
 - (void)stepperDidChangeValue:(UIStepper *)stepper {
     
-    ASTSearchFormOptionsCell *cell = (ASTSearchFormOptionsCell *)[[self tableView] cellForRowAtIndexPath:AST_SF_INDEX_PATH_OPTIONS];
+    ASTSearchFormOptionsCell *cell = (ASTSearchFormOptionsCell *)[_tableView cellForRowAtIndexPath:AST_SF_INDEX_PATH_OPTIONS];
     
     if (stepper.tag == ASTStepperTypeAdults) {
         _adultsNumber = stepper.value;
@@ -551,7 +514,7 @@ static NSDate *initialReturnDate = nil;
             _searchParams.originIATA = _origin.iata;
             [_searchParams save];
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
+                [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
             });
         } else {
             _origin = nil;
@@ -570,7 +533,7 @@ static NSDate *initialReturnDate = nil;
                 return;
             }
             dispatch_async(dispatch_get_main_queue(), ^{
-                [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+                [_tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
             });
         } else {
             _destination = nil;
@@ -650,9 +613,56 @@ static NSDate *initialReturnDate = nil;
     _destination = previousOrigin;
     _searchParams.destinationIATA = _destination.iata;
     
-    [self.tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_AIRPORT, AST_SF_INDEX_PATH_DESTINATION_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_AIRPORT, AST_SF_INDEX_PATH_DESTINATION_AIRPORT] withRowAnimation:UITableViewRowAnimationAutomatic];
     
     [_searchParams save];
+}
+
+- (void)updateOrigin:(NSString *)originIATA {
+    _searchParams.originIATA = originIATA;
+    [_searchParams save];
+    [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DEPARTURE_AIRPORT withIATA:originIATA];
+}
+
+- (void)updateDestination:(NSString *)destinationIATA {
+    _searchParams.destinationIATA = destinationIATA;
+    [_searchParams save];
+    [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DESTINATION_AIRPORT withIATA:destinationIATA];
+}
+
+- (void)updateDepartureDate:(NSDate *)departureDate {
+    if (departureDate) {
+        _searchParams.departureDate = departureDate;
+    }
+    if ([_searchParams.departureDate timeIntervalSinceNow] < 0) {
+        _searchParams.departureDate = [NSDate date];
+    }
+    
+    [_searchParams save];
+    
+    _departureDate = _searchParams.departureDate;
+    
+    if ([_departureDate timeIntervalSinceDate:_returnDate] > 0) {
+        _returnDate = _departureDate;
+        [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationNone];
+    }
+    
+    [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_DATE] withRowAnimation:UITableViewRowAnimationNone];
+}
+
+- (void)updateReturnDate:(NSDate *)returnDate {
+    if (returnDate) {
+        _searchParams.returnDate = returnDate;
+    }
+    if ([_searchParams.returnDate timeIntervalSinceDate:_searchParams.departureDate] < 0) {
+        _searchParams.returnDate = [NSDate date];
+    }
+    
+    [_searchParams save];
+    
+    _returnDate = _searchParams.returnDate;
+    
+    [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationNone];
 }
 
 @end

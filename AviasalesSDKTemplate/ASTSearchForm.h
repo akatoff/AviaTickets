@@ -12,7 +12,7 @@
 
 #import "ASTAirportPicker.h"
 
-@interface ASTSearchForm : UITableViewController <ASTAirportPickerDelegate>
+@interface ASTSearchForm : UIViewController <ASTAirportPickerDelegate, UITableViewDataSource, UITableViewDelegate>
 
 + (void)launchFromViewController:(UIViewController *)viewController withOriginIATA:(NSString *)originIATA destinationIATA:(NSString *)destinationIATA departureDate:(NSString *)departureDate returnDate:(NSString *)returnDate;
 
@@ -34,5 +34,11 @@
 - (IBAction)stepperDidChangeValue:(UIStepper *)stepper;
 - (IBAction)travelClassSelected:(UISegmentedControl *)segmentedControl;
 - (void)switchAirports;
+
+- (void)updateOrigin:(NSString *)originIATA;
+- (void)updateDestination:(NSString *)destinationIATA;
+
+- (void)updateDepartureDate:(NSDate *)departureDate;
+- (void)updateReturnDate:(NSDate *)returnDate;
 
 @end

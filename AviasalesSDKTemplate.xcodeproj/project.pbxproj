@@ -33,7 +33,6 @@
 		C636CA51186099910073F5C7 /* AviasalesSearchParams.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E1186056B000446328 /* AviasalesSearchParams.h */; };
 		C636CA52186099910073F5C7 /* AviasalesSearchResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E2186056B000446328 /* AviasalesSearchResponse.h */; };
 		C636CA53186099910073F5C7 /* AviasalesTicket.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E3186056B000446328 /* AviasalesTicket.h */; };
-		C636CA54186099910073F5C7 /* ASTNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C660842E18463F37001E9712 /* ASTNavigationController.h */; };
 		C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */; };
 		C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */; };
 		C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F11817C778007A4F00 /* ASTFlightCell.m */; };
@@ -58,8 +57,6 @@
 		C655931C181456560048F252 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C655930C181456560048F252 /* UIImage+MultiFormat.m */; };
 		C655931D181456560048F252 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = C655930E181456560048F252 /* UIImage+WebP.m */; };
 		C655931E181456560048F252 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C6559310181456560048F252 /* UIImageView+WebCache.m */; };
-		C660843018463F37001E9712 /* ASTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C660842F18463F37001E9712 /* ASTNavigationController.m */; };
-		C660843118463F37001E9712 /* ASTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C660842F18463F37001E9712 /* ASTNavigationController.m */; };
 		C66965EE186056B000446328 /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C66965E4186056B000446328 /* libAviasales.a */; };
 		C66965EF186056B000446328 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C66965E6186056B000446328 /* Aviasales_top_airports.json */; };
 		C66965F0186056B000446328 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66965E8186056B000446328 /* AviasalesStaticLibLocalizable.strings */; };
@@ -128,7 +125,6 @@
 		C6B7519B1824011600FEF5B9 /* ASTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */; };
 		C6B751E118240B5400FEF5B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */; };
 		C6B751E718240B5400FEF5B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6B751E518240B5400FEF5B9 /* InfoPlist.strings */; };
-		C6B751EC18240CA500FEF5B9 /* ASTSearchForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60EC87B17E84B3600C5D52E /* ASTSearchForm.xib */; };
 		C6B751ED18240CBE00FEF5B9 /* ASTSearchFormDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */; };
 		C6B751EE18240CC400FEF5B9 /* ASTSearchFormOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */; };
 		C6B752151824116B00FEF5B9 /* ASTStopoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */; };
@@ -151,7 +147,6 @@
 		C6BA198D1827581C00BAD465 /* ASTAirportPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67CC6EC17F1EF1B006C659C /* ASTAirportPickerCell.xib */; };
 		C6BA198E1827581C00BAD465 /* ASTAirportPickerSearchingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ABB12517F0619B0086872F /* ASTAirportPickerSearchingCell.xib */; };
 		C6BA198F1827581C00BAD465 /* ASTAirportPickerEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39017F338DA007FFBD9 /* ASTAirportPickerEmptyCell.xib */; };
-		C6BA19901827581C00BAD465 /* ASTSearchForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60EC87B17E84B3600C5D52E /* ASTSearchForm.xib */; };
 		C6BA19911827581C00BAD465 /* ASTSearchFormOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */; };
 		C6BA19921827581C00BAD465 /* ASTSearchFormDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */; };
 		C6BA19941827581C00BAD465 /* ASTResultsTicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */; };
@@ -305,7 +300,6 @@
 				C636CA51186099910073F5C7 /* AviasalesSearchParams.h in CopyFiles */,
 				C636CA52186099910073F5C7 /* AviasalesSearchResponse.h in CopyFiles */,
 				C636CA53186099910073F5C7 /* AviasalesTicket.h in CopyFiles */,
-				C636CA54186099910073F5C7 /* ASTNavigationController.h in CopyFiles */,
 				C6BA19C61827701000BAD465 /* ASTAirportPicker.h in CopyFiles */,
 				C6BA19C71827701000BAD465 /* ASTAirportPickerCell.h in CopyFiles */,
 				C6BA19C81827701000BAD465 /* ASTAirportPickerSearchingCell.h in CopyFiles */,
@@ -378,7 +372,6 @@
 		C60EC86117E848DB00C5D52E /* AviasalesSDKTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AviasalesSDKTemplateTests-Info.plist"; sourceTree = "<group>"; };
 		C60EC86317E848DB00C5D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateTests.m; sourceTree = "<group>"; };
-		C60EC87B17E84B3600C5D52E /* ASTSearchForm.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchForm.xib; sourceTree = "<group>"; };
 		C60EC87E17E8576B00C5D52E /* ASTMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTMain.xib; sourceTree = "<group>"; };
 		C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTicketCellOneWay.xib; sourceTree = "<group>"; };
 		C63BA9EA1816B56E007A4F00 /* ASTCommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCommonFunctions.h; sourceTree = "<group>"; };
@@ -431,8 +424,6 @@
 		C655930E181456560048F252 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+WebP.m"; path = "SDWebImage/UIImage+WebP.m"; sourceTree = "<group>"; };
 		C655930F181456560048F252 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		C6559310181456560048F252 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		C660842E18463F37001E9712 /* ASTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNavigationController.h; sourceTree = "<group>"; };
-		C660842F18463F37001E9712 /* ASTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNavigationController.m; sourceTree = "<group>"; };
 		C66965D9186056B000446328 /* AviasalesAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AviasalesAirline.h; sourceTree = "<group>"; };
 		C66965DA186056B000446328 /* AviasalesAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AviasalesAirport.h; sourceTree = "<group>"; };
 		C66965DB186056B000446328 /* AviasalesFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AviasalesFilter.h; sourceTree = "<group>"; };
@@ -636,8 +627,6 @@
 				C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */,
 				C60EC84917E848DA00C5D52E /* ASTAppDelegate.h */,
 				C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */,
-				C660842E18463F37001E9712 /* ASTNavigationController.h */,
-				C660842F18463F37001E9712 /* ASTNavigationController.m */,
 				C60EC87E17E8576B00C5D52E /* ASTMain.xib */,
 				C60EC84117E848DA00C5D52E /* Supporting Files */,
 				C6B752251824123800FEF5B9 /* Defines.h */,
@@ -841,7 +830,6 @@
 			children = (
 				C645047417EC38AB00BF9E31 /* ASTSearchForm.h */,
 				C645047517EC38AB00BF9E31 /* ASTSearchForm.m */,
-				C60EC87B17E84B3600C5D52E /* ASTSearchForm.xib */,
 				C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */,
 				C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */,
 				C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */,
@@ -1078,7 +1066,6 @@
 				C6C45CF1183122BD00E7885B /* filter_stars.png in Resources */,
 				C6C45D07183122BD00E7885B /* slider-default7-trackBackground.png in Resources */,
 				C6C45CE3183122BD00E7885B /* filter_cell_checkmark@2x.png in Resources */,
-				C6BA19901827581C00BAD465 /* ASTSearchForm.xib in Resources */,
 				C6C45D03183122BD00E7885B /* slider-default7-track.png in Resources */,
 				C6C45CDF183122BD00E7885B /* filter_arrow_up@2x.png in Resources */,
 				C6C45CD5183122BD00E7885B /* all_airports_image.png in Resources */,
@@ -1149,7 +1136,6 @@
 				C6BA19C518275DB700BAD465 /* ASTFlightCell.xib in Resources */,
 				C6B752211824118700FEF5B9 /* ASTAirportPicker.xib in Resources */,
 				C6C45CE0183122BD00E7885B /* filter_arrow_up@2x.png in Resources */,
-				C6B751EC18240CA500FEF5B9 /* ASTSearchForm.xib in Resources */,
 				C6B7521B1824117500FEF5B9 /* ASFilterCellWithView.xib in Resources */,
 				C6B752181824117500FEF5B9 /* ASFilterCellWithMobileSwitch.xib in Resources */,
 				C6C45CD8183122BD00E7885B /* all_airports_image@2x.png in Resources */,
@@ -1238,7 +1224,6 @@
 				C60EC84717E848DA00C5D52E /* main.m in Sources */,
 				C6B74FA8181FDCD700FEF5B9 /* NMRangeSlider.m in Sources */,
 				C6559312181456560048F252 /* NSData+GIF.m in Sources */,
-				C660843018463F37001E9712 /* ASTNavigationController.m in Sources */,
 				C60EC84B17E848DA00C5D52E /* ASTAppDelegate.m in Sources */,
 				C6559316181456560048F252 /* SDWebImageDownloader.m in Sources */,
 				C6B74F97181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m in Sources */,
@@ -1294,7 +1279,6 @@
 				C6B7518E1824011600FEF5B9 /* SDWebImageDecoder.m in Sources */,
 				C6B7518F1824011600FEF5B9 /* SDWebImageDownloader.m in Sources */,
 				C6B751901824011600FEF5B9 /* SDWebImageDownloaderOperation.m in Sources */,
-				C660843118463F37001E9712 /* ASTNavigationController.m in Sources */,
 				C6B751911824011600FEF5B9 /* SDWebImageManager.m in Sources */,
 				C6B751921824011600FEF5B9 /* SDWebImagePrefetcher.m in Sources */,
 				C6B751931824011600FEF5B9 /* UIButton+WebCache.m in Sources */,
