@@ -35,3 +35,7 @@
 "AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_INFANTS" = "Total number of infants shouldn't be more than 9";
 
 "AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "Incorrect travel class";
+
+"AVIASALES_INTERNET_UNREACHABLE" = "Please check your Internet connection";
+
+"AVIASALES_HOST_UNREACHABLE" = "The server is unreachable";

@@ -94,15 +94,23 @@ BOOL isCompatible() {
     NSDate *initialDepartureDate = [formatter dateFromString:departureDate];
     NSDate *initialReturnDate = [formatter dateFromString:returnDate];
     
-    ASTSearchForm *searchForm = [[ASTSearchForm alloc] initWithNibName:@"ASTSearchForm" bundle:AVIASALES_BUNDLE];
+    ASTSearchForm *searchForm = [[ASTSearchForm alloc] init];
     searchForm.launchedModally = YES;
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:searchForm];
     [viewController presentViewController:nav animated:YES completion:^{
-        [searchForm updateOrigin:originIATA];
-        [searchForm updateDestination:destinationIATA];
-        [searchForm updateDepartureDate:initialDepartureDate];
-        [searchForm updateReturnDate:initialReturnDate];
+        if (originIATA) {
+            [searchForm updateOrigin:originIATA];
+        }
+        if (destinationIATA) {
+            [searchForm updateDestination:destinationIATA];
+        }
+        if (initialDepartureDate) {
+            [searchForm updateDepartureDate:initialDepartureDate];
+        }
+        if (initialReturnDate) {
+            [searchForm updateReturnDate:initialReturnDate];
+        }
     }];
 }
 
@@ -165,13 +173,13 @@ BOOL isCompatible() {
     _datePicker.datePickerMode = UIDatePickerModeDate;
     
     if (_searchParams.originIATA) {
-        [self updateOrigin:_searchParams.originIATA];
+        [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DEPARTURE_AIRPORT withIATA:_searchParams.originIATA];
     } else {
         [self updateNearestAirport];
     }
     
     if (_searchParams.destinationIATA) {
-        [self updateDestination:_searchParams.destinationIATA];
+        [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DESTINATION_AIRPORT withIATA:_searchParams.destinationIATA];
     }
     
     _departureDate = _searchParams.departureDate;

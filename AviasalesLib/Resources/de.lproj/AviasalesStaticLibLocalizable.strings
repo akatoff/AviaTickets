@@ -69,3 +69,12 @@
 
 
 "AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "Falsche Reiseklasse";
+
+
+
+"AVIASALES_INTERNET_UNREACHABLE" = "Bitte uberprüfen Sie Ihre Internetverbindung";
+
+
+
+"AVIASALES_HOST_UNREACHABLE" = "Der Server ist nicht erreichbar";
+

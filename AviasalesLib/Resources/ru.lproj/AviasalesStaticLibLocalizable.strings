@@ -70,3 +70,11 @@
 
 "AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "Неподдерживаемый класс перелета";
 
+
+
+"AVIASALES_INTERNET_UNREACHABLE" = "Нет доступа к сети";
+
+
+
+"AVIASALES_HOST_UNREACHABLE" = "Не удалось установить соединение с сервером";
+
