@@ -127,7 +127,14 @@
 //    [UIBackgroundTaskInvalid addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
     
     _resetBtn = [[UIBarButtonItem alloc] initWithTitle:AVIASALES_(@"AVIASALES_RESET") style:UIBarButtonItemStylePlain target:self action:@selector(resetAction:)];
-    [self.navigationItem setRightBarButtonItem:_resetBtn];
+    
+    if (AVIASALES_VC_GRANDPA_IS_TABBAR) {
+        [self.navigationItem setLeftBarButtonItem:_resetBtn];
+        UIBarButtonItem *okBtn = [[UIBarButtonItem alloc] initWithTitle:@"OK" style:UIBarButtonItemStylePlain target:self action:@selector(dismiss:)];
+        [self.navigationItem setRightBarButtonItem:okBtn];
+    } else {
+        [self.navigationItem setRightBarButtonItem:_resetBtn];
+    }
     
     _resetBtn.enabled = _filter.needFiltering;
     

@@ -22,6 +22,10 @@
 		C60EC86417E848DB00C5D52E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C60EC86217E848DB00C5D52E /* InfoPlist.strings */; };
 		C60EC86617E848DB00C5D52E /* AviasalesSDKTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */; };
 		C62408D11848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */; };
+		C62DCD0A186C79190039C256 /* ASTResultsTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */; };
+		C62DCD0B186C79190039C256 /* ASTResultsTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */; };
+		C62DCD0D186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */; };
+		C62DCD0E186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */; };
 		C636CA49186099910073F5C7 /* AviasalesAirline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965D9186056B000446328 /* AviasalesAirline.h */; };
 		C636CA4A186099910073F5C7 /* AviasalesAirport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DA186056B000446328 /* AviasalesAirport.h */; };
 		C636CA4B186099910073F5C7 /* AviasalesFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DB186056B000446328 /* AviasalesFilter.h */; };
@@ -374,6 +378,8 @@
 		C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateTests.m; sourceTree = "<group>"; };
 		C60EC87E17E8576B00C5D52E /* ASTMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTMain.xib; sourceTree = "<group>"; };
 		C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTicketCellOneWay.xib; sourceTree = "<group>"; };
+		C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTabBar.xib; sourceTree = "<group>"; };
+		C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTFiltersTabBar.xib; sourceTree = "<group>"; };
 		C63BA9EA1816B56E007A4F00 /* ASTCommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCommonFunctions.h; sourceTree = "<group>"; };
 		C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTCommonFunctions.m; sourceTree = "<group>"; };
 		C63BA9ED1816BA6A007A4F00 /* ASTSearchParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchParams.h; sourceTree = "<group>"; };
@@ -846,6 +852,7 @@
 				C6B74F72181EA14A00FEF5B9 /* ASTResults.h */,
 				C6B74F73181EA14A00FEF5B9 /* ASTResults.m */,
 				C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */,
+				C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */,
 				C6A0977918113DD500862C71 /* ASTResultsTicketCell.h */,
 				C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */,
 				C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */,
@@ -896,6 +903,7 @@
 				C6B74F7C181FDA9100FEF5B9 /* ASTFilters.h */,
 				C6B74F7D181FDA9100FEF5B9 /* ASTFilters.m */,
 				C6B74F7E181FDA9100FEF5B9 /* ASTFilters.xib */,
+				C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */,
 				C6B74FC11820ED3600FEF5B9 /* ASRaitingStars.h */,
 				C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */,
 				C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */,
@@ -1067,6 +1075,7 @@
 				C6C45D07183122BD00E7885B /* slider-default7-trackBackground.png in Resources */,
 				C6C45CE3183122BD00E7885B /* filter_cell_checkmark@2x.png in Resources */,
 				C6C45D03183122BD00E7885B /* slider-default7-track.png in Resources */,
+				C62DCD0D186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */,
 				C6C45CDF183122BD00E7885B /* filter_arrow_up@2x.png in Resources */,
 				C6C45CD5183122BD00E7885B /* all_airports_image.png in Resources */,
 				C6C45CDD183122BD00E7885B /* filter_arrow_up.png in Resources */,
@@ -1089,6 +1098,7 @@
 				C6C45CE5183122BD00E7885B /* filter_stars_active_hi.png in Resources */,
 				C6BA199A1827581C00BAD465 /* ASFilterCellWithView.xib in Resources */,
 				C6D652F6184DE9AC001C6FFF /* switch_airports.png in Resources */,
+				C62DCD0A186C79190039C256 /* ASTResultsTabBar.xib in Resources */,
 				C6C45CE7183122BD00E7885B /* filter_stars_active_hi@2x.png in Resources */,
 				C6C45CFD183122BD00E7885B /* search_check_on@2x.png in Resources */,
 				C6C45CEB183122BD00E7885B /* filter_stars_active@2x.png in Resources */,
@@ -1130,6 +1140,7 @@
 			files = (
 				C6C45CE4183122BD00E7885B /* filter_cell_checkmark@2x.png in Resources */,
 				C6C45CD6183122BD00E7885B /* all_airports_image.png in Resources */,
+				C62DCD0E186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */,
 				C6C45D08183122BD00E7885B /* slider-default7-trackBackground.png in Resources */,
 				C6BA19C418275DB700BAD465 /* ASTTicketScreen.xib in Resources */,
 				C6C45CF2183122BD00E7885B /* filter_stars.png in Resources */,
@@ -1153,6 +1164,7 @@
 				C606321E18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings in Resources */,
 				C6B751ED18240CBE00FEF5B9 /* ASTSearchFormDateCell.xib in Resources */,
 				C6B752241824118700FEF5B9 /* ASTAirportPickerEmptyCell.xib in Resources */,
+				C62DCD0B186C79190039C256 /* ASTResultsTabBar.xib in Resources */,
 				C6B751EE18240CC400FEF5B9 /* ASTSearchFormOptionsCell.xib in Resources */,
 				C6B752221824118700FEF5B9 /* ASTAirportPickerCell.xib in Resources */,
 				C6B752171824117500FEF5B9 /* ASFilterCellWithAirport.xib in Resources */,

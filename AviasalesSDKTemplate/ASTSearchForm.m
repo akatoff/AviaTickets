@@ -603,7 +603,12 @@ BOOL isCompatible() {
         return;
     }
     
-    __block ASTResults *resultsVC = [[ASTResults alloc] initWithNibName:@"ASTResults" bundle:AVIASALES_BUNDLE];
+    NSString *xibName = @"ASTResults";
+    if (AVIASALES_VC_GRANDPA_IS_TABBAR) {
+        xibName = @"ASTResultsTabBar";
+    }
+    
+    __block ASTResults *resultsVC = [[ASTResults alloc] initWithNibName:xibName bundle:AVIASALES_BUNDLE];
     
     [[AviasalesSDK sharedInstance] setDurationFormat:AVIASALES_(@"AVIASALES_DURATION_FORMAT")];
     

@@ -42,6 +42,7 @@
  Nib name for ticket cell in results. Depends on oneway or return ticket.
  */
 static NSString *NibName = nil;
+static NSIndexPath *selectedIndexPath;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -100,6 +101,8 @@ static NSString *NibName = nil;
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    [_tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
+    
     if (_filter.needFiltering && [self.filteredTickets count] == 0) {
         [_emptyView setHidden:NO];
     } else {
@@ -121,7 +124,12 @@ static NSString *NibName = nil;
     [_filter setResponse:_response];
     [_filter setDelegate:self];
     
-    _filtersVC = [[ASTFilters alloc] initWithNibName:@"ASTFilters" bundle:AVIASALES_BUNDLE];
+    NSString *xibName = @"ASTFilters";
+    if (AVIASALES_VC_GRANDPA_IS_TABBAR) {
+        xibName = @"ASTFiltersTabBar";
+    }
+    
+    _filtersVC = [[ASTFilters alloc] initWithNibName:xibName bundle:AVIASALES_BUNDLE];
     [_filtersVC setFilter:_filter];
     [_filtersVC setTickets:[self filteredTickets]];
 }
@@ -168,6 +176,9 @@ static NSString *NibName = nil;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    selectedIndexPath = indexPath;
+    
     ASTTicketScreen *ticketVC = [[ASTTicketScreen alloc] initWithNibName:@"ASTTicketScreen" bundle:AVIASALES_BUNDLE];
     
     ticketVC.ticket = [[self tickets] objectAtIndex:indexPath.section];

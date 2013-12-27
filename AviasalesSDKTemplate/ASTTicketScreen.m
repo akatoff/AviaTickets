@@ -38,8 +38,6 @@
     
     [self applyTicket:_ticket];
     
-    _tableView.contentInset = UIEdgeInsetsMake(10.0f, 0, 0, 0);
-    
     _waitingView.hidden = YES;
     [self.view addSubview:_waitingView];
     _waitingView.autoresizingMask = self.view.autoresizingMask;

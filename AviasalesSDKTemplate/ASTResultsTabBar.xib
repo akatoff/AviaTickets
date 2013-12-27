@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTResults">
+            <connections>
+                <outlet property="currencyButton" destination="LFQ-NW-JGZ" id="bQm-nx-0ga"/>
+                <outlet property="emptyLabel" destination="aJY-es-iCl" id="xS7-zq-p5q"/>
+                <outlet property="emptyView" destination="DiM-OC-ktt" id="mLY-GE-MaL"/>
+                <outlet property="filters" destination="hbf-U5-ljb" id="EUm-OA-Pvq"/>
+                <outlet property="progressLabel" destination="jg0-c7-oTx" id="Zpt-7l-sag"/>
+                <outlet property="progressView" destination="p72-Ss-U8r" id="vcd-YZ-w55"/>
+                <outlet property="tableView" destination="veO-Fa-Y7M" id="nrI-NV-iNf"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="waitingView" destination="eta-NH-spU" id="adR-bW-xp9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" userLabel="Main">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eta-NH-spU" userLabel="Waiting">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p72-Ss-U8r">
+                            <rect key="frame" x="20" y="283" width="280" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </progressView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поиск самых лучших билетов..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg0-c7-oTx">
+                            <rect key="frame" x="20" y="252" width="280" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jg0-c7-oTx" firstAttribute="leading" secondItem="p72-Ss-U8r" secondAttribute="leading" id="9Th-gp-uMJ"/>
+                        <constraint firstItem="p72-Ss-U8r" firstAttribute="centerY" secondItem="eta-NH-spU" secondAttribute="centerY" id="V7d-Sn-mZL"/>
+                        <constraint firstItem="jg0-c7-oTx" firstAttribute="leading" secondItem="eta-NH-spU" secondAttribute="leading" constant="20" symbolic="YES" id="i1m-lr-i7V"/>
+                        <constraint firstItem="jg0-c7-oTx" firstAttribute="trailing" secondItem="p72-Ss-U8r" secondAttribute="trailing" id="jpp-nE-JhD"/>
+                        <constraint firstItem="p72-Ss-U8r" firstAttribute="top" secondItem="jg0-c7-oTx" secondAttribute="bottom" constant="8" symbolic="YES" id="s6X-zj-2mE"/>
+                        <constraint firstAttribute="trailing" secondItem="jg0-c7-oTx" secondAttribute="trailing" constant="20" symbolic="YES" id="wph-Ve-YhL"/>
+                    </constraints>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </view>
+                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="veO-Fa-Y7M">
+                    <rect key="frame" x="0.0" y="54" width="320" height="514"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="g7x-Pp-SGF"/>
+                        <outlet property="delegate" destination="-1" id="Zmt-MV-LUo"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiM-OC-ktt" userLabel="Nothing Found">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не найдено ни одного билета" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aJY-es-iCl">
+                            <rect key="frame" x="10" y="266" width="300" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="vFD-OQ-r1b"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aJY-es-iCl" firstAttribute="centerY" secondItem="DiM-OC-ktt" secondAttribute="centerY" id="qwH-G7-Ctq"/>
+                        <constraint firstItem="aJY-es-iCl" firstAttribute="centerX" secondItem="DiM-OC-ktt" secondAttribute="centerX" id="svS-OZ-dKs"/>
+                        <constraint firstItem="aJY-es-iCl" firstAttribute="leading" secondItem="DiM-OC-ktt" secondAttribute="leading" constant="10" id="vl9-mq-ZzF"/>
+                    </constraints>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-Gp-wPc">
+                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Фильтры" id="hbf-U5-ljb">
+                            <connections>
+                                <action selector="showFilters:" destination="-1" id="SNu-Ia-2q2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="mtK-xI-2vR"/>
+                        <barButtonItem title="Валюта: RUB" id="LFQ-NW-JGZ">
+                            <connections>
+                                <action selector="showCurrenciesList:" destination="-1" id="sI5-6a-JRS"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5rA-Gp-wPc" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="7O7-tD-1C9"/>
+                <constraint firstAttribute="trailing" secondItem="5rA-Gp-wPc" secondAttribute="trailing" id="9TF-0o-ey5"/>
+                <constraint firstAttribute="bottom" secondItem="eta-NH-spU" secondAttribute="bottom" id="AkQ-MX-PFy"/>
+                <constraint firstAttribute="bottom" secondItem="DiM-OC-ktt" secondAttribute="bottom" id="DuS-Vp-yN1"/>
+                <constraint firstItem="eta-NH-spU" firstAttribute="top" secondItem="1" secondAttribute="top" id="JUp-mC-eTe"/>
+                <constraint firstItem="eta-NH-spU" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="JXn-BD-83O"/>
+                <constraint firstAttribute="trailing" secondItem="veO-Fa-Y7M" secondAttribute="trailing" id="O8E-hc-foQ"/>
+                <constraint firstAttribute="trailing" secondItem="DiM-OC-ktt" secondAttribute="trailing" id="bxa-Xy-ft8"/>
+                <constraint firstItem="veO-Fa-Y7M" firstAttribute="top" secondItem="1" secondAttribute="top" constant="54" id="fn0-lH-rRS"/>
+                <constraint firstAttribute="trailing" secondItem="eta-NH-spU" secondAttribute="trailing" id="hRa-73-fjl"/>
+                <constraint firstItem="DiM-OC-ktt" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="ilH-GV-Nqp"/>
+                <constraint firstAttribute="bottom" secondItem="veO-Fa-Y7M" secondAttribute="bottom" id="khB-7z-QKT"/>
+                <constraint firstItem="5rA-Gp-wPc" firstAttribute="top" secondItem="1" secondAttribute="top" constant="64" id="me5-ky-xjN"/>
+                <constraint firstItem="veO-Fa-Y7M" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="pd5-GC-eb3"/>
+                <constraint firstItem="DiM-OC-ktt" firstAttribute="top" secondItem="1" secondAttribute="top" id="stJ-bi-VOM"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
