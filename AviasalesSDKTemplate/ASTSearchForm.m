@@ -210,6 +210,8 @@ BOOL isCompatible() {
         _datePickerState = ASTDatePickerHidden;
         [_tableView reloadData];
     }
+    
+    [[AviasalesSDK sharedInstance] cancelTicketsSearch];
 }
 
 - (void)didReceiveMemoryWarning

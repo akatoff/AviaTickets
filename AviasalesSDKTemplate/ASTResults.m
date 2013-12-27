@@ -91,13 +91,6 @@ static NSIndexPath *selectedIndexPath;
     }
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    
-    [[AviasalesSDK sharedInstance] cancelTicketsSearch];
-    [_progressTimer invalidate];
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
@@ -108,6 +101,10 @@ static NSIndexPath *selectedIndexPath;
     } else {
         [_emptyView setHidden:YES];
     }
+}
+
+- (void)dealloc {
+    [_progressTimer invalidate];
 }
 
 - (void)setResponse:(AviasalesSearchResponse *)response {
