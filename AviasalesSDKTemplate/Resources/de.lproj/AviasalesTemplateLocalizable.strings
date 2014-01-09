@@ -10,21 +10,21 @@
 
 "AVIASALES_CANCEL" = "Abbrechen";
 
-"AVIASALES_ORIGIN" = "Select origin";
+"AVIASALES_ORIGIN" = "Abflugort";
 
-"AVIASALES_DESTINATION" = "Select destination";
+"AVIASALES_DESTINATION" = "Reiseziel";
 
-"AVIASALES_DEPARTURE_DATE" = "Departure date";
+"AVIASALES_DEPARTURE_DATE" = "Abflugdatum";
 
-"AVIASALES_RETURN_DATE" = "Return date";
+"AVIASALES_RETURN_DATE" = "Rückflugdatum";
 
 "AVIASALES_RETURN_FLIGHT" = "Rückflug";
 
-"AVIASALES_PICKER_ADULTS" = "Adults";
+"AVIASALES_PICKER_ADULTS" = "Erwachsene";
 
-"AVIASALES_PICKER_CHILDREN" = "2-11 years";
+"AVIASALES_PICKER_CHILDREN" = "Kinder 2-11 J.";
 
-"AVIASALES_PICKER_INFANTS" = "0-2 years";
+"AVIASALES_PICKER_INFANTS" = "Babys 0-2 J.";
 
 "AVIASALES_TRAVEL_CLASS_0" = "Economy";
 

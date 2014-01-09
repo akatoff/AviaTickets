@@ -693,7 +693,7 @@ BOOL isCompatible() {
         _searchParams.returnDate = returnDate;
     }
     if ([_searchParams.returnDate timeIntervalSinceDate:_searchParams.departureDate] < 0) {
-        _searchParams.returnDate = [NSDate date];
+        _searchParams.returnDate = _searchParams.departureDate;
     }
     
     [_searchParams save];
