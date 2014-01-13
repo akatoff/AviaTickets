@@ -258,17 +258,15 @@ BOOL isCompatible() {
             [datePicker addTarget:self action:@selector(datePickerDidChangeDate:) forControlEvents:UIControlEventValueChanged];
         }
         
+        UIDatePicker *picker = (UIDatePicker *)[cell viewWithTag:AST_SF_DATEPICKER_TAG];
+        
         if (indexPath.row == AST_SF_ROW_DEPARTURE_PICKER) {
             if (_departureDate) {
-                [(UIDatePicker *)[cell viewWithTag:AST_SF_DATEPICKER_TAG] setDate:_departureDate animated:NO];
+                [picker setDate:_departureDate animated:NO];
             }
         } else {
-            UIDatePicker *picker = (UIDatePicker *)[cell viewWithTag:AST_SF_DATEPICKER_TAG];
             if (_returnDate) {
                 [picker setDate:_returnDate animated:NO];
-            }
-            if (_departureDate) {
-                [picker setMinimumDate:_departureDate];
             }
         }
         return cell;
@@ -670,15 +668,8 @@ BOOL isCompatible() {
 
 - (void)updateDepartureDate:(NSDate *)departureDate {
     if (departureDate) {
-        _searchParams.departureDate = departureDate;
+        _departureDate = departureDate;
     }
-    if ([_searchParams.departureDate timeIntervalSinceNow] < 0) {
-        _searchParams.departureDate = [NSDate date];
-    }
-    
-    [_searchParams save];
-    
-    _departureDate = _searchParams.departureDate;
     
     if ([_departureDate timeIntervalSinceDate:_returnDate] > 0) {
         _returnDate = _departureDate;
@@ -686,21 +677,27 @@ BOOL isCompatible() {
     }
     
     [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_DATE] withRowAnimation:UITableViewRowAnimationNone];
+    
+    _searchParams.departureDate = _departureDate;
+    _searchParams.returnDate = _returnDate;
+    [_searchParams save];
 }
 
 - (void)updateReturnDate:(NSDate *)returnDate {
     if (returnDate) {
-        _searchParams.returnDate = returnDate;
-    }
-    if ([_searchParams.returnDate timeIntervalSinceDate:_searchParams.departureDate] < 0) {
-        _searchParams.returnDate = _searchParams.departureDate;
+        _returnDate = returnDate;
     }
     
-    [_searchParams save];
-    
-    _returnDate = _searchParams.returnDate;
+    if ([_departureDate timeIntervalSinceDate:_returnDate] > 0) {
+        _departureDate = _returnDate;
+        [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_DATE] withRowAnimation:UITableViewRowAnimationNone];
+    }
     
     [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationNone];
+    
+    _searchParams.returnDate = _returnDate;
+    _searchParams.departureDate = _departureDate;
+    [_searchParams save];
 }
 
 @end
