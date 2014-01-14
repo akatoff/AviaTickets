@@ -199,12 +199,20 @@
     [self.view bringSubviewToFront:_waitingView];
     
     [price getRedirectRequest:^(NSURLRequest *request, NSError *error) {
-        if (error) {
-            
-        } else {
-            [[UIApplication sharedApplication] openURL:request.URL];
-        }
-        _waitingView.hidden = YES;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error) {
+                NSString *errorText = AVIASALES_(@"AVIASALES_ALERT_UNKNOWN_ERROR_TEXT");
+                if ([error isKindOfClass:[NSError class]] && [[error localizedDescription] length] > 0) {
+                    errorText = [error localizedDescription];
+                }
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:AVIASALES_(@"AVIASALES_ALERT_ERROR_TITLE") message:errorText delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
+            } else {
+                [[UIApplication sharedApplication] openURL:request.URL];
+            }
+            [_waitingView setHidden:YES];
+        });
     }];
 }
 

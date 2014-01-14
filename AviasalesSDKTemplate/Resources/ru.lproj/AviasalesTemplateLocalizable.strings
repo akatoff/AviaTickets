@@ -6,6 +6,8 @@
 
 "AVIASALES_ALERT_ERROR_TITLE" = "Ошибка";
 
+"AVIASALES_ALERT_UNKNOWN_ERROR_TEXT" = "Неизвестная ошибка";
+
 "AVIASALES_BACK" = "Назад";
 
 "AVIASALES_CANCEL" = "Отмена";

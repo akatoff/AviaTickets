@@ -6,6 +6,8 @@
 
 "AVIASALES_ALERT_ERROR_TITLE" = "Ein Fehler";
 
+"AVIASALES_ALERT_UNKNOWN_ERROR_TEXT" = "Unbekannter Fehler";
+
 "AVIASALES_BACK" = "Zurück";
 
 "AVIASALES_CANCEL" = "Abbrechen";
