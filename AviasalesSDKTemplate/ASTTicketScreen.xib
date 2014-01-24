@@ -12,6 +12,7 @@
                 <outlet property="price" destination="n2x-Ep-eL6" id="DNN-TH-Khh"/>
                 <outlet property="tableView" destination="MGo-6E-JJg" id="uEx-4V-bee"/>
                 <outlet property="view" destination="1" id="3"/>
+                <outlet property="waitingLabel" destination="eOj-kC-rgr" id="F9Y-8c-0Ji"/>
                 <outlet property="waitingView" destination="79a-BO-AIu" id="5X2-xL-jr7"/>
             </connections>
         </placeholder>

@@ -24,6 +24,7 @@
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @property (nonatomic, weak) IBOutlet UIView *waitingView;
+@property (nonatomic, weak) IBOutlet UILabel *waitingLabel;
 
 @property (nonatomic, weak) IBOutlet UIButton *buyButton;
 

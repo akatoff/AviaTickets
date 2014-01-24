@@ -15,6 +15,8 @@
 #import "ASTFlightCell.h"
 #import "ASTStopoverCell.h"
 
+#import "ASTWebBrowserViewController.h"
+
 @interface ASTTicketScreen ()
 
 @end
@@ -34,13 +36,20 @@
 {
     [super viewDidLoad];
     
+    _waitingView.hidden = YES;
+    [self.view addSubview:_waitingView];
+    [_waitingLabel setText:AVIASALES_(@"AVIASALES_PLEASE_WAIT")];
+    
     [_buyButton setTitle:AVIASALES_(@"AVIASALES_BUY") forState:UIControlStateNormal];
     
     [self applyTicket:_ticket];
-    
-    _waitingView.hidden = YES;
-    [self.view addSubview:_waitingView];
-    _waitingView.autoresizingMask = self.view.autoresizingMask;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    CGRect rect = self.view.frame;
+    rect.origin.x = 0;
+    rect.origin.y = 0;
+    [_waitingView setFrame:rect];
 }
 
 - (void)didReceiveMemoryWarning
@@ -209,7 +218,15 @@
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:AVIASALES_(@"AVIASALES_ALERT_ERROR_TITLE") message:errorText delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
             } else {
-                [[UIApplication sharedApplication] openURL:request.URL];
+                ASTWebBrowserViewController *webBrowser = [[ASTWebBrowserViewController alloc] initWithRequest:request];
+                
+                UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:AVIASALES_(@"AVIASALES_CANCEL") style:UIBarButtonItemStylePlain target:nil action:nil];
+                
+                self.navigationItem.backBarButtonItem = backButton;
+                
+                webBrowser.title = price.gate.gateName;
+                
+                [self.navigationController pushViewController:webBrowser animated:YES];
             }
             [_waitingView setHidden:YES];
         });
