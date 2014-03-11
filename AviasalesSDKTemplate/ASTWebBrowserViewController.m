@@ -42,6 +42,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [_webView setScalesPageToFit:YES];
+    
     _waitingView.hidden = NO;
     [self.view addSubview:_waitingView];
     [_waitingLabel setText:AVIASALES_(@"AVIASALES_PLEASE_WAIT")];

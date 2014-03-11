@@ -130,7 +130,6 @@
 		C6B751981824011600FEF5B9 /* NMRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74FA7181FDCD700FEF5B9 /* NMRangeSlider.m */; };
 		C6B751991824011600FEF5B9 /* ASTCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */; };
 		C6B7519A1824011600FEF5B9 /* ASTSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */; };
-		C6B7519B1824011600FEF5B9 /* ASTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */; };
 		C6B751E118240B5400FEF5B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */; };
 		C6B751E718240B5400FEF5B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6B751E518240B5400FEF5B9 /* InfoPlist.strings */; };
 		C6B751ED18240CBE00FEF5B9 /* ASTSearchFormDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */; };
@@ -1323,7 +1322,6 @@
 				C6B751981824011600FEF5B9 /* NMRangeSlider.m in Sources */,
 				C6B751991824011600FEF5B9 /* ASTCommonFunctions.m in Sources */,
 				C6B7519A1824011600FEF5B9 /* ASTSearchParams.m in Sources */,
-				C6B7519B1824011600FEF5B9 /* ASTAppDelegate.m in Sources */,
 				C6B7514B1823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
