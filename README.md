@@ -7,7 +7,7 @@ The framework consists of:
 * static library to integrate with search engine server;
 * template project with user interface.
  
-You may choose to use our ready template project or build your own flight search based on Aviasales iOS SDK library. To track sales and get paid, link your app with our affiliate network — [Travelpayouts.com](http://www.travelpayouts.com/).
+You may choose to use our ready template project or build your own flight search based on Aviasales/JetRadar iOS SDK library. To track sales and get paid, link your app with our affiliate network — [Travelpayouts.com](http://www.travelpayouts.com/).
 
 Learn more and complete integration with [Aviasales iOS SDK Documentation](https://github.com/KosyanMedia/Aviasales-iOS-SDK/wiki/Aviasales-SDK-Documentation).
 <br>Learn more about earnings in [Travelpayouts FAQ](http://support.travelpayouts.com/entries/23225382-Commission-and-payments).
