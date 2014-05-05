@@ -1,7 +1,7 @@
 Aviasales/JetRadar iOS SDK
 =================
 
-[Aviasales](http://www.aviasales.ru)/[Jetradar](http://www.jetradar.com) iOS SDK is a framework integrating flight search engine into your app. When your user books a flight, you get paid. Framework is based on leading flight search engines Aviasales.ru and JetRadar.com.
+[Aviasales](http://www.aviasales.ru)/[JetRadar](http://www.jetradar.com) iOS SDK is a framework integrating flight search engine into your app. When your user books a flight, you get paid. Framework is based on leading flight search engines Aviasales.ru and JetRadar.com.
 
 The framework consists of:
 * static library to integrate with search engine server;
