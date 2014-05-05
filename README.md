@@ -1,14 +1,15 @@
-Aviasales-iOS-SDK
+Aviasales/JetRadar-iOS-SDK
 =================
 
-[Aviasales](http://www.aviasales.ru)/[Jetradar](http://www.jetradar.com) iOS SDK (Static Library + Template Project)
+[Aviasales](http://www.aviasales.ru)/[Jetradar](http://www.jetradar.com) iOS SDK is a framework integrating flight search engine into your app. When your user books a flight, you get paid. Framework is based on leading flight search engines Aviasales and JetRadar.
 
-Фреймворк, который позволяет интегрировать поиск авиабилетов в iOS приложения.
-
-Состав фреймворка:
-* статическая библиотека, которая реализует логику взаимодействия с поисковым сервером и фильтрацию результатов.
-* шаблонный проект, в котором реализованы все основные экраны для выбора авиабилета.
+The framework consists of:
+* static library to integrate with search engine server;
+* template project with user interface.
  
-Чтобы начать работу, вам достаточно включить шаблонный проект в ваше приложение, указав необходимые параметры партнерской сети [Travelpayouts](http://www.travelpayouts.com).
+You may choose to use our ready template project or build your own flight search based on Aviasales iOS SDK library. To track sales and get paid, link your app with our affiliate network — [Travelpayouts.com](http://www.travelpayouts.com/).
 
-[Более подробно о составе фреймворка и подключении к проекту](https://github.com/KosyanMedia/Aviasales-iOS-SDK/wiki)
+Learn more and complete integration with [Aviasales iOS SDK Documentation](https://github.com/KosyanMedia/Aviasales-iOS-SDK/wiki/Aviasales-SDK-Documentation).
+Learn more about earnings in [Travelpayouts FAQ](http://support.travelpayouts.com/entries/23225382-Commission-and-payments).
+
+More languages: [RUS] [Документация Aviasaels iOS SDK](https://github.com/KosyanMedia/Aviasales-iOS-SDK/wiki/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F-Aviasales-SDK).
