@@ -1,0 +1,125 @@
+"AVIASALES_CLOSE_BUTTON" = "Cerrar";
+
+"AVIASALES_SEARCH_BUTTON" = "Buscar";
+
+"AVIASALES_FORM_TITLE" = "Billetes";
+
+"AVIASALES_ALERT_ERROR_TITLE" = "Error";
+
+"AVIASALES_ALERT_UNKNOWN_ERROR_TEXT" = "Error desconocido";
+
+"AVIASALES_BACK" = "Volver";
+
+"AVIASALES_CANCEL" = "Cancelar";
+
+"AVIASALES_ORIGIN" = "Seleccionar origen";
+
+"AVIASALES_DESTINATION" = "Seleccionar destino";
+
+"AVIASALES_DEPARTURE_DATE" = "Fecha de salida";
+
+"AVIASALES_RETURN_DATE" = "Fecha de regreso";
+
+"AVIASALES_RETURN_FLIGHT" = "Ida y vuelta";
+
+"AVIASALES_PICKER_ADULTS" = "Adultos";
+
+"AVIASALES_PICKER_CHILDREN" = "2-11 años";
+
+"AVIASALES_PICKER_INFANTS" = "0-2 años";
+
+"AVIASALES_TRAVEL_CLASS_0" = "Económica";
+
+"AVIASALES_TRAVEL_CLASS_1" = "Business";
+
+"AVIASALES_NEARBY" = "Aeropuertos cercanos";
+
+"AVIASALES_NEARBY_ERROR" = "No se han encontrado aeropuertos en tu zona";
+
+"AVIASALES_SEARCH_HISTORY" = "Historial de búsqueda";
+
+"AVIASALES_ANY_AIRPORT" = "Todos los aeropuertos";
+
+"AVIASALES_SEARCHING_PROGRESS" = "Buscando...";
+
+"AVIASALES_FILTERS" = "Filtros";
+
+"AVIASALES_FILTERS_EMPTY" = "No se han encontrado resultados. Inténtelo utilizando filtros distintos";
+
+"AVIASALES_CURRENCY" = "Divisa";
+
+"AVIASALES_DURATION_FORMAT" = "%ih %im";
+
+"AVIASALES_DURATION_FORMAT_LONG" = "%@ h %@ m";
+
+"AVIASALES_RESET" = "Reajustar";
+
+"AVIASALES_FILTER_NONSTOP" = "Directo";
+
+"AVIASALES_FILTER_ONE_STOP" = "1 escala";
+
+"AVIASALES_FILTER_TWO_STOPS" = "2 escalas";
+
+"AVIASALES_FILTER_NIGHT" = "Vuelos con escala nocturna";
+
+"AVIASALES_FILTER_PRICE" = "Precio del billete";
+
+"AVIASALES_FILTER_TOTAL_DURATION" = "Duración del vuelo";
+
+"AVIASALES_FILTER_STOPOVER_DURATION" = "Duración de las escalas";
+
+"AVIASALES_FILTER_DEPARTURE" = "Salida";
+
+"AVIASALES_FILTER_ARRIVAL" = "Llegada";
+
+"AVIASALES_FILTER_RETURN_DEPARTURE" = "Vuelo de regreso";
+
+"AVIASALES_FILTER_RETURN_ARRIVAL" = "Regreso";
+
+"AVIASALES_FILTER_AIRLINES" = "Aerolíneas";
+
+"AVIASALES_FILTER_ALL_AIRLINES" = "Todas las aerolíneas";
+
+"AVIASALES_FILTER_ALLIANCES" = "Alianzas";
+
+"AVIASALES_FILTER_ALL_ALLIANCES" = "Todas las alianzas";
+
+"AVIASALES_FILTER_AIRPORTS" = "Aeropuertos";
+
+"AVIASALES_FILTER_ALL_AIRPORTS" = "Todos los aeropuertos";
+
+"AVIASALES_FILTER_FROM" = "De";
+
+"AVIASALES_FILTER_STOPOVERS" = "Escalas";
+
+"AVIASALES_FILTER_TO" = "A";
+
+"AVIASALES_FILTER_AGENCIES" = "Agencias de viajes";
+
+"AVIASALES_FILTER_ALL_AGENCIES" = "Todas las agencias de viajes";
+
+"AVIASALES_FILTER_MOBILE" = "Sólo compañías con páginas web optimizadas para dispositivos móviles";
+
+"AVIASALES_FILTER_FOUND" = "Vuelos";
+
+"AVIASALES_FILTER_FROM1" = "de";
+
+"AVIASALES_FILTER_FROM2" = "de";
+
+"AVIASALES_FILTER_UP_TO" = "a";
+
+"AVIASALES_TICKET" = "Detalles del vuelo";
+
+"AVIASALES_ONE_PASSENGER" = "pasajero";
+
+"AVIASALES_PASSENGERS1" = "pasajeros";
+
+"AVIASALES_PASSENGERS2" = "pasajeros";
+
+"AVIASALES_BUY" = "Comprar ahora";
+
+"AVIASALES_FLIGHT" = "Vuelos";
+
+"AVIASALES_STOPOVER" = "Escalas";
+
+"AVIASALES_PLEASE_WAIT" = "Por favor, espere...";

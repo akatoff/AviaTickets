@@ -1,0 +1,41 @@
+"AVIASALES_LANG" = "es";
+
+"AVIASALES_REDIRECT_ERROR" = "No ha sido posible realizar la compra. Error de servidor";
+
+"AVIASALES_REDIRECT_EXPIRED" = "No ha sido posible realizar la compra. Por favor, intente realizar una nueva búsqueda";
+
+"AVIASALES_SEARCH_RESULTS_EMPTY" = "No se han encontrado resultados. Inténtalo de nuevo cambiando los ajustes de búsqueda";
+
+"AVIASALES_SEARCH_RESULTS_ERROR" = "Lo sentimos, el servicio está temporalmente fuera de servicio";
+
+"AVIASALES_OTHER_ALLIANCES" = "Otra red de aerolíneas";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Por favor, seleccione el aeropueto de salida";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Por favor, seleccione el aeropuesto de destino";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "El aeropuero de salida no tiene un formato válido. El formato debe ser un código IATA";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_FORMAT_ERROR" = "El aeropuerto de llegada no tiene un formato válido. El formato debe ser un código IATA";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_SAME_AIRPORTS" = "El aeropuerto de origen y el de destino no pueden ser el mismo";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_DEPARTURE_DATE_EMPTY" = "Campo obligatorio: Fecha de salida";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_RETURN_DATE_EMPTY" = "Campo obligatorio: Fecha de regreso";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EXPIRED_DATE" = "La fecha de salida debe ser posterior a la fecha actual";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_EARLY_RETURN_DATE" = "La fecha de salida es posterior a la fecha de regreso";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_ONE_ADULT_REQUIRED" = "En la lista de pasajeros debe firgurar al menos un adulto";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_PASSENGERS" = "El número total de pasajeros (adultos y niños), no debe ser mayor que 9";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_INFANTS" = "El número de niños no debe ser mayor que 9";
+
+"AVIASALES_SEARCH_PARAMS_ERROR_WRONG_CLASS" = "La clase elegida no es válida";
+
+"AVIASALES_INTERNET_UNREACHABLE" = "Compruebe su conexión a internet";
+
+"AVIASALES_HOST_UNREACHABLE" = "No ha sido posible establecer conexión con el servidor";
