@@ -10,11 +10,11 @@
 
 "AVIASALES_OTHER_ALLIANCES" = "Otra red de aerolíneas";
 
-"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Por favor, seleccione el aeropueto de salida";
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Por favor, seleccione el aeropuerto de salida";
 
-"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Por favor, seleccione el aeropueto de destino";
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Por favor, seleccione el aeropuerto de destino";
 
-"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "El aeropueto de salida no tiene un formato válido. El formato debe ser un código IATA";
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "El aeropuerto de salida no tiene un formato válido. El formato debe ser un código IATA";
 
 "AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_FORMAT_ERROR" = "El aeropuerto de llegada no tiene un formato válido. El formato debe ser un código IATA";
 
