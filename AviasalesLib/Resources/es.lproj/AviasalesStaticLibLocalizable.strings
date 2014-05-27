@@ -12,9 +12,9 @@
 
 "AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_EMPTY" = "Por favor, seleccione el aeropueto de salida";
 
-"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Por favor, seleccione el aeropuesto de destino";
+"AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_EMPTY" = "Por favor, seleccione el aeropueto de destino";
 
-"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "El aeropuero de salida no tiene un formato válido. El formato debe ser un código IATA";
+"AVIASALES_SEARCH_PARAMS_ERROR_ORIGIN_FORMAT_ERROR" = "El aeropueto de salida no tiene un formato válido. El formato debe ser un código IATA";
 
 "AVIASALES_SEARCH_PARAMS_ERROR_DESTINATION_FORMAT_ERROR" = "El aeropuerto de llegada no tiene un formato válido. El formato debe ser un código IATA";
 
@@ -28,7 +28,7 @@
 
 "AVIASALES_SEARCH_PARAMS_ERROR_EARLY_RETURN_DATE" = "La fecha de salida es posterior a la fecha de regreso";
 
-"AVIASALES_SEARCH_PARAMS_ERROR_ONE_ADULT_REQUIRED" = "En la lista de pasajeros debe firgurar al menos un adulto";
+"AVIASALES_SEARCH_PARAMS_ERROR_ONE_ADULT_REQUIRED" = "En la lista de pasajeros debe figurar al menos un adulto";
 
 "AVIASALES_SEARCH_PARAMS_ERROR_TOTAL_PASSENGERS" = "El número total de pasajeros (adultos y niños), no debe ser mayor que 9";
 
