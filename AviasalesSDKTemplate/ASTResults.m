@@ -51,7 +51,24 @@ static NSIndexPath *selectedIndexPath;
         NSString *pathToCurrenciesFile = [AVIASALES_BUNDLE pathForResource:@"currencies" ofType:@"json"];
         if (pathToCurrenciesFile) {
             NSData *currenciesData = [NSData dataWithContentsOfFile:pathToCurrenciesFile options:kNilOptions error:nil];
-            _currencies = [NSJSONSerialization JSONObjectWithData:currenciesData options:kNilOptions error:NULL];
+            NSMutableArray *currencies = [[NSMutableArray alloc] initWithArray:[NSJSONSerialization JSONObjectWithData:currenciesData options:kNilOptions error:NULL]];
+            BOOL __block shouldAddDefaultCurrency = YES;
+            NSString *upperCaseCurrencyCode = [[[AviasalesSDK sharedInstance] currencyCode] uppercaseString];
+            [currencies enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+                if ([obj[@"code"] isEqual:upperCaseCurrencyCode]) {
+                    shouldAddDefaultCurrency = NO;
+                    *stop = YES;
+                }
+            }];
+            if (shouldAddDefaultCurrency) {
+                [currencies addObject:@{
+                                        @"code":
+                                            [[AviasalesSDK sharedInstance] currencyCode],
+                                        @"name":
+                                            upperCaseCurrencyCode}];
+                [[NSJSONSerialization dataWithJSONObject:currencies options:NSJSONWritingPrettyPrinted error:nil] writeToFile:pathToCurrenciesFile atomically:YES];
+            }
+            _currencies = currencies;
         }
         
         NibName = [ASTSearchParams sharedInstance].returnDate ? @"ASTResultsTicketCell" : @"ASTResultsTicketCellOneWay";

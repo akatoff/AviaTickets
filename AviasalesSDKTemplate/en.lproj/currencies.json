@@ -6,20 +6,26 @@
 "name":"Euro"
 },{
 "code":"GBP",
-"name":"British Pounds"
+"name":"British Pound"
 },{
 "code":"AUD",
-"name":"Australian Dollars"
+"name":"Australian Dollar"
 },{
 "code":"CNY",
-"name":"Chinese Yuans"
+"name":"Chinese Yuan"
 },{
 "code":"CAD",
-"name":"Canadian Dollars"
+"name":"Canadian Dollar"
 },{
 "code":"INR",
-"name":"Indian Rupees"
+"name":"Indian Rupee"
 },{
 "code":"RUB",
 "name":"Russian Ruble"
+},{
+"code":"THB",
+"name":"Thai Baht"
+},{
+"code":"ZAR",
+"name":"South African Rand"
 }]
