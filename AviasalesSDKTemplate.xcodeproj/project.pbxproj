@@ -542,6 +542,10 @@
 		C6D652F4184DE9AC001C6FFF /* switch_airports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch_airports.png; path = Resources/switch_airports.png; sourceTree = "<group>"; };
 		C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch_airports@2x.png"; path = "Resources/switch_airports@2x.png"; sourceTree = "<group>"; };
 		C6E36C20183E3D330076CA3F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		D1A98CC51933394D0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
+		D1A98CC61933394E0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/currencies.json; sourceTree = "<group>"; };
+		D1A98CC71933394F0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
+		D1A98CC8193339500076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1060,6 +1064,7 @@
 				Base,
 				de,
 				ru,
+				es,
 			);
 			mainGroup = C60EC82E17E848DA00C5D52E;
 			productRefGroup = C60EC83817E848DA00C5D52E /* Products */;
@@ -1350,6 +1355,7 @@
 				C606321C18560A6B00ED4475 /* en */,
 				C606321F18560A7500ED4475 /* de */,
 				C606322018560A7500ED4475 /* ru */,
+				D1A98CC51933394D0076B04C /* es */,
 			);
 			name = AviasalesTemplateLocalizable.strings;
 			sourceTree = "<group>";
@@ -1376,6 +1382,7 @@
 				C66965E7186056B000446328 /* de */,
 				C66965EA186056B000446328 /* en */,
 				C66965EC186056B000446328 /* ru */,
+				D1A98CC71933394F0076B04C /* es */,
 			);
 			name = Aviasales_top_airports.json;
 			sourceTree = "<group>";
@@ -1386,6 +1393,7 @@
 				C66965E9186056B000446328 /* de */,
 				C66965EB186056B000446328 /* en */,
 				C66965ED186056B000446328 /* ru */,
+				D1A98CC8193339500076B04C /* es */,
 			);
 			name = AviasalesStaticLibLocalizable.strings;
 			sourceTree = "<group>";
@@ -1396,6 +1404,7 @@
 				C684E80F185708FD007F703A /* en */,
 				C684E81118570901007F703A /* de */,
 				C684E81218570901007F703A /* ru */,
+				D1A98CC61933394E0076B04C /* es */,
 			);
 			name = currencies.json;
 			sourceTree = "<group>";
