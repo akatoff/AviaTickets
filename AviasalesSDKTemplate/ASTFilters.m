@@ -192,7 +192,7 @@
     
     _sections = [[NSMutableArray alloc] init];
     NSMutableArray *transferSection = [[NSMutableArray alloc] init];
-    NSArray *transferCellsTitles = @[AVIASALES_(@"AVIASALES_FILTER_NONSTOP"), AVIASALES_(@"AVIASALES_FILTER_ONE_STOP"), AVIASALES_(@"AVIASALES_FILTER_TWO_STOPS"), AVIASALES_(@"AVIASALES_FILTER_NIGHT")];
+    NSArray *transferCellsTitles = @[AVIASALES_(@"AVIASALES_FILTER_NONSTOP"), [NSString localizedStringWithFormat:AVIASALES_(@"AVIASALES_FILTER_ONE_STOP"), 1], [NSString localizedStringWithFormat:AVIASALES_(@"AVIASALES_FILTER_TWO_STOPS"), 2], AVIASALES_(@"AVIASALES_FILTER_NIGHT")];
     for (NSInteger i = ASFilterNoTransferCell; i <= ASFilterOvernightTransferCell; i++) {
         ASFilterCellInfo *transferCellInfo = [[ASFilterCellInfo alloc] init];
         transferCellInfo.title = [transferCellsTitles objectAtIndex:i];
@@ -537,7 +537,7 @@
     } else {
         offersFrame.size.height = 17;
         [_offersLabel setFrame:offersFrame];
-        return [NSString stringWithFormat:@"%@: %lu", AVIASALES_(@"AVIASALES_FILTER_FOUND"), (unsigned long)count];
+        return [NSString localizedStringWithFormat:@"%@: %lu", AVIASALES_(@"AVIASALES_FILTER_FOUND"), (unsigned long)count];
     }
 }
 
@@ -776,7 +776,7 @@
     [headerCell.cellLabel setText:info.title];
     [headerCell.cellLabel setHighlighted:info.disabled];
     [headerCell.cellImageView  setHighlighted:info.disabled];
-    [headerCell.countLabel setText:info.content];
+    [headerCell.countLabel setText:[NSString localizedStringWithFormat:@"%d", [info.content intValue]]];
     if (info.type == ASFilterAirlineFooterCell) {
         [headerCell.cellLabel setHighlighted:YES];
     }
@@ -1106,13 +1106,13 @@
     int hours = totalDuration / 60;
     int minutes = totalDuration % 60;
     minutes -= minutes % 5;
-    NSString *hoursString = [NSString stringWithFormat:@"%d", hours];
-    NSString *minutesString = [NSString stringWithFormat:@"%d", minutes];
+    NSString *hoursString = [NSString localizedStringWithFormat:@"%d", hours];
+    NSString *minutesString = [NSString localizedStringWithFormat:@"%d", minutes];
     if (hours <= 9) {
-        hoursString = [NSString stringWithFormat:@"0%d", hours];
+        hoursString = [NSString localizedStringWithFormat:@"%d%d", 0, hours];
     }
     if (minutes <= 9) {
-        minutesString = [NSString stringWithFormat:@"0%d", minutes];
+        minutesString = [NSString localizedStringWithFormat:@"%d%d", 0, minutes];
     }
     return [NSString stringWithFormat:AVIASALES_(@"AVIASALES_DURATION_FORMAT_LONG"), hoursString, minutesString];
 }
@@ -1121,13 +1121,13 @@
     int hours = totalDuration / 60;
     int minutes = totalDuration % 60;
     minutes -= minutes % 5;
-    NSString *hoursString = [NSString stringWithFormat:@"%d", hours];
-    NSString *minutesString = [NSString stringWithFormat:@"%d", minutes];
+    NSString *hoursString = [NSString localizedStringWithFormat:@"%d", hours];
+    NSString *minutesString = [NSString localizedStringWithFormat:@"%d", minutes];
     if (hours <= 9) {
-        hoursString = [NSString stringWithFormat:@"0%d", hours];
+        hoursString = [NSString localizedStringWithFormat:@"%d%d", 0, hours];
     }
     if (minutes <= 9) {
-        minutesString = [NSString stringWithFormat:@"0%d", minutes];
+        minutesString = [NSString localizedStringWithFormat:@"%d%d", 0, minutes];
     }
     return [NSString stringWithFormat:@"%@:%@", hoursString, minutesString];
 }

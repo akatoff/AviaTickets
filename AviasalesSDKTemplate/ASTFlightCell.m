@@ -33,7 +33,7 @@
     
     [self downloadImageForImageView:_logo withURL:flight.airline.logoURL];
     
-    _flightNumber.text = [NSString stringWithFormat:@"%@ %@-%@", AVIASALES_(@"AVIASALES_FLIGHT"), flight.airline.iata, flight.number];
+    _flightNumber.text = [NSString localizedStringWithFormat:@"%@ %@-%d", AVIASALES_(@"AVIASALES_FLIGHT"), flight.airline.iata, [flight.number intValue]];
     
     _airline.text = flight.airline.name;
     

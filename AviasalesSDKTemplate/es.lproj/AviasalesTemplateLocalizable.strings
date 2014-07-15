@@ -56,9 +56,9 @@
 
 "AVIASALES_FILTER_NONSTOP" = "Directo";
 
-"AVIASALES_FILTER_ONE_STOP" = "1 escala";
+"AVIASALES_FILTER_ONE_STOP" = "%d escala";
 
-"AVIASALES_FILTER_TWO_STOPS" = "2 escalas";
+"AVIASALES_FILTER_TWO_STOPS" = "%d escalas";
 
 "AVIASALES_FILTER_NIGHT" = "Vuelos con escala nocturna";
 
@@ -110,11 +110,7 @@
 
 "AVIASALES_TICKET" = "Detalles del vuelo";
 
-"AVIASALES_ONE_PASSENGER" = "pasajero";
-
-"AVIASALES_PASSENGERS1" = "pasajeros";
-
-"AVIASALES_PASSENGERS2" = "pasajeros";
+"AVIASALES_PASSENGERS" = "Pasajeros: %d, %@";
 
 "AVIASALES_BUY" = "Comprar";
 

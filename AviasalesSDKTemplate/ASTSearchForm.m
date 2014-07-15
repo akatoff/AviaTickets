@@ -311,9 +311,9 @@ BOOL isCompatible() {
         cell.captionChildren.text = AVIASALES_(@"AVIASALES_PICKER_CHILDREN");
         cell.captionInfants.text = AVIASALES_(@"AVIASALES_PICKER_INFANTS");
         
-        cell.labelAdults.text = [NSString stringWithFormat:@"%d", _adultsNumber];
-        cell.labelChildren.text = [NSString stringWithFormat:@"%d", _childrenNumber];
-        cell.labelInfants.text = [NSString stringWithFormat:@"%d", _infantsNumber];
+        cell.labelAdults.text = [NSString localizedStringWithFormat:@"%d", _adultsNumber];
+        cell.labelChildren.text = [NSString localizedStringWithFormat:@"%d", _childrenNumber];
+        cell.labelInfants.text = [NSString localizedStringWithFormat:@"%d", _infantsNumber];
         
         [cell.classSelector setTitle:AVIASALES_(@"AVIASALES_TRAVEL_CLASS_0") forSegmentAtIndex:0];
         [cell.classSelector setTitle:AVIASALES_(@"AVIASALES_TRAVEL_CLASS_1") forSegmentAtIndex:1];
@@ -500,15 +500,15 @@ BOOL isCompatible() {
     
     if (stepper.tag == ASTStepperTypeAdults) {
         _adultsNumber = stepper.value;
-        cell.labelAdults.text = [NSString stringWithFormat:@"%d", _adultsNumber];
+        cell.labelAdults.text = [NSString localizedStringWithFormat:@"%d", _adultsNumber];
         [ASTSearchParams sharedInstance].adultsNumber = @(_adultsNumber);
     } else if (stepper.tag == ASTStepperTypeChildren) {
         _childrenNumber = stepper.value;
-        cell.labelChildren.text = [NSString stringWithFormat:@"%d", _childrenNumber];
+        cell.labelChildren.text = [NSString localizedStringWithFormat:@"%d", _childrenNumber];
         [ASTSearchParams sharedInstance].childrenNumber = @(_childrenNumber);
     } else if (stepper.tag == ASTStepperTypeInfants) {
         _infantsNumber = stepper.value;
-        cell.labelInfants.text = [NSString stringWithFormat:@"%d", _infantsNumber];
+        cell.labelInfants.text = [NSString localizedStringWithFormat:@"%d", _infantsNumber];
         [ASTSearchParams sharedInstance].infantsNumber = @(_infantsNumber);
     }
 
@@ -521,7 +521,7 @@ BOOL isCompatible() {
     if (_infantsNumber > cell.stepperInfants.maximumValue) {
         _infantsNumber = cell.stepperInfants.maximumValue;
         cell.stepperInfants.value = _infantsNumber;
-        cell.labelInfants.text = [NSString stringWithFormat:@"%d", _infantsNumber];
+        cell.labelInfants.text = [NSString localizedStringWithFormat:@"%d", _infantsNumber];
         [ASTSearchParams sharedInstance].infantsNumber = @(_infantsNumber);
     }
     

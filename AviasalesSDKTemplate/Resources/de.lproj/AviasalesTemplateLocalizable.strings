@@ -56,9 +56,9 @@
 
 "AVIASALES_FILTER_NONSTOP" = "Nur Direktflüge";
 
-"AVIASALES_FILTER_ONE_STOP" = "1 Stopp";
+"AVIASALES_FILTER_ONE_STOP" = "%d Stopp";
 
-"AVIASALES_FILTER_TWO_STOPS" = "2 Zwischenstopps";
+"AVIASALES_FILTER_TWO_STOPS" = "%d Zwischenstopps";
 
 "AVIASALES_FILTER_NIGHT" = "Übernachtung möglich";
 
@@ -110,11 +110,7 @@
 
 "AVIASALES_TICKET" = "Flugticket";
 
-"AVIASALES_ONE_PASSENGER" = "Reisender";
-
-"AVIASALES_PASSENGERS1" = "Reisende";
-
-"AVIASALES_PASSENGERS2" = "Reisende";
+"AVIASALES_PASSENGERS" = "Reisende: %d, %@";
 
 "AVIASALES_BUY" = "Buchen";
 

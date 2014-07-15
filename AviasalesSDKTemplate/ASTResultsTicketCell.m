@@ -74,7 +74,7 @@
     NSUInteger outboundFlightsCount = [ticket.outboundFlights count];
     if (outboundFlightsCount > 1) {
         _outboundFlightStopoversView.hidden = NO;
-        _outboundFlightStopoversNumber.text = [NSString stringWithFormat:@"%u", (unsigned int)(outboundFlightsCount-1)];
+        _outboundFlightStopoversNumber.text = [NSString localizedStringWithFormat:@"%u", (unsigned int)(outboundFlightsCount-1)];
     } else {
         _outboundFlightStopoversView.hidden = YES;
     }
@@ -82,7 +82,7 @@
     NSUInteger returnFlightsCount = [ticket.returnFlights count];
     if (returnFlightsCount > 1) {
         _returnFlightStopoversView.hidden = NO;
-        _returnFlightStopoversNumber.text = [NSString stringWithFormat:@"%u", (unsigned int)(returnFlightsCount-1)];
+        _returnFlightStopoversNumber.text = [NSString localizedStringWithFormat:@"%u", (unsigned int)(returnFlightsCount-1)];
     } else {
         _returnFlightStopoversView.hidden = YES;
     }

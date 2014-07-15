@@ -56,9 +56,9 @@
 
 "AVIASALES_FILTER_NONSTOP" = "Без пересадок";
 
-"AVIASALES_FILTER_ONE_STOP" = "1 пересадка";
+"AVIASALES_FILTER_ONE_STOP" = "%d пересадка";
 
-"AVIASALES_FILTER_TWO_STOPS" = "2 пересадки";
+"AVIASALES_FILTER_TWO_STOPS" = "%d пересадки";
 
 "AVIASALES_FILTER_NIGHT" = "Допустима ночная пересадка";
 
@@ -110,11 +110,7 @@
 
 "AVIASALES_TICKET" = "Билет";
 
-"AVIASALES_ONE_PASSENGER" = "пассажир";
-
-"AVIASALES_PASSENGERS1" = "пассажира";
-
-"AVIASALES_PASSENGERS2" = "пассажиров";
+"AVIASALES_PASSENGERS" = "Пассажиры: %d, %@";
 
 "AVIASALES_BUY" = "Купить";
 
