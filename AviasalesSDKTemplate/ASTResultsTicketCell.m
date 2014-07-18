@@ -31,7 +31,7 @@
 
 - (void)applyTicket:(AviasalesTicket *)ticket {
     
-    [_price setText:[NSString stringWithFormat:@"%@ %@", [ASTCommonFunctions formatPrice:ticket.totalPriceInUserCurrency], [[AviasalesSDK sharedInstance] currencySymbol]]];
+    [_price setText:ticket.formattedPrice];
     
     [_airline setText:ticket.mainAirline.iata];
     

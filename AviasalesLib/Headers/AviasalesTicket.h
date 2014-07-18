@@ -22,6 +22,11 @@
 @property (nonatomic, readonly) NSNumber *totalPriceInUserCurrency;
 
 /**
+ Отформатированная цена с обозначением валюты
+ */
+@property (nonatomic, readonly) NSString *formattedPrice;
+
+/**
  Массивы перелетов туда (объекты типа AviasalesFlight)
  */
 @property (nonatomic, readonly) NSArray *outboundFlights;
