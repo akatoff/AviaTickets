@@ -100,7 +100,9 @@ static NSMutableDictionary *downloadLogoErrors;
     [logo setHighlightedImage:nil];
     [logo setHidden:YES];
     
-    [logo setImageWithURL:URL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+    
+    
+    [logo sd_setImageWithURL:URL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         if (error) {
             NSString *urlWithError = [NSString stringWithFormat:@"%@", URL.relativePath];
             if (error.code == 404 && ![downloadLogoErrors objectForKey:urlWithError]) {

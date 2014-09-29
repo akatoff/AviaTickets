@@ -404,6 +404,7 @@ BOOL isCompatible() {
             [_tableView deleteRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
         } else if (_datePickerState == anotherState) {
             _datePickerState = ASTDatePickerHidden;
+            [_datePicker resignFirstResponder];
             [_tableView deleteRowsAtIndexPaths:@[anotherPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             _datePickerState = relatedState;
             [_tableView insertRowsAtIndexPaths:@[relatedPickerIndexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -444,7 +445,7 @@ BOOL isCompatible() {
 
 - (void)datePickerDidChangeDate:(UIDatePicker *)datePicker {
     //to avoid picker set value in not related cell
-    if (_visiblePickerCell != [[datePicker superview] superview]) {
+    if (![[_visiblePickerCell viewWithTag:AST_SF_DATEPICKER_TAG] isEqual:datePicker]) {
         return;
     }
     
@@ -624,6 +625,7 @@ BOOL isCompatible() {
     
     self.navigationItem.backBarButtonItem = backButton;
     
+    self.navigationController.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:resultsVC animated:YES];
     
     [ASTSearchParams sharedInstance].origin = _origin;

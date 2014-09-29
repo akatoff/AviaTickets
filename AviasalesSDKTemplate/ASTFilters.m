@@ -792,7 +792,9 @@
 
 - (void)mobileWebButtonAction:(UIButton *)sender {
     _filter.mobileWebOnly = !_filter.mobileWebOnly;
-    [self updateSwitchCell:(ASFilterCellWithMobileSwitch *)sender.superview.superview.superview];
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:_tableView];
+    NSIndexPath *indexPath = [_tableView indexPathForRowAtPoint:buttonPosition];
+    [self updateSwitchCell:(ASFilterCellWithMobileSwitch *)[_tableView cellForRowAtIndexPath:indexPath]];
     [_filter setNeedFiltering:YES];
     if (_statistics) {
         _mobileOnlyStat = YES;
@@ -817,9 +819,9 @@
 }
 
 - (void)singleSliderValueChanged:(UISlider *)sender {
-    
-    ASFilterCellWithOneThumbSlider *cell = (ASFilterCellWithOneThumbSlider *)sender.superview.superview.superview;
-    NSIndexPath *indexPath = [_tableView indexPathForCell:cell];
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:_tableView];
+    NSIndexPath *indexPath = [_tableView indexPathForRowAtPoint:buttonPosition];
+    ASFilterCellWithOneThumbSlider *cell = (ASFilterCellWithOneThumbSlider *)[_tableView cellForRowAtIndexPath:indexPath];
     ASFilterCellInfo *info = [[_sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     if (info.type == ASFilterPriceSliderCell) {
         [_filter setCurrentMaxPrice:[[NSNumber numberWithFloat:sender.value] integerValue]];
@@ -898,8 +900,10 @@
 }
 
 - (void)twoThumbsSliderAction:(NMRangeSlider *)sender {
-    ASFilterCellWithTwoThumbsSlider *cell = (ASFilterCellWithTwoThumbsSlider *)sender.superview.superview.superview;
-    NSIndexPath *indexPath = [_tableView indexPathForCell:cell];
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:_tableView];
+    NSIndexPath *indexPath = [_tableView indexPathForRowAtPoint:buttonPosition];
+    ASFilterCellWithTwoThumbsSlider *cell = (ASFilterCellWithTwoThumbsSlider *)[_tableView cellForRowAtIndexPath:indexPath];
+    indexPath = [_tableView indexPathForCell:cell];
     ASFilterCellInfo *info = [[_sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     if (info.type == ASFilterOutboundDepartTimeSliderCell) {
         [_filter setCurrentMinOutboundDepartTime:[[NSNumber numberWithFloat:sender.lowerValue] integerValue]];
