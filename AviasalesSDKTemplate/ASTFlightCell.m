@@ -27,13 +27,19 @@
     [super setSelected:selected animated:animated];
 }
 
+static NSNumberFormatter *flightNumberFormatter;
 - (void)applyFlight:(AviasalesFlight *)flight {
     
     _route.text = [NSString stringWithFormat:@"%@ - %@", flight.origin.iata, flight.destination.iata];
     
     [self downloadImageForImageView:_logo withURL:flight.airline.logoURL];
-    
-    _flightNumber.text = [NSString localizedStringWithFormat:@"%@ %@-%d", AVIASALES_(@"AVIASALES_FLIGHT"), flight.airline.iata, [flight.number intValue]];
+
+    if (!flightNumberFormatter) {
+        flightNumberFormatter = [[NSNumberFormatter alloc] init];
+        [flightNumberFormatter setGroupingSize:0];
+    }
+    NSNumber *flightNumber = [flightNumberFormatter numberFromString:flight.number];
+    _flightNumber.text = [NSString localizedStringWithFormat:@"%@ %@-%@", AVIASALES_(@"AVIASALES_FLIGHT"), flight.airline.iata, [flightNumberFormatter stringFromNumber:flightNumber]];
     
     _airline.text = flight.airline.name;
     
@@ -49,6 +55,7 @@
         dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"d MMM, EE"];
         [dateFormatter setTimeZone:GMT];
+        [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:AVIASALES__(@"AVIASALES_LANG", [NSLocale currentLocale].localeIdentifier)]];
         
         timeFormatter = [[NSDateFormatter alloc] init];
         [timeFormatter setDateFormat:@"HH:mm"];

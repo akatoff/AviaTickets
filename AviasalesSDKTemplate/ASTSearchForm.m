@@ -144,6 +144,7 @@ BOOL isCompatible() {
     _searchParams = [ASTSearchParams sharedInstance];
     _dateFormatter = [[NSDateFormatter alloc] init];
     [_dateFormatter setDateFormat:@"d MMMM ‘yy"];
+    [_dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:AVIASALES__(@"AVIASALES_LANG", [NSLocale currentLocale].localeIdentifier)]];
 }
 
 - (void)viewDidLoad
@@ -168,9 +169,6 @@ BOOL isCompatible() {
     
     UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc] initWithTitle:AST_SF_SEARCH_BUTTON_TEXT style:UIBarButtonItemStylePlain target:self action:@selector(showSearchResults)];
     self.navigationItem.rightBarButtonItem = searchBtn;
-    
-    _datePicker = [[UIDatePicker alloc] init];
-    _datePicker.datePickerMode = UIDatePickerModeDate;
     
     if (_searchParams.originIATA) {
         [self updateAirportAtIndexPath:AST_SF_INDEX_PATH_DEPARTURE_AIRPORT withIATA:_searchParams.originIATA];
@@ -251,6 +249,7 @@ BOOL isCompatible() {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
             UIDatePicker *datePicker = [[UIDatePicker alloc] init];
             datePicker.datePickerMode = UIDatePickerModeDate;
+            datePicker.locale = [NSLocale localeWithLocaleIdentifier:AVIASALES__(@"AVIASALES_LANG", [NSLocale currentLocale].localeIdentifier)];
             [cell addSubview:datePicker];
             [datePicker setTag:AST_SF_DATEPICKER_TAG];
             [datePicker setMinimumDate:[NSDate date]];

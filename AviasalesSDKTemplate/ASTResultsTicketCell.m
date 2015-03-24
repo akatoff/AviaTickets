@@ -47,6 +47,7 @@
         dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"d MMM"];
         [dateFormatter setTimeZone:GMT];
+        [dateFormatter setLocale:[NSLocale localeWithLocaleIdentifier:AVIASALES__(@"AVIASALES_LANG", [NSLocale currentLocale].localeIdentifier)]];
         
         timeFormatter = [[NSDateFormatter alloc] init];
         [timeFormatter setDateFormat:@"HH:mm"];

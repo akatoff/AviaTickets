@@ -1,7 +1,7 @@
 //
 //  AviasalesSDK.h
 //
-//  v1.2
+//  v1.3
 //
 
 #import <Foundation/Foundation.h>
@@ -28,6 +28,11 @@
  Уникальный токен партнера, который используется для подписывания поискового запроса
  */
 @property (nonatomic, strong) NSString *APIToken;
+
+/**
+ Предпочитаемая локаль для API поиска (доступные варианты: "ru", "en", "en_GB", "en_IE", "en_AU", "de", "fr", "it", "es")
+ */
+@property (nonatomic, strong) NSString *APILocale;
 
 /**
  Трехзначный код валюты, выбранной пользователем (по умолчанию соответствует выбранной локали)

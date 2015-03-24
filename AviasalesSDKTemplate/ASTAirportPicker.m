@@ -40,6 +40,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    if (![AVIASALES_(@"AVIASALES_PICKER_PLACEHOLDER") isEqualToString:@"AVIASALES_PICKER_PLACEHOLDER"]) {
+        self.searchDisplayController.searchBar.placeholder = AVIASALES_(@"AVIASALES_PICKER_PLACEHOLDER");
+    }
+    if (![AVIASALES_(@"AVIASALES_PICKER_CANCEL") isEqualToString:@"AVIASALES_PICKER_CANCEL"]) {
+        [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTitle:AVIASALES_(@"AVIASALES_PICKER_CANCEL")];
+    }
     _pickerNearestState = ASTAirportPickerNearestStateSearching;
 }
 
