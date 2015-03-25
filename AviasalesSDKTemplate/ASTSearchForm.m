@@ -380,6 +380,16 @@ BOOL isCompatible() {
             [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationAutomatic];
         }
         
+        if ([indexPath isEqual:AST_SF_INDEX_PATH_RETURN_DATE]) {
+            if (!_returnDate) {
+                [self updateReturnDate:_departureDate];
+            } else {
+                _searchParams.returnDate = _returnDate;
+                [_searchParams save];
+            }
+            [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_RETURN_DATE] withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+
         NSInteger relatedState;
         NSInteger anotherState;
         NSIndexPath *relatedPickerIndexPath;
@@ -680,7 +690,9 @@ BOOL isCompatible() {
     [_tableView reloadRowsAtIndexPaths:@[AST_SF_INDEX_PATH_DEPARTURE_DATE] withRowAnimation:UITableViewRowAnimationNone];
     
     _searchParams.departureDate = _departureDate;
-    _searchParams.returnDate = _returnDate;
+    if (_returnFlight) {
+        _searchParams.returnDate = _returnDate;
+    }
     [_searchParams save];
 }
 

@@ -767,7 +767,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.1f;
+    return 1;
 }
 
 #pragma mark - Header Action

@@ -43,6 +43,7 @@
     [_buyButton setTitle:AVIASALES_(@"AVIASALES_BUY") forState:UIControlStateNormal];
     
     [self applyTicket:_ticket];
+	self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated {

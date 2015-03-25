@@ -19,19 +19,19 @@
     
     UIImage *image = nil;
     
-    image = [UIImage imageNamed:@"slider-default7-trackBackground"];
+    image = [UIImage imageNamed:@"AviasalesSDKTemplateBundle.bundle/slider-default7-trackBackground"];
     image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 2.0, 0.0, 3.0)];
     _cellSlider.trackBackgroundImage = image;
     
-    image = [UIImage imageNamed:@"slider-default7-track"];
+    image = [UIImage imageNamed:@"AviasalesSDKTemplateBundle.bundle/slider-default7-track"];
     image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 7.0, 0.0, 7.0)];
     _cellSlider.trackImage = image;
     
-    image = [UIImage imageNamed:@"slider-default7-handle"];
+    image = [UIImage imageNamed:@"AviasalesSDKTemplateBundle.bundle/slider-default7-handle"];
     _cellSlider.lowerHandleImageNormal = image;
     _cellSlider.upperHandleImageNormal = image;
     
-    image = [UIImage imageNamed:@"slider-default7-handle"];
+    image = [UIImage imageNamed:@"AviasalesSDKTemplateBundle.bundle/slider-default7-handle"];
     _cellSlider.lowerHandleImageHighlighted = image;
     _cellSlider.upperHandleImageHighlighted = image;
 }

@@ -9,6 +9,36 @@
 /* Begin PBXBuildFile section */
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
+		C6056A9A1A0D082F008724D9 /* all_airports_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056A991A0D082F008724D9 /* all_airports_image@3x.png */; };
+		C6056A9B1A0D082F008724D9 /* all_airports_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056A991A0D082F008724D9 /* all_airports_image@3x.png */; };
+		C6056A9D1A0D0A22008724D9 /* switch_airports@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056A9C1A0D0A22008724D9 /* switch_airports@3x.png */; };
+		C6056A9E1A0D0A22008724D9 /* switch_airports@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056A9C1A0D0A22008724D9 /* switch_airports@3x.png */; };
+		C6056AB61A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA01A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */; };
+		C6056AB71A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA01A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */; };
+		C6056AB81A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA31A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */; };
+		C6056AB91A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA31A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */; };
+		C6056ABA1A0D0CA7008724D9 /* filter_arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA51A0D0CA7008724D9 /* filter_arrow_down@3x.png */; };
+		C6056ABB1A0D0CA7008724D9 /* filter_arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA51A0D0CA7008724D9 /* filter_arrow_down@3x.png */; };
+		C6056ABC1A0D0CA7008724D9 /* filter_arrow_up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA61A0D0CA7008724D9 /* filter_arrow_up@3x.png */; };
+		C6056ABD1A0D0CA7008724D9 /* filter_arrow_up@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA61A0D0CA7008724D9 /* filter_arrow_up@3x.png */; };
+		C6056ABE1A0D0CA7008724D9 /* filter_cell_checkmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA71A0D0CA7008724D9 /* filter_cell_checkmark@3x.png */; };
+		C6056ABF1A0D0CA7008724D9 /* filter_cell_checkmark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA71A0D0CA7008724D9 /* filter_cell_checkmark@3x.png */; };
+		C6056AC01A0D0CA7008724D9 /* filter_stars_active_hi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA81A0D0CA7008724D9 /* filter_stars_active_hi@3x.png */; };
+		C6056AC11A0D0CA7008724D9 /* filter_stars_active_hi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA81A0D0CA7008724D9 /* filter_stars_active_hi@3x.png */; };
+		C6056AC21A0D0CA7008724D9 /* filter_stars_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA91A0D0CA7008724D9 /* filter_stars_active@3x.png */; };
+		C6056AC31A0D0CA7008724D9 /* filter_stars_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AA91A0D0CA7008724D9 /* filter_stars_active@3x.png */; };
+		C6056AC41A0D0CA7008724D9 /* filter_stars_hi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAA1A0D0CA7008724D9 /* filter_stars_hi@3x.png */; };
+		C6056AC51A0D0CA7008724D9 /* filter_stars_hi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAA1A0D0CA7008724D9 /* filter_stars_hi@3x.png */; };
+		C6056AC61A0D0CA7008724D9 /* filter_stars@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAB1A0D0CA7008724D9 /* filter_stars@3x.png */; };
+		C6056AC71A0D0CA7008724D9 /* filter_stars@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAB1A0D0CA7008724D9 /* filter_stars@3x.png */; };
+		C6056AC81A0D0CA7008724D9 /* rounded_rect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAC1A0D0CA7008724D9 /* rounded_rect@3x.png */; };
+		C6056AC91A0D0CA7008724D9 /* rounded_rect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAC1A0D0CA7008724D9 /* rounded_rect@3x.png */; };
+		C6056ACA1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAE1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */; };
+		C6056ACB1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6056AAE1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */; };
+		C6056ACC1A0D0CA7008724D9 /* search_check_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AB01A0D0CA7008724D9 /* search_check_off@3x.png */; };
+		C6056ACD1A0D0CA7008724D9 /* search_check_off@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AB01A0D0CA7008724D9 /* search_check_off@3x.png */; };
+		C6056ACE1A0D0CA7008724D9 /* search_check_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AB11A0D0CA7008724D9 /* search_check_on@3x.png */; };
+		C6056ACF1A0D0CA7008724D9 /* search_check_on@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6056AB11A0D0CA7008724D9 /* search_check_on@3x.png */; };
 		C606321D18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C606321B18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings */; };
 		C606321E18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C606321B18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings */; };
 		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
@@ -280,6 +310,7 @@
 		C6D652F9184DE9AC001C6FFF /* switch_airports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */; };
 		C6E36C21183E3D330076CA3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6E36C20183E3D330076CA3F /* Default-568h@2x.png */; };
 		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
+		E7952DFA1A0238E0008C08CF /* AVSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7952DF91A0238E0008C08CF /* AVSLaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -363,6 +394,21 @@
 		C604811A1814F0DE0015FFEE /* ASTTicketScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTicketScreen.h; sourceTree = "<group>"; };
 		C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTTicketScreen.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		C604811C1814F0DE0015FFEE /* ASTTicketScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTTicketScreen.xib; sourceTree = "<group>"; };
+		C6056A991A0D082F008724D9 /* all_airports_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "all_airports_image@3x.png"; path = "Resources/all_airports_image@3x.png"; sourceTree = "<group>"; };
+		C6056A9C1A0D0A22008724D9 /* switch_airports@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch_airports@3x.png"; path = "Resources/switch_airports@3x.png"; sourceTree = "<group>"; };
+		C6056AA11A0D0CA7008724D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
+		C6056AA41A0D0CA7008724D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
+		C6056AA51A0D0CA7008724D9 /* filter_arrow_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_arrow_down@3x.png"; path = "Resources/filter_arrow_down@3x.png"; sourceTree = "<group>"; };
+		C6056AA61A0D0CA7008724D9 /* filter_arrow_up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_arrow_up@3x.png"; path = "Resources/filter_arrow_up@3x.png"; sourceTree = "<group>"; };
+		C6056AA71A0D0CA7008724D9 /* filter_cell_checkmark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_cell_checkmark@3x.png"; path = "Resources/filter_cell_checkmark@3x.png"; sourceTree = "<group>"; };
+		C6056AA81A0D0CA7008724D9 /* filter_stars_active_hi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_stars_active_hi@3x.png"; path = "Resources/filter_stars_active_hi@3x.png"; sourceTree = "<group>"; };
+		C6056AA91A0D0CA7008724D9 /* filter_stars_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_stars_active@3x.png"; path = "Resources/filter_stars_active@3x.png"; sourceTree = "<group>"; };
+		C6056AAA1A0D0CA7008724D9 /* filter_stars_hi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_stars_hi@3x.png"; path = "Resources/filter_stars_hi@3x.png"; sourceTree = "<group>"; };
+		C6056AAB1A0D0CA7008724D9 /* filter_stars@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filter_stars@3x.png"; path = "Resources/filter_stars@3x.png"; sourceTree = "<group>"; };
+		C6056AAC1A0D0CA7008724D9 /* rounded_rect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rounded_rect@3x.png"; path = "Resources/rounded_rect@3x.png"; sourceTree = "<group>"; };
+		C6056AAF1A0D0CA7008724D9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
+		C6056AB01A0D0CA7008724D9 /* search_check_off@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search_check_off@3x.png"; path = "Resources/search_check_off@3x.png"; sourceTree = "<group>"; };
+		C6056AB11A0D0CA7008724D9 /* search_check_on@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "search_check_on@3x.png"; path = "Resources/search_check_on@3x.png"; sourceTree = "<group>"; };
 		C606321C18560A6B00ED4475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
 		C606321F18560A7500ED4475 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = Resources/de.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
 		C606322018560A7500ED4475 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Resources/ru.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
@@ -555,6 +601,7 @@
 		D1A98CC61933394E0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/currencies.json; sourceTree = "<group>"; };
 		D1A98CC71933394F0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
 		D1A98CC8193339500076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
+		E7952DF91A0238E0008C08CF /* AVSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AVSLaunchScreen.xib; path = Resources/AVSLaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -600,6 +647,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6056A9F1A0D0CA7008724D9 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C6056AA01A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */,
+			);
+			name = de.lproj;
+			path = Resources/de.lproj;
+			sourceTree = "<group>";
+		};
+		C6056AA21A0D0CA7008724D9 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C6056AA31A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */,
+			);
+			name = en.lproj;
+			path = Resources/en.lproj;
+			sourceTree = "<group>";
+		};
+		C6056AAD1A0D0CA7008724D9 /* ru.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C6056AAE1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */,
+			);
+			name = ru.lproj;
+			path = Resources/ru.lproj;
+			sourceTree = "<group>";
+		};
 		C60EC82E17E848DA00C5D52E = {
 			isa = PBXGroup;
 			children = (
@@ -789,32 +863,47 @@
 		C6B74F20181DCEA200FEF5B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C6056A9F1A0D0CA7008724D9 /* de.lproj */,
+				C6056AA21A0D0CA7008724D9 /* en.lproj */,
+				C6056AAD1A0D0CA7008724D9 /* ru.lproj */,
 				C606321B18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings */,
 				C6D652F4184DE9AC001C6FFF /* switch_airports.png */,
 				C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */,
+				C6056A9C1A0D0A22008724D9 /* switch_airports@3x.png */,
 				C6E36C20183E3D330076CA3F /* Default-568h@2x.png */,
 				C6C45CB8183122BD00E7885B /* all_airports_image.png */,
 				C6C45CB9183122BD00E7885B /* all_airports_image@2x.png */,
+				C6056A991A0D082F008724D9 /* all_airports_image@3x.png */,
 				C6C45CBA183122BD00E7885B /* filter_arrow_down.png */,
 				C6C45CBB183122BD00E7885B /* filter_arrow_down@2x.png */,
+				C6056AA51A0D0CA7008724D9 /* filter_arrow_down@3x.png */,
 				C6C45CBC183122BD00E7885B /* filter_arrow_up.png */,
 				C6C45CBD183122BD00E7885B /* filter_arrow_up@2x.png */,
+				C6056AA61A0D0CA7008724D9 /* filter_arrow_up@3x.png */,
 				C6C45CBE183122BD00E7885B /* filter_cell_checkmark.png */,
 				C6C45CBF183122BD00E7885B /* filter_cell_checkmark@2x.png */,
+				C6056AA71A0D0CA7008724D9 /* filter_cell_checkmark@3x.png */,
 				C6C45CC0183122BD00E7885B /* filter_stars_active_hi.png */,
 				C6C45CC1183122BD00E7885B /* filter_stars_active_hi@2x.png */,
+				C6056AA81A0D0CA7008724D9 /* filter_stars_active_hi@3x.png */,
 				C6C45CC2183122BD00E7885B /* filter_stars_active.png */,
 				C6C45CC3183122BD00E7885B /* filter_stars_active@2x.png */,
+				C6056AA91A0D0CA7008724D9 /* filter_stars_active@3x.png */,
 				C6C45CC4183122BD00E7885B /* filter_stars_hi.png */,
 				C6C45CC5183122BD00E7885B /* filter_stars_hi@2x.png */,
+				C6056AAA1A0D0CA7008724D9 /* filter_stars_hi@3x.png */,
 				C6C45CC6183122BD00E7885B /* filter_stars.png */,
 				C6C45CC7183122BD00E7885B /* filter_stars@2x.png */,
+				C6056AAB1A0D0CA7008724D9 /* filter_stars@3x.png */,
 				C6C45CC8183122BD00E7885B /* rounded_rect.png */,
 				C64BAA7318325919007C1FED /* rounded_rect@2x.png */,
+				C6056AAC1A0D0CA7008724D9 /* rounded_rect@3x.png */,
 				C6C45CC9183122BD00E7885B /* search_check_off.png */,
 				C6C45CCA183122BD00E7885B /* search_check_off@2x.png */,
+				C6056AB01A0D0CA7008724D9 /* search_check_off@3x.png */,
 				C6C45CCB183122BD00E7885B /* search_check_on.png */,
 				C6C45CCC183122BD00E7885B /* search_check_on@2x.png */,
+				C6056AB11A0D0CA7008724D9 /* search_check_on@3x.png */,
 				C6C45CCD183122BD00E7885B /* slider-default7-handle.png */,
 				C6C45CCE183122BD00E7885B /* slider-default7-handle@2x.png */,
 				C6C45CCF183122BD00E7885B /* slider-default7-track.png */,
@@ -824,6 +913,7 @@
 				C6C45CD3183122BD00E7885B /* slider-default7-trackCrossedOver.png */,
 				C6C45CD4183122BD00E7885B /* slider-default7-trackCrossedOver@2x.png */,
 				C684E810185708FD007F703A /* currencies.json */,
+				E7952DF91A0238E0008C08CF /* AVSLaunchScreen.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1105,6 +1195,7 @@
 				C6C45CEF183122BD00E7885B /* filter_stars_hi@2x.png in Resources */,
 				C6BA198D1827581C00BAD465 /* ASTAirportPickerCell.xib in Resources */,
 				C6BA198E1827581C00BAD465 /* ASTAirportPickerSearchingCell.xib in Resources */,
+				C6056ACC1A0D0CA7008724D9 /* search_check_off@3x.png in Resources */,
 				C6BA198F1827581C00BAD465 /* ASTAirportPickerEmptyCell.xib in Resources */,
 				C6C45CF1183122BD00E7885B /* filter_stars.png in Resources */,
 				C6C45D07183122BD00E7885B /* slider-default7-trackBackground.png in Resources */,
@@ -1114,6 +1205,8 @@
 				C6C45CDF183122BD00E7885B /* filter_arrow_up@2x.png in Resources */,
 				C6C45CD5183122BD00E7885B /* all_airports_image.png in Resources */,
 				C6C45CDD183122BD00E7885B /* filter_arrow_up.png in Resources */,
+				C6056A9D1A0D0A22008724D9 /* switch_airports@3x.png in Resources */,
+				C6056AC41A0D0CA7008724D9 /* filter_stars_hi@3x.png in Resources */,
 				C6BA19911827581C00BAD465 /* ASTSearchFormOptionsCell.xib in Resources */,
 				C6BA19921827581C00BAD465 /* ASTSearchFormDateCell.xib in Resources */,
 				C6C45CD7183122BD00E7885B /* all_airports_image@2x.png in Resources */,
@@ -1131,32 +1224,45 @@
 				C6BA19991827581C00BAD465 /* ASFilterCellWithTwoThumbsSlider.xib in Resources */,
 				C6C45D0D183122BD00E7885B /* slider-default7-trackCrossedOver@2x.png in Resources */,
 				C6C45CE5183122BD00E7885B /* filter_stars_active_hi.png in Resources */,
+				C6056ABE1A0D0CA7008724D9 /* filter_cell_checkmark@3x.png in Resources */,
 				C6BA199A1827581C00BAD465 /* ASFilterCellWithView.xib in Resources */,
 				C6D652F6184DE9AC001C6FFF /* switch_airports.png in Resources */,
 				C62DCD0A186C79190039C256 /* ASTResultsTabBar.xib in Resources */,
+				C6056A9A1A0D082F008724D9 /* all_airports_image@3x.png in Resources */,
 				C6C45CE7183122BD00E7885B /* filter_stars_active_hi@2x.png in Resources */,
 				C6C45CFD183122BD00E7885B /* search_check_on@2x.png in Resources */,
+				C6056AC81A0D0CA7008724D9 /* rounded_rect@3x.png in Resources */,
+				C6056ABA1A0D0CA7008724D9 /* filter_arrow_down@3x.png in Resources */,
+				C6056AB61A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */,
+				C6056AC61A0D0CA7008724D9 /* filter_stars@3x.png in Resources */,
+				E7952DFA1A0238E0008C08CF /* AVSLaunchScreen.xib in Resources */,
 				C6C45CEB183122BD00E7885B /* filter_stars_active@2x.png in Resources */,
 				C6C45D05183122BD00E7885B /* slider-default7-track@2x.png in Resources */,
 				C6C45CD9183122BD00E7885B /* filter_arrow_down.png in Resources */,
+				C6056ACA1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */,
 				C6BA199B1827581C00BAD465 /* ASFilterHeaderCell.xib in Resources */,
 				C62408D11848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib in Resources */,
 				C66965F0186056B000446328 /* AviasalesStaticLibLocalizable.strings in Resources */,
 				C6BA199C1827581C00BAD465 /* ASTFilters.xib in Resources */,
 				C606321D18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings in Resources */,
+				C6056ABC1A0D0CA7008724D9 /* filter_arrow_up@3x.png in Resources */,
 				C6BA199D1827581C00BAD465 /* ASRaitingStars.xib in Resources */,
 				C6C45CF7183122BD00E7885B /* search_check_off.png in Resources */,
 				C6C45CE1183122BD00E7885B /* filter_cell_checkmark.png in Resources */,
 				C6C45CFF183122BD00E7885B /* slider-default7-handle.png in Resources */,
+				C6056ACE1A0D0CA7008724D9 /* search_check_on@3x.png in Resources */,
 				C6C45CE9183122BD00E7885B /* filter_stars_active.png in Resources */,
 				C6C45D09183122BD00E7885B /* slider-default7-trackBackground@2x.png in Resources */,
 				C6BA199E1827581C00BAD465 /* ASTTicketScreen.xib in Resources */,
 				C6C45D01183122BD00E7885B /* slider-default7-handle@2x.png in Resources */,
+				C6056AC01A0D0CA7008724D9 /* filter_stars_active_hi@3x.png in Resources */,
 				C6C45CED183122BD00E7885B /* filter_stars_hi.png in Resources */,
 				C6BA199F1827581C00BAD465 /* ASTFlightCell.xib in Resources */,
+				C6056AB81A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */,
 				C67B450318916CA2006CBA73 /* ASTWebBrowserViewController.xib in Resources */,
 				C6BA19A01827581C00BAD465 /* ASTStopoverCell.xib in Resources */,
 				C6C45CF5183122BD00E7885B /* rounded_rect.png in Resources */,
+				C6056AC21A0D0CA7008724D9 /* filter_stars_active@3x.png in Resources */,
 				C64BAA7418325919007C1FED /* rounded_rect@2x.png in Resources */,
 				C6BA198B182757F000BAD465 /* ASTMain.xib in Resources */,
 			);
@@ -1177,14 +1283,22 @@
 				C6C45CE4183122BD00E7885B /* filter_cell_checkmark@2x.png in Resources */,
 				C6C45CD6183122BD00E7885B /* all_airports_image.png in Resources */,
 				C62DCD0E186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */,
+				C6056ACF1A0D0CA7008724D9 /* search_check_on@3x.png in Resources */,
+				C6056AB71A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */,
 				C6C45D08183122BD00E7885B /* slider-default7-trackBackground.png in Resources */,
 				C6BA19C418275DB700BAD465 /* ASTTicketScreen.xib in Resources */,
 				C6C45CF2183122BD00E7885B /* filter_stars.png in Resources */,
 				C6BA19C518275DB700BAD465 /* ASTFlightCell.xib in Resources */,
+				C6056AC11A0D0CA7008724D9 /* filter_stars_active_hi@3x.png in Resources */,
 				C6B752211824118700FEF5B9 /* ASTAirportPicker.xib in Resources */,
 				C6C45CE0183122BD00E7885B /* filter_arrow_up@2x.png in Resources */,
+				C6056AC71A0D0CA7008724D9 /* filter_stars@3x.png in Resources */,
 				C6B7521B1824117500FEF5B9 /* ASFilterCellWithView.xib in Resources */,
 				C6B752181824117500FEF5B9 /* ASFilterCellWithMobileSwitch.xib in Resources */,
+				C6056AC31A0D0CA7008724D9 /* filter_stars_active@3x.png in Resources */,
+				C6056ACB1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */,
+				C6056A9E1A0D0A22008724D9 /* switch_airports@3x.png in Resources */,
+				C6056ABD1A0D0CA7008724D9 /* filter_arrow_up@3x.png in Resources */,
 				C6C45CD8183122BD00E7885B /* all_airports_image@2x.png in Resources */,
 				C6C45CDA183122BD00E7885B /* filter_arrow_down.png in Resources */,
 				C6B7521C1824117500FEF5B9 /* ASFilterHeaderCell.xib in Resources */,
@@ -1200,7 +1314,9 @@
 				C606321E18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings in Resources */,
 				C6B751ED18240CBE00FEF5B9 /* ASTSearchFormDateCell.xib in Resources */,
 				C6B752241824118700FEF5B9 /* ASTAirportPickerEmptyCell.xib in Resources */,
+				C6056ACD1A0D0CA7008724D9 /* search_check_off@3x.png in Resources */,
 				C62DCD0B186C79190039C256 /* ASTResultsTabBar.xib in Resources */,
+				C6056A9B1A0D082F008724D9 /* all_airports_image@3x.png in Resources */,
 				C6B751EE18240CC400FEF5B9 /* ASTSearchFormOptionsCell.xib in Resources */,
 				C6B752221824118700FEF5B9 /* ASTAirportPickerCell.xib in Resources */,
 				C6B752171824117500FEF5B9 /* ASFilterCellWithAirport.xib in Resources */,
@@ -1210,6 +1326,7 @@
 				C6C45CF6183122BD00E7885B /* rounded_rect.png in Resources */,
 				C6D652F9184DE9AC001C6FFF /* switch_airports@2x.png in Resources */,
 				C6C45D02183122BD00E7885B /* slider-default7-handle@2x.png in Resources */,
+				C6056ABB1A0D0CA7008724D9 /* filter_arrow_down@3x.png in Resources */,
 				C6C45D0C183122BD00E7885B /* slider-default7-trackCrossedOver.png in Resources */,
 				C6D652F7184DE9AC001C6FFF /* switch_airports.png in Resources */,
 				C6C45CF0183122BD00E7885B /* filter_stars_hi@2x.png in Resources */,
@@ -1217,8 +1334,11 @@
 				C66965F4186056C800446328 /* AviasalesStaticLibLocalizable.strings in Resources */,
 				C6C45CDC183122BD00E7885B /* filter_arrow_down@2x.png in Resources */,
 				C6C45D0E183122BD00E7885B /* slider-default7-trackCrossedOver@2x.png in Resources */,
+				C6056AC91A0D0CA7008724D9 /* rounded_rect@3x.png in Resources */,
 				C6C45CE8183122BD00E7885B /* filter_stars_active_hi@2x.png in Resources */,
+				C6056AB91A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings in Resources */,
 				C6C45CF4183122BD00E7885B /* filter_stars@2x.png in Resources */,
+				C6056ABF1A0D0CA7008724D9 /* filter_cell_checkmark@3x.png in Resources */,
 				C6B7521A1824117500FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib in Resources */,
 				C6C45D0A183122BD00E7885B /* slider-default7-trackBackground@2x.png in Resources */,
 				C6B752161824117500FEF5B9 /* ASFilterAirportsSeparatorCell.xib in Resources */,
@@ -1228,6 +1348,7 @@
 				C6C45CF8183122BD00E7885B /* search_check_off.png in Resources */,
 				C6C45CFE183122BD00E7885B /* search_check_on@2x.png in Resources */,
 				C6C45CEE183122BD00E7885B /* filter_stars_hi.png in Resources */,
+				C6056AC51A0D0CA7008724D9 /* filter_stars_hi@3x.png in Resources */,
 				C6C45CFC183122BD00E7885B /* search_check_on.png in Resources */,
 				C6C45CE6183122BD00E7885B /* filter_stars_active_hi.png in Resources */,
 				C66965F61860653800446328 /* ASTResultsTicketCellOneWay.xib in Resources */,
@@ -1366,6 +1487,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C6056AA01A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6056AA11A0D0CA7008724D9 /* de */,
+			);
+			name = AviasalesTemplateLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6056AA31A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6056AA41A0D0CA7008724D9 /* en */,
+			);
+			name = AviasalesTemplateLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		C6056AAE1A0D0CA7008724D9 /* AviasalesTemplateLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6056AAF1A0D0CA7008724D9 /* ru */,
+			);
+			name = AviasalesTemplateLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		C606321B18560A6B00ED4475 /* AviasalesTemplateLocalizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
