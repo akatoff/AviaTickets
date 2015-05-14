@@ -30,7 +30,7 @@
 @property (nonatomic, strong) NSString *APIToken;
 
 /**
- Предпочитаемая локаль для API поиска (доступные варианты: "ru", "en", "en_GB", "en_IE", "en_AU", "de", "fr", "it", "es")
+ Предпочитаемая локаль для API поиска (доступные варианты: en, de, en_GB, en_AU, en_CA, en_NZ, en_IE, en_SG, en_IN, pt_PT, pt_BR, fr, es, it, th, pl, pt)
  */
 @property (nonatomic, strong) NSString *APILocale;
 
