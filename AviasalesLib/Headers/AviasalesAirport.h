@@ -39,4 +39,15 @@
  */
 @property (nonatomic, strong) NSNumber *averageRate;
 
+/**
+ Координаты аэропорта
+ */
+@property (nonatomic, strong) NSNumber *latitude;
+@property (nonatomic, strong) NSNumber *longitude;
+
+/**
+ Часовой пояс аэропорта
+ */
+@property (nonatomic, strong) NSTimeZone *timeZone;
+
 @end
