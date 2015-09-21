@@ -46,11 +46,8 @@
 	self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    CGRect rect = self.view.frame;
-    rect.origin.x = 0;
-    rect.origin.y = 0;
-    [_waitingView setFrame:rect];
+- (void)viewWillLayoutSubviews {
+    [_waitingView setFrame:self.view.bounds];
 }
 
 - (void)didReceiveMemoryWarning

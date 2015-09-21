@@ -90,10 +90,8 @@
 		C655931C181456560048F252 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C655930C181456560048F252 /* UIImage+MultiFormat.m */; };
 		C655931D181456560048F252 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = C655930E181456560048F252 /* UIImage+WebP.m */; };
 		C655931E181456560048F252 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C6559310181456560048F252 /* UIImageView+WebCache.m */; };
-		C66965EE186056B000446328 /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C66965E4186056B000446328 /* libAviasales.a */; };
 		C66965EF186056B000446328 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C66965E6186056B000446328 /* Aviasales_top_airports.json */; };
 		C66965F0186056B000446328 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66965E8186056B000446328 /* AviasalesStaticLibLocalizable.strings */; };
-		C66965F1186056B800446328 /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C66965E4186056B000446328 /* libAviasales.a */; };
 		C66965F3186056C500446328 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C66965E6186056B000446328 /* Aviasales_top_airports.json */; };
 		C66965F4186056C800446328 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66965E8186056B000446328 /* AviasalesStaticLibLocalizable.strings */; };
 		C66965F61860653800446328 /* ASTResultsTicketCellOneWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */; };
@@ -310,6 +308,8 @@
 		C6D652F9184DE9AC001C6FFF /* switch_airports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */; };
 		C6E36C21183E3D330076CA3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6E36C20183E3D330076CA3F /* Default-568h@2x.png */; };
 		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
+		C6F63B4B1BB051430060183C /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F63B4A1BB051430060183C /* libAviasales.a */; settings = {ASSET_TAGS = (); }; };
+		C6F63B4C1BB051430060183C /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F63B4A1BB051430060183C /* libAviasales.a */; settings = {ASSET_TAGS = (); }; };
 		E7952DFA1A0238E0008C08CF /* AVSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7952DF91A0238E0008C08CF /* AVSLaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
@@ -490,7 +490,6 @@
 		C66965E1186056B000446328 /* AviasalesSearchParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AviasalesSearchParams.h; sourceTree = "<group>"; };
 		C66965E2186056B000446328 /* AviasalesSearchResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AviasalesSearchResponse.h; sourceTree = "<group>"; };
 		C66965E3186056B000446328 /* AviasalesTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AviasalesTicket.h; sourceTree = "<group>"; };
-		C66965E4186056B000446328 /* libAviasales.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviasales.a; sourceTree = "<group>"; };
 		C66965E7186056B000446328 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
 		C66965E9186056B000446328 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
 		C66965EA186056B000446328 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
@@ -597,6 +596,7 @@
 		C6D652F4184DE9AC001C6FFF /* switch_airports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch_airports.png; path = Resources/switch_airports.png; sourceTree = "<group>"; };
 		C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch_airports@2x.png"; path = "Resources/switch_airports@2x.png"; sourceTree = "<group>"; };
 		C6E36C20183E3D330076CA3F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		C6F63B4A1BB051430060183C /* libAviasales.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviasales.a; sourceTree = "<group>"; };
 		D1A98CC51933394D0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
 		D1A98CC61933394E0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/currencies.json; sourceTree = "<group>"; };
 		D1A98CC71933394F0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
@@ -611,7 +611,7 @@
 			files = (
 				C67CC6FB17F31A55006C659C /* CoreLocation.framework in Frameworks */,
 				C60EC83D17E848DA00C5D52E /* CoreGraphics.framework in Frameworks */,
-				C66965EE186056B000446328 /* libAviasales.a in Frameworks */,
+				C6F63B4B1BB051430060183C /* libAviasales.a in Frameworks */,
 				C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */,
 				C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */,
 			);
@@ -632,7 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B751441823F94B00FEF5B9 /* Foundation.framework in Frameworks */,
-				C66965F1186056B800446328 /* libAviasales.a in Frameworks */,
+				C6F63B4C1BB051430060183C /* libAviasales.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,8 +816,8 @@
 		C66965D7186056B000446328 /* AviasalesLib */ = {
 			isa = PBXGroup;
 			children = (
+				C6F63B4A1BB051430060183C /* libAviasales.a */,
 				C66965D8186056B000446328 /* Headers */,
-				C66965E4186056B000446328 /* libAviasales.a */,
 				C66965E5186056B000446328 /* Resources */,
 			);
 			path = AviasalesLib;
@@ -1666,6 +1666,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(SRCROOT)/AviasalesLib",
+					"$(PROJECT_DIR)/AviasalesLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1688,6 +1689,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 					"$(SRCROOT)/AviasalesLib",
+					"$(PROJECT_DIR)/AviasalesLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1751,6 +1753,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					./AviasalesLib,
 					"$(SRCROOT)/AviasalesLib",
+					"$(PROJECT_DIR)/AviasalesLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1768,6 +1771,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					./AviasalesLib,
 					"$(SRCROOT)/AviasalesLib",
+					"$(PROJECT_DIR)/AviasalesLib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

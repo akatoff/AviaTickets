@@ -277,6 +277,7 @@ BOOL isCompatible() {
         if (cell == nil) {
             cell = [[AVIASALES_BUNDLE loadNibNamed:cellIdentifier owner:self options:nil] firstObject];
             [cell.textLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:18.0f]];
+            [cell.textLabel setBackgroundColor:[UIColor clearColor]];
             [cell.returnButton addTarget:self action:@selector(switchOneWay) forControlEvents:UIControlEventTouchUpInside];
         }
         if (indexPath.section == AST_SF_SECTION_DATES) {
