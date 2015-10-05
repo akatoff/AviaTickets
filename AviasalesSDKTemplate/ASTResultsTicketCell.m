@@ -52,6 +52,7 @@
         timeFormatter = [[NSDateFormatter alloc] init];
         [timeFormatter setDateFormat:@"HH:mm"];
         [timeFormatter setTimeZone:GMT];
+        [timeFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
     });
     
     AviasalesFlight *firstOutboundFlight = [ticket.outboundFlights firstObject];

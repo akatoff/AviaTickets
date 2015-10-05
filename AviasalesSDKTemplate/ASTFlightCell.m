@@ -60,6 +60,7 @@ static NSNumberFormatter *flightNumberFormatter;
         timeFormatter = [[NSDateFormatter alloc] init];
         [timeFormatter setDateFormat:@"HH:mm"];
         [timeFormatter setTimeZone:GMT];
+        [timeFormatter setLocale:[NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"]];
     });
     
     _departureTime.text = [timeFormatter stringFromDate:flight.departure];
