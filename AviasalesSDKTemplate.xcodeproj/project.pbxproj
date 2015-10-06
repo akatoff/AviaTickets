@@ -1658,7 +1658,9 @@
 		C60EC86A17E848DB00C5D52E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
 				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1680,8 +1682,10 @@
 		C60EC86B17E848DB00C5D52E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Go Travel Un Limited";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
 				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1743,8 +1747,10 @@
 		C6B751601823F94C00FEF5B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/AviasalesSDKTemplateLibrary.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplateLibrary/AviasalesSDKTemplateLibrary-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1765,8 +1771,10 @@
 		C6B751611823F94C00FEF5B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/AviasalesSDKTemplateLibrary.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplateLibrary/AviasalesSDKTemplateLibrary-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					./AviasalesLib,
