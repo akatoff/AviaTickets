@@ -84,7 +84,7 @@ BOOL isCompatible() {
 
 + (void)launchFromViewController:(UIViewController *)viewController withOriginIATA:(NSString *)originIATA destinationIATA:(NSString *)destinationIATA departureDate:(NSString *)departureDate returnDate:(NSString *)returnDate {
     
-    if (!isCompatible) {
+    if (!isCompatible()) {
         return;
     }
     
