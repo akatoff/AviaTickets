@@ -18,27 +18,9 @@
 		C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83E17E848DA00C5D52E /* UIKit.framework */; };
 		C60EC84717E848DA00C5D52E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC84617E848DA00C5D52E /* main.m */; };
 		C60EC84B17E848DA00C5D52E /* ASTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */; };
-		C60EC85A17E848DB00C5D52E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC85917E848DB00C5D52E /* XCTest.framework */; };
-		C60EC85B17E848DB00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
-		C60EC85C17E848DB00C5D52E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83E17E848DA00C5D52E /* UIKit.framework */; };
-		C60EC86417E848DB00C5D52E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C60EC86217E848DB00C5D52E /* InfoPlist.strings */; };
-		C60EC86617E848DB00C5D52E /* AviasalesSDKTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */; };
 		C62408D11848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */; };
 		C62DCD0A186C79190039C256 /* ASTResultsTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */; };
-		C62DCD0B186C79190039C256 /* ASTResultsTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */; };
 		C62DCD0D186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */; };
-		C62DCD0E186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */; };
-		C636CA49186099910073F5C7 /* AviasalesAirline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965D9186056B000446328 /* AviasalesAirline.h */; };
-		C636CA4A186099910073F5C7 /* AviasalesAirport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DA186056B000446328 /* AviasalesAirport.h */; };
-		C636CA4B186099910073F5C7 /* AviasalesFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DB186056B000446328 /* AviasalesFilter.h */; };
-		C636CA4C186099910073F5C7 /* AviasalesFiltersBoundary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DC186056B000446328 /* AviasalesFiltersBoundary.h */; };
-		C636CA4D186099910073F5C7 /* AviasalesFlight.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DD186056B000446328 /* AviasalesFlight.h */; };
-		C636CA4E186099910073F5C7 /* AviasalesGate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DE186056B000446328 /* AviasalesGate.h */; };
-		C636CA4F186099910073F5C7 /* AviasalesPrice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965DF186056B000446328 /* AviasalesPrice.h */; };
-		C636CA50186099910073F5C7 /* AviasalesSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E0186056B000446328 /* AviasalesSDK.h */; };
-		C636CA51186099910073F5C7 /* AviasalesSearchParams.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E1186056B000446328 /* AviasalesSearchParams.h */; };
-		C636CA52186099910073F5C7 /* AviasalesSearchResponse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E2186056B000446328 /* AviasalesSearchResponse.h */; };
-		C636CA53186099910073F5C7 /* AviasalesTicket.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C66965E3186056B000446328 /* AviasalesTicket.h */; };
 		C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */; };
 		C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */; };
 		C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F11817C778007A4F00 /* ASTFlightCell.m */; };
@@ -49,13 +31,8 @@
 		C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C645047517EC38AB00BF9E31 /* ASTSearchForm.m */; };
 		C66965EF186056B000446328 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C66965E6186056B000446328 /* Aviasales_top_airports.json */; };
 		C66965F0186056B000446328 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66965E8186056B000446328 /* AviasalesStaticLibLocalizable.strings */; };
-		C66965F3186056C500446328 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = C66965E6186056B000446328 /* Aviasales_top_airports.json */; };
-		C66965F4186056C800446328 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66965E8186056B000446328 /* AviasalesStaticLibLocalizable.strings */; };
-		C66965F61860653800446328 /* ASTResultsTicketCellOneWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */; };
 		C67B450218916CA2006CBA73 /* ASTWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B450018916CA2006CBA73 /* ASTWebBrowserViewController.m */; };
 		C67B450318916CA2006CBA73 /* ASTWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67B450118916CA2006CBA73 /* ASTWebBrowserViewController.xib */; };
-		C67B450418916CB1006CBA73 /* ASTWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B450018916CA2006CBA73 /* ASTWebBrowserViewController.m */; };
-		C67B450518916CC0006CBA73 /* ASTWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67B450118916CA2006CBA73 /* ASTWebBrowserViewController.xib */; };
 		C67CC6FB17F31A55006C659C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67CC6FA17F31A55006C659C /* CoreLocation.framework */; };
 		C6A0977B18113DD500862C71 /* ASTResultsTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */; };
 		C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6ABB12417F0619B0086872F /* ASTAirportPickerCell.m */; };
@@ -70,51 +47,6 @@
 		C6B74FA1181FDBBB00FEF5B9 /* ASFilterCellWithView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F92181FDBBB00FEF5B9 /* ASFilterCellWithView.m */; };
 		C6B74FA3181FDBBB00FEF5B9 /* ASFilterHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F95181FDBBB00FEF5B9 /* ASFilterHeaderCell.m */; };
 		C6B74FC41820ED3600FEF5B9 /* ASRaitingStars.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */; };
-		C6B751441823F94B00FEF5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
-		C6B751491823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B751481823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.h */; };
-		C6B7514B1823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B7514A1823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.m */; };
-		C6B751751824011500FEF5B9 /* ASTAirportPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B255D717F0228C00630769 /* ASTAirportPicker.m */; };
-		C6B751761824011500FEF5B9 /* ASTAirportPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6ABB12417F0619B0086872F /* ASTAirportPickerCell.m */; };
-		C6B751771824011500FEF5B9 /* ASTAirportPickerSearchingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FD38B17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m */; };
-		C6B751781824011500FEF5B9 /* ASTAirportPickerEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FD38E17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m */; };
-		C6B751791824011500FEF5B9 /* ASTSearchForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C645047517EC38AB00BF9E31 /* ASTSearchForm.m */; };
-		C6B7517A1824011500FEF5B9 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
-		C6B7517B1824011500FEF5B9 /* ASTSearchFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FD39A17F49292007FFBD9 /* ASTSearchFormDateCell.m */; };
-		C6B7517C1824011500FEF5B9 /* ASTResults.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F73181EA14A00FEF5B9 /* ASTResults.m */; };
-		C6B7517D1824011500FEF5B9 /* ASTResultsTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */; };
-		C6B7517E1824011500FEF5B9 /* ASFilterAirportsSeparatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F83181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m */; };
-		C6B7517F1824011600FEF5B9 /* ASFilterCellWithAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F86181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m */; };
-		C6B751801824011600FEF5B9 /* ASFilterCellWithMobileSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F89181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m */; };
-		C6B751811824011600FEF5B9 /* ASFilterCellWithOneThumbSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F8C181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m */; };
-		C6B751821824011600FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F8F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m */; };
-		C6B751831824011600FEF5B9 /* ASFilterCellWithView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F92181FDBBB00FEF5B9 /* ASFilterCellWithView.m */; };
-		C6B751841824011600FEF5B9 /* ASFilterHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F95181FDBBB00FEF5B9 /* ASFilterHeaderCell.m */; };
-		C6B751851824011600FEF5B9 /* ASTFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F7D181FDA9100FEF5B9 /* ASTFilters.m */; };
-		C6B751861824011600FEF5B9 /* ASRaitingStars.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */; };
-		C6B751871824011600FEF5B9 /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
-		C6B751881824011600FEF5B9 /* ASTFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F11817C778007A4F00 /* ASTFlightCell.m */; };
-		C6B751891824011600FEF5B9 /* ASTStopoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F61817F1FD007A4F00 /* ASTStopoverCell.m */; };
-		C6B751991824011600FEF5B9 /* ASTCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */; };
-		C6B7519A1824011600FEF5B9 /* ASTSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */; };
-		C6B751E118240B5400FEF5B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */; };
-		C6B751E718240B5400FEF5B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6B751E518240B5400FEF5B9 /* InfoPlist.strings */; };
-		C6B751ED18240CBE00FEF5B9 /* ASTSearchFormDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */; };
-		C6B751EE18240CC400FEF5B9 /* ASTSearchFormOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */; };
-		C6B752151824116B00FEF5B9 /* ASTStopoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */; };
-		C6B752161824117500FEF5B9 /* ASFilterAirportsSeparatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F84181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.xib */; };
-		C6B752171824117500FEF5B9 /* ASFilterCellWithAirport.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F87181FDBBB00FEF5B9 /* ASFilterCellWithAirport.xib */; };
-		C6B752181824117500FEF5B9 /* ASFilterCellWithMobileSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F8A181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.xib */; };
-		C6B752191824117500FEF5B9 /* ASFilterCellWithOneThumbSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F8D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.xib */; };
-		C6B7521A1824117500FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F90181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib */; };
-		C6B7521B1824117500FEF5B9 /* ASFilterCellWithView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F93181FDBBB00FEF5B9 /* ASFilterCellWithView.xib */; };
-		C6B7521C1824117500FEF5B9 /* ASFilterHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F96181FDBBB00FEF5B9 /* ASFilterHeaderCell.xib */; };
-		C6B7521D1824117500FEF5B9 /* ASTFilters.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F7E181FDA9100FEF5B9 /* ASTFilters.xib */; };
-		C6B7521E1824117500FEF5B9 /* ASRaitingStars.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */; };
-		C6B752201824117B00FEF5B9 /* ASTResultsTicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */; };
-		C6B752211824118700FEF5B9 /* ASTAirportPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B255D817F0228C00630769 /* ASTAirportPicker.xib */; };
-		C6B752221824118700FEF5B9 /* ASTAirportPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67CC6EC17F1EF1B006C659C /* ASTAirportPickerCell.xib */; };
-		C6B752231824118700FEF5B9 /* ASTAirportPickerSearchingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ABB12517F0619B0086872F /* ASTAirportPickerSearchingCell.xib */; };
-		C6B752241824118700FEF5B9 /* ASTAirportPickerEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39017F338DA007FFBD9 /* ASTAirportPickerEmptyCell.xib */; };
 		C6BA198B182757F000BAD465 /* ASTMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60EC87E17E8576B00C5D52E /* ASTMain.xib */; };
 		C6BA198C1827581C00BAD465 /* ASTAirportPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B255D817F0228C00630769 /* ASTAirportPicker.xib */; };
 		C6BA198D1827581C00BAD465 /* ASTAirportPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67CC6EC17F1EF1B006C659C /* ASTAirportPickerCell.xib */; };
@@ -135,97 +67,9 @@
 		C6BA199E1827581C00BAD465 /* ASTTicketScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C604811C1814F0DE0015FFEE /* ASTTicketScreen.xib */; };
 		C6BA199F1827581C00BAD465 /* ASTFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F31817C781007A4F00 /* ASTFlightCell.xib */; };
 		C6BA19A01827581C00BAD465 /* ASTStopoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */; };
-		C6BA19C418275DB700BAD465 /* ASTTicketScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C604811C1814F0DE0015FFEE /* ASTTicketScreen.xib */; };
-		C6BA19C518275DB700BAD465 /* ASTFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F31817C781007A4F00 /* ASTFlightCell.xib */; };
-		C6BA19C61827701000BAD465 /* ASTAirportPicker.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B255D617F0228C00630769 /* ASTAirportPicker.h */; };
-		C6BA19C71827701000BAD465 /* ASTAirportPickerCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6ABB12317F0619B0086872F /* ASTAirportPickerCell.h */; };
-		C6BA19C81827701000BAD465 /* ASTAirportPickerSearchingCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63FD38A17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.h */; };
-		C6BA19C91827701000BAD465 /* ASTAirportPickerEmptyCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63FD38D17F338C4007FFBD9 /* ASTAirportPickerEmptyCell.h */; };
-		C6BA19CA1827701000BAD465 /* ASTSearchForm.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C645047417EC38AB00BF9E31 /* ASTSearchForm.h */; };
-		C6BA19CB1827701000BAD465 /* ASTSearchFormOptionsCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */; };
-		C6BA19CC1827701000BAD465 /* ASTSearchFormDateCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63FD39917F4928C007FFBD9 /* ASTSearchFormDateCell.h */; };
-		C6BA19CD1827701000BAD465 /* ASTResults.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F72181EA14A00FEF5B9 /* ASTResults.h */; };
-		C6BA19CE1827701000BAD465 /* ASTResultsTicketCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0977918113DD500862C71 /* ASTResultsTicketCell.h */; };
-		C6BA19CF1827701000BAD465 /* ASFilterAirportsSeparatorCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F82181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.h */; };
-		C6BA19D01827701000BAD465 /* ASFilterCellWithAirport.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F85181FDBBB00FEF5B9 /* ASFilterCellWithAirport.h */; };
-		C6BA19D11827701000BAD465 /* ASFilterCellWithMobileSwitch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F88181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.h */; };
-		C6BA19D21827701000BAD465 /* ASFilterCellWithOneThumbSlider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F8B181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.h */; };
-		C6BA19D31827701000BAD465 /* ASFilterCellWithTwoThumbsSlider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F8E181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.h */; };
-		C6BA19D41827701000BAD465 /* ASFilterCellWithView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F91181FDBBB00FEF5B9 /* ASFilterCellWithView.h */; };
-		C6BA19D51827701000BAD465 /* ASFilterHeaderCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F94181FDBBB00FEF5B9 /* ASFilterHeaderCell.h */; };
-		C6BA19D61827701000BAD465 /* ASTFilters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74F7C181FDA9100FEF5B9 /* ASTFilters.h */; };
-		C6BA19D71827701000BAD465 /* ASRaitingStars.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B74FC11820ED3600FEF5B9 /* ASRaitingStars.h */; };
-		C6BA19D81827701000BAD465 /* ASTTicketScreen.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C604811A1814F0DE0015FFEE /* ASTTicketScreen.h */; };
-		C6BA19D91827701000BAD465 /* ASTFlightCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63BA9F01817C76F007A4F00 /* ASTFlightCell.h */; };
-		C6BA19DA1827701000BAD465 /* ASTStopoverCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63BA9F51817F1F1007A4F00 /* ASTStopoverCell.h */; };
-		C6BA19F71827701000BAD465 /* ASTCommonFunctions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63BA9EA1816B56E007A4F00 /* ASTCommonFunctions.h */; };
-		C6BA19F81827701000BAD465 /* ASTSearchParams.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C63BA9ED1816BA6A007A4F00 /* ASTSearchParams.h */; };
-		C6BA19F91827701000BAD465 /* ASTAppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C60EC84917E848DA00C5D52E /* ASTAppDelegate.h */; };
-		C6BA19FA1827701000BAD465 /* Defines.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B752251824123800FEF5B9 /* Defines.h */; };
-		C6C45D161831399B00E7885B /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
 		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
 		C6F63B4B1BB051430060183C /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F63B4A1BB051430060183C /* libAviasales.a */; };
-		C6F63B4C1BB051430060183C /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F63B4A1BB051430060183C /* libAviasales.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C60EC85D17E848DB00C5D52E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C60EC82F17E848DA00C5D52E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C60EC83617E848DA00C5D52E;
-			remoteInfo = AviasalesSDKTemplate;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C6B751411823F94B00FEF5B9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = include;
-			dstSubfolderSpec = 16;
-			files = (
-				C636CA49186099910073F5C7 /* AviasalesAirline.h in CopyFiles */,
-				C636CA4A186099910073F5C7 /* AviasalesAirport.h in CopyFiles */,
-				C636CA4B186099910073F5C7 /* AviasalesFilter.h in CopyFiles */,
-				C636CA4C186099910073F5C7 /* AviasalesFiltersBoundary.h in CopyFiles */,
-				C636CA4D186099910073F5C7 /* AviasalesFlight.h in CopyFiles */,
-				C636CA4E186099910073F5C7 /* AviasalesGate.h in CopyFiles */,
-				C636CA4F186099910073F5C7 /* AviasalesPrice.h in CopyFiles */,
-				C636CA50186099910073F5C7 /* AviasalesSDK.h in CopyFiles */,
-				C636CA51186099910073F5C7 /* AviasalesSearchParams.h in CopyFiles */,
-				C636CA52186099910073F5C7 /* AviasalesSearchResponse.h in CopyFiles */,
-				C636CA53186099910073F5C7 /* AviasalesTicket.h in CopyFiles */,
-				C6BA19C61827701000BAD465 /* ASTAirportPicker.h in CopyFiles */,
-				C6BA19C71827701000BAD465 /* ASTAirportPickerCell.h in CopyFiles */,
-				C6BA19C81827701000BAD465 /* ASTAirportPickerSearchingCell.h in CopyFiles */,
-				C6BA19C91827701000BAD465 /* ASTAirportPickerEmptyCell.h in CopyFiles */,
-				C6BA19CA1827701000BAD465 /* ASTSearchForm.h in CopyFiles */,
-				C6BA19CB1827701000BAD465 /* ASTSearchFormOptionsCell.h in CopyFiles */,
-				C6BA19CC1827701000BAD465 /* ASTSearchFormDateCell.h in CopyFiles */,
-				C6BA19CD1827701000BAD465 /* ASTResults.h in CopyFiles */,
-				C6BA19CE1827701000BAD465 /* ASTResultsTicketCell.h in CopyFiles */,
-				C6BA19CF1827701000BAD465 /* ASFilterAirportsSeparatorCell.h in CopyFiles */,
-				C6BA19D01827701000BAD465 /* ASFilterCellWithAirport.h in CopyFiles */,
-				C6BA19D11827701000BAD465 /* ASFilterCellWithMobileSwitch.h in CopyFiles */,
-				C6BA19D21827701000BAD465 /* ASFilterCellWithOneThumbSlider.h in CopyFiles */,
-				C6BA19D31827701000BAD465 /* ASFilterCellWithTwoThumbsSlider.h in CopyFiles */,
-				C6BA19D41827701000BAD465 /* ASFilterCellWithView.h in CopyFiles */,
-				C6BA19D51827701000BAD465 /* ASFilterHeaderCell.h in CopyFiles */,
-				C6BA19D61827701000BAD465 /* ASTFilters.h in CopyFiles */,
-				C6BA19D71827701000BAD465 /* ASRaitingStars.h in CopyFiles */,
-				C6BA19D81827701000BAD465 /* ASTTicketScreen.h in CopyFiles */,
-				C6BA19D91827701000BAD465 /* ASTFlightCell.h in CopyFiles */,
-				C6BA19DA1827701000BAD465 /* ASTStopoverCell.h in CopyFiles */,
-				C6BA19F71827701000BAD465 /* ASTCommonFunctions.h in CopyFiles */,
-				C6BA19F81827701000BAD465 /* ASTSearchParams.h in CopyFiles */,
-				C6BA19F91827701000BAD465 /* ASTAppDelegate.h in CopyFiles */,
-				C6BA19FA1827701000BAD465 /* Defines.h in CopyFiles */,
-				C6B751491823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0719776B1CAA800100D89B2E /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
@@ -252,11 +96,7 @@
 		C60EC84817E848DA00C5D52E /* AviasalesSDKTemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Prefix.pch"; sourceTree = "<group>"; };
 		C60EC84917E848DA00C5D52E /* ASTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTAppDelegate.h; sourceTree = "<group>"; };
 		C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTAppDelegate.m; sourceTree = "<group>"; };
-		C60EC85817E848DB00C5D52E /* AviasalesSDKTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60EC85917E848DB00C5D52E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C60EC86117E848DB00C5D52E /* AviasalesSDKTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AviasalesSDKTemplateTests-Info.plist"; sourceTree = "<group>"; };
-		C60EC86317E848DB00C5D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateTests.m; sourceTree = "<group>"; };
 		C60EC87E17E8576B00C5D52E /* ASTMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTMain.xib; sourceTree = "<group>"; };
 		C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTicketCellOneWay.xib; sourceTree = "<group>"; };
 		C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTabBar.xib; sourceTree = "<group>"; };
@@ -345,15 +185,7 @@
 		C6B74FC11820ED3600FEF5B9 /* ASRaitingStars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRaitingStars.h; sourceTree = "<group>"; };
 		C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRaitingStars.m; sourceTree = "<group>"; };
 		C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASRaitingStars.xib; sourceTree = "<group>"; };
-		C6B751431823F94B00FEF5B9 /* libAviasalesSDKTemplateLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAviasalesSDKTemplateLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6B751471823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplateLibrary-Prefix.pch"; sourceTree = "<group>"; };
-		C6B751481823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AviasalesSDKTemplateLibrary.h; sourceTree = "<group>"; };
-		C6B7514A1823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateLibrary.m; sourceTree = "<group>"; };
-		C6B751DF18240B5400FEF5B9 /* AviasalesSDKTemplateBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		C6B751E418240B5400FEF5B9 /* AviasalesSDKTemplateBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AviasalesSDKTemplateBundle-Info.plist"; sourceTree = "<group>"; };
-		C6B751E618240B5400FEF5B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C6B751E818240B5400FEF5B9 /* AviasalesSDKTemplateBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplateBundle-Prefix.pch"; sourceTree = "<group>"; };
 		C6B752251824123800FEF5B9 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Defines.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		C6F63B4A1BB051430060183C /* libAviasales.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviasales.a; sourceTree = "<group>"; };
 		D1A98CC71933394F0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
@@ -371,33 +203,6 @@
 				C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */,
 				C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */,
 				7A520655FABE1A4B9DE6777A /* libPods-AviasalesSDKTemplate.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C60EC85517E848DB00C5D52E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C60EC85A17E848DB00C5D52E /* XCTest.framework in Frameworks */,
-				C60EC85C17E848DB00C5D52E /* UIKit.framework in Frameworks */,
-				C60EC85B17E848DB00C5D52E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6B751401823F94B00FEF5B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6B751441823F94B00FEF5B9 /* Foundation.framework in Frameworks */,
-				C6F63B4C1BB051430060183C /* libAviasales.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6B751DC18240B5400FEF5B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6B751E118240B5400FEF5B9 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,9 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */,
-				C60EC85F17E848DB00C5D52E /* AviasalesSDKTemplateTests */,
-				C6B751451823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary */,
-				C6B751E218240B5400FEF5B9 /* AviasalesSDKTemplateBundle */,
 				C60EC83917E848DA00C5D52E /* Frameworks */,
 				C60EC83817E848DA00C5D52E /* Products */,
 				70EE66F484C07DAA97746F4C /* Pods */,
@@ -440,9 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */,
-				C60EC85817E848DB00C5D52E /* AviasalesSDKTemplateTests.xctest */,
-				C6B751431823F94B00FEF5B9 /* libAviasalesSDKTemplateLibrary.a */,
-				C6B751DF18240B5400FEF5B9 /* AviasalesSDKTemplateBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -492,24 +291,6 @@
 				C60EC84317E848DA00C5D52E /* InfoPlist.strings */,
 				C60EC84617E848DA00C5D52E /* main.m */,
 				C60EC84817E848DA00C5D52E /* AviasalesSDKTemplate-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C60EC85F17E848DB00C5D52E /* AviasalesSDKTemplateTests */ = {
-			isa = PBXGroup;
-			children = (
-				C60EC86517E848DB00C5D52E /* AviasalesSDKTemplateTests.m */,
-				C60EC86017E848DB00C5D52E /* Supporting Files */,
-			);
-			path = AviasalesSDKTemplateTests;
-			sourceTree = "<group>";
-		};
-		C60EC86017E848DB00C5D52E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C60EC86117E848DB00C5D52E /* AviasalesSDKTemplateTests-Info.plist */,
-				C60EC86217E848DB00C5D52E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -677,42 +458,6 @@
 			name = "Filters Screen";
 			sourceTree = "<group>";
 		};
-		C6B751451823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				C6B751481823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.h */,
-				C6B7514A1823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.m */,
-				C6B751461823F94B00FEF5B9 /* Supporting Files */,
-			);
-			path = AviasalesSDKTemplateLibrary;
-			sourceTree = "<group>";
-		};
-		C6B751461823F94B00FEF5B9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6B751471823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C6B751E218240B5400FEF5B9 /* AviasalesSDKTemplateBundle */ = {
-			isa = PBXGroup;
-			children = (
-				C6B751E318240B5400FEF5B9 /* Supporting Files */,
-			);
-			path = AviasalesSDKTemplateBundle;
-			sourceTree = "<group>";
-		};
-		C6B751E318240B5400FEF5B9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6B751E418240B5400FEF5B9 /* AviasalesSDKTemplateBundle-Info.plist */,
-				C6B751E518240B5400FEF5B9 /* InfoPlist.strings */,
-				C6B751E818240B5400FEF5B9 /* AviasalesSDKTemplateBundle-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -736,58 +481,6 @@
 			productReference = C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C60EC85717E848DB00C5D52E /* AviasalesSDKTemplateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C60EC86C17E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */;
-			buildPhases = (
-				C60EC85417E848DB00C5D52E /* Sources */,
-				C60EC85517E848DB00C5D52E /* Frameworks */,
-				C60EC85617E848DB00C5D52E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C60EC85E17E848DB00C5D52E /* PBXTargetDependency */,
-			);
-			name = AviasalesSDKTemplateTests;
-			productName = AviasalesSDKTemplateTests;
-			productReference = C60EC85817E848DB00C5D52E /* AviasalesSDKTemplateTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C6B751421823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C6B7515F1823F94C00FEF5B9 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateLibrary" */;
-			buildPhases = (
-				C6B7513F1823F94B00FEF5B9 /* Sources */,
-				C6B751401823F94B00FEF5B9 /* Frameworks */,
-				C6B751411823F94B00FEF5B9 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AviasalesSDKTemplateLibrary;
-			productName = AviasalesSDKTemplateLibrary;
-			productReference = C6B751431823F94B00FEF5B9 /* libAviasalesSDKTemplateLibrary.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C6B751DE18240B5400FEF5B9 /* AviasalesSDKTemplateBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C6B751E918240B5400FEF5B9 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateBundle" */;
-			buildPhases = (
-				C6B751DB18240B5400FEF5B9 /* Sources */,
-				C6B751DC18240B5400FEF5B9 /* Frameworks */,
-				C6B751DD18240B5400FEF5B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AviasalesSDKTemplateBundle;
-			productName = AviasalesSDKTemplateBundle;
-			productReference = C6B751DF18240B5400FEF5B9 /* AviasalesSDKTemplateBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -797,11 +490,6 @@
 				CLASSPREFIX = AST;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Go Travel Un LImited";
-				TargetAttributes = {
-					C60EC85717E848DB00C5D52E = {
-						TestTargetID = C60EC83617E848DA00C5D52E;
-					};
-				};
 			};
 			buildConfigurationList = C60EC83217E848DA00C5D52E /* Build configuration list for PBXProject "AviasalesSDKTemplate" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -820,9 +508,6 @@
 			projectRoot = "";
 			targets = (
 				C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */,
-				C60EC85717E848DB00C5D52E /* AviasalesSDKTemplateTests */,
-				C6B751421823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary */,
-				C6B751DE18240B5400FEF5B9 /* AviasalesSDKTemplateBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -862,48 +547,6 @@
 				C67B450318916CA2006CBA73 /* ASTWebBrowserViewController.xib in Resources */,
 				C6BA19A01827581C00BAD465 /* ASTStopoverCell.xib in Resources */,
 				C6BA198B182757F000BAD465 /* ASTMain.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C60EC85617E848DB00C5D52E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C60EC86417E848DB00C5D52E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6B751DD18240B5400FEF5B9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C62DCD0E186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */,
-				C6BA19C418275DB700BAD465 /* ASTTicketScreen.xib in Resources */,
-				C6BA19C518275DB700BAD465 /* ASTFlightCell.xib in Resources */,
-				C6B752211824118700FEF5B9 /* ASTAirportPicker.xib in Resources */,
-				C6B7521B1824117500FEF5B9 /* ASFilterCellWithView.xib in Resources */,
-				C6B752181824117500FEF5B9 /* ASFilterCellWithMobileSwitch.xib in Resources */,
-				C6B7521C1824117500FEF5B9 /* ASFilterHeaderCell.xib in Resources */,
-				C6B7521D1824117500FEF5B9 /* ASTFilters.xib in Resources */,
-				C66965F3186056C500446328 /* Aviasales_top_airports.json in Resources */,
-				C6B751E718240B5400FEF5B9 /* InfoPlist.strings in Resources */,
-				C6B752231824118700FEF5B9 /* ASTAirportPickerSearchingCell.xib in Resources */,
-				C6B751ED18240CBE00FEF5B9 /* ASTSearchFormDateCell.xib in Resources */,
-				C6B752241824118700FEF5B9 /* ASTAirportPickerEmptyCell.xib in Resources */,
-				C62DCD0B186C79190039C256 /* ASTResultsTabBar.xib in Resources */,
-				C6B751EE18240CC400FEF5B9 /* ASTSearchFormOptionsCell.xib in Resources */,
-				C6B752221824118700FEF5B9 /* ASTAirportPickerCell.xib in Resources */,
-				C6B752171824117500FEF5B9 /* ASFilterCellWithAirport.xib in Resources */,
-				C6B752191824117500FEF5B9 /* ASFilterCellWithOneThumbSlider.xib in Resources */,
-				C6B752151824116B00FEF5B9 /* ASTStopoverCell.xib in Resources */,
-				C66965F4186056C800446328 /* AviasalesStaticLibLocalizable.strings in Resources */,
-				C6B7521A1824117500FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib in Resources */,
-				C6B752161824117500FEF5B9 /* ASFilterAirportsSeparatorCell.xib in Resources */,
-				C6B752201824117B00FEF5B9 /* ASTResultsTicketCell.xib in Resources */,
-				C67B450518916CC0006CBA73 /* ASTWebBrowserViewController.xib in Resources */,
-				C66965F61860653800446328 /* ASTResultsTicketCellOneWay.xib in Resources */,
-				C6B7521E1824117500FEF5B9 /* ASRaitingStars.xib in Resources */,
-				C6C45D161831399B00E7885B /* ASTResults.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -991,62 +634,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C60EC85417E848DB00C5D52E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C60EC86617E848DB00C5D52E /* AviasalesSDKTemplateTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6B7513F1823F94B00FEF5B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6B751751824011500FEF5B9 /* ASTAirportPicker.m in Sources */,
-				C67B450418916CB1006CBA73 /* ASTWebBrowserViewController.m in Sources */,
-				C6B751761824011500FEF5B9 /* ASTAirportPickerCell.m in Sources */,
-				C6B751771824011500FEF5B9 /* ASTAirportPickerSearchingCell.m in Sources */,
-				C6B751781824011500FEF5B9 /* ASTAirportPickerEmptyCell.m in Sources */,
-				C6B751791824011500FEF5B9 /* ASTSearchForm.m in Sources */,
-				C6B7517A1824011500FEF5B9 /* ASTSearchFormOptionsCell.m in Sources */,
-				C6B7517B1824011500FEF5B9 /* ASTSearchFormDateCell.m in Sources */,
-				C6B7517C1824011500FEF5B9 /* ASTResults.m in Sources */,
-				C6B7517D1824011500FEF5B9 /* ASTResultsTicketCell.m in Sources */,
-				C6B7517E1824011500FEF5B9 /* ASFilterAirportsSeparatorCell.m in Sources */,
-				C6B7517F1824011600FEF5B9 /* ASFilterCellWithAirport.m in Sources */,
-				C6B751801824011600FEF5B9 /* ASFilterCellWithMobileSwitch.m in Sources */,
-				C6B751811824011600FEF5B9 /* ASFilterCellWithOneThumbSlider.m in Sources */,
-				C6B751821824011600FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */,
-				C6B751831824011600FEF5B9 /* ASFilterCellWithView.m in Sources */,
-				C6B751841824011600FEF5B9 /* ASFilterHeaderCell.m in Sources */,
-				C6B751851824011600FEF5B9 /* ASTFilters.m in Sources */,
-				C6B751861824011600FEF5B9 /* ASRaitingStars.m in Sources */,
-				C6B751871824011600FEF5B9 /* ASTTicketScreen.m in Sources */,
-				C6B751881824011600FEF5B9 /* ASTFlightCell.m in Sources */,
-				C6B751891824011600FEF5B9 /* ASTStopoverCell.m in Sources */,
-				C6B751991824011600FEF5B9 /* ASTCommonFunctions.m in Sources */,
-				C6B7519A1824011600FEF5B9 /* ASTSearchParams.m in Sources */,
-				C6B7514B1823F94B00FEF5B9 /* AviasalesSDKTemplateLibrary.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C6B751DB18240B5400FEF5B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C60EC85E17E848DB00C5D52E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */;
-			targetProxy = C60EC85D17E848DB00C5D52E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0719776D1CAA800100D89B2E /* AviasalesTemplateLocalizable.strings */ = {
@@ -1066,14 +654,6 @@
 				C6A6666A19ED4664000C6EAB /* de */,
 				C6A6666B19ED4665000C6EAB /* ru */,
 				C6A6666C19ED4688000C6EAB /* es */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C60EC86217E848DB00C5D52E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C60EC86317E848DB00C5D52E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1098,14 +678,6 @@
 				D1A98CC8193339500076B04C /* es */,
 			);
 			name = AviasalesStaticLibLocalizable.strings;
-			sourceTree = "<group>";
-		};
-		C6B751E518240B5400FEF5B9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6B751E618240B5400FEF5B9 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1236,131 +808,6 @@
 			};
 			name = Release;
 		};
-		C60EC86D17E848DB00C5D52E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AviasalesSDKTemplateTests/AviasalesSDKTemplateTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C60EC86E17E848DB00C5D52E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
-				INFOPLIST_FILE = "AviasalesSDKTemplateTests/AviasalesSDKTemplateTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-		C6B751601823F94C00FEF5B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DSTROOT = /tmp/AviasalesSDKTemplateLibrary.dst;
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplateLibrary/AviasalesSDKTemplateLibrary-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					./AviasalesLib,
-					"$(SRCROOT)/AviasalesLib",
-					"$(PROJECT_DIR)/AviasalesLib",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s arm64";
-			};
-			name = Debug;
-		};
-		C6B751611823F94C00FEF5B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DSTROOT = /tmp/AviasalesSDKTemplateLibrary.dst;
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplateLibrary/AviasalesSDKTemplateLibrary-Prefix.pch";
-				LIBRARY_SEARCH_PATHS = (
-					./AviasalesLib,
-					"$(SRCROOT)/AviasalesLib",
-					"$(PROJECT_DIR)/AviasalesLib",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s arm64";
-			};
-			name = Release;
-		};
-		C6B751EA18240B5400FEF5B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = NO;
-				COMPRESS_PNG_FILES = YES;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplateBundle/AviasalesSDKTemplateBundle-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AviasalesSDKTemplateBundle/AviasalesSDKTemplateBundle-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		C6B751EB18240B5400FEF5B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = NO;
-				COMPRESS_PNG_FILES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplateBundle/AviasalesSDKTemplateBundle-Prefix.pch";
-				INFOPLIST_FILE = "AviasalesSDKTemplateBundle/AviasalesSDKTemplateBundle-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1378,33 +825,6 @@
 			buildConfigurations = (
 				C60EC86A17E848DB00C5D52E /* Debug */,
 				C60EC86B17E848DB00C5D52E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C60EC86C17E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C60EC86D17E848DB00C5D52E /* Debug */,
-				C60EC86E17E848DB00C5D52E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C6B7515F1823F94C00FEF5B9 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateLibrary" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C6B751601823F94C00FEF5B9 /* Debug */,
-				C6B751611823F94C00FEF5B9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C6B751E918240B5400FEF5B9 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C6B751EA18240B5400FEF5B9 /* Debug */,
-				C6B751EB18240B5400FEF5B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
