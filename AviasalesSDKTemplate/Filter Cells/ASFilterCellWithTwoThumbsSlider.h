@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NMRangeSlider.h"
+#import <NMRangeSlider/NMRangeSlider.h>
 
 @interface ASFilterCellWithTwoThumbsSlider : UITableViewCell
 

@@ -7,8 +7,6 @@
 
 #import "AviasalesSDK.h"
 
-#import "UIImageView+WebCache.h"
-
 #import "ASTCommonFunctions.h"
 
 @implementation ASTStopoverCell

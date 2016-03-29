@@ -1,0 +1,15 @@
+PODS:
+  - NMRangeSlider (1.2.1)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+
+DEPENDENCIES:
+  - NMRangeSlider (~> 1.2)
+  - SDWebImage (~> 3.7)
+
+SPEC CHECKSUMS:
+  NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+
+COCOAPODS: 0.39.0
