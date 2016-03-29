@@ -7,7 +7,7 @@
 //
 
 #import "ASFilterCellWithView.h"
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
 @implementation ASFilterCellWithView
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
 typedef NS_ENUM(NSUInteger, ASTAirportPickerMode) {
     ASTAirportPickerDeparture,

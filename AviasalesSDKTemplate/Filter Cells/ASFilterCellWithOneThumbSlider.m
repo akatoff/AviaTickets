@@ -7,7 +7,7 @@
 //
 
 #import "ASFilterCellWithOneThumbSlider.h"
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
 @implementation ASFilterCellWithOneThumbSlider
 

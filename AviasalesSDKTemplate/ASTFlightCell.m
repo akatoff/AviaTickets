@@ -5,7 +5,7 @@
 
 #import "ASTFlightCell.h"
 
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
 #import <SDWebImage/UIImageView+WebCache.h>
 

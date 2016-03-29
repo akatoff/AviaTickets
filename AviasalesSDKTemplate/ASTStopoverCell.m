@@ -5,7 +5,7 @@
 
 #import "ASTStopoverCell.h"
 
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
 #import "ASTCommonFunctions.h"
 

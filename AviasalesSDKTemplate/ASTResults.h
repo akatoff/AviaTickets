@@ -2,8 +2,8 @@
 //  ASTResults.h
 //
 
-#import "AviasalesSDK.h"
-#import "AviasalesFilter.h"
+#import <AviasalesSDK/AviasalesSDK.h>
+#import <AviasalesSDK/AviasalesFilter.h>
 #import <UIKit/UIKit.h>
 
 @interface ASTResults : UIViewController <UIActionSheetDelegate, UITableViewDataSource, UITableViewDelegate, AviasalesFilterDelegate>
