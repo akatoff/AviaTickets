@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B5821A1CAA7A1000C3058B /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B582191CAA7A1000C3058B /* App.xcassets */; };
 		7A520655FABE1A4B9DE6777A /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B2F4F7C1B048D2A6F938F6 /* libPods-AviasalesSDKTemplate.a */; };
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
@@ -258,7 +259,6 @@
 		C6D652F7184DE9AC001C6FFF /* switch_airports.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D652F4184DE9AC001C6FFF /* switch_airports.png */; };
 		C6D652F8184DE9AC001C6FFF /* switch_airports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */; };
 		C6D652F9184DE9AC001C6FFF /* switch_airports@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */; };
-		C6E36C21183E3D330076CA3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6E36C20183E3D330076CA3F /* Default-568h@2x.png */; };
 		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
 		C6F63B4B1BB051430060183C /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F63B4A1BB051430060183C /* libAviasales.a */; };
 		C6F63B4C1BB051430060183C /* libAviasales.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F63B4A1BB051430060183C /* libAviasales.a */; };
@@ -325,6 +325,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07B582191CAA7A1000C3058B /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
 		4D7DA0CDF7389AE236EBAA1D /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		91B2F4F7C1B048D2A6F938F6 /* libPods-AviasalesSDKTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F6431207035D278CE06F9F /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -500,7 +501,6 @@
 		C6C45CD4183122BD00E7885B /* slider-default7-trackCrossedOver@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slider-default7-trackCrossedOver@2x.png"; path = "Resources/slider-default7-trackCrossedOver@2x.png"; sourceTree = "<group>"; };
 		C6D652F4184DE9AC001C6FFF /* switch_airports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch_airports.png; path = Resources/switch_airports.png; sourceTree = "<group>"; };
 		C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch_airports@2x.png"; path = "Resources/switch_airports@2x.png"; sourceTree = "<group>"; };
-		C6E36C20183E3D330076CA3F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		C6F63B4A1BB051430060183C /* libAviasales.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviasales.a; sourceTree = "<group>"; };
 		D1A98CC51933394D0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
 		D1A98CC61933394E0076B04C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/currencies.json; sourceTree = "<group>"; };
@@ -745,7 +745,6 @@
 				C6D652F4184DE9AC001C6FFF /* switch_airports.png */,
 				C6D652F5184DE9AC001C6FFF /* switch_airports@2x.png */,
 				C6056A9C1A0D0A22008724D9 /* switch_airports@3x.png */,
-				C6E36C20183E3D330076CA3F /* Default-568h@2x.png */,
 				C6C45CB8183122BD00E7885B /* all_airports_image.png */,
 				C6C45CB9183122BD00E7885B /* all_airports_image@2x.png */,
 				C6056A991A0D082F008724D9 /* all_airports_image@3x.png */,
@@ -789,6 +788,7 @@
 				C6C45CD4183122BD00E7885B /* slider-default7-trackCrossedOver@2x.png */,
 				C684E810185708FD007F703A /* currencies.json */,
 				E7952DF91A0238E0008C08CF /* AVSLaunchScreen.xib */,
+				07B582191CAA7A1000C3058B /* App.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1072,6 +1072,7 @@
 				C6C45D03183122BD00E7885B /* slider-default7-track.png in Resources */,
 				C62DCD0D186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */,
 				C6C45CDF183122BD00E7885B /* filter_arrow_up@2x.png in Resources */,
+				07B5821A1CAA7A1000C3058B /* App.xcassets in Resources */,
 				C6C45CD5183122BD00E7885B /* all_airports_image.png in Resources */,
 				C6C45CDD183122BD00E7885B /* filter_arrow_up.png in Resources */,
 				C6056A9D1A0D0A22008724D9 /* switch_airports@3x.png in Resources */,
@@ -1082,7 +1083,6 @@
 				C6BA19941827581C00BAD465 /* ASTResultsTicketCell.xib in Resources */,
 				C6C45D0B183122BD00E7885B /* slider-default7-trackCrossedOver.png in Resources */,
 				C6C45CF3183122BD00E7885B /* filter_stars@2x.png in Resources */,
-				C6E36C21183E3D330076CA3F /* Default-568h@2x.png in Resources */,
 				C6BA19951827581C00BAD465 /* ASFilterAirportsSeparatorCell.xib in Resources */,
 				C6BA19961827581C00BAD465 /* ASFilterCellWithAirport.xib in Resources */,
 				C66965EF186056B000446328 /* Aviasales_top_airports.json in Resources */,
@@ -1542,6 +1542,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94F6431207035D278CE06F9F /* Pods-AviasalesSDKTemplate.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -1567,6 +1569,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D7DA0CDF7389AE236EBAA1D /* Pods-AviasalesSDKTemplate.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Go Travel Un Limited";
 				ENABLE_BITCODE = NO;
