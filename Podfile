@@ -6,6 +6,7 @@
 target 'AviasalesSDKTemplate' do
 pod 'SDWebImage', '~> 3.7'
 pod 'NMRangeSlider', '~> 1.2'
+pod 'SDVersion', '~> 2.6'
 end
 
 target 'AviasalesSDKTemplateTests' do
