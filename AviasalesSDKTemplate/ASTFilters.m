@@ -4,6 +4,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import <NMRangeSlider/NMRangeSlider.h>
+
 #import "ASTFilters.h"
 #import "ASFilterCellWithView.h"
 #import "ASFilterCellWithOneThumbSlider.h"
@@ -12,6 +14,7 @@
 #import "ASFilterCellWithMobileSwitch.h"
 #import "ASFilterAirportsSeparatorCell.h"
 #import "ASFilterCellWithAirport.h"
+#import "ASRaitingStars.h"
 
 #import "AviasalesSDK.h"
 #import "AviasalesAirport.h"
