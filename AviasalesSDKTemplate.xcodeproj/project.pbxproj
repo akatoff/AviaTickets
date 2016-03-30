@@ -12,8 +12,9 @@
 		072CCA8D1CAABE73003A8834 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */; };
 		072CCA8E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */; };
 		072CCA8F1CAABE73003A8834 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */; };
-		073E93541CABD93200C880D7 /* AviasalesSDKTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */; };
+		073E936B1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */; };
 		258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */; };
+		8E065DCA30A8457D037D6463 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */; };
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
 		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
@@ -97,10 +98,13 @@
 		072CCA891CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
 		072CCA8A1CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
 		073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateTests.m; sourceTree = "<group>"; };
 		073E93551CABD93200C880D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AviasalesSearchParamsUrlCoderTests.m; sourceTree = "<group>"; };
 		10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75A80B32C36553C307776DFE /* Pods-AviasalesSDKTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormOptionsCell.h; sourceTree = "<group>"; };
 		C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchFormOptionsCell.m; sourceTree = "<group>"; };
 		C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormOptionsCell.xib; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E065DCA30A8457D037D6463 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +236,8 @@
 		073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */ = {
 			isa = PBXGroup;
 			children = (
-				073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */,
 				073E93551CABD93200C880D7 /* Info.plist */,
+				073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */,
 			);
 			path = AviasalesSDKTemplateTests;
 			sourceTree = "<group>";
@@ -242,6 +247,8 @@
 			children = (
 				10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
 				E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */,
+				53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */,
+				75A80B32C36553C307776DFE /* Pods-AviasalesSDKTemplateTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -275,6 +282,7 @@
 				C60EC83E17E848DA00C5D52E /* UIKit.framework */,
 				C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */,
 				8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */,
+				BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -438,9 +446,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */;
 			buildPhases = (
+				5759988038D90B54B397B981 /* Check Pods Manifest.lock */,
 				073E934D1CABD93200C880D7 /* Sources */,
 				073E934E1CABD93200C880D7 /* Frameworks */,
 				073E934F1CABD93200C880D7 /* Resources */,
+				730098FC8DBFF095CD965D1F /* Embed Pods Frameworks */,
+				24464BBBF4D37F74563E48B9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -573,6 +584,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		24464BBBF4D37F74563E48B9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5759988038D90B54B397B981 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		651C555C9ECCDC820617B896 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -586,6 +627,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		730098FC8DBFF095CD965D1F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B717F886B8C6D207031EFDCE /* Copy Pods Resources */ = {
@@ -610,7 +666,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				073E93541CABD93200C880D7 /* AviasalesSDKTemplateTests.m in Sources */,
+				073E936B1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +763,7 @@
 /* Begin XCBuildConfiguration section */
 		073E93581CABD93200C880D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -728,6 +785,7 @@
 		};
 		073E93591CABD93200C880D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A80B32C36553C307776DFE /* Pods-AviasalesSDKTemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -880,6 +938,7 @@
 				073E93591CABD93200C880D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C60EC83217E848DA00C5D52E /* Build configuration list for PBXProject "AviasalesSDKTemplate" */ = {
 			isa = XCConfigurationList;
