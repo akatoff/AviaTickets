@@ -11,3 +11,6 @@ pod 'SDVersion', '~> 2.6'
 pod 'AviasalesSDK', '~> 1.3.3-beta1'
 
 end
+
+target 'AviasalesSDKTemplateTests' do
+end
