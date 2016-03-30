@@ -12,6 +12,7 @@
 		072CCA8D1CAABE73003A8834 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */; };
 		072CCA8E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */; };
 		072CCA8F1CAABE73003A8834 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */; };
+		073E93541CABD93200C880D7 /* AviasalesSDKTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */; };
 		258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */; };
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
@@ -70,6 +71,16 @@
 		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		073E93561CABD93200C880D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C60EC82F17E848DA00C5D52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C60EC83617E848DA00C5D52E;
+			remoteInfo = AviasalesSDKTemplate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		072CCA7A1CAABE73003A8834 /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
 		072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVSLaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,6 +96,9 @@
 		072CCA881CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ru; path = ru.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
 		072CCA891CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
 		072CCA8A1CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
+		073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateTests.m; sourceTree = "<group>"; };
+		073E93551CABD93200C880D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormOptionsCell.h; sourceTree = "<group>"; };
@@ -180,6 +194,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		073E934E1CABD93200C880D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C60EC83417E848DA00C5D52E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +228,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */,
+				073E93551CABD93200C880D7 /* Info.plist */,
+			);
+			path = AviasalesSDKTemplateTests;
+			sourceTree = "<group>";
+		};
 		7BC5C931F97B144ACDC22F69 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */,
+				073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */,
 				C60EC83917E848DA00C5D52E /* Frameworks */,
 				C60EC83817E848DA00C5D52E /* Products */,
 				7BC5C931F97B144ACDC22F69 /* Pods */,
@@ -230,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */,
+				073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,6 +434,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		073E93501CABD93200C880D7 /* AviasalesSDKTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */;
+			buildPhases = (
+				073E934D1CABD93200C880D7 /* Sources */,
+				073E934E1CABD93200C880D7 /* Frameworks */,
+				073E934F1CABD93200C880D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				073E93571CABD93200C880D7 /* PBXTargetDependency */,
+			);
+			name = AviasalesSDKTemplateTests;
+			productName = AviasalesSDKTemplateTests;
+			productReference = 073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C60EC86917E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplate" */;
@@ -431,6 +481,12 @@
 				CLASSPREFIX = AST;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Go Travel Un LImited";
+				TargetAttributes = {
+					073E93501CABD93200C880D7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = C60EC83617E848DA00C5D52E;
+					};
+				};
 			};
 			buildConfigurationList = C60EC83217E848DA00C5D52E /* Build configuration list for PBXProject "AviasalesSDKTemplate" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -449,11 +505,19 @@
 			projectRoot = "";
 			targets = (
 				C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */,
+				073E93501CABD93200C880D7 /* AviasalesSDKTemplateTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		073E934F1CABD93200C880D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C60EC83517E848DA00C5D52E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +606,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		073E934D1CABD93200C880D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073E93541CABD93200C880D7 /* AviasalesSDKTemplateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C60EC83317E848DA00C5D52E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,6 +648,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		073E93571CABD93200C880D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */;
+			targetProxy = 073E93561CABD93200C880D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */ = {
@@ -625,6 +705,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		073E93581CABD93200C880D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = AviasalesSDKTemplateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = diniska.AviasalesSDKTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate";
+			};
+			name = Debug;
+		};
+		073E93591CABD93200C880D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = AviasalesSDKTemplateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = diniska.AviasalesSDKTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate";
+			};
+			name = Release;
+		};
 		C60EC86717E848DB00C5D52E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -751,6 +873,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073E93581CABD93200C880D7 /* Debug */,
+				073E93591CABD93200C880D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C60EC83217E848DA00C5D52E /* Build configuration list for PBXProject "AviasalesSDKTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
