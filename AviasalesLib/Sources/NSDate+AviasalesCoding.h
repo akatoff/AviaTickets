@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate(AviasalesCoding)
-- (NSString *)aviasales_fastDayMonthString; //TODO: add tests
-+ (NSDate *)aviasales_fastDateWithDayMonthString:(NSString *)string; //TODO: add tests
+- (NSString *)aviasales_fastDayMonthString;
++ (NSDate *)aviasales_dateWithDayMonthString:(NSString *)string;
 @end

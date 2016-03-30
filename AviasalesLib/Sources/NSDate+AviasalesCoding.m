@@ -23,12 +23,22 @@
     return timeInfoString;
 }
 
-+ (NSDate *)aviasales_fastDateWithDayMonthString:(NSString *)string {
++ (NSDate *)aviasales_dateWithDayMonthString:(NSString *)string {
     NSParameterAssert(string.length == 4);
-    struct tm timeInfo;
-    timeInfo.tm_mday = [[string substringToIndex:2] integerValue];
-    timeInfo.tm_mon = [[string substringFromIndex:2] integerValue];
-    const time_t rawTime = mktime(&timeInfo);
-    return [self dateWithTimeIntervalSince1970:rawTime];
+    NSCalendar *const calendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
+    calendar.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"GMT"];
+
+    NSDateComponents *const components = [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+
+    const NSInteger day = [[string substringToIndex:2] integerValue];
+    const NSInteger month = [[string substringFromIndex:2] integerValue];
+
+    if (components.month > month || (components.day > day && components.month == month)) {
+        components.year ++;
+    }
+
+    components.day = day;
+    components.month = month;
+    return [calendar dateFromComponents:components];
 }
 @end
