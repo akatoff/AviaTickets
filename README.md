@@ -1,6 +1,17 @@
 Aviasales/JetRadar iOS SDK
 =================
 
+## Installation
+The easiest way is to use [CocoaPods](http://cocoapods.org). It takes care of all required frameworks and third party dependencies:
+
+```ruby
+pod 'AviasalesSDK', '~> 1.3.3-beta1'
+```
+
+
+##Description
+
+
 [Aviasales](http://www.aviasales.ru)/[JetRadar](http://www.jetradar.com) iOS SDK is a framework integrating flight search engine into your app. When your user books a flight, you get paid. Framework is based on leading flight search engines Aviasales.ru and JetRadar.com.
 
 The framework consists of:
