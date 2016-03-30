@@ -4,8 +4,13 @@
 # use_frameworks!
 
 target 'AviasalesSDKTemplate' do
+
 pod 'SDWebImage', '~> 3.7'
 pod 'NMRangeSlider', '~> 1.2'
 pod 'SDVersion', '~> 2.6'
-pod 'AviasalesSDK', :path => '../Aviasales-iOS-SDK'
+pod 'AviasalesSDK', '~> 1.3.3-beta1'
+
+end
+
+target 'AviasalesSDKTemplateTests' do
 end

@@ -1,0 +1,11 @@
+language: objective-c
+
+rvm: 2.2.2
+before_install:
+    - gem install cocoapods -v '0.39.0'  
+    
+podfile: Podfile
+xcode_workspace: AviasalesSDKTemplate.xcworkspace
+xcode_scheme: AviasalesSDKTemplate
+xcode_sdk: 
+    - iphonesimulator

@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 	s.name         = "AviasalesSDK"
 	s.version      = "1.3.3-beta1"
-	s.summary      = "Include avias tickets search and buy process in your apps."
+	s.summary      = "Integrate flight search and booking framework in your apps."
 	s.description  = <<-DESC
 Aviasales SDK lets you create custom process of searching and buying tickets to flights.
                    DESC
