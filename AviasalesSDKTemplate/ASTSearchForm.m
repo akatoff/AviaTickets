@@ -57,17 +57,7 @@ typedef NS_ENUM(NSUInteger, ASTDatePickerState) {
     ASTDatePickerReturn
 };
 
-@interface ASTSearchForm () {
-    UITableView *_tableView;
-    UIDatePicker *_datePicker;
-    ASTDatePickerState _datePickerState;
-    NSDateFormatter *_dateFormatter;
-    
-    UITableViewCell *_visiblePickerCell;
-    
-    ASTSearchParams *_searchParams;
-}
-
+@interface ASTSearchForm ()
 @property (nonatomic, assign) BOOL launchedModally;
 
 - (void)updateNearestAirport;
@@ -82,7 +72,16 @@ BOOL isCompatible() {
     return YES;
 }
 
-@implementation ASTSearchForm
+@implementation ASTSearchForm {
+    UITableView *_tableView;
+    UIDatePicker *_datePicker;
+    ASTDatePickerState _datePickerState;
+    NSDateFormatter *_dateFormatter;
+
+    UITableViewCell *_visiblePickerCell;
+
+    ASTSearchParams *_searchParams;
+}
 
 + (void)launchFromViewController:(UIViewController *)viewController withOriginIATA:(NSString *)originIATA destinationIATA:(NSString *)destinationIATA departureDate:(NSString *)departureDate returnDate:(NSString *)returnDate {
     
@@ -608,23 +607,27 @@ BOOL isCompatible() {
     params.infantsNumber = [_searchParams.infantsNumber integerValue];
     params.travelClass = [_searchParams.travelClass integerValue];
     
+    [self showSearchResultsWithParams:params];
+}
+
+- (void)showSearchResultsWithParams:(AviasalesSearchParams *)params {
     NSError *error = [params validate];
-    
+
     if (error) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:AVIASALES_(@"AVIASALES_ALERT_ERROR_TITLE") message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
         return;
     }
-    
+
     NSString *xibName = @"ASTResults";
     if (AVIASALES_VC_GRANDPA_IS_TABBAR) {
         xibName = @"ASTResultsTabBar";
     }
-    
+
     __block ASTResults *resultsVC = [[ASTResults alloc] initWithNibName:xibName bundle:AVIASALES_BUNDLE];
-    
+
     [[AviasalesSDK sharedInstance] setDurationFormat:AVIASALES_(@"AVIASALES_DURATION_FORMAT")];
-    
+
     [[AviasalesSDK sharedInstance] searchTicketsWithParams:params completion:^(AviasalesSearchResponse *response, NSError *error) {
         if (error) {
             [self performSelector:@selector(cancelSearchWithError:) withObject:error afterDelay:1.0f];
@@ -632,14 +635,14 @@ BOOL isCompatible() {
             [resultsVC setResponse:response];
         }
     }];
-    
+
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:AVIASALES_(@"AVIASALES_BACK") style:UIBarButtonItemStylePlain target:nil action:nil];
-    
+
     self.navigationItem.backBarButtonItem = backButton;
-    
+
     self.navigationController.view.backgroundColor = [UIColor whiteColor];
     [self.navigationController pushViewController:resultsVC animated:YES];
-    
+
     [ASTSearchParams sharedInstance].origin = _origin;
     [ASTSearchParams sharedInstance].destination = _destination;
 }
@@ -716,4 +719,24 @@ BOOL isCompatible() {
     [_searchParams save];
 }
 
+- (void)startSearchWithParams:(AviasalesSearchParams *)params {
+    [self updateOrigin:params.originIATA];
+    [self updateDestination:params.destinationIATA];
+    [self updateDepartureDate:params.departureDate];
+    [self updateReturnDate:params.returnDate];
+
+    self.adultsNumber = (int)params.adultsNumber;
+    self.childrenNumber = (int)params.childrenNumber;
+    self.infantsNumber = (int)params.infantsNumber;
+    self.travelClass = (int)params.travelClass;
+    self.returnFlight = params.returnFlight;
+
+    _searchParams.adultsNumber = @(params.adultsNumber);
+    _searchParams.childrenNumber = @(params.childrenNumber);
+    _searchParams.infantsNumber = @(params.infantsNumber);
+    _searchParams.travelClass = @(params.travelClass);
+
+    [_tableView reloadData];
+    [self showSearchResultsWithParams:params];
+}
 @end
