@@ -490,7 +490,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AST;
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Go Travel Un LImited";
 				TargetAttributes = {
 					073E93501CABD93200C880D7 = {
@@ -823,6 +823,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -893,6 +894,7 @@
 					"$(SRCROOT)/AviasalesLib",
 					"$(PROJECT_DIR)/AviasalesLib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.promo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
@@ -920,6 +922,7 @@
 					"$(SRCROOT)/AviasalesLib",
 					"$(PROJECT_DIR)/AviasalesLib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.promo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
