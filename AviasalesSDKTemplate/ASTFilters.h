@@ -2,7 +2,7 @@
 //  ASTFilters.h
 //
 
-#import "AviasalesFilter.h"
+#import <AviasalesSDK/AviasalesFilter.h>
 
 typedef enum ASFilterCellType:NSUInteger {
     ASFilterNoTransferCell,

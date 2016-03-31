@@ -5,9 +5,9 @@
 
 #import "ASTResultsTicketCell.h"
 
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
-#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #import "ASTCommonFunctions.h"
 

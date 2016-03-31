@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AviasalesAirport.h"
+
+@class AviasalesAirport;
 
 @interface ASTSearchParams : NSObject <NSCoding>
 

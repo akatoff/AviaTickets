@@ -7,7 +7,7 @@
 //
 
 #import "ASTTicketScreen.h"
-#import "AviasalesSDK.h"
+#import <AviasalesSDK/AviasalesSDK.h>
 
 #import "ASTCommonFunctions.h"
 #import "ASTSearchParams.h"

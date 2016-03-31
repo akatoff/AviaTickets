@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AviasalesTicket.h"
+@class AviasalesTicket;
 
 @interface ASTTicketScreen : UIViewController <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 

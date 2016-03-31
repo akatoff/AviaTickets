@@ -15,7 +15,7 @@
 #import "ASTSearchParams.h"
 
 #import "ASTFilters.h"
-#import "AviasalesFilter.h"
+#import <AviasalesSDK/AviasalesFilter.h>
 
 #define AST_SEARCH_TIME 40.0f
 #define AST_PROGRESS_UPDATE_INTERVAL 0.1f

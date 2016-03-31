@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Go Travel Un Limited. All rights reserved.
 //
 
+#import <SDVersion/SDiOSVersion.h>
+
 #import "ASTSearchForm.h"
 
 #import "ASTSearchFormDateCell.h"
@@ -73,7 +75,7 @@ typedef NS_ENUM(NSUInteger, ASTDatePickerState) {
 @end
 
 BOOL isCompatible() {
-    if ([[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] == NSOrderedAscending) {
+    if (iOSVersionLessThan(@"7.0")) {
         NSLog(@"Aviasales SDK Search Form needs iOS7 and higher to work correctly.");
         return NO;
     }
@@ -84,7 +86,7 @@ BOOL isCompatible() {
 
 + (void)launchFromViewController:(UIViewController *)viewController withOriginIATA:(NSString *)originIATA destinationIATA:(NSString *)destinationIATA departureDate:(NSString *)departureDate returnDate:(NSString *)returnDate {
     
-    if (!isCompatible) {
+    if (!isCompatible()) {
         return;
     }
     

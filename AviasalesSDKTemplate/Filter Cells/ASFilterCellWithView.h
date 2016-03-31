@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASRaitingStars.h"
+
+@class ASRaitingStars;
 
 @interface ASFilterCellWithView : UITableViewCell
 
