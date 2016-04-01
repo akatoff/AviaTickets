@@ -17,18 +17,18 @@
 #import "ASTFilters.h"
 #import <AviasalesSDK/AviasalesFilter.h>
 
+#import <Appodeal/Appodeal.h>
+
 #define AST_SEARCH_TIME 40.0f
 #define AST_PROGRESS_UPDATE_INTERVAL 0.1f
 
 #define AST_RS_HEADER_HEIGHT 4.0f
 
-@interface ASTResults () {
-    NSTimer *_progressTimer;
-    NSArray *_currencies;
-    ASTFilters *_filtersVC;
-    AviasalesFilter *_filter;
-    NSArray *_tickets;
-}
+@interface ASTResults () <AppodealNativeAdServiceDelegate>
+ 
+@property (strong, nonatomic) AppodealNativeAdService* adService;
+@property (strong, nonatomic) AppodealNativeMediaView *waitingScreenAd;
+
 
 - (void)updateCurrencyButton;
 - (NSArray *)filteredTickets;
@@ -36,7 +36,13 @@
 
 @end
 
-@implementation ASTResults
+@implementation ASTResults{
+    NSTimer *_progressTimer;
+    NSArray *_currencies;
+    ASTFilters *_filtersVC;
+    AviasalesFilter *_filter;
+    NSArray *_tickets;
+}
 
 /**
  Nib name for ticket cell in results. Depends on oneway or return ticket.
@@ -79,7 +85,11 @@ static NSIndexPath *selectedIndexPath;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    _adService = [[AppodealNativeAdService alloc] init];
+    _adService.delegate = self;
+    [_adService loadAd];
+
     [_progressLabel setText:AVIASALES_(@"AVIASALES_SEARCHING_PROGRESS")];
     [_filters setTitle:AVIASALES_(@"AVIASALES_FILTERS")];
     [_emptyLabel setText:AVIASALES_(@"AVIASALES_FILTERS_EMPTY")];
@@ -132,6 +142,9 @@ static NSIndexPath *selectedIndexPath;
     
     [UIView animateWithDuration:0.5f animations:^{
         [_waitingView setAlpha:0];
+    } completion:^(BOOL finished) {
+        self.adService.delegate = nil;
+        [self.waitingScreenAd removeFromSuperview];
     }];
     
     _filter = [[AviasalesFilter alloc] init];
@@ -287,6 +300,16 @@ static NSIndexPath *selectedIndexPath;
 - (void)needReloadFilter {
     [_filtersVC buildTable];
     [_filtersVC.tableView reloadData];
+}
+
+#pragma mark - <AppodealNativeAdServiceDelegate>
+
+- (void)nativeAdServiceDidLoad:(AppodealNativeAd *)nativeAd {
+    AppodealNativeMediaView* mediaView = [[AppodealNativeMediaView alloc] initWithNativeAd:nativeAd andRootViewController: self];
+    [mediaView setFrame:self.waitingView.bounds];
+    [self.view addSubview: mediaView];
+    [mediaView prepareToPlay];
+    [self.waitingView addSubview:mediaView];
 }
 
 @end
