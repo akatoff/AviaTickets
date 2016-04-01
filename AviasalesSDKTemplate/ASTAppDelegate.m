@@ -9,15 +9,24 @@
 #import <SDVersion/SDVersion.h>
 #import <AviasalesSDK/AviasalesSearchParamsUrlCoder.h>
 #import <AviasalesSDK/AviasalesSearchParams.h>
+#import <Appodeal/Appodeal.h>
 
 #import "ASTAppDelegate.h"
 #import "ASTSearchForm.h"
+
+
+// Set your appodeal api key here
+static NSString *const kAppodealApiKey = @"aa80d2e07a9324db0eee12024924236ee60c3d31434fd818";
 
 @implementation ASTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //application.to
+    // Appodeal SDK Initialization
+
+    [Appodeal initializeWithApiKey:kAppodealApiKey
+                             types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo];
+
     return YES;
 }
 							
