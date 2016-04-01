@@ -19,11 +19,11 @@
  * Преобразует строку в параметры поиска.
  * @return Параметры поиска, построенные по строке или nil, если не удалось раскодировать параметры.
  */
-- (nullable AviasalesSearchParams *)searchParamsWithString:(NSString *)encodedSearchParams;
+- (nullable AviasalesSearchParams *)searchParamsWithString:(nonnull NSString *)encodedSearchParams;
 
 /**
  * Преобразует параметры поиска в строку.
  * @return Закодированные параметры поиска или nil при возникновении ошибки.
  */
-- (nullable NSString *)encodeSearchParams:(AviasalesSearchParams *)searchParams;
+- (nullable NSString *)encodeSearchParams:(nonnull AviasalesSearchParams *)searchParams;
 @end

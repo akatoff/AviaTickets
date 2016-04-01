@@ -16,7 +16,7 @@
 
 
 // Set your appodeal api key here
-static NSString *const kAppodealApiKey = @"aa80d2e07a9324db0eee12024924236ee60c3d31434fd818";
+static NSString *const kAppodealApiKey = @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f";
 
 @implementation ASTAppDelegate
 
@@ -25,8 +25,8 @@ static NSString *const kAppodealApiKey = @"aa80d2e07a9324db0eee12024924236ee60c3
     // Appodeal SDK Initialization
 
     [Appodeal initializeWithApiKey:kAppodealApiKey
-                             types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo];
-
+                             types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo | AppodealAdTypeNativeAd | AppodealAdTypeSkippableVideo];
+    [Appodeal showAd:AppodealShowStyleVideoOrInterstitial rootViewController:self.window.rootViewController];
     return YES;
 }
 							
