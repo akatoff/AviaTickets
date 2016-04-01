@@ -19,15 +19,18 @@
 
 #import <Appodeal/Appodeal.h>
 
+#import "ASTSearchResultsList.h"
+
 #define AST_SEARCH_TIME 40.0f
 #define AST_PROGRESS_UPDATE_INTERVAL 0.1f
 
 #define AST_RS_HEADER_HEIGHT 4.0f
 
-@interface ASTResults () <AppodealNativeAdServiceDelegate>
+@interface ASTResults () <AppodealNativeAdServiceDelegate, ASTSearchResultsListDelegate>
  
 @property (strong, nonatomic) AppodealNativeAdService* adService;
 @property (strong, nonatomic) AppodealNativeMediaView *waitingScreenAd;
+@property (strong, nonatomic) ASTSearchResultsList *resultsList;
 
 
 - (void)updateCurrencyButton;
@@ -43,12 +46,6 @@
     AviasalesFilter *_filter;
     NSArray *_tickets;
 }
-
-/**
- Nib name for ticket cell in results. Depends on oneway or return ticket.
- */
-static NSString *NibName = nil;
-static NSIndexPath *selectedIndexPath;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -76,8 +73,10 @@ static NSIndexPath *selectedIndexPath;
             }
             _currencies = currencies;
         }
-        
-        NibName = [ASTSearchParams sharedInstance].returnDate ? @"ASTResultsTicketCell" : @"ASTResultsTicketCellOneWay";
+
+        NSString *const nibName = [ASTSearchParams sharedInstance].returnDate ? @"ASTResultsTicketCell" : @"ASTResultsTicketCellOneWay";
+        _resultsList = [[ASTSearchResultsList alloc] initWithCellNibName:nibName];
+        _resultsList.delegate = self;
     }
     return self;
 }
@@ -89,6 +88,9 @@ static NSIndexPath *selectedIndexPath;
     _adService = [[AppodealNativeAdService alloc] init];
     _adService.delegate = self;
     [_adService loadAd];
+
+    self.tableView.dataSource = self.resultsList;
+    self.tableView.delegate = self.resultsList;
 
     [_progressLabel setText:AVIASALES_(@"AVIASALES_SEARCHING_PROGRESS")];
     [_filters setTitle:AVIASALES_(@"AVIASALES_FILTERS")];
@@ -120,8 +122,6 @@ static NSIndexPath *selectedIndexPath;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    [_tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
     
     if (_filter.needFiltering && [self.filteredTickets count] == 0) {
         [_emptyView setHidden:NO];
@@ -161,54 +161,14 @@ static NSIndexPath *selectedIndexPath;
     [_filtersVC setTickets:[self filteredTickets]];
 }
 
-#pragma mark - Table view data source
+#pragma mark - <ASTSearchResultsListDelegate>
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return [[self tickets] count];
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return 1;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"ASTResultsTicketCell";
-    ASTResultsTicketCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[AVIASALES_BUNDLE loadNibNamed:NibName owner:self options:nil] objectAtIndex:0];
-    }
-    
-    [cell applyTicket:[[self tickets] objectAtIndex:indexPath.section]];
-    
-    return cell;
-}
-
-#pragma mark - Table view delegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 77;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 1;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    selectedIndexPath = indexPath;
+- (void)didSelectTicketAtIndex:(NSInteger)index {
     
     ASTTicketScreen *ticketVC = [[ASTTicketScreen alloc] initWithNibName:@"ASTTicketScreen" bundle:AVIASALES_BUNDLE];
     
-    ticketVC.ticket = [[self tickets] objectAtIndex:indexPath.section];
+    ticketVC.ticket = [[self tickets] objectAtIndex:index];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:AVIASALES_(@"AVIASALES_BACK") style:UIBarButtonItemStylePlain target:nil action:nil];
     

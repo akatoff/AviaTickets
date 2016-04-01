@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 07082A1F1CAEC2B400CE4305 /* ASTSearchResultsList.m */; };
 		072CCA8B1CAABE73003A8834 /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7A1CAABE73003A8834 /* App.xcassets */; };
 		072CCA8C1CAABE73003A8834 /* AVSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */; };
 		072CCA8D1CAABE73003A8834 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */; };
@@ -83,6 +84,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07082A1E1CAEC2B400CE4305 /* ASTSearchResultsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchResultsList.h; sourceTree = "<group>"; };
+		07082A1F1CAEC2B400CE4305 /* ASTSearchResultsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchResultsList.m; sourceTree = "<group>"; };
 		072CCA7A1CAABE73003A8834 /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
 		072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVSLaunchScreen.xib; sourceTree = "<group>"; };
 		072CCA7D1CAABE73003A8834 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
@@ -385,6 +388,8 @@
 				C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */,
 				C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */,
 				C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */,
+				07082A1E1CAEC2B400CE4305 /* ASTSearchResultsList.h */,
+				07082A1F1CAEC2B400CE4305 /* ASTSearchResultsList.m */,
 			);
 			name = "Results Screen";
 			sourceTree = "<group>";
@@ -690,6 +695,7 @@
 				C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */,
 				C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */,
 				C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */,
+				07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */,
 				C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */,
 				C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */,
 				C60EC84717E848DA00C5D52E /* main.m in Sources */,

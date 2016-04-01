@@ -6,7 +6,7 @@
 #import <AviasalesSDK/AviasalesFilter.h>
 #import <UIKit/UIKit.h>
 
-@interface ASTResults : UIViewController <UIActionSheetDelegate, UITableViewDataSource, UITableViewDelegate, AviasalesFilterDelegate>
+@interface ASTResults : UIViewController <UIActionSheetDelegate, AviasalesFilterDelegate>
 
 - (IBAction)showCurrenciesList:(id)sender;
 - (IBAction)showFilters:(id)sender;
