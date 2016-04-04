@@ -6,7 +6,7 @@
 //  Copyright © 2016 Go Travel Un LImited. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ASTTableManager.h"
 
 @class AviasalesTicket;
 
@@ -15,7 +15,7 @@
 - (void)didSelectTicketAtIndex:(NSInteger)index;
 @end
 
-@interface ASTSearchResultsList : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface ASTSearchResultsList : NSObject <ASTTableManager>
 @property (weak, nonatomic) id<ASTSearchResultsListDelegate> delegate;
 @property (strong, nonatomic, readonly) NSString *ticketCellNibName;
 - (instancetype)initWithCellNibName:(NSString *)cellNibName;

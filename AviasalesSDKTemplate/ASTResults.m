@@ -17,21 +17,26 @@
 #import "ASTFilters.h"
 #import <AviasalesSDK/AviasalesFilter.h>
 
-#import <Appodeal/Appodeal.h>
-
 #import "ASTSearchResultsList.h"
+#import "ASTAdvertisementManager.h"
+#import "ASTVideoAdPlayer.h"
+#import "ASTTableManagerUnion.h"
+#import "ASTAdvertisementTableManager.h"
+#import <Appodeal/AppodealNativeAdView.h>
 
 #define AST_SEARCH_TIME 40.0f
 #define AST_PROGRESS_UPDATE_INTERVAL 0.1f
 
 #define AST_RS_HEADER_HEIGHT 4.0f
 
-@interface ASTResults () <AppodealNativeAdServiceDelegate, ASTSearchResultsListDelegate>
- 
-@property (strong, nonatomic) AppodealNativeAdService* adService;
-@property (strong, nonatomic) AppodealNativeMediaView *waitingScreenAd;
-@property (strong, nonatomic) ASTSearchResultsList *resultsList;
+static const NSInteger kAppodealAdIndex = 3;
 
+@interface ASTResults () <ASTSearchResultsListDelegate>
+
+@property (strong, nonatomic) ASTSearchResultsList *resultsList;
+@property (strong, nonatomic) ASTAdvertisementTableManager *ads;
+@property (strong, nonatomic) ASTTableManagerUnion *tableManager;
+@property (strong, nonatomic) id<ASTVideoAdPlayer> waitingAdPlayer;
 
 - (void)updateCurrencyButton;
 - (NSArray *)filteredTickets;
@@ -77,6 +82,10 @@
         NSString *const nibName = [ASTSearchParams sharedInstance].returnDate ? @"ASTResultsTicketCell" : @"ASTResultsTicketCellOneWay";
         _resultsList = [[ASTSearchResultsList alloc] initWithCellNibName:nibName];
         _resultsList.delegate = self;
+
+        _ads = [[ASTAdvertisementTableManager alloc] init];
+
+        _tableManager = [[ASTTableManagerUnion alloc] initWithFirstManager:_resultsList secondManager:_ads secondManagerPositions:[NSIndexSet indexSet]];
     }
     return self;
 }
@@ -85,12 +94,10 @@
 {
     [super viewDidLoad];
 
-    _adService = [[AppodealNativeAdService alloc] init];
-    _adService.delegate = self;
-    [_adService loadAd];
+    self.waitingAdPlayer = [[ASTAdvertisementManager sharedInstance] presentVideoAdInViewIfNeeded:self.waitingView rootViewController:self];
 
-    self.tableView.dataSource = self.resultsList;
-    self.tableView.delegate = self.resultsList;
+    self.tableView.dataSource = self.tableManager;
+    self.tableView.delegate = self.tableManager;
 
     [_progressLabel setText:AVIASALES_(@"AVIASALES_SEARCHING_PROGRESS")];
     [_filters setTitle:AVIASALES_(@"AVIASALES_FILTERS")];
@@ -105,6 +112,11 @@
     self.navigationItem.title = [NSString stringWithFormat:@"%@ — %@", [ASTSearchParams sharedInstance].originIATA, [ASTSearchParams sharedInstance].destinationIATA];
     
     [self updateCurrencyButton];
+
+    __weak typeof(self) bself = self;
+    [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdView:^(AppodealNativeAdView *adView) {
+        [bself didLoadAd:adView];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -143,8 +155,8 @@
     [UIView animateWithDuration:0.5f animations:^{
         [_waitingView setAlpha:0];
     } completion:^(BOOL finished) {
-        self.adService.delegate = nil;
-        [self.waitingScreenAd removeFromSuperview];
+        [self.waitingAdPlayer stop];
+        [_waitingView removeFromSuperview];
     }];
     
     _filter = [[AviasalesFilter alloc] init];
@@ -262,14 +274,16 @@
     [_filtersVC.tableView reloadData];
 }
 
-#pragma mark - <AppodealNativeAdServiceDelegate>
 
-- (void)nativeAdServiceDidLoad:(AppodealNativeAd *)nativeAd {
-    AppodealNativeMediaView* mediaView = [[AppodealNativeMediaView alloc] initWithNativeAd:nativeAd andRootViewController: self];
-    [mediaView setFrame:self.waitingView.bounds];
-    [self.view addSubview: mediaView];
-    [mediaView prepareToPlay];
-    [self.waitingView addSubview:mediaView];
+#pragma mark - Advertisement
+- (void)didLoadAd:(UIView *)adView {
+    [self.tableView beginUpdates];
+
+    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:0]
+                  withRowAnimation:UITableViewRowAnimationFade];
+    self.ads.ads = @[adView];
+    self.tableManager.secondManagerPositions = [NSIndexSet indexSetWithIndex:kAppodealAdIndex];
+
+    [self.tableView endUpdates];
 }
-
 @end

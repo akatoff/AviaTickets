@@ -14,6 +14,13 @@
 		072CCA8E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */; };
 		072CCA8F1CAABE73003A8834 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */; };
 		073E936B1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */; };
+		0756C0381CB249D60039443B /* ASTAdvertisementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0371CB249D60039443B /* ASTAdvertisementManager.m */; };
+		0756C03B1CB252860039443B /* ASTVideoAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C03A1CB252860039443B /* ASTVideoAdLoader.m */; };
+		0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C03F1CB262240039443B /* ASTVideoAdPlayerProxy.m */; };
+		0756C0431CB26C080039443B /* ASTNativeAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0421CB26C080039443B /* ASTNativeAdLoader.m */; };
+		0756C0471CB26F780039443B /* ASTNewsFeedAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */; };
+		0756C04E1CB291F70039443B /* ASTTableManagerUnion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */; };
+		0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */; };
 		07F5C20B1CAD1D0B006BDF0A /* ASTMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */; };
 		258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */; };
 		8E065DCA30A8457D037D6463 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */; };
@@ -103,6 +110,22 @@
 		073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073E93551CABD93200C880D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AviasalesSearchParamsUrlCoderTests.m; sourceTree = "<group>"; };
+		0756C0361CB249D60039443B /* ASTAdvertisementManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAdvertisementManager.h; sourceTree = "<group>"; };
+		0756C0371CB249D60039443B /* ASTAdvertisementManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAdvertisementManager.m; sourceTree = "<group>"; };
+		0756C0391CB252860039443B /* ASTVideoAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTVideoAdLoader.h; sourceTree = "<group>"; };
+		0756C03A1CB252860039443B /* ASTVideoAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTVideoAdLoader.m; sourceTree = "<group>"; };
+		0756C03D1CB261E00039443B /* ASTVideoAdPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTVideoAdPlayer.h; sourceTree = "<group>"; };
+		0756C03E1CB262240039443B /* ASTVideoAdPlayerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTVideoAdPlayerProxy.h; sourceTree = "<group>"; };
+		0756C03F1CB262240039443B /* ASTVideoAdPlayerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTVideoAdPlayerProxy.m; sourceTree = "<group>"; };
+		0756C0411CB26C080039443B /* ASTNativeAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNativeAdLoader.h; sourceTree = "<group>"; };
+		0756C0421CB26C080039443B /* ASTNativeAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNativeAdLoader.m; sourceTree = "<group>"; };
+		0756C0451CB26F780039443B /* ASTNewsFeedAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNewsFeedAdLoader.h; sourceTree = "<group>"; };
+		0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNewsFeedAdLoader.m; sourceTree = "<group>"; };
+		0756C0491CB291770039443B /* ASTTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTableManager.h; sourceTree = "<group>"; };
+		0756C04C1CB291F70039443B /* ASTTableManagerUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTableManagerUnion.h; sourceTree = "<group>"; };
+		0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTableManagerUnion.m; sourceTree = "<group>"; };
+		0756C04F1CB29B830039443B /* ASTAdvertisementTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAdvertisementTableManager.h; sourceTree = "<group>"; };
+		0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAdvertisementTableManager.m; sourceTree = "<group>"; };
 		07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ASTMain.storyboard; sourceTree = "<group>"; };
 		10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +268,44 @@
 			path = AviasalesSDKTemplateTests;
 			sourceTree = "<group>";
 		};
+		0756C0351CB249BB0039443B /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				0756C0441CB26F500039443B /* AdLoading */,
+				0756C0361CB249D60039443B /* ASTAdvertisementManager.h */,
+				0756C0371CB249D60039443B /* ASTAdvertisementManager.m */,
+				0756C03D1CB261E00039443B /* ASTVideoAdPlayer.h */,
+				0756C03E1CB262240039443B /* ASTVideoAdPlayerProxy.h */,
+				0756C03F1CB262240039443B /* ASTVideoAdPlayerProxy.m */,
+				0756C04F1CB29B830039443B /* ASTAdvertisementTableManager.h */,
+				0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */,
+			);
+			name = Advertisement;
+			sourceTree = "<group>";
+		};
+		0756C0441CB26F500039443B /* AdLoading */ = {
+			isa = PBXGroup;
+			children = (
+				0756C0411CB26C080039443B /* ASTNativeAdLoader.h */,
+				0756C0421CB26C080039443B /* ASTNativeAdLoader.m */,
+				0756C0391CB252860039443B /* ASTVideoAdLoader.h */,
+				0756C03A1CB252860039443B /* ASTVideoAdLoader.m */,
+				0756C0451CB26F780039443B /* ASTNewsFeedAdLoader.h */,
+				0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */,
+			);
+			name = AdLoading;
+			sourceTree = "<group>";
+		};
+		0756C0481CB291550039443B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0756C0491CB291770039443B /* ASTTableManager.h */,
+				0756C04C1CB291F70039443B /* ASTTableManagerUnion.h */,
+				0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		7BC5C931F97B144ACDC22F69 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +354,8 @@
 		C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0756C0481CB291550039443B /* Utils */,
+				0756C0351CB249BB0039443B /* Advertisement */,
 				072CCA791CAABE73003A8834 /* Resources */,
 				C67B44FE18916C72006CBA73 /* Browser */,
 				C6B750171823F30E00FEF5B9 /* Airport Picker */,
@@ -680,8 +743,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67B450218916CA2006CBA73 /* ASTWebBrowserViewController.m in Sources */,
+				0756C04E1CB291F70039443B /* ASTTableManagerUnion.m in Sources */,
+				0756C03B1CB252860039443B /* ASTVideoAdLoader.m in Sources */,
 				C63BA9F71817F1FD007A4F00 /* ASTStopoverCell.m in Sources */,
+				0756C0381CB249D60039443B /* ASTAdvertisementManager.m in Sources */,
 				C6B74F99181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m in Sources */,
+				0756C0471CB26F780039443B /* ASTNewsFeedAdLoader.m in Sources */,
 				C6A0977B18113DD500862C71 /* ASTResultsTicketCell.m in Sources */,
 				C6B255D917F0228C00630769 /* ASTAirportPicker.m in Sources */,
 				C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */,
@@ -690,11 +757,14 @@
 				C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */,
 				C6B74F9F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */,
 				C63FD39B17F49292007FFBD9 /* ASTSearchFormDateCell.m in Sources */,
+				0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */,
+				0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */,
 				C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */,
 				C6B74FC41820ED3600FEF5B9 /* ASRaitingStars.m in Sources */,
 				C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */,
 				C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */,
 				C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */,
+				0756C0431CB26C080039443B /* ASTNativeAdLoader.m in Sources */,
 				07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */,
 				C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */,
 				C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */,
@@ -900,7 +970,7 @@
 					"$(SRCROOT)/AviasalesLib",
 					"$(PROJECT_DIR)/AviasalesLib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.promo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
@@ -928,7 +998,7 @@
 					"$(SRCROOT)/AviasalesLib",
 					"$(PROJECT_DIR)/AviasalesLib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.promo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;

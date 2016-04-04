@@ -9,24 +9,30 @@
 #import <SDVersion/SDVersion.h>
 #import <AviasalesSDK/AviasalesSearchParamsUrlCoder.h>
 #import <AviasalesSDK/AviasalesSearchParams.h>
-#import <Appodeal/Appodeal.h>
 
 #import "ASTAppDelegate.h"
 #import "ASTSearchForm.h"
+#import "ASTAdvertisementManager.h"
 
 
 // Set your appodeal api key here
-static NSString *const kAppodealApiKey = @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f";
+static NSString *const kAppodealApiKey = @"a7beac116e58f674f94c10cf795bff4bc2e7a5e2dd2795a7";
+static NSString *const kAviasalesAPIToken = @"c6b51c32eb444d40e6a8132a430d4e98";
+static NSString *const kAviasalesMarker = @"99305";
 
 @implementation ASTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Appodeal SDK Initialization
+    // Aviasale SDK
+    [AviasalesSDK sharedInstance].APIToken = kAviasalesAPIToken;
+    [AviasalesSDK sharedInstance].marker = kAviasalesMarker;
 
-    [Appodeal initializeWithApiKey:kAppodealApiKey
-                             types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo | AppodealAdTypeNativeAd | AppodealAdTypeSkippableVideo];
-    [Appodeal showAd:AppodealShowStyleVideoOrInterstitial rootViewController:self.window.rootViewController];
+    // Advertisement initializing
+    ASTAdvertisementManager *const adManager = [ASTAdvertisementManager sharedInstance];
+    [adManager initializeAppodealWithAPIKey:kAppodealApiKey];
+
+    [adManager presentFullScreenAdFromViewControllerIfNeeded:self.window.rootViewController];
     return YES;
 }
 							
