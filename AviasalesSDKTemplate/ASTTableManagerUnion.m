@@ -63,6 +63,23 @@
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    const NSInteger index = indexPath.section;
+    CGFloat result = tableView.rowHeight;
+    if ([self isSecondTableIndex:index]) {
+        if ([self.second respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]) {
+            NSIndexPath *const pathInSeconTable = [self indexPathFromSecondTableWithIndex:index];
+            result = [self.second tableView:tableView heightForRowAtIndexPath:pathInSeconTable];
+        }
+    } else {
+        if ([self.first respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]) {
+            NSIndexPath *const pathInFirstTable = [self indexPathFromFirstTableWithIndex:index];
+            result = [self.first tableView:tableView heightForRowAtIndexPath:pathInFirstTable];
+        }
+    }
+    return result;
+}
+
 #pragma mark - Private
 - (BOOL)isSecondTableIndex:(NSInteger)index {
     return [self.secondManagerPositions containsIndex:index];

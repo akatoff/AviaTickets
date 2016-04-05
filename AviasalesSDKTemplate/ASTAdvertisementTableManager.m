@@ -10,8 +10,12 @@
 
 static NSString *const kCellReusableId = @"ASTAdvertisementTableManagerAdCell";
 static NSInteger const kAdViewTag = 567134;
+static CGFloat kAppodealAdHeight = 100;
 
 @implementation ASTAdvertisementTableManager
++ (CGFloat)appodealAdHeight {
+    return kAppodealAdHeight;
+}
 
 #pragma mark - <UITableViewDataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -37,5 +41,10 @@ static NSInteger const kAdViewTag = 567134;
     adView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [res.contentView addSubview:adView];
     return res;
+}
+
+#pragma mark - <UITableViewDelegate>
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kAppodealAdHeight;
 }
 @end

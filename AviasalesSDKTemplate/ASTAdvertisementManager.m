@@ -84,7 +84,8 @@
 }
 
 - (void)viewController:(UIViewController *)viewController
-      loadNativeAdView:(void (^)(AppodealNativeAdView *))callback {
+  loadNativeAdWithSize:(CGSize)size
+              callback:(void (^)(AppodealNativeAdView *))callback {
     if (callback == nil) {
         return;
     }
@@ -99,7 +100,7 @@
     NSMutableSet *const loaders = _adLoaders;
     [loaders addObject:loader];
 
-    [loader loadAd:^(ASTNewsFeedAdLoader *loader, AppodealNativeAdView *adView) {
+    [loader loadAdWithSize:size callback:^(ASTNewsFeedAdLoader *loader, AppodealNativeAdView *adView) {
         [loaders removeObject:loader];
         callback(adView);
     }];

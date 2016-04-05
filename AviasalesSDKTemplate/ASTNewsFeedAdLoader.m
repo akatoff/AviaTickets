@@ -22,15 +22,7 @@
     return self;
 }
 
-- (void)loadAd:(void (^)(ASTNewsFeedAdLoader *, AppodealNativeAdView *))callback {
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIView *res = [[UIView alloc] init];
-        res.backgroundColor = [UIColor greenColor];
-        callback(self, res);
-    });
-    return;
-    //TODO: remove previous lines
+- (void)loadAdWithSize:(CGSize)size callback:(void(^)(ASTNewsFeedAdLoader *, AppodealNativeAdView *))callback {
 
     __weak typeof(self) bself = self;
     [self.loader loadAd:^(ASTNativeAdLoader *loader, AppodealNativeAd *ad) {
@@ -42,6 +34,8 @@
         AppodealNativeAdView *adView;
         if (sSelf.rootViewController != nil) {
             AppodealNativeAdViewAttributes *const attributes = [[AppodealNativeAdViewAttributes alloc] init];
+            attributes.width = size.width;
+            attributes.heigth = size.height;
             adView = [AppodealNativeAdView nativeAdViewWithType:AppodealNativeAdTypeNewsFeed
                                                     andNativeAd:ad
                                                   andAttributes:attributes

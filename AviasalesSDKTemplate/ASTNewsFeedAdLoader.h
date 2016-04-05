@@ -12,5 +12,5 @@
 
 @interface ASTNewsFeedAdLoader : NSObject
 @property (weak, nonatomic) UIViewController *rootViewController;
-- (void)loadAd:(void(^)(ASTNewsFeedAdLoader *, AppodealNativeAdView *))callback;
+- (void)loadAdWithSize:(CGSize)size callback:(void(^)(ASTNewsFeedAdLoader *, AppodealNativeAdView *))callback;
 @end

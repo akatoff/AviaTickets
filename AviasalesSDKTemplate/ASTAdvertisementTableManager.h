@@ -10,4 +10,5 @@
 
 @interface ASTAdvertisementTableManager : NSObject <ASTTableManager>
 @property (strong, nonatomic) NSArray<UIView *> *ads;
++ (CGFloat)appodealAdHeight;
 @end

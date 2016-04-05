@@ -112,9 +112,12 @@ static const NSInteger kAppodealAdIndex = 3;
     self.navigationItem.title = [NSString stringWithFormat:@"%@ — %@", [ASTSearchParams sharedInstance].originIATA, [ASTSearchParams sharedInstance].destinationIATA];
     
     [self updateCurrencyButton];
+}
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     __weak typeof(self) bself = self;
-    [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdView:^(AppodealNativeAdView *adView) {
+    [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdWithSize:(CGSize){self.view.bounds.size.width, [ASTAdvertisementTableManager appodealAdHeight]} callback:^(AppodealNativeAdView *adView) {
         [bself didLoadAd:adView];
     }];
 }

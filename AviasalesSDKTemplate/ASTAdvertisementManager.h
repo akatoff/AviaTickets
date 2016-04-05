@@ -24,5 +24,6 @@
 - (id<ASTVideoAdPlayer>)presentVideoAdInViewIfNeeded:(UIView *)view
                                rootViewController:(UIViewController *)viewController;
 - (void)viewController:(UIViewController *)viewController
-      loadNativeAdView:(void (^)(AppodealNativeAdView *))callback;
+  loadNativeAdWithSize:(CGSize)size
+              callback:(void (^)(AppodealNativeAdView *))callback;
 @end
