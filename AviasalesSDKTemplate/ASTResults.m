@@ -37,7 +37,7 @@ static const NSInteger kAppodealAdIndex = 3;
 @property (strong, nonatomic) ASTAdvertisementTableManager *ads;
 @property (strong, nonatomic) ASTTableManagerUnion *tableManager;
 @property (strong, nonatomic) id<ASTVideoAdPlayer> waitingAdPlayer;
-@property (assign, nonnull) BOOL appodealAdLoaded;
+@property (assign, nonatomic) BOOL appodealAdLoaded;
 
 - (void)updateCurrencyButton;
 - (NSArray *)filteredTickets;
