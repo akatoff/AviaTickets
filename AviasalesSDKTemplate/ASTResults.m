@@ -37,6 +37,7 @@ static const NSInteger kAppodealAdIndex = 3;
 @property (strong, nonatomic) ASTAdvertisementTableManager *ads;
 @property (strong, nonatomic) ASTTableManagerUnion *tableManager;
 @property (strong, nonatomic) id<ASTVideoAdPlayer> waitingAdPlayer;
+@property (assign, nonnull) BOOL appodealAdLoaded;
 
 - (void)updateCurrencyButton;
 - (NSArray *)filteredTickets;
@@ -116,10 +117,14 @@ static const NSInteger kAppodealAdIndex = 3;
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    __weak typeof(self) bself = self;
-    [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdWithSize:(CGSize){self.view.bounds.size.width, [ASTAdvertisementTableManager appodealAdHeight]} callback:^(AppodealNativeAdView *adView) {
-        [bself didLoadAd:adView];
-    }];
+    
+    if (!self.appodealAdLoaded) {
+        self.appodealAdLoaded = YES;
+        __weak typeof(self) bself = self;
+        [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdWithSize:(CGSize){self.view.bounds.size.width, [ASTAdvertisementTableManager appodealAdHeight]} callback:^(AppodealNativeAdView *adView) {
+            [bself didLoadAd:adView];
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning
