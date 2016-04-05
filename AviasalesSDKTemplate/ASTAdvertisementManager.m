@@ -42,6 +42,7 @@
 }
 
 - (void)initializeAppodealWithAPIKey:(NSString *)appodealAPIKey {
+//    [Appodeal setTestingEnabled:YES]; //Uncomment this line to enable appodeal testing
     [Appodeal initializeWithApiKey:appodealAPIKey
                              types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo | AppodealAdTypeNativeAd | AppodealAdTypeSkippableVideo];
 }
