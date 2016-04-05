@@ -970,7 +970,7 @@
 					"$(SRCROOT)/AviasalesLib",
 					"$(PROJECT_DIR)/AviasalesLib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.test;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.promo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
@@ -998,7 +998,7 @@
 					"$(SRCROOT)/AviasalesLib",
 					"$(PROJECT_DIR)/AviasalesLib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.test;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.promo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;

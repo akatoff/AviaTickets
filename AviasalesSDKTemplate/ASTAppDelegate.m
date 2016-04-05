@@ -16,7 +16,7 @@
 
 
 // Set your appodeal api key here
-static NSString *const kAppodealApiKey = @"a7beac116e58f674f94c10cf795bff4bc2e7a5e2dd2795a7";
+static NSString *const kAppodealApiKey = @"aa80d2e07a9324db0eee12024924236ee60c3d31434fd818";
 static NSString *const kAviasalesAPIToken = @"c6b51c32eb444d40e6a8132a430d4e98";
 static NSString *const kAviasalesMarker = @"99305";
 
