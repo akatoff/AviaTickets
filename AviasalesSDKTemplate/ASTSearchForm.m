@@ -624,7 +624,9 @@ BOOL isCompatible() {
         xibName = @"ASTResultsTabBar";
     }
 
-    __block ASTResults *resultsVC = [[ASTResults alloc] initWithNibName:xibName bundle:AVIASALES_BUNDLE];
+    __block ASTResults *resultsVC = [[ASTResults alloc] initWithNibName:xibName
+                                                                 bundle:AVIASALES_BUNDLE
+                                                           searchParams:params];
 
     [[AviasalesSDK sharedInstance] setDurationFormat:AVIASALES_(@"AVIASALES_DURATION_FORMAT")];
 

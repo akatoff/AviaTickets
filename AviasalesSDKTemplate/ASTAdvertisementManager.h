@@ -10,6 +10,7 @@
 
 @protocol ASTVideoAdPlayer;
 @class AppodealNativeAdView;
+@class AviasalesSearchParams;
 
 @interface ASTAdvertisementManager : NSObject
 + (instancetype)sharedInstance;
@@ -21,9 +22,14 @@
 - (void)initializeAppodealWithAPIKey:(NSString *)appodealAPIKey;
 
 - (void)presentFullScreenAdFromViewControllerIfNeeded:(UIViewController *)viewController;
+
 - (id<ASTVideoAdPlayer>)presentVideoAdInViewIfNeeded:(UIView *)view
                                rootViewController:(UIViewController *)viewController;
+
 - (void)viewController:(UIViewController *)viewController
   loadNativeAdWithSize:(CGSize)size
-              callback:(void (^)(AppodealNativeAdView *))callback;
+              ifNeededWithCallback:(void (^)(AppodealNativeAdView *))callback;
+
+- (void)loadAviasalesAdWithSearchParams:(AviasalesSearchParams *)searchParams
+                               ifNeededWithCallback:(void(^)(UIView *))callback;
 @end

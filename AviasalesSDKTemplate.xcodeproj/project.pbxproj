@@ -21,9 +21,10 @@
 		0756C0471CB26F780039443B /* ASTNewsFeedAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */; };
 		0756C04E1CB291F70039443B /* ASTTableManagerUnion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */; };
 		0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */; };
+		077C43791CB7DCFD007A3290 /* ASTAviasalesAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 077C43781CB7DCFD007A3290 /* ASTAviasalesAdLoader.m */; };
 		07F5C20B1CAD1D0B006BDF0A /* ASTMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */; };
-		258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */; };
-		8E065DCA30A8457D037D6463 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */; };
+		8C5076CD4BC01DA26A4EDA3B /* Pods_AviasalesSDKTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */; };
+		928A76E39DB845FFA9BF2247 /* Pods_AviasalesSDKTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */; };
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
 		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
@@ -126,12 +127,14 @@
 		0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTableManagerUnion.m; sourceTree = "<group>"; };
 		0756C04F1CB29B830039443B /* ASTAdvertisementTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAdvertisementTableManager.h; sourceTree = "<group>"; };
 		0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAdvertisementTableManager.m; sourceTree = "<group>"; };
+		077C43771CB7DCFD007A3290 /* ASTAviasalesAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAviasalesAdLoader.h; sourceTree = "<group>"; };
+		077C43781CB7DCFD007A3290 /* ASTAviasalesAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAviasalesAdLoader.m; sourceTree = "<group>"; };
 		07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ASTMain.storyboard; sourceTree = "<group>"; };
-		10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		75A80B32C36553C307776DFE /* Pods-AviasalesSDKTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C032BE26C94F858560AB273 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		28E4DE0B12286732C167B03A /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormOptionsCell.h; sourceTree = "<group>"; };
 		C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchFormOptionsCell.m; sourceTree = "<group>"; };
 		C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormOptionsCell.xib; sourceTree = "<group>"; };
@@ -220,7 +223,7 @@
 		C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASRaitingStars.xib; sourceTree = "<group>"; };
 		C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C6B752251824123800FEF5B9 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Defines.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		F795FF0C0DFD438D1C5837DC /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E065DCA30A8457D037D6463 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */,
+				8C5076CD4BC01DA26A4EDA3B /* Pods_AviasalesSDKTemplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +243,7 @@
 				C60EC83D17E848DA00C5D52E /* CoreGraphics.framework in Frameworks */,
 				C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */,
 				C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */,
-				258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */,
+				928A76E39DB845FFA9BF2247 /* Pods_AviasalesSDKTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +295,8 @@
 				0756C03A1CB252860039443B /* ASTVideoAdLoader.m */,
 				0756C0451CB26F780039443B /* ASTNewsFeedAdLoader.h */,
 				0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */,
+				077C43771CB7DCFD007A3290 /* ASTAviasalesAdLoader.h */,
+				077C43781CB7DCFD007A3290 /* ASTAviasalesAdLoader.m */,
 			);
 			name = AdLoading;
 			sourceTree = "<group>";
@@ -306,17 +311,6 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
-		7BC5C931F97B144ACDC22F69 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
-				E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */,
-				53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */,
-				75A80B32C36553C307776DFE /* Pods-AviasalesSDKTemplateTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		C60EC82E17E848DA00C5D52E = {
 			isa = PBXGroup;
 			children = (
@@ -324,7 +318,7 @@
 				073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */,
 				C60EC83917E848DA00C5D52E /* Frameworks */,
 				C60EC83817E848DA00C5D52E /* Products */,
-				7BC5C931F97B144ACDC22F69 /* Pods */,
+				E9639D387FCAE0AD5C8F2E7C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,8 +339,8 @@
 				C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */,
 				C60EC83E17E848DA00C5D52E /* UIKit.framework */,
 				C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */,
-				8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */,
-				BDE0DFBF695D7DE389690597 /* libPods-AviasalesSDKTemplateTests.a */,
+				AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */,
+				A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -507,6 +501,17 @@
 			name = "Filters Screen";
 			sourceTree = "<group>";
 		};
+		E9639D387FCAE0AD5C8F2E7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F795FF0C0DFD438D1C5837DC /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
+				C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */,
+				28E4DE0B12286732C167B03A /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */,
+				0C032BE26C94F858560AB273 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,12 +519,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */;
 			buildPhases = (
-				5759988038D90B54B397B981 /* Check Pods Manifest.lock */,
+				41C28FC82222B18D766A6463 /* Check Pods Manifest.lock */,
 				073E934D1CABD93200C880D7 /* Sources */,
 				073E934E1CABD93200C880D7 /* Frameworks */,
 				073E934F1CABD93200C880D7 /* Resources */,
-				730098FC8DBFF095CD965D1F /* Embed Pods Frameworks */,
-				24464BBBF4D37F74563E48B9 /* Copy Pods Resources */,
+				CB2BA65D02F33E1E7F407B92 /* Embed Pods Frameworks */,
+				99EDF53C9A4817507EC518C2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -535,12 +540,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C60EC86917E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplate" */;
 			buildPhases = (
-				14E0D12DE322F09EBE0AE808 /* Check Pods Manifest.lock */,
+				CF941CE7AF3A17A79ABA252A /* Check Pods Manifest.lock */,
 				C60EC83317E848DA00C5D52E /* Sources */,
 				C60EC83417E848DA00C5D52E /* Frameworks */,
 				C60EC83517E848DA00C5D52E /* Resources */,
-				651C555C9ECCDC820617B896 /* Embed Pods Frameworks */,
-				B717F886B8C6D207031EFDCE /* Copy Pods Resources */,
+				E4ABF22AB848A6C1FCF88809 /* Embed Pods Frameworks */,
+				6FE12E2A3031362B62AD9DCE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -637,7 +642,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14E0D12DE322F09EBE0AE808 /* Check Pods Manifest.lock */ = {
+		41C28FC82222B18D766A6463 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -652,7 +657,22 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		24464BBBF4D37F74563E48B9 /* Copy Pods Resources */ = {
+		6FE12E2A3031362B62AD9DCE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99EDF53C9A4817507EC518C2 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -667,37 +687,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5759988038D90B54B397B981 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		651C555C9ECCDC820617B896 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		730098FC8DBFF095CD965D1F /* Embed Pods Frameworks */ = {
+		CB2BA65D02F33E1E7F407B92 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -712,19 +702,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B717F886B8C6D207031EFDCE /* Copy Pods Resources */ = {
+		CF941CE7AF3A17A79ABA252A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4ABF22AB848A6C1FCF88809 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -760,6 +765,7 @@
 				0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */,
 				0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */,
 				C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */,
+				077C43791CB7DCFD007A3290 /* ASTAviasalesAdLoader.m in Sources */,
 				C6B74FC41820ED3600FEF5B9 /* ASRaitingStars.m in Sources */,
 				C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */,
 				C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */,
@@ -839,7 +845,7 @@
 /* Begin XCBuildConfiguration section */
 		073E93581CABD93200C880D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53F22CE63C662D726C7084CC /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */;
+			baseConfigurationReference = 28E4DE0B12286732C167B03A /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -861,7 +867,7 @@
 		};
 		073E93591CABD93200C880D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75A80B32C36553C307776DFE /* Pods-AviasalesSDKTemplateTests.release.xcconfig */;
+			baseConfigurationReference = 0C032BE26C94F858560AB273 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -914,7 +920,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -946,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -954,7 +960,7 @@
 		};
 		C60EC86A17E848DB00C5D52E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */;
+			baseConfigurationReference = F795FF0C0DFD438D1C5837DC /* Pods-AviasalesSDKTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -963,7 +969,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
 				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
@@ -981,7 +987,7 @@
 		};
 		C60EC86B17E848DB00C5D52E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */;
+			baseConfigurationReference = C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -991,7 +997,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
 				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",

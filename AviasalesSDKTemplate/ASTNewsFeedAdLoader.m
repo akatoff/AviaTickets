@@ -22,10 +22,10 @@
     return self;
 }
 
-- (void)loadAdWithSize:(CGSize)size callback:(void(^)(ASTNewsFeedAdLoader *, AppodealNativeAdView *))callback {
+- (void)loadAdWithSize:(CGSize)size callback:(void(^)(AppodealNativeAdView *))callback {
 
     __weak typeof(self) bself = self;
-    [self.loader loadAd:^(ASTNativeAdLoader *loader, AppodealNativeAd *ad) {
+    [self.loader loadAd:^(AppodealNativeAd *ad) {
         typeof(self) sSelf = bself;
         if (sSelf == nil) {
             return;
@@ -44,7 +44,7 @@
             adView = nil;
         }
 
-        callback(sSelf, adView);
+        callback(adView);
     }];
 }
 @end

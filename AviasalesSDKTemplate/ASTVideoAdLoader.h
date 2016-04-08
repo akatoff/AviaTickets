@@ -12,5 +12,5 @@
 
 @interface ASTVideoAdLoader : NSObject
 @property (weak, nonatomic) UIViewController *rootViewController;
-- (void)loadVideoAd:(void(^)(ASTVideoAdLoader *, AppodealNativeMediaView *))callback;
+- (void)loadVideoAd:(void(^)(AppodealNativeMediaView *))callback;
 @end

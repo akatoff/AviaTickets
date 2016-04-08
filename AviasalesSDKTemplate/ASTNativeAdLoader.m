@@ -12,7 +12,7 @@
 
 @interface ASTNativeAdLoader () <AppodealNativeAdServiceDelegate>
 @property (strong, nonatomic) AppodealNativeAdService *appodeal;
-@property (copy, nonatomic) void (^callback)(ASTNativeAdLoader *, AppodealNativeAd *);
+@property (copy, nonatomic) void (^callback)(AppodealNativeAd *);
 @end
 
 @implementation ASTNativeAdLoader
@@ -24,7 +24,7 @@
     return self;
 }
 
-- (void)loadAd:(void(^)(ASTNativeAdLoader *, AppodealNativeAd *))callback {
+- (void)loadAd:(void(^)(AppodealNativeAd *))callback {
     if (callback == nil) {
         return;
     }
@@ -40,11 +40,19 @@
 
 #pragma mark - <AppodealNativeAdServiceDelegate>
 - (void)nativeAdServiceDidLoad:(AppodealNativeAd *)nativeAd {
-    self.callback(self, nativeAd);
+    self.callback(nativeAd);
+    [self clean];
 }
 
 - (void)nativeAdServiceDidFailedToLoad {
-    self.callback(self, nil);
+    self.callback(nil);
+    [self clean];
+}
+
+#pragma mark - Private
+- (void)clean {
+    self.callback = nil;
+    self.appodeal = nil;
 }
 @end
 

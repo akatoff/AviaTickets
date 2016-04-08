@@ -8,6 +8,10 @@
 
 @interface ASTResults : UIViewController <UIActionSheetDelegate, AviasalesFilterDelegate>
 
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+                   searchParams:(AviasalesSearchParams *)searchParams;
+
 - (IBAction)showCurrenciesList:(id)sender;
 - (IBAction)showFilters:(id)sender;
 

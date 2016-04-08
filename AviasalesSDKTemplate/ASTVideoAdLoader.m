@@ -23,14 +23,14 @@
     return self;
 }
 
-- (void)loadVideoAd:(void(^)(ASTVideoAdLoader* ,AppodealNativeMediaView *))callback {
+- (void)loadVideoAd:(void(^)(AppodealNativeMediaView *))callback {
     if (callback == nil) {
         return;
     }
 
     __weak typeof(self) bself = self;
 
-    [self.nativeAdLoader loadAd:^(ASTNativeAdLoader *loader, AppodealNativeAd *ad) {
+    [self.nativeAdLoader loadAd:^(AppodealNativeAd *ad) {
         typeof(self) sSelf = bself;
         if (sSelf == nil) {
             return;
@@ -45,7 +45,7 @@
             result = nil;
         }
 
-        callback(sSelf, result);
+        callback(result);
     }];
 }
 @end

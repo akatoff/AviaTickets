@@ -30,6 +30,7 @@
 #define AST_RS_HEADER_HEIGHT 4.0f
 
 static const NSInteger kAppodealAdIndex = 3;
+static const NSInteger kAviasalesAdIndex = 0;
 
 @interface ASTResults () <ASTSearchResultsListDelegate>
 
@@ -38,6 +39,7 @@ static const NSInteger kAppodealAdIndex = 3;
 @property (strong, nonatomic) ASTTableManagerUnion *tableManager;
 @property (strong, nonatomic) id<ASTVideoAdPlayer> waitingAdPlayer;
 @property (assign, nonatomic) BOOL appodealAdLoaded;
+@property (strong, nonatomic) AviasalesSearchParams *searchParams;
 
 - (void)updateCurrencyButton;
 - (NSArray *)filteredTickets;
@@ -53,10 +55,17 @@ static const NSInteger kAppodealAdIndex = 3;
     NSArray *_tickets;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    return [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil searchParams:nil];
+}
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+                   searchParams:(AviasalesSearchParams *)searchParams {
+
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        _searchParams = searchParams;
         NSString *pathToCurrenciesFile = [AVIASALES_BUNDLE pathForResource:@"currencies" ofType:@"json"];
         if (pathToCurrenciesFile) {
             NSData *currenciesData = [NSData dataWithContentsOfFile:pathToCurrenciesFile options:kNilOptions error:nil];
@@ -121,8 +130,13 @@ static const NSInteger kAppodealAdIndex = 3;
     if (!self.appodealAdLoaded) {
         self.appodealAdLoaded = YES;
         __weak typeof(self) bself = self;
-        [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdWithSize:(CGSize){self.view.bounds.size.width, [ASTAdvertisementTableManager appodealAdHeight]} callback:^(AppodealNativeAdView *adView) {
+        
+        [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdWithSize:(CGSize){self.view.bounds.size.width, [ASTAdvertisementTableManager appodealAdHeight]} ifNeededWithCallback:^(AppodealNativeAdView *adView) {
             [bself didLoadAd:adView];
+        }];
+
+        [[ASTAdvertisementManager sharedInstance] loadAviasalesAdWithSearchParams:self.searchParams ifNeededWithCallback:^(UIView *adView) {
+            [bself didLoadAviasalesAd:adView];
         }];
     }
 }
@@ -285,13 +299,48 @@ static const NSInteger kAppodealAdIndex = 3;
 
 #pragma mark - Advertisement
 - (void)didLoadAd:(UIView *)adView {
-    [self.tableView beginUpdates];
+    if (adView == nil) {
+        return;
+    }
 
-    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:0]
-                  withRowAnimation:UITableViewRowAnimationFade];
-    self.ads.ads = @[adView];
-    self.tableManager.secondManagerPositions = [NSIndexSet indexSetWithIndex:kAppodealAdIndex];
+    NSArray<UIView *> *ads = self.ads.ads ?: @[];
+    ads = [ads arrayByAddingObject:adView];
 
-    [self.tableView endUpdates];
+    NSMutableIndexSet *const indexSet = [[NSMutableIndexSet alloc] initWithIndex:kAppodealAdIndex];
+    if (ads.count > 1) {
+        [indexSet addIndex:kAviasalesAdIndex];
+    }
+
+    [self updateAdsTableWithAds:ads atIndexes:[indexSet copy]];
+}
+
+- (void)didLoadAviasalesAd:(UIView *)adView {
+    if (adView == nil) {
+        return;
+    }
+    NSMutableArray<UIView *> *const ads = [self.ads.ads ?: @[] mutableCopy];
+    [ads insertObject:adView atIndex:0];
+
+    NSMutableIndexSet *const indexSet = [[NSMutableIndexSet alloc] initWithIndex:kAviasalesAdIndex];
+    if (ads.count > 1) {
+        [indexSet addIndex:kAppodealAdIndex];
+    }
+
+    [self updateAdsTableWithAds:ads atIndexes:[indexSet copy]];
+}
+
+- (void)updateAdsTableWithAds:(NSArray<UIView *> *)ads atIndexes:(NSIndexSet *)indexes {
+//    NSIndexSet *const oldIndexes = self.tableManager.secondManagerPositions;
+
+//    if (oldIndexes.count > 0) {//TODO: check if table has necessary indexes
+//        [self.tableView deleteSections:oldIndexes withRowAnimation:UITableViewRowAnimationFade];
+//    }
+
+//    [self.tableView insertSections:indexes withRowAnimation:UITableViewRowAnimationFade];
+
+    self.ads.ads = ads;
+    self.tableManager.secondManagerPositions = indexes;
+
+    [self.tableView reloadData];
 }
 @end

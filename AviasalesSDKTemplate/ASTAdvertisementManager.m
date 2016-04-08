@@ -13,7 +13,7 @@
 #import "ASTVideoAdPlayer.h"
 #import "ASTVideoAdPlayerProxy.h"
 #import "ASTNewsFeedAdLoader.h"
-
+#import "ASTAviasalesAdLoader.h"
 
 @interface AppodealNativeMediaView() <ASTVideoAdPlayer>
 @end
@@ -42,7 +42,7 @@
 }
 
 - (void)initializeAppodealWithAPIKey:(NSString *)appodealAPIKey {
-//    [Appodeal setTestingEnabled:YES]; //Uncomment this line to enable appodeal testing
+    [Appodeal setTestingEnabled:YES]; //Uncomment this line to enable appodeal testing
     [Appodeal initializeWithApiKey:appodealAPIKey
                              types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo | AppodealAdTypeNativeAd | AppodealAdTypeSkippableVideo];
 }
@@ -68,8 +68,8 @@
     NSMutableSet *const loaders = _adLoaders;
     [loaders addObject:videoLoader];
 
-    [videoLoader loadVideoAd:^(ASTVideoAdLoader *loader, AppodealNativeMediaView *adView) {
-        [loaders removeObject:loader];
+    [videoLoader loadVideoAd:^(AppodealNativeMediaView *adView) {
+        [loaders removeObject:videoLoader];
 
         if (adView != nil) {
             adView.frame = view.bounds;
@@ -85,7 +85,7 @@
 
 - (void)viewController:(UIViewController *)viewController
   loadNativeAdWithSize:(CGSize)size
-              callback:(void (^)(AppodealNativeAdView *))callback {
+  ifNeededWithCallback:(void (^)(AppodealNativeAdView *))callback {
     if (callback == nil) {
         return;
     }
@@ -100,10 +100,26 @@
     NSMutableSet *const loaders = _adLoaders;
     [loaders addObject:loader];
 
-    [loader loadAdWithSize:size callback:^(ASTNewsFeedAdLoader *loader, AppodealNativeAdView *adView) {
+    [loader loadAdWithSize:size callback:^(AppodealNativeAdView *adView) {
         [loaders removeObject:loader];
         callback(adView);
     }];
+}
 
+- (void)loadAviasalesAdWithSearchParams:(AviasalesSearchParams *)searchParams
+                   ifNeededWithCallback:(void(^)(UIView *))callback {
+    if (callback == nil) {
+        return;
+    }
+    ASTAviasalesAdLoader *const loader = [[ASTAviasalesAdLoader alloc] initWithSearchParams:searchParams];
+
+    NSMutableSet *const loaders = _adLoaders;
+    [loaders addObject:loader];
+
+    [loader loadAdWithCallback:^(UIView *adView) {
+        [loaders removeObject:loader];
+        callback(adView);
+    }];
+    
 }
 @end

@@ -11,5 +11,5 @@
 @class AppodealNativeAd;
 
 @interface ASTNativeAdLoader : NSObject
-- (void)loadAd:(void(^)(ASTNativeAdLoader *, AppodealNativeAd *))callback;
+- (void)loadAd:(void(^)(AppodealNativeAd *))callback;
 @end
