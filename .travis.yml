@@ -4,9 +4,15 @@ osx_image: xcode7.2
 rvm: 2.2.2
 before_install:
     - gem install cocoapods -v '0.39.0'  
+    - brew update
+#   - brew install xctool #fixme update after new release of xctool
+    - git clone https://github.com/facebook/xctool.git
     
 podfile: Podfile
 xcode_workspace: AviasalesSDKTemplate.xcworkspace
 xcode_scheme: AviasalesSDKTemplate
 xcode_sdk: 
     - iphonesimulator
+    
+script:
+    - xctool/xctool.sh  -workspace AviasalesSDKTemplate.xcworkspace -scheme AviasalesSDKTemplate -sdk iphonesimulator build test
