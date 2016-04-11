@@ -15,4 +15,4 @@ xcode_sdk:
     - iphonesimulator
     
 script:
-    - xctool -workspace AviasalesSDKTemplate.xcworkspace -scheme AviasalesSDKTemplate -sdk iphonesimulator build test
+    - xctool/xctool.sh  -workspace AviasalesSDKTemplate.xcworkspace -scheme AviasalesSDKTemplate -sdk iphonesimulator build test
