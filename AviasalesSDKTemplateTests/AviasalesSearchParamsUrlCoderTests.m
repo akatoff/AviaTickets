@@ -2,7 +2,6 @@
 //  AviasalesSearchParamsUrlCoderTests.m
 //  AviasalesSDKTemplate
 //
-//  Created by Denis Chaschin on 30.03.16.
 //  Copyright © 2016 Go Travel Un LImited. All rights reserved.
 //
 
