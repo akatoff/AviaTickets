@@ -11,7 +11,7 @@ Aviasales SDK lets you create custom process of searching and buying tickets to 
 	s.license      = { :type => "MIT", :file => "LICENSE" }
 	s.author       = { "Aviasales iOS Team" => "support@aviasales.ru" }
 	s.platform     = :ios, "7.0"
-	s.source       = { :git => "https://github.com/KosyanMedia/Aviasales-iOS-SDK.git", :branch =>"1.3.3-beta2", :tag => "1.3.3-beta2" }
+	s.source       = { :git => "https://github.com/KosyanMedia/Aviasales-iOS-SDK.git", :tag => "1.3.3-beta2" }
 	s.source_files = "AviasalesLib/**/*.{h,m}"
 	s.vendored_libraries = "AviasalesLib/libAviasales.a"
 
