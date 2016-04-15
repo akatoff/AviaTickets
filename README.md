@@ -8,7 +8,7 @@ Aviasales/JetRadar iOS SDK
 The easiest way is to use [CocoaPods](http://cocoapods.org). It takes care of all required frameworks and third party dependencies:
 
 ```ruby
-pod 'AviasalesSDK', '~> 1.3.3-beta1'
+pod 'AviasalesSDK', '~> 1.3.3-beta2'
 ```
 
 
