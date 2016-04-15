@@ -2,8 +2,7 @@
 //  AviasalesSearchParamsCoder.m
 //  Pods
 //
-//  Created by Denis Chaschin on 30.03.16. //FIXME: headers
-//
+//  Copyright (c) 2013 Go Travel Un Limited. All rights reserved.
 //
 
 #import "AviasalesSearchParamsUrlCoder.h"
@@ -27,7 +26,7 @@
 
     NSArray<NSTextCheckingResult *> *const matches = [lastTravelSegmentRegexp matchesInString:lastTravelSegmentPart options:0 range:NSMakeRange(0, lastTravelSegmentPart.length)];
 
-    __block BOOL isMatching = matches.count > 0;
+    BOOL isMatching = matches.count > 0;
 
     if (isMatching) {
         NSTextCheckingResult *const match = matches[0];

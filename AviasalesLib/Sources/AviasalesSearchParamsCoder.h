@@ -2,8 +2,7 @@
 //  AviasalesSearchParamsCoder.h
 //  Pods
 //
-//  Created by Denis Chaschin on 30.03.16.
-//
+//  Copyright (c) 2013 Go Travel Un Limited. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
