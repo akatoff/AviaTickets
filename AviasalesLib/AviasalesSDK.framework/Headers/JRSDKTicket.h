@@ -8,9 +8,9 @@
 @property (nonatomic, retain) NSNumber *simpleRating;
 @property (nonatomic, retain) NSNumber *totalDuration;
 @property (nonatomic, retain) NSNumber *delayDuration;
-@property (nonatomic, retain) NSNumber *overnightStopover;
+@property (nonatomic, assign) BOOL overnightStopover;
 
 @property (nonatomic, retain) NSString *sign;
-@property (nonatomic, retain) NSNumber *fromTrustedGate;
+@property (nonatomic, assign) BOOL fromTrustedGate;
 
 @end
