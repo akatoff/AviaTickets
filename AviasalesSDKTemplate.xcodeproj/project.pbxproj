@@ -25,6 +25,18 @@
 		07F5C20B1CAD1D0B006BDF0A /* ASTMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */; };
 		8C5076CD4BC01DA26A4EDA3B /* Pods_AviasalesSDKTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */; };
 		928A76E39DB845FFA9BF2247 /* Pods_AviasalesSDKTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */; };
+		C513B8081CC0E1E0002B5190 /* ASTFlightSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B7FC1CC0E1E0002B5190 /* ASTFlightSegment.m */; };
+		C513B8091CC0E1E0002B5190 /* ASTPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B7FD1CC0E1E0002B5190 /* ASTPrice.m */; };
+		C513B80A1CC0E1E0002B5190 /* ASTSearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B7FE1CC0E1E0002B5190 /* ASTSearchInfo.m */; };
+		C513B80B1CC0E1E0002B5190 /* ASTTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B7FF1CC0E1E0002B5190 /* ASTTicket.m */; };
+		C513B80C1CC0E1E0002B5190 /* ASTTravelSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8001CC0E1E0002B5190 /* ASTTravelSegment.m */; };
+		C513B80D1CC0E1E0002B5190 /* ASTFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8011CC0E1E0002B5190 /* ASTFlight.m */; };
+		C513B80E1CC0E1E0002B5190 /* ASTGate.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8021CC0E1E0002B5190 /* ASTGate.m */; };
+		C513B80F1CC0E1E0002B5190 /* ASTPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8031CC0E1E0002B5190 /* ASTPaymentMethod.m */; };
+		C513B8101CC0E1E0002B5190 /* ASTCurrencyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8041CC0E1E0002B5190 /* ASTCurrencyRate.m */; };
+		C513B8111CC0E1E0002B5190 /* ASTAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8051CC0E1E0002B5190 /* ASTAirport.m */; };
+		C513B8121CC0E1E0002B5190 /* ASTAlliance.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8061CC0E1E0002B5190 /* ASTAlliance.m */; };
+		C513B8131CC0E1E0002B5190 /* ASTAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = C513B8071CC0E1E0002B5190 /* ASTAirline.m */; };
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
 		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
@@ -135,6 +147,30 @@
 		A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		C513B7F01CC0E1E0002B5190 /* ASTAlliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAlliance.h; sourceTree = "<group>"; };
+		C513B7F11CC0E1E0002B5190 /* ASTCurrencyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCurrencyRate.h; sourceTree = "<group>"; };
+		C513B7F21CC0E1E0002B5190 /* ASTFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTFlight.h; sourceTree = "<group>"; };
+		C513B7F31CC0E1E0002B5190 /* ASTFlightSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTFlightSegment.h; sourceTree = "<group>"; };
+		C513B7F41CC0E1E0002B5190 /* ASTGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTGate.h; sourceTree = "<group>"; };
+		C513B7F51CC0E1E0002B5190 /* ASTPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTPaymentMethod.h; sourceTree = "<group>"; };
+		C513B7F61CC0E1E0002B5190 /* ASTPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTPrice.h; sourceTree = "<group>"; };
+		C513B7F71CC0E1E0002B5190 /* ASTTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTicket.h; sourceTree = "<group>"; };
+		C513B7F81CC0E1E0002B5190 /* ASTTravelSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTravelSegment.h; sourceTree = "<group>"; };
+		C513B7F91CC0E1E0002B5190 /* ASTSearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchInfo.h; sourceTree = "<group>"; };
+		C513B7FA1CC0E1E0002B5190 /* ASTAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirline.h; sourceTree = "<group>"; };
+		C513B7FB1CC0E1E0002B5190 /* ASTAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirport.h; sourceTree = "<group>"; };
+		C513B7FC1CC0E1E0002B5190 /* ASTFlightSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTFlightSegment.m; sourceTree = "<group>"; };
+		C513B7FD1CC0E1E0002B5190 /* ASTPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTPrice.m; sourceTree = "<group>"; };
+		C513B7FE1CC0E1E0002B5190 /* ASTSearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchInfo.m; sourceTree = "<group>"; };
+		C513B7FF1CC0E1E0002B5190 /* ASTTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTicket.m; sourceTree = "<group>"; };
+		C513B8001CC0E1E0002B5190 /* ASTTravelSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTravelSegment.m; sourceTree = "<group>"; };
+		C513B8011CC0E1E0002B5190 /* ASTFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTFlight.m; sourceTree = "<group>"; };
+		C513B8021CC0E1E0002B5190 /* ASTGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTGate.m; sourceTree = "<group>"; };
+		C513B8031CC0E1E0002B5190 /* ASTPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTPaymentMethod.m; sourceTree = "<group>"; };
+		C513B8041CC0E1E0002B5190 /* ASTCurrencyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTCurrencyRate.m; sourceTree = "<group>"; };
+		C513B8051CC0E1E0002B5190 /* ASTAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAirport.m; sourceTree = "<group>"; };
+		C513B8061CC0E1E0002B5190 /* ASTAlliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAlliance.m; sourceTree = "<group>"; };
+		C513B8071CC0E1E0002B5190 /* ASTAirline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAirline.m; sourceTree = "<group>"; };
 		C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormOptionsCell.h; sourceTree = "<group>"; };
 		C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchFormOptionsCell.m; sourceTree = "<group>"; };
 		C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormOptionsCell.xib; sourceTree = "<group>"; };
@@ -311,6 +347,37 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		C513B7EF1CC0E14B002B5190 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C513B7FA1CC0E1E0002B5190 /* ASTAirline.h */,
+				C513B8071CC0E1E0002B5190 /* ASTAirline.m */,
+				C513B7FB1CC0E1E0002B5190 /* ASTAirport.h */,
+				C513B8051CC0E1E0002B5190 /* ASTAirport.m */,
+				C513B7F01CC0E1E0002B5190 /* ASTAlliance.h */,
+				C513B8061CC0E1E0002B5190 /* ASTAlliance.m */,
+				C513B7F11CC0E1E0002B5190 /* ASTCurrencyRate.h */,
+				C513B8041CC0E1E0002B5190 /* ASTCurrencyRate.m */,
+				C513B7F21CC0E1E0002B5190 /* ASTFlight.h */,
+				C513B8011CC0E1E0002B5190 /* ASTFlight.m */,
+				C513B7F31CC0E1E0002B5190 /* ASTFlightSegment.h */,
+				C513B7FC1CC0E1E0002B5190 /* ASTFlightSegment.m */,
+				C513B7F41CC0E1E0002B5190 /* ASTGate.h */,
+				C513B8021CC0E1E0002B5190 /* ASTGate.m */,
+				C513B7F51CC0E1E0002B5190 /* ASTPaymentMethod.h */,
+				C513B8031CC0E1E0002B5190 /* ASTPaymentMethod.m */,
+				C513B7F61CC0E1E0002B5190 /* ASTPrice.h */,
+				C513B7FD1CC0E1E0002B5190 /* ASTPrice.m */,
+				C513B7F91CC0E1E0002B5190 /* ASTSearchInfo.h */,
+				C513B7FE1CC0E1E0002B5190 /* ASTSearchInfo.m */,
+				C513B7F71CC0E1E0002B5190 /* ASTTicket.h */,
+				C513B7FF1CC0E1E0002B5190 /* ASTTicket.m */,
+				C513B7F81CC0E1E0002B5190 /* ASTTravelSegment.h */,
+				C513B8001CC0E1E0002B5190 /* ASTTravelSegment.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C60EC82E17E848DA00C5D52E = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +415,7 @@
 		C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C513B7EF1CC0E14B002B5190 /* Model */,
 				0756C0481CB291550039443B /* Utils */,
 				0756C0351CB249BB0039443B /* Advertisement */,
 				072CCA791CAABE73003A8834 /* Resources */,
@@ -760,9 +828,14 @@
 				C6B74F9B181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m in Sources */,
 				C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */,
 				C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */,
+				C513B8101CC0E1E0002B5190 /* ASTCurrencyRate.m in Sources */,
 				C6B74F9F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */,
+				C513B80D1CC0E1E0002B5190 /* ASTFlight.m in Sources */,
+				C513B8111CC0E1E0002B5190 /* ASTAirport.m in Sources */,
+				C513B80E1CC0E1E0002B5190 /* ASTGate.m in Sources */,
 				C63FD39B17F49292007FFBD9 /* ASTSearchFormDateCell.m in Sources */,
 				0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */,
+				C513B80F1CC0E1E0002B5190 /* ASTPaymentMethod.m in Sources */,
 				0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */,
 				C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */,
 				077C43791CB7DCFD007A3290 /* ASTAviasalesAdLoader.m in Sources */,
@@ -771,16 +844,23 @@
 				C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */,
 				C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */,
 				0756C0431CB26C080039443B /* ASTNativeAdLoader.m in Sources */,
+				C513B8081CC0E1E0002B5190 /* ASTFlightSegment.m in Sources */,
 				07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */,
+				C513B8131CC0E1E0002B5190 /* ASTAirline.m in Sources */,
+				C513B8121CC0E1E0002B5190 /* ASTAlliance.m in Sources */,
 				C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */,
 				C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */,
 				C60EC84717E848DA00C5D52E /* main.m in Sources */,
 				C60EC84B17E848DA00C5D52E /* ASTAppDelegate.m in Sources */,
 				C6B74F97181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m in Sources */,
 				C6B74FA3181FDBBB00FEF5B9 /* ASFilterHeaderCell.m in Sources */,
+				C513B80C1CC0E1E0002B5190 /* ASTTravelSegment.m in Sources */,
 				C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */,
 				C63FD38C17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m in Sources */,
+				C513B8091CC0E1E0002B5190 /* ASTPrice.m in Sources */,
+				C513B80B1CC0E1E0002B5190 /* ASTTicket.m in Sources */,
 				C6B74FA1181FDBBB00FEF5B9 /* ASFilterCellWithView.m in Sources */,
+				C513B80A1CC0E1E0002B5190 /* ASTSearchInfo.m in Sources */,
 				C6B74F9D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

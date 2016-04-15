@@ -18,3 +18,17 @@ FOUNDATION_EXPORT const unsigned char AviasalesLibVersionString[];
 
 
 #import <AviasalesSDK/AviasalesSDK.h>
+
+// Model protocols
+#import "JRSDKAirline.h"
+#import "JRSDKAirport.h"
+#import "JRSDKAlliance.h"
+#import "JRSDKCurrencyRate.h"
+#import "JRSDKFlight.h"
+#import "JRSDKFlightSegment.h"
+#import "JRSDKGate.h"
+#import "JRSDKPaymentMethod.h"
+#import "JRSDKPrice.h"
+#import "JRSDKSearchInfo.h"
+#import "JRSDKTicket.h"
+#import "JRSDKTravelSegment.h"
