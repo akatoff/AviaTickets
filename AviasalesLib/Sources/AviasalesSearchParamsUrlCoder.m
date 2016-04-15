@@ -22,7 +22,7 @@
 
     NSString *const lastTravelSegmentPart = travelSegments.lastObject;
 
-    NSRegularExpression *const lastTravelSegmentRegexp = [[NSRegularExpression alloc] initWithPattern: @"(.*?)(\\d)(\\d)?(\\d?)([CY])$" options:NSRegularExpressionCaseInsensitive error:nil];
+    NSRegularExpression *const lastTravelSegmentRegexp = [[NSRegularExpression alloc] initWithPattern:@"(.*?)(\\d)(\\d)?(\\d?)([CY])$" options:NSRegularExpressionCaseInsensitive error:nil];
 
 
     NSArray<NSTextCheckingResult *> *const matches = [lastTravelSegmentRegexp matchesInString:lastTravelSegmentPart options:0 range:NSMakeRange(0, lastTravelSegmentPart.length)];
@@ -35,7 +35,7 @@
         if (isMatching) {
             result = [[AviasalesSearchParams alloc] init];
 
-            NSString *const lastTravelSegmentValue = [lastTravelSegmentPart substringWithRange: [match rangeAtIndex:1]];
+            NSString *const lastTravelSegmentValue = [lastTravelSegmentPart substringWithRange:[match rangeAtIndex:1]];
             travelSegments[travelSegments.count - 1] = lastTravelSegmentValue;
 
             const NSRange adiltsPartRange = [match rangeAtIndex:2];
