@@ -1,905 +1,3070 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		072CCA8B1CAABE73003A8834 /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7A1CAABE73003A8834 /* App.xcassets */; };
-		072CCA8C1CAABE73003A8834 /* AVSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */; };
-		072CCA8D1CAABE73003A8834 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */; };
-		072CCA8E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */; };
-		072CCA8F1CAABE73003A8834 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */; };
-		073E93541CABD93200C880D7 /* AviasalesSDKTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */; };
-		258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */; };
-		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
-		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
-		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
-		C60EC83D17E848DA00C5D52E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */; };
-		C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83E17E848DA00C5D52E /* UIKit.framework */; };
-		C60EC84717E848DA00C5D52E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC84617E848DA00C5D52E /* main.m */; };
-		C60EC84B17E848DA00C5D52E /* ASTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */; };
-		C62408D11848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */; };
-		C62DCD0A186C79190039C256 /* ASTResultsTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */; };
-		C62DCD0D186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */; };
-		C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */; };
-		C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */; };
-		C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F11817C778007A4F00 /* ASTFlightCell.m */; };
-		C63BA9F71817F1FD007A4F00 /* ASTStopoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63BA9F61817F1FD007A4F00 /* ASTStopoverCell.m */; };
-		C63FD38C17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FD38B17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m */; };
-		C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FD38E17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m */; };
-		C63FD39B17F49292007FFBD9 /* ASTSearchFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C63FD39A17F49292007FFBD9 /* ASTSearchFormDateCell.m */; };
-		C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */ = {isa = PBXBuildFile; fileRef = C645047517EC38AB00BF9E31 /* ASTSearchForm.m */; };
-		C67B450218916CA2006CBA73 /* ASTWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B450018916CA2006CBA73 /* ASTWebBrowserViewController.m */; };
-		C67B450318916CA2006CBA73 /* ASTWebBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67B450118916CA2006CBA73 /* ASTWebBrowserViewController.xib */; };
-		C67CC6FB17F31A55006C659C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67CC6FA17F31A55006C659C /* CoreLocation.framework */; };
-		C6A0977B18113DD500862C71 /* ASTResultsTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */; };
-		C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6ABB12417F0619B0086872F /* ASTAirportPickerCell.m */; };
-		C6B255D917F0228C00630769 /* ASTAirportPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B255D717F0228C00630769 /* ASTAirportPicker.m */; };
-		C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F73181EA14A00FEF5B9 /* ASTResults.m */; };
-		C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F7D181FDA9100FEF5B9 /* ASTFilters.m */; };
-		C6B74F97181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F83181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m */; };
-		C6B74F99181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F86181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m */; };
-		C6B74F9B181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F89181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m */; };
-		C6B74F9D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F8C181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m */; };
-		C6B74F9F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F8F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m */; };
-		C6B74FA1181FDBBB00FEF5B9 /* ASFilterCellWithView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F92181FDBBB00FEF5B9 /* ASFilterCellWithView.m */; };
-		C6B74FA3181FDBBB00FEF5B9 /* ASFilterHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74F95181FDBBB00FEF5B9 /* ASFilterHeaderCell.m */; };
-		C6B74FC41820ED3600FEF5B9 /* ASRaitingStars.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */; };
-		C6BA198B182757F000BAD465 /* ASTMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60EC87E17E8576B00C5D52E /* ASTMain.xib */; };
-		C6BA198C1827581C00BAD465 /* ASTAirportPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B255D817F0228C00630769 /* ASTAirportPicker.xib */; };
-		C6BA198D1827581C00BAD465 /* ASTAirportPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67CC6EC17F1EF1B006C659C /* ASTAirportPickerCell.xib */; };
-		C6BA198E1827581C00BAD465 /* ASTAirportPickerSearchingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6ABB12517F0619B0086872F /* ASTAirportPickerSearchingCell.xib */; };
-		C6BA198F1827581C00BAD465 /* ASTAirportPickerEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39017F338DA007FFBD9 /* ASTAirportPickerEmptyCell.xib */; };
-		C6BA19911827581C00BAD465 /* ASTSearchFormOptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */; };
-		C6BA19921827581C00BAD465 /* ASTSearchFormDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */; };
-		C6BA19941827581C00BAD465 /* ASTResultsTicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */; };
-		C6BA19951827581C00BAD465 /* ASFilterAirportsSeparatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F84181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.xib */; };
-		C6BA19961827581C00BAD465 /* ASFilterCellWithAirport.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F87181FDBBB00FEF5B9 /* ASFilterCellWithAirport.xib */; };
-		C6BA19971827581C00BAD465 /* ASFilterCellWithMobileSwitch.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F8A181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.xib */; };
-		C6BA19981827581C00BAD465 /* ASFilterCellWithOneThumbSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F8D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.xib */; };
-		C6BA19991827581C00BAD465 /* ASFilterCellWithTwoThumbsSlider.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F90181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib */; };
-		C6BA199A1827581C00BAD465 /* ASFilterCellWithView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F93181FDBBB00FEF5B9 /* ASFilterCellWithView.xib */; };
-		C6BA199B1827581C00BAD465 /* ASFilterHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F96181FDBBB00FEF5B9 /* ASFilterHeaderCell.xib */; };
-		C6BA199C1827581C00BAD465 /* ASTFilters.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F7E181FDA9100FEF5B9 /* ASTFilters.xib */; };
-		C6BA199D1827581C00BAD465 /* ASRaitingStars.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */; };
-		C6BA199E1827581C00BAD465 /* ASTTicketScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C604811C1814F0DE0015FFEE /* ASTTicketScreen.xib */; };
-		C6BA199F1827581C00BAD465 /* ASTFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F31817C781007A4F00 /* ASTFlightCell.xib */; };
-		C6BA19A01827581C00BAD465 /* ASTStopoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */; };
-		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		073E93561CABD93200C880D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C60EC82F17E848DA00C5D52E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C60EC83617E848DA00C5D52E;
-			remoteInfo = AviasalesSDKTemplate;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		072CCA7A1CAABE73003A8834 /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
-		072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVSLaunchScreen.xib; sourceTree = "<group>"; };
-		072CCA7D1CAABE73003A8834 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
-		072CCA7F1CAABE73003A8834 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
-		072CCA811CAABE73003A8834 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
-		072CCA821CAABE73003A8834 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
-		072CCA831CAABE73003A8834 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
-		072CCA841CAABE73003A8834 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
-		072CCA851CAABE73003A8834 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
-		072CCA861CAABE73003A8834 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
-		072CCA871CAABE73003A8834 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
-		072CCA881CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ru; path = ru.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
-		072CCA891CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AviasalesStaticLibLocalizable.strings; sourceTree = "<group>"; };
-		072CCA8A1CAABE73003A8834 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
-		073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AviasalesSDKTemplateTests.m; sourceTree = "<group>"; };
-		073E93551CABD93200C880D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormOptionsCell.h; sourceTree = "<group>"; };
-		C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchFormOptionsCell.m; sourceTree = "<group>"; };
-		C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormOptionsCell.xib; sourceTree = "<group>"; };
-		C604811A1814F0DE0015FFEE /* ASTTicketScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTicketScreen.h; sourceTree = "<group>"; };
-		C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTTicketScreen.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		C604811C1814F0DE0015FFEE /* ASTTicketScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTTicketScreen.xib; sourceTree = "<group>"; };
-		C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviasalesSDKTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C60EC83A17E848DA00C5D52E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C60EC83E17E848DA00C5D52E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		C60EC84217E848DA00C5D52E /* AviasalesSDKTemplate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AviasalesSDKTemplate-Info.plist"; sourceTree = "<group>"; };
-		C60EC84417E848DA00C5D52E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C60EC84617E848DA00C5D52E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C60EC84817E848DA00C5D52E /* AviasalesSDKTemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Prefix.pch"; sourceTree = "<group>"; };
-		C60EC84917E848DA00C5D52E /* ASTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTAppDelegate.h; sourceTree = "<group>"; };
-		C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTAppDelegate.m; sourceTree = "<group>"; };
-		C60EC87E17E8576B00C5D52E /* ASTMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTMain.xib; sourceTree = "<group>"; };
-		C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTicketCellOneWay.xib; sourceTree = "<group>"; };
-		C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTabBar.xib; sourceTree = "<group>"; };
-		C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTFiltersTabBar.xib; sourceTree = "<group>"; };
-		C63BA9EA1816B56E007A4F00 /* ASTCommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCommonFunctions.h; sourceTree = "<group>"; };
-		C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTCommonFunctions.m; sourceTree = "<group>"; };
-		C63BA9ED1816BA6A007A4F00 /* ASTSearchParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchParams.h; sourceTree = "<group>"; };
-		C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchParams.m; sourceTree = "<group>"; };
-		C63BA9F01817C76F007A4F00 /* ASTFlightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTFlightCell.h; sourceTree = "<group>"; };
-		C63BA9F11817C778007A4F00 /* ASTFlightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTFlightCell.m; sourceTree = "<group>"; };
-		C63BA9F31817C781007A4F00 /* ASTFlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTFlightCell.xib; sourceTree = "<group>"; };
-		C63BA9F51817F1F1007A4F00 /* ASTStopoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTStopoverCell.h; sourceTree = "<group>"; };
-		C63BA9F61817F1FD007A4F00 /* ASTStopoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTStopoverCell.m; sourceTree = "<group>"; };
-		C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTStopoverCell.xib; sourceTree = "<group>"; };
-		C63FD38A17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirportPickerSearchingCell.h; sourceTree = "<group>"; };
-		C63FD38B17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAirportPickerSearchingCell.m; sourceTree = "<group>"; };
-		C63FD38D17F338C4007FFBD9 /* ASTAirportPickerEmptyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirportPickerEmptyCell.h; sourceTree = "<group>"; };
-		C63FD38E17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAirportPickerEmptyCell.m; sourceTree = "<group>"; };
-		C63FD39017F338DA007FFBD9 /* ASTAirportPickerEmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTAirportPickerEmptyCell.xib; sourceTree = "<group>"; };
-		C63FD39917F4928C007FFBD9 /* ASTSearchFormDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormDateCell.h; sourceTree = "<group>"; };
-		C63FD39A17F49292007FFBD9 /* ASTSearchFormDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchFormDateCell.m; sourceTree = "<group>"; };
-		C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormDateCell.xib; sourceTree = "<group>"; };
-		C645047417EC38AB00BF9E31 /* ASTSearchForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchForm.h; sourceTree = "<group>"; };
-		C645047517EC38AB00BF9E31 /* ASTSearchForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTSearchForm.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		C67B44FF18916CA2006CBA73 /* ASTWebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTWebBrowserViewController.h; sourceTree = "<group>"; };
-		C67B450018916CA2006CBA73 /* ASTWebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTWebBrowserViewController.m; sourceTree = "<group>"; };
-		C67B450118916CA2006CBA73 /* ASTWebBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTWebBrowserViewController.xib; sourceTree = "<group>"; };
-		C67CC6EC17F1EF1B006C659C /* ASTAirportPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTAirportPickerCell.xib; sourceTree = "<group>"; };
-		C67CC6FA17F31A55006C659C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		C6A0977918113DD500862C71 /* ASTResultsTicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTResultsTicketCell.h; sourceTree = "<group>"; };
-		C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTResultsTicketCell.m; sourceTree = "<group>"; };
-		C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResultsTicketCell.xib; sourceTree = "<group>"; };
-		C6A6666A19ED4664000C6EAB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C6A6666B19ED4665000C6EAB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C6A6666C19ED4688000C6EAB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C6ABB12317F0619B0086872F /* ASTAirportPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirportPickerCell.h; sourceTree = "<group>"; };
-		C6ABB12417F0619B0086872F /* ASTAirportPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTAirportPickerCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		C6ABB12517F0619B0086872F /* ASTAirportPickerSearchingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTAirportPickerSearchingCell.xib; sourceTree = "<group>"; };
-		C6B255D617F0228C00630769 /* ASTAirportPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirportPicker.h; sourceTree = "<group>"; };
-		C6B255D717F0228C00630769 /* ASTAirportPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTAirportPicker.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		C6B255D817F0228C00630769 /* ASTAirportPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTAirportPicker.xib; sourceTree = "<group>"; };
-		C6B74F72181EA14A00FEF5B9 /* ASTResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTResults.h; sourceTree = "<group>"; };
-		C6B74F73181EA14A00FEF5B9 /* ASTResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTResults.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTResults.xib; sourceTree = "<group>"; };
-		C6B74F7C181FDA9100FEF5B9 /* ASTFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTFilters.h; sourceTree = "<group>"; };
-		C6B74F7D181FDA9100FEF5B9 /* ASTFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ASTFilters.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		C6B74F7E181FDA9100FEF5B9 /* ASTFilters.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTFilters.xib; sourceTree = "<group>"; };
-		C6B74F82181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterAirportsSeparatorCell.h; sourceTree = "<group>"; };
-		C6B74F83181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterAirportsSeparatorCell.m; sourceTree = "<group>"; };
-		C6B74F84181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterAirportsSeparatorCell.xib; sourceTree = "<group>"; };
-		C6B74F85181FDBBB00FEF5B9 /* ASFilterCellWithAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterCellWithAirport.h; sourceTree = "<group>"; };
-		C6B74F86181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterCellWithAirport.m; sourceTree = "<group>"; };
-		C6B74F87181FDBBB00FEF5B9 /* ASFilterCellWithAirport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterCellWithAirport.xib; sourceTree = "<group>"; };
-		C6B74F88181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterCellWithMobileSwitch.h; sourceTree = "<group>"; };
-		C6B74F89181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterCellWithMobileSwitch.m; sourceTree = "<group>"; };
-		C6B74F8A181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterCellWithMobileSwitch.xib; sourceTree = "<group>"; };
-		C6B74F8B181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterCellWithOneThumbSlider.h; sourceTree = "<group>"; };
-		C6B74F8C181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterCellWithOneThumbSlider.m; sourceTree = "<group>"; };
-		C6B74F8D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterCellWithOneThumbSlider.xib; sourceTree = "<group>"; };
-		C6B74F8E181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterCellWithTwoThumbsSlider.h; sourceTree = "<group>"; };
-		C6B74F8F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterCellWithTwoThumbsSlider.m; sourceTree = "<group>"; };
-		C6B74F90181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterCellWithTwoThumbsSlider.xib; sourceTree = "<group>"; };
-		C6B74F91181FDBBB00FEF5B9 /* ASFilterCellWithView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterCellWithView.h; sourceTree = "<group>"; };
-		C6B74F92181FDBBB00FEF5B9 /* ASFilterCellWithView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterCellWithView.m; sourceTree = "<group>"; };
-		C6B74F93181FDBBB00FEF5B9 /* ASFilterCellWithView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterCellWithView.xib; sourceTree = "<group>"; };
-		C6B74F94181FDBBB00FEF5B9 /* ASFilterHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFilterHeaderCell.h; sourceTree = "<group>"; };
-		C6B74F95181FDBBB00FEF5B9 /* ASFilterHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFilterHeaderCell.m; sourceTree = "<group>"; };
-		C6B74F96181FDBBB00FEF5B9 /* ASFilterHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASFilterHeaderCell.xib; sourceTree = "<group>"; };
-		C6B74FC11820ED3600FEF5B9 /* ASRaitingStars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRaitingStars.h; sourceTree = "<group>"; };
-		C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRaitingStars.m; sourceTree = "<group>"; };
-		C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASRaitingStars.xib; sourceTree = "<group>"; };
-		C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		C6B752251824123800FEF5B9 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Defines.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		073E934E1CABD93200C880D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C60EC83417E848DA00C5D52E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C67CC6FB17F31A55006C659C /* CoreLocation.framework in Frameworks */,
-				C60EC83D17E848DA00C5D52E /* CoreGraphics.framework in Frameworks */,
-				C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */,
-				C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */,
-				258828FB5D87EE0C1E347AFA /* libPods-AviasalesSDKTemplate.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		072CCA791CAABE73003A8834 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				072CCA7A1CAABE73003A8834 /* App.xcassets */,
-				072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */,
-				072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */,
-				072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */,
-				072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */ = {
-			isa = PBXGroup;
-			children = (
-				073E93531CABD93200C880D7 /* AviasalesSDKTemplateTests.m */,
-				073E93551CABD93200C880D7 /* Info.plist */,
-			);
-			path = AviasalesSDKTemplateTests;
-			sourceTree = "<group>";
-		};
-		7BC5C931F97B144ACDC22F69 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
-				E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C60EC82E17E848DA00C5D52E = {
-			isa = PBXGroup;
-			children = (
-				C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */,
-				073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */,
-				C60EC83917E848DA00C5D52E /* Frameworks */,
-				C60EC83817E848DA00C5D52E /* Products */,
-				7BC5C931F97B144ACDC22F69 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		C60EC83817E848DA00C5D52E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */,
-				073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C60EC83917E848DA00C5D52E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C67CC6FA17F31A55006C659C /* CoreLocation.framework */,
-				C60EC83A17E848DA00C5D52E /* Foundation.framework */,
-				C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */,
-				C60EC83E17E848DA00C5D52E /* UIKit.framework */,
-				C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */,
-				8AC9C9DF7A4DA221158F9899 /* libPods-AviasalesSDKTemplate.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */ = {
-			isa = PBXGroup;
-			children = (
-				072CCA791CAABE73003A8834 /* Resources */,
-				C67B44FE18916C72006CBA73 /* Browser */,
-				C6B750171823F30E00FEF5B9 /* Airport Picker */,
-				C6B750151823F29B00FEF5B9 /* Search Form */,
-				C6B750161823F2DF00FEF5B9 /* Results Screen */,
-				C6B750191823F35700FEF5B9 /* Filters Screen */,
-				C6B750181823F32D00FEF5B9 /* Ticket Screen */,
-				C63BA9EA1816B56E007A4F00 /* ASTCommonFunctions.h */,
-				C63BA9EB1816B56E007A4F00 /* ASTCommonFunctions.m */,
-				C63BA9ED1816BA6A007A4F00 /* ASTSearchParams.h */,
-				C63BA9EE1816BA6A007A4F00 /* ASTSearchParams.m */,
-				C60EC84917E848DA00C5D52E /* ASTAppDelegate.h */,
-				C60EC84A17E848DA00C5D52E /* ASTAppDelegate.m */,
-				C60EC87E17E8576B00C5D52E /* ASTMain.xib */,
-				C60EC84117E848DA00C5D52E /* Supporting Files */,
-				C6B752251824123800FEF5B9 /* Defines.h */,
-			);
-			path = AviasalesSDKTemplate;
-			sourceTree = "<group>";
-		};
-		C60EC84117E848DA00C5D52E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C60EC84217E848DA00C5D52E /* AviasalesSDKTemplate-Info.plist */,
-				C60EC84317E848DA00C5D52E /* InfoPlist.strings */,
-				C60EC84617E848DA00C5D52E /* main.m */,
-				C60EC84817E848DA00C5D52E /* AviasalesSDKTemplate-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C67B44FE18916C72006CBA73 /* Browser */ = {
-			isa = PBXGroup;
-			children = (
-				C67B44FF18916CA2006CBA73 /* ASTWebBrowserViewController.h */,
-				C67B450018916CA2006CBA73 /* ASTWebBrowserViewController.m */,
-				C67B450118916CA2006CBA73 /* ASTWebBrowserViewController.xib */,
-			);
-			name = Browser;
-			sourceTree = "<group>";
-		};
-		C6B74F81181FDBBB00FEF5B9 /* Filter Cells */ = {
-			isa = PBXGroup;
-			children = (
-				C6B74F82181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.h */,
-				C6B74F83181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m */,
-				C6B74F84181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.xib */,
-				C6B74F85181FDBBB00FEF5B9 /* ASFilterCellWithAirport.h */,
-				C6B74F86181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m */,
-				C6B74F87181FDBBB00FEF5B9 /* ASFilterCellWithAirport.xib */,
-				C6B74F88181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.h */,
-				C6B74F89181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m */,
-				C6B74F8A181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.xib */,
-				C6B74F8B181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.h */,
-				C6B74F8C181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m */,
-				C6B74F8D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.xib */,
-				C6B74F8E181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.h */,
-				C6B74F8F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m */,
-				C6B74F90181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.xib */,
-				C6B74F91181FDBBB00FEF5B9 /* ASFilterCellWithView.h */,
-				C6B74F92181FDBBB00FEF5B9 /* ASFilterCellWithView.m */,
-				C6B74F93181FDBBB00FEF5B9 /* ASFilterCellWithView.xib */,
-				C6B74F94181FDBBB00FEF5B9 /* ASFilterHeaderCell.h */,
-				C6B74F95181FDBBB00FEF5B9 /* ASFilterHeaderCell.m */,
-				C6B74F96181FDBBB00FEF5B9 /* ASFilterHeaderCell.xib */,
-			);
-			path = "Filter Cells";
-			sourceTree = "<group>";
-		};
-		C6B750151823F29B00FEF5B9 /* Search Form */ = {
-			isa = PBXGroup;
-			children = (
-				C645047417EC38AB00BF9E31 /* ASTSearchForm.h */,
-				C645047517EC38AB00BF9E31 /* ASTSearchForm.m */,
-				C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */,
-				C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */,
-				C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */,
-				C63FD39917F4928C007FFBD9 /* ASTSearchFormDateCell.h */,
-				C63FD39A17F49292007FFBD9 /* ASTSearchFormDateCell.m */,
-				C63FD39C17F49297007FFBD9 /* ASTSearchFormDateCell.xib */,
-			);
-			name = "Search Form";
-			sourceTree = "<group>";
-		};
-		C6B750161823F2DF00FEF5B9 /* Results Screen */ = {
-			isa = PBXGroup;
-			children = (
-				C6B74F72181EA14A00FEF5B9 /* ASTResults.h */,
-				C6B74F73181EA14A00FEF5B9 /* ASTResults.m */,
-				C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */,
-				C62DCD09186C79190039C256 /* ASTResultsTabBar.xib */,
-				C6A0977918113DD500862C71 /* ASTResultsTicketCell.h */,
-				C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */,
-				C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */,
-				C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */,
-			);
-			name = "Results Screen";
-			sourceTree = "<group>";
-		};
-		C6B750171823F30E00FEF5B9 /* Airport Picker */ = {
-			isa = PBXGroup;
-			children = (
-				C6B255D617F0228C00630769 /* ASTAirportPicker.h */,
-				C6B255D717F0228C00630769 /* ASTAirportPicker.m */,
-				C6B255D817F0228C00630769 /* ASTAirportPicker.xib */,
-				C6ABB12317F0619B0086872F /* ASTAirportPickerCell.h */,
-				C6ABB12417F0619B0086872F /* ASTAirportPickerCell.m */,
-				C67CC6EC17F1EF1B006C659C /* ASTAirportPickerCell.xib */,
-				C63FD38A17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.h */,
-				C63FD38B17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m */,
-				C6ABB12517F0619B0086872F /* ASTAirportPickerSearchingCell.xib */,
-				C63FD38D17F338C4007FFBD9 /* ASTAirportPickerEmptyCell.h */,
-				C63FD38E17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m */,
-				C63FD39017F338DA007FFBD9 /* ASTAirportPickerEmptyCell.xib */,
-			);
-			name = "Airport Picker";
-			sourceTree = "<group>";
-		};
-		C6B750181823F32D00FEF5B9 /* Ticket Screen */ = {
-			isa = PBXGroup;
-			children = (
-				C604811A1814F0DE0015FFEE /* ASTTicketScreen.h */,
-				C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */,
-				C604811C1814F0DE0015FFEE /* ASTTicketScreen.xib */,
-				C63BA9F01817C76F007A4F00 /* ASTFlightCell.h */,
-				C63BA9F11817C778007A4F00 /* ASTFlightCell.m */,
-				C63BA9F31817C781007A4F00 /* ASTFlightCell.xib */,
-				C63BA9F51817F1F1007A4F00 /* ASTStopoverCell.h */,
-				C63BA9F61817F1FD007A4F00 /* ASTStopoverCell.m */,
-				C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */,
-			);
-			name = "Ticket Screen";
-			sourceTree = "<group>";
-		};
-		C6B750191823F35700FEF5B9 /* Filters Screen */ = {
-			isa = PBXGroup;
-			children = (
-				C6B74F81181FDBBB00FEF5B9 /* Filter Cells */,
-				C6B74F7C181FDA9100FEF5B9 /* ASTFilters.h */,
-				C6B74F7D181FDA9100FEF5B9 /* ASTFilters.m */,
-				C6B74F7E181FDA9100FEF5B9 /* ASTFilters.xib */,
-				C62DCD0C186C80F10039C256 /* ASTFiltersTabBar.xib */,
-				C6B74FC11820ED3600FEF5B9 /* ASRaitingStars.h */,
-				C6B74FC21820ED3600FEF5B9 /* ASRaitingStars.m */,
-				C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */,
-			);
-			name = "Filters Screen";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		073E93501CABD93200C880D7 /* AviasalesSDKTemplateTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */;
-			buildPhases = (
-				073E934D1CABD93200C880D7 /* Sources */,
-				073E934E1CABD93200C880D7 /* Frameworks */,
-				073E934F1CABD93200C880D7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				073E93571CABD93200C880D7 /* PBXTargetDependency */,
-			);
-			name = AviasalesSDKTemplateTests;
-			productName = AviasalesSDKTemplateTests;
-			productReference = 073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C60EC86917E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplate" */;
-			buildPhases = (
-				14E0D12DE322F09EBE0AE808 /* Check Pods Manifest.lock */,
-				C60EC83317E848DA00C5D52E /* Sources */,
-				C60EC83417E848DA00C5D52E /* Frameworks */,
-				C60EC83517E848DA00C5D52E /* Resources */,
-				651C555C9ECCDC820617B896 /* Embed Pods Frameworks */,
-				B717F886B8C6D207031EFDCE /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AviasalesSDKTemplate;
-			productName = AviasalesSDKTemplate;
-			productReference = C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C60EC82F17E848DA00C5D52E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = AST;
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "Go Travel Un LImited";
-				TargetAttributes = {
-					073E93501CABD93200C880D7 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = C60EC83617E848DA00C5D52E;
-					};
-				};
-			};
-			buildConfigurationList = C60EC83217E848DA00C5D52E /* Build configuration list for PBXProject "AviasalesSDKTemplate" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-				de,
-				ru,
-				es,
-			);
-			mainGroup = C60EC82E17E848DA00C5D52E;
-			productRefGroup = C60EC83817E848DA00C5D52E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */,
-				073E93501CABD93200C880D7 /* AviasalesSDKTemplateTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		073E934F1CABD93200C880D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C60EC83517E848DA00C5D52E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */,
-				072CCA8D1CAABE73003A8834 /* Aviasales_top_airports.json in Resources */,
-				C6BA198C1827581C00BAD465 /* ASTAirportPicker.xib in Resources */,
-				C6BA198D1827581C00BAD465 /* ASTAirportPickerCell.xib in Resources */,
-				072CCA8C1CAABE73003A8834 /* AVSLaunchScreen.xib in Resources */,
-				C6BA198E1827581C00BAD465 /* ASTAirportPickerSearchingCell.xib in Resources */,
-				C6BA198F1827581C00BAD465 /* ASTAirportPickerEmptyCell.xib in Resources */,
-				C62DCD0D186C80F10039C256 /* ASTFiltersTabBar.xib in Resources */,
-				C6BA19911827581C00BAD465 /* ASTSearchFormOptionsCell.xib in Resources */,
-				C6BA19921827581C00BAD465 /* ASTSearchFormDateCell.xib in Resources */,
-				072CCA8E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings in Resources */,
-				C6BA19941827581C00BAD465 /* ASTResultsTicketCell.xib in Resources */,
-				072CCA8B1CAABE73003A8834 /* App.xcassets in Resources */,
-				C6BA19951827581C00BAD465 /* ASFilterAirportsSeparatorCell.xib in Resources */,
-				C6BA19961827581C00BAD465 /* ASFilterCellWithAirport.xib in Resources */,
-				C6BA19971827581C00BAD465 /* ASFilterCellWithMobileSwitch.xib in Resources */,
-				C6BA19981827581C00BAD465 /* ASFilterCellWithOneThumbSlider.xib in Resources */,
-				072CCA8F1CAABE73003A8834 /* AviasalesTemplateLocalizable.strings in Resources */,
-				C6BA19991827581C00BAD465 /* ASFilterCellWithTwoThumbsSlider.xib in Resources */,
-				C6BA199A1827581C00BAD465 /* ASFilterCellWithView.xib in Resources */,
-				C62DCD0A186C79190039C256 /* ASTResultsTabBar.xib in Resources */,
-				C6BA199B1827581C00BAD465 /* ASFilterHeaderCell.xib in Resources */,
-				C62408D11848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib in Resources */,
-				C6BA199C1827581C00BAD465 /* ASTFilters.xib in Resources */,
-				C6BA199D1827581C00BAD465 /* ASRaitingStars.xib in Resources */,
-				C6BA199E1827581C00BAD465 /* ASTTicketScreen.xib in Resources */,
-				C6BA199F1827581C00BAD465 /* ASTFlightCell.xib in Resources */,
-				C67B450318916CA2006CBA73 /* ASTWebBrowserViewController.xib in Resources */,
-				C6BA19A01827581C00BAD465 /* ASTStopoverCell.xib in Resources */,
-				C6BA198B182757F000BAD465 /* ASTMain.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		14E0D12DE322F09EBE0AE808 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		651C555C9ECCDC820617B896 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B717F886B8C6D207031EFDCE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		073E934D1CABD93200C880D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				073E93541CABD93200C880D7 /* AviasalesSDKTemplateTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C60EC83317E848DA00C5D52E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C67B450218916CA2006CBA73 /* ASTWebBrowserViewController.m in Sources */,
-				C63BA9F71817F1FD007A4F00 /* ASTStopoverCell.m in Sources */,
-				C6B74F99181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m in Sources */,
-				C6A0977B18113DD500862C71 /* ASTResultsTicketCell.m in Sources */,
-				C6B255D917F0228C00630769 /* ASTAirportPicker.m in Sources */,
-				C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */,
-				C6B74F9B181FDBBB00FEF5B9 /* ASFilterCellWithMobileSwitch.m in Sources */,
-				C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */,
-				C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */,
-				C6B74F9F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */,
-				C63FD39B17F49292007FFBD9 /* ASTSearchFormDateCell.m in Sources */,
-				C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */,
-				C6B74FC41820ED3600FEF5B9 /* ASRaitingStars.m in Sources */,
-				C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */,
-				C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */,
-				C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */,
-				C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */,
-				C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */,
-				C60EC84717E848DA00C5D52E /* main.m in Sources */,
-				C60EC84B17E848DA00C5D52E /* ASTAppDelegate.m in Sources */,
-				C6B74F97181FDBBB00FEF5B9 /* ASFilterAirportsSeparatorCell.m in Sources */,
-				C6B74FA3181FDBBB00FEF5B9 /* ASFilterHeaderCell.m in Sources */,
-				C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */,
-				C63FD38C17F338AC007FFBD9 /* ASTAirportPickerSearchingCell.m in Sources */,
-				C6B74FA1181FDBBB00FEF5B9 /* ASFilterCellWithView.m in Sources */,
-				C6B74F9D181FDBBB00FEF5B9 /* ASFilterCellWithOneThumbSlider.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		073E93571CABD93200C880D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C60EC83617E848DA00C5D52E /* AviasalesSDKTemplate */;
-			targetProxy = 073E93561CABD93200C880D7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */ = {
-			isa = PBXVariantGroup;
-			children = (
-				072CCA7D1CAABE73003A8834 /* de */,
-				072CCA821CAABE73003A8834 /* en */,
-				072CCA851CAABE73003A8834 /* es */,
-				072CCA881CAABE73003A8834 /* ru */,
-			);
-			name = Aviasales_top_airports.json;
-			sourceTree = "<group>";
-		};
-		072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				072CCA7F1CAABE73003A8834 /* de */,
-				072CCA831CAABE73003A8834 /* en */,
-				072CCA861CAABE73003A8834 /* es */,
-				072CCA891CAABE73003A8834 /* ru */,
-			);
-			name = AviasalesStaticLibLocalizable.strings;
-			sourceTree = "<group>";
-		};
-		072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				072CCA811CAABE73003A8834 /* de */,
-				072CCA841CAABE73003A8834 /* en */,
-				072CCA871CAABE73003A8834 /* es */,
-				072CCA8A1CAABE73003A8834 /* ru */,
-			);
-			name = AviasalesTemplateLocalizable.strings;
-			sourceTree = "<group>";
-		};
-		C60EC84317E848DA00C5D52E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C60EC84417E848DA00C5D52E /* en */,
-				C6A6666A19ED4664000C6EAB /* de */,
-				C6A6666B19ED4665000C6EAB /* ru */,
-				C6A6666C19ED4688000C6EAB /* es */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		073E93581CABD93200C880D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = AviasalesSDKTemplateTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = diniska.AviasalesSDKTemplateTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate";
-			};
-			name = Debug;
-		};
-		073E93591CABD93200C880D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = AviasalesSDKTemplateTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = diniska.AviasalesSDKTemplateTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate";
-			};
-			name = Release;
-		};
-		C60EC86717E848DB00C5D52E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		C60EC86817E848DB00C5D52E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C60EC86A17E848DB00C5D52E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10A14D5A608031C9AB2718CF /* Pods-AviasalesSDKTemplate.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
-				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-					"$(SRCROOT)/AviasalesLib",
-					"$(PROJECT_DIR)/AviasalesLib",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = all;
-				VALID_ARCHS = "armv7 armv7s arm64";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		C60EC86B17E848DB00C5D52E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E68F5E4B548E9B9621A28429 /* Pods-AviasalesSDKTemplate.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Go Travel Un Limited";
-				ENABLE_BITCODE = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
-				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/lib/system",
-					"$(SRCROOT)/AviasalesLib",
-					"$(PROJECT_DIR)/AviasalesLib",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				STRIP_STYLE = all;
-				VALID_ARCHS = "armv7 armv7s arm64";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				073E93581CABD93200C880D7 /* Debug */,
-				073E93591CABD93200C880D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C60EC83217E848DA00C5D52E /* Build configuration list for PBXProject "AviasalesSDKTemplate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C60EC86717E848DB00C5D52E /* Debug */,
-				C60EC86817E848DB00C5D52E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C60EC86917E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplate" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C60EC86A17E848DB00C5D52E /* Debug */,
-				C60EC86B17E848DB00C5D52E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C60EC82F17E848DA00C5D52E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>04FB2A1D5C3F7AF9ABB08717</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>072CCA791CAABE73003A8834</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>072CCA7A1CAABE73003A8834</string>
+				<string>072CCA7B1CAABE73003A8834</string>
+				<string>072CCA7C1CAABE73003A8834</string>
+				<string>072CCA7E1CAABE73003A8834</string>
+				<string>072CCA801CAABE73003A8834</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA7A1CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>App.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA7B1CAABE73003A8834</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>AVSLaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA7C1CAABE73003A8834</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>072CCA7D1CAABE73003A8834</string>
+				<string>072CCA821CAABE73003A8834</string>
+				<string>072CCA851CAABE73003A8834</string>
+				<string>072CCA881CAABE73003A8834</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Aviasales_top_airports.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA7D1CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>de</string>
+			<key>path</key>
+			<string>de.lproj/Aviasales_top_airports.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA7E1CAABE73003A8834</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>072CCA7F1CAABE73003A8834</string>
+				<string>072CCA831CAABE73003A8834</string>
+				<string>072CCA861CAABE73003A8834</string>
+				<string>072CCA891CAABE73003A8834</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>AviasalesStaticLibLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA7F1CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>de</string>
+			<key>path</key>
+			<string>de.lproj/AviasalesStaticLibLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA801CAABE73003A8834</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>072CCA811CAABE73003A8834</string>
+				<string>072CCA841CAABE73003A8834</string>
+				<string>072CCA871CAABE73003A8834</string>
+				<string>072CCA8A1CAABE73003A8834</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>AviasalesTemplateLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA811CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>de</string>
+			<key>path</key>
+			<string>de.lproj/AviasalesTemplateLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA821CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/Aviasales_top_airports.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA831CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/AviasalesStaticLibLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA841CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/AviasalesTemplateLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA851CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>es</string>
+			<key>path</key>
+			<string>es.lproj/Aviasales_top_airports.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA861CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>es</string>
+			<key>path</key>
+			<string>es.lproj/AviasalesStaticLibLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA871CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>es</string>
+			<key>path</key>
+			<string>es.lproj/AviasalesTemplateLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA881CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>name</key>
+			<string>ru</string>
+			<key>path</key>
+			<string>ru.lproj/Aviasales_top_airports.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA891CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>ru</string>
+			<key>path</key>
+			<string>ru.lproj/AviasalesStaticLibLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA8A1CAABE73003A8834</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>ru</string>
+			<key>path</key>
+			<string>ru.lproj/AviasalesTemplateLocalizable.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>072CCA8B1CAABE73003A8834</key>
+		<dict>
+			<key>fileRef</key>
+			<string>072CCA7A1CAABE73003A8834</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>072CCA8C1CAABE73003A8834</key>
+		<dict>
+			<key>fileRef</key>
+			<string>072CCA7B1CAABE73003A8834</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>072CCA8D1CAABE73003A8834</key>
+		<dict>
+			<key>fileRef</key>
+			<string>072CCA7C1CAABE73003A8834</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>072CCA8E1CAABE73003A8834</key>
+		<dict>
+			<key>fileRef</key>
+			<string>072CCA7E1CAABE73003A8834</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>072CCA8F1CAABE73003A8834</key>
+		<dict>
+			<key>fileRef</key>
+			<string>072CCA801CAABE73003A8834</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>073E934D1CABD93200C880D7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>073E936B1CAC11B400C880D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>073E934E1CABD93200C880D7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2CEC34A59CE0F148FF2BAFD5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>073E934F1CABD93200C880D7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>073E93501CABD93200C880D7</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>073E935A1CABD93200C880D7</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E9FFB58869344A6DC68DFB25</string>
+				<string>073E934D1CABD93200C880D7</string>
+				<string>073E934E1CABD93200C880D7</string>
+				<string>073E934F1CABD93200C880D7</string>
+				<string>04FB2A1D5C3F7AF9ABB08717</string>
+				<string>430863308817AACB979D83F9</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>073E93571CABD93200C880D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AviasalesSDKTemplateTests</string>
+			<key>productName</key>
+			<string>AviasalesSDKTemplateTests</string>
+			<key>productReference</key>
+			<string>073E93511CABD93200C880D7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>073E93511CABD93200C880D7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AviasalesSDKTemplateTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>073E93521CABD93200C880D7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>073E93551CABD93200C880D7</string>
+				<string>073E936A1CAC11B400C880D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AviasalesSDKTemplateTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>073E93551CABD93200C880D7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>073E93561CABD93200C880D7</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C60EC82F17E848DA00C5D52E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C60EC83617E848DA00C5D52E</string>
+			<key>remoteInfo</key>
+			<string>AviasalesSDKTemplate</string>
+		</dict>
+		<key>073E93571CABD93200C880D7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C60EC83617E848DA00C5D52E</string>
+			<key>targetProxy</key>
+			<string>073E93561CABD93200C880D7</string>
+		</dict>
+		<key>073E93581CABD93200C880D7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1600BD2538F037C2EE077B30</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AviasalesSDKTemplateTests/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>diniska.AviasalesSDKTemplateTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>073E93591CABD93200C880D7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3E183AE246B23B8C22C93785</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AviasalesSDKTemplateTests/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>diniska.AviasalesSDKTemplateTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/AviasalesSDKTemplate.app/AviasalesSDKTemplate</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>073E935A1CABD93200C880D7</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>073E93581CABD93200C880D7</string>
+				<string>073E93591CABD93200C880D7</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>073E936A1CAC11B400C880D7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AviasalesSearchParamsUrlCoderTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>073E936B1CAC11B400C880D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>073E936A1CAC11B400C880D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>07F5C20A1CAD1D0B006BDF0A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>ASTMain.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>07F5C20B1CAD1D0B006BDF0A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07F5C20A1CAD1D0B006BDF0A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>106A8292329EA2FF7BA4656E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AviasalesSDKTemplate.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1600BD2538F037C2EE077B30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AviasalesSDKTemplateTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E1BC3E822CC29FC120ACEBB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2CEC34A59CE0F148FF2BAFD5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A932ECE8B4290A995D90FA38</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E183AE246B23B8C22C93785</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AviasalesSDKTemplateTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>430863308817AACB979D83F9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>628B762E2457AB2215DE9632</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>78F0B7295E187DDC298DDA62</string>
+				<string>106A8292329EA2FF7BA4656E</string>
+				<string>1600BD2538F037C2EE077B30</string>
+				<string>3E183AE246B23B8C22C93785</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>78F0B7295E187DDC298DDA62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-AviasalesSDKTemplate.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>799933DAD3E5554DDC2AF21D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A932ECE8B4290A995D90FA38</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-AviasalesSDKTemplateTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BD570B90FEA871F9E1907159</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-AviasalesSDKTemplate.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C600CECD17FD7E1900697E47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTSearchFormOptionsCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C600CECE17FD7E2300697E47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTSearchFormOptionsCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C600CECF17FD7E2300697E47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C600CECE17FD7E2300697E47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C600CED017FD7E2E00697E47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTSearchFormOptionsCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C604811A1814F0DE0015FFEE</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTTicketScreen.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C604811B1814F0DE0015FFEE</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>ASTTicketScreen.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objc</string>
+		</dict>
+		<key>C604811C1814F0DE0015FFEE</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTTicketScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C604811D1814F0DE0015FFEE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C604811B1814F0DE0015FFEE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C60EC82E17E848DA00C5D52E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C60EC84017E848DA00C5D52E</string>
+				<string>073E93521CABD93200C880D7</string>
+				<string>C60EC83917E848DA00C5D52E</string>
+				<string>C60EC83817E848DA00C5D52E</string>
+				<string>628B762E2457AB2215DE9632</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC82F17E848DA00C5D52E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>AST</string>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Go Travel Un LImited</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>073E93501CABD93200C880D7</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>TestTargetID</key>
+						<string>C60EC83617E848DA00C5D52E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C60EC83217E848DA00C5D52E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+				<string>de</string>
+				<string>ru</string>
+				<string>es</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C60EC82E17E848DA00C5D52E</string>
+			<key>productRefGroup</key>
+			<string>C60EC83817E848DA00C5D52E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C60EC83617E848DA00C5D52E</string>
+				<string>073E93501CABD93200C880D7</string>
+			</array>
+		</dict>
+		<key>C60EC83217E848DA00C5D52E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C60EC86717E848DB00C5D52E</string>
+				<string>C60EC86817E848DB00C5D52E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C60EC83317E848DA00C5D52E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C67B450218916CA2006CBA73</string>
+				<string>C63BA9F71817F1FD007A4F00</string>
+				<string>C6B74F99181FDBBB00FEF5B9</string>
+				<string>C6A0977B18113DD500862C71</string>
+				<string>C6B255D917F0228C00630769</string>
+				<string>C63BA9EC1816B56E007A4F00</string>
+				<string>C6B74F9B181FDBBB00FEF5B9</string>
+				<string>C63BA9EF1816BA6A007A4F00</string>
+				<string>C6ABB12617F0619B0086872F</string>
+				<string>C6B74F9F181FDBBB00FEF5B9</string>
+				<string>C63FD39B17F49292007FFBD9</string>
+				<string>C6B74F75181EA14A00FEF5B9</string>
+				<string>C6B74FC41820ED3600FEF5B9</string>
+				<string>C645047617EC38AB00BF9E31</string>
+				<string>C63FD38F17F338D3007FFBD9</string>
+				<string>C63BA9F21817C778007A4F00</string>
+				<string>C604811D1814F0DE0015FFEE</string>
+				<string>C6B74F7F181FDA9100FEF5B9</string>
+				<string>C60EC84717E848DA00C5D52E</string>
+				<string>C60EC84B17E848DA00C5D52E</string>
+				<string>C6B74F97181FDBBB00FEF5B9</string>
+				<string>C6B74FA3181FDBBB00FEF5B9</string>
+				<string>C600CECF17FD7E2300697E47</string>
+				<string>C63FD38C17F338AC007FFBD9</string>
+				<string>C6B74FA1181FDBBB00FEF5B9</string>
+				<string>C6B74F9D181FDBBB00FEF5B9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C60EC83417E848DA00C5D52E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C67CC6FB17F31A55006C659C</string>
+				<string>C60EC83D17E848DA00C5D52E</string>
+				<string>C60EC83F17E848DA00C5D52E</string>
+				<string>C60EC83B17E848DA00C5D52E</string>
+				<string>DA159C833A453395FAF1CF5C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C60EC83517E848DA00C5D52E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C6EA13D218313BB800E77589</string>
+				<string>072CCA8D1CAABE73003A8834</string>
+				<string>C6BA198C1827581C00BAD465</string>
+				<string>C6BA198D1827581C00BAD465</string>
+				<string>072CCA8C1CAABE73003A8834</string>
+				<string>C6BA198E1827581C00BAD465</string>
+				<string>C6BA198F1827581C00BAD465</string>
+				<string>C62DCD0D186C80F10039C256</string>
+				<string>C6BA19911827581C00BAD465</string>
+				<string>C6BA19921827581C00BAD465</string>
+				<string>072CCA8E1CAABE73003A8834</string>
+				<string>C6BA19941827581C00BAD465</string>
+				<string>072CCA8B1CAABE73003A8834</string>
+				<string>C6BA19951827581C00BAD465</string>
+				<string>C6BA19961827581C00BAD465</string>
+				<string>C6BA19971827581C00BAD465</string>
+				<string>C6BA19981827581C00BAD465</string>
+				<string>072CCA8F1CAABE73003A8834</string>
+				<string>C6BA19991827581C00BAD465</string>
+				<string>C6BA199A1827581C00BAD465</string>
+				<string>C62DCD0A186C79190039C256</string>
+				<string>C6BA199B1827581C00BAD465</string>
+				<string>C62408D11848C96D008D0D63</string>
+				<string>C6BA199C1827581C00BAD465</string>
+				<string>07F5C20B1CAD1D0B006BDF0A</string>
+				<string>C6BA199D1827581C00BAD465</string>
+				<string>C6BA199E1827581C00BAD465</string>
+				<string>C6BA199F1827581C00BAD465</string>
+				<string>C67B450318916CA2006CBA73</string>
+				<string>C6BA19A01827581C00BAD465</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C60EC83617E848DA00C5D52E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C60EC86917E848DB00C5D52E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>799933DAD3E5554DDC2AF21D</string>
+				<string>C60EC83317E848DA00C5D52E</string>
+				<string>C60EC83417E848DA00C5D52E</string>
+				<string>C60EC83517E848DA00C5D52E</string>
+				<string>E5E0B82FA99CFF9AD199612F</string>
+				<string>1E1BC3E822CC29FC120ACEBB</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>AviasalesSDKTemplate</string>
+			<key>productName</key>
+			<string>AviasalesSDKTemplate</string>
+			<key>productReference</key>
+			<string>C60EC83717E848DA00C5D52E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>C60EC83717E848DA00C5D52E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>AviasalesSDKTemplate.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C60EC83817E848DA00C5D52E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C60EC83717E848DA00C5D52E</string>
+				<string>073E93511CABD93200C880D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC83917E848DA00C5D52E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C67CC6FA17F31A55006C659C</string>
+				<string>C60EC83A17E848DA00C5D52E</string>
+				<string>C60EC83C17E848DA00C5D52E</string>
+				<string>C60EC83E17E848DA00C5D52E</string>
+				<string>C6B751E018240B5400FEF5B9</string>
+				<string>BD570B90FEA871F9E1907159</string>
+				<string>A932ECE8B4290A995D90FA38</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC83A17E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C60EC83B17E848DA00C5D52E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C60EC83A17E848DA00C5D52E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C60EC83C17E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C60EC83D17E848DA00C5D52E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C60EC83C17E848DA00C5D52E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C60EC83E17E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C60EC83F17E848DA00C5D52E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C60EC83E17E848DA00C5D52E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C60EC84017E848DA00C5D52E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>072CCA791CAABE73003A8834</string>
+				<string>C67B44FE18916C72006CBA73</string>
+				<string>C6B750171823F30E00FEF5B9</string>
+				<string>C6B750151823F29B00FEF5B9</string>
+				<string>C6B750161823F2DF00FEF5B9</string>
+				<string>C6B750191823F35700FEF5B9</string>
+				<string>C6B750181823F32D00FEF5B9</string>
+				<string>C63BA9EA1816B56E007A4F00</string>
+				<string>C63BA9EB1816B56E007A4F00</string>
+				<string>C63BA9ED1816BA6A007A4F00</string>
+				<string>C63BA9EE1816BA6A007A4F00</string>
+				<string>C60EC84917E848DA00C5D52E</string>
+				<string>C60EC84A17E848DA00C5D52E</string>
+				<string>07F5C20A1CAD1D0B006BDF0A</string>
+				<string>C60EC84117E848DA00C5D52E</string>
+				<string>C6B752251824123800FEF5B9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AviasalesSDKTemplate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84117E848DA00C5D52E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C60EC84217E848DA00C5D52E</string>
+				<string>C60EC84317E848DA00C5D52E</string>
+				<string>C60EC84617E848DA00C5D52E</string>
+				<string>C60EC84817E848DA00C5D52E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84217E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>AviasalesSDKTemplate-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84317E848DA00C5D52E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C60EC84417E848DA00C5D52E</string>
+				<string>C6A6666A19ED4664000C6EAB</string>
+				<string>C6A6666B19ED4665000C6EAB</string>
+				<string>C6A6666C19ED4688000C6EAB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84417E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84617E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84717E848DA00C5D52E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C60EC84617E848DA00C5D52E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C60EC84817E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AviasalesSDKTemplate-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84917E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84A17E848DA00C5D52E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C60EC84B17E848DA00C5D52E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C60EC84A17E848DA00C5D52E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C60EC86717E848DB00C5D52E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C60EC86817E848DB00C5D52E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C60EC86917E848DB00C5D52E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C60EC86A17E848DB00C5D52E</string>
+				<string>C60EC86B17E848DB00C5D52E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C60EC86A17E848DB00C5D52E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>78F0B7295E187DDC298DDA62</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_BITCODE</key>
+				<string>NO</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(SDKROOT)/usr/lib/system</string>
+					<string>$(SRCROOT)/AviasalesLib</string>
+					<string>$(PROJECT_DIR)/AviasalesLib</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ru.aviasales.promo</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>STRIP_STYLE</key>
+				<string>all</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C60EC86B17E848DB00C5D52E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>106A8292329EA2FF7BA4656E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Distribution: Go Travel Un Limited</string>
+				<key>ENABLE_BITCODE</key>
+				<string>NO</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>NO</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>$(SDKROOT)/usr/lib/system</string>
+					<string>$(SRCROOT)/AviasalesLib</string>
+					<string>$(PROJECT_DIR)/AviasalesLib</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>ru.aviasales.promo</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>STRIP_STYLE</key>
+				<string>all</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C62408D01848C96D008D0D63</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTResultsTicketCellOneWay.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C62408D11848C96D008D0D63</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C62408D01848C96D008D0D63</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C62DCD09186C79190039C256</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTResultsTabBar.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C62DCD0A186C79190039C256</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C62DCD09186C79190039C256</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C62DCD0C186C80F10039C256</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTFiltersTabBar.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C62DCD0D186C80F10039C256</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C62DCD0C186C80F10039C256</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63BA9EA1816B56E007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTCommonFunctions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9EB1816B56E007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTCommonFunctions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9EC1816B56E007A4F00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63BA9EB1816B56E007A4F00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63BA9ED1816BA6A007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTSearchParams.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9EE1816BA6A007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTSearchParams.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9EF1816BA6A007A4F00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63BA9EE1816BA6A007A4F00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63BA9F01817C76F007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTFlightCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9F11817C778007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTFlightCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9F21817C778007A4F00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63BA9F11817C778007A4F00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63BA9F31817C781007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTFlightCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9F51817F1F1007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTStopoverCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9F61817F1FD007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTStopoverCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63BA9F71817F1FD007A4F00</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63BA9F61817F1FD007A4F00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63BA9F81817F206007A4F00</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTStopoverCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD38A17F338AC007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTAirportPickerSearchingCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD38B17F338AC007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTAirportPickerSearchingCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD38C17F338AC007FFBD9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63FD38B17F338AC007FFBD9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63FD38D17F338C4007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTAirportPickerEmptyCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD38E17F338D3007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTAirportPickerEmptyCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD38F17F338D3007FFBD9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63FD38E17F338D3007FFBD9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63FD39017F338DA007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTAirportPickerEmptyCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD39917F4928C007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTSearchFormDateCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD39A17F49292007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTSearchFormDateCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C63FD39B17F49292007FFBD9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63FD39A17F49292007FFBD9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C63FD39C17F49297007FFBD9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTSearchFormDateCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C645047417EC38AB00BF9E31</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTSearchForm.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C645047517EC38AB00BF9E31</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>ASTSearchForm.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objc</string>
+		</dict>
+		<key>C645047617EC38AB00BF9E31</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C645047517EC38AB00BF9E31</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C67B44FE18916C72006CBA73</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C67B44FF18916CA2006CBA73</string>
+				<string>C67B450018916CA2006CBA73</string>
+				<string>C67B450118916CA2006CBA73</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Browser</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C67B44FF18916CA2006CBA73</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTWebBrowserViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C67B450018916CA2006CBA73</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTWebBrowserViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C67B450118916CA2006CBA73</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTWebBrowserViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C67B450218916CA2006CBA73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C67B450018916CA2006CBA73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C67B450318916CA2006CBA73</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C67B450118916CA2006CBA73</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C67CC6EC17F1EF1B006C659C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTAirportPickerCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C67CC6FA17F31A55006C659C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreLocation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreLocation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C67CC6FB17F31A55006C659C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C67CC6FA17F31A55006C659C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6A0977918113DD500862C71</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTResultsTicketCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6A0977A18113DD500862C71</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASTResultsTicketCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6A0977B18113DD500862C71</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6A0977A18113DD500862C71</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6A0977C18113DEA00862C71</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTResultsTicketCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6A6666A19ED4664000C6EAB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>de</string>
+			<key>path</key>
+			<string>de.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6A6666B19ED4665000C6EAB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>ru</string>
+			<key>path</key>
+			<string>ru.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6A6666C19ED4688000C6EAB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>es</string>
+			<key>path</key>
+			<string>es.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6ABB12317F0619B0086872F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTAirportPickerCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6ABB12417F0619B0086872F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>ASTAirportPickerCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objc</string>
+		</dict>
+		<key>C6ABB12517F0619B0086872F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTAirportPickerSearchingCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6ABB12617F0619B0086872F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6ABB12417F0619B0086872F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B255D617F0228C00630769</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTAirportPicker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B255D717F0228C00630769</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>ASTAirportPicker.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objc</string>
+		</dict>
+		<key>C6B255D817F0228C00630769</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTAirportPicker.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B255D917F0228C00630769</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B255D717F0228C00630769</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F72181EA14A00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTResults.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F73181EA14A00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>ASTResults.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objc</string>
+		</dict>
+		<key>C6B74F74181EA14A00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTResults.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F75181EA14A00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F73181EA14A00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F7C181FDA9100FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASTFilters.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F7D181FDA9100FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>ASTFilters.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objc</string>
+		</dict>
+		<key>C6B74F7E181FDA9100FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASTFilters.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F7F181FDA9100FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F7D181FDA9100FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F81181FDBBB00FEF5B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6B74F82181FDBBB00FEF5B9</string>
+				<string>C6B74F83181FDBBB00FEF5B9</string>
+				<string>C6B74F84181FDBBB00FEF5B9</string>
+				<string>C6B74F85181FDBBB00FEF5B9</string>
+				<string>C6B74F86181FDBBB00FEF5B9</string>
+				<string>C6B74F87181FDBBB00FEF5B9</string>
+				<string>C6B74F88181FDBBB00FEF5B9</string>
+				<string>C6B74F89181FDBBB00FEF5B9</string>
+				<string>C6B74F8A181FDBBB00FEF5B9</string>
+				<string>C6B74F8B181FDBBB00FEF5B9</string>
+				<string>C6B74F8C181FDBBB00FEF5B9</string>
+				<string>C6B74F8D181FDBBB00FEF5B9</string>
+				<string>C6B74F8E181FDBBB00FEF5B9</string>
+				<string>C6B74F8F181FDBBB00FEF5B9</string>
+				<string>C6B74F90181FDBBB00FEF5B9</string>
+				<string>C6B74F91181FDBBB00FEF5B9</string>
+				<string>C6B74F92181FDBBB00FEF5B9</string>
+				<string>C6B74F93181FDBBB00FEF5B9</string>
+				<string>C6B74F94181FDBBB00FEF5B9</string>
+				<string>C6B74F95181FDBBB00FEF5B9</string>
+				<string>C6B74F96181FDBBB00FEF5B9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Filter Cells</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F82181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterAirportsSeparatorCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F83181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterAirportsSeparatorCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F84181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterAirportsSeparatorCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F85181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterCellWithAirport.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F86181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterCellWithAirport.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F87181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterCellWithAirport.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F88181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterCellWithMobileSwitch.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F89181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterCellWithMobileSwitch.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F8A181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterCellWithMobileSwitch.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F8B181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterCellWithOneThumbSlider.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F8C181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterCellWithOneThumbSlider.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F8D181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterCellWithOneThumbSlider.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F8E181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterCellWithTwoThumbsSlider.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F8F181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterCellWithTwoThumbsSlider.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F90181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterCellWithTwoThumbsSlider.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F91181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterCellWithView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F92181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterCellWithView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F93181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterCellWithView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F94181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASFilterHeaderCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F95181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASFilterHeaderCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F96181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASFilterHeaderCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74F97181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F83181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F99181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F86181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F9B181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F89181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F9D181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F8C181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74F9F181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F8F181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74FA1181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F92181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74FA3181FDBBB00FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F95181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B74FC11820ED3600FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ASRaitingStars.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74FC21820ED3600FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ASRaitingStars.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74FC31820ED3600FEF5B9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ASRaitingStars.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B74FC41820ED3600FEF5B9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74FC21820ED3600FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6B750151823F29B00FEF5B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C645047417EC38AB00BF9E31</string>
+				<string>C645047517EC38AB00BF9E31</string>
+				<string>C600CECD17FD7E1900697E47</string>
+				<string>C600CECE17FD7E2300697E47</string>
+				<string>C600CED017FD7E2E00697E47</string>
+				<string>C63FD39917F4928C007FFBD9</string>
+				<string>C63FD39A17F49292007FFBD9</string>
+				<string>C63FD39C17F49297007FFBD9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Search Form</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B750161823F2DF00FEF5B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6B74F72181EA14A00FEF5B9</string>
+				<string>C6B74F73181EA14A00FEF5B9</string>
+				<string>C6B74F74181EA14A00FEF5B9</string>
+				<string>C62DCD09186C79190039C256</string>
+				<string>C6A0977918113DD500862C71</string>
+				<string>C6A0977A18113DD500862C71</string>
+				<string>C6A0977C18113DEA00862C71</string>
+				<string>C62408D01848C96D008D0D63</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Results Screen</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B750171823F30E00FEF5B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6B255D617F0228C00630769</string>
+				<string>C6B255D717F0228C00630769</string>
+				<string>C6B255D817F0228C00630769</string>
+				<string>C6ABB12317F0619B0086872F</string>
+				<string>C6ABB12417F0619B0086872F</string>
+				<string>C67CC6EC17F1EF1B006C659C</string>
+				<string>C63FD38A17F338AC007FFBD9</string>
+				<string>C63FD38B17F338AC007FFBD9</string>
+				<string>C6ABB12517F0619B0086872F</string>
+				<string>C63FD38D17F338C4007FFBD9</string>
+				<string>C63FD38E17F338D3007FFBD9</string>
+				<string>C63FD39017F338DA007FFBD9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Airport Picker</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B750181823F32D00FEF5B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C604811A1814F0DE0015FFEE</string>
+				<string>C604811B1814F0DE0015FFEE</string>
+				<string>C604811C1814F0DE0015FFEE</string>
+				<string>C63BA9F01817C76F007A4F00</string>
+				<string>C63BA9F11817C778007A4F00</string>
+				<string>C63BA9F31817C781007A4F00</string>
+				<string>C63BA9F51817F1F1007A4F00</string>
+				<string>C63BA9F61817F1FD007A4F00</string>
+				<string>C63BA9F81817F206007A4F00</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Ticket Screen</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B750191823F35700FEF5B9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C6B74F81181FDBBB00FEF5B9</string>
+				<string>C6B74F7C181FDA9100FEF5B9</string>
+				<string>C6B74F7D181FDA9100FEF5B9</string>
+				<string>C6B74F7E181FDA9100FEF5B9</string>
+				<string>C62DCD0C186C80F10039C256</string>
+				<string>C6B74FC11820ED3600FEF5B9</string>
+				<string>C6B74FC21820ED3600FEF5B9</string>
+				<string>C6B74FC31820ED3600FEF5B9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Filters Screen</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C6B751E018240B5400FEF5B9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreFoundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreFoundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C6B752251824123800FEF5B9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>lineEnding</key>
+			<string>0</string>
+			<key>path</key>
+			<string>Defines.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.objcpp</string>
+		</dict>
+		<key>C6BA198C1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B255D817F0228C00630769</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA198D1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C67CC6EC17F1EF1B006C659C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA198E1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6ABB12517F0619B0086872F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA198F1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63FD39017F338DA007FFBD9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19911827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C600CED017FD7E2E00697E47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19921827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63FD39C17F49297007FFBD9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19941827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6A0977C18113DEA00862C71</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19951827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F84181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19961827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F87181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19971827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F8A181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19981827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F8D181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19991827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F90181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA199A1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F93181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA199B1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F96181FDBBB00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA199C1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F7E181FDA9100FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA199D1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74FC31820ED3600FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA199E1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C604811C1814F0DE0015FFEE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA199F1827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63BA9F31817C781007A4F00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6BA19A01827581C00BAD465</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C63BA9F81817F206007A4F00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6EA13D218313BB800E77589</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C6B74F74181EA14A00FEF5B9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DA159C833A453395FAF1CF5C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>BD570B90FEA871F9E1907159</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5E0B82FA99CFF9AD199612F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E9FFB58869344A6DC68DFB25</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C60EC82F17E848DA00C5D52E</string>
+</dict>
+</plist>

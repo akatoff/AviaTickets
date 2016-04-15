@@ -41,4 +41,6 @@
 - (void)updateDepartureDate:(NSDate *)departureDate;
 - (void)updateReturnDate:(NSDate *)returnDate;
 
+- (void)startSearchWithParams:(AviasalesSearchParams *)params;
+
 @end

@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 Go Travel Un Limited. All rights reserved.
 //
 
+#import <SDVersion/SDVersion.h>
+#import <AviasalesSDK/AviasalesSearchParamsUrlCoder.h>
+#import <AviasalesSDK/AviasalesSearchParams.h>
+
 #import "ASTAppDelegate.h"
 #import "ASTSearchForm.h"
 
@@ -42,5 +46,38 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    //iOS 9+
+    [self performUrlOpening:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    //iOS < 9
+    [self performUrlOpening:url];
+    return YES;
+}
+
+- (void)performUrlOpening:(NSURL *)url {
+    NSURLComponents *const components = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    if ([components.host isEqualToString:@"search"]) {
+        NSString *const path = components.path;
+        NSString *const searchString = [path substringFromIndex:1];
+        AviasalesSearchParams *const searchParams = [[[AviasalesSearchParamsUrlCoder alloc] init] searchParamsWithString:searchString];
+
+        UINavigationController *const navigationController = (UINavigationController *)self.window.rootViewController;
+        ASTSearchForm *const searchForm = navigationController.viewControllers[0];
+
+        if ([searchForm isKindOfClass:[ASTSearchForm class]]) {
+            [navigationController popToRootViewControllerAnimated:NO];
+            [searchForm startSearchWithParams:searchParams];
+        }
+
+    }
+
+}
+
 
 @end
