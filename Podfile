@@ -8,10 +8,10 @@ target 'AviasalesSDKTemplate' do
 pod 'SDWebImage', '~> 3.7'
 pod 'NMRangeSlider', '~> 1.2'
 pod 'SDVersion', '~> 2.6'
-pod 'AviasalesSDK', :path => '.' #'~> 1.3.3-beta1'
+pod 'AviasalesSDK', '~> 1.3.3-beta2'
 
 end
 
 target 'AviasalesSDKTemplateTests' do
-    pod 'AviasalesSDK', :path => '.' #'~> 1.3.3-beta1' 
+    pod 'AviasalesSDK', '~> 1.3.3-beta2' 
 end

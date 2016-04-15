@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 	s.name         = "AviasalesSDK"
-	s.version      = "1.3.3-beta1"
+	s.version      = "1.3.3-beta2"
 	s.summary      = "Integrate flight search and booking framework in your apps."
 	s.description  = <<-DESC
 Aviasales SDK lets you create custom process of searching and buying tickets to flights.
@@ -9,9 +9,9 @@ Aviasales SDK lets you create custom process of searching and buying tickets to 
 
 	s.homepage     = "https://github.com/KosyanMedia/Aviasales-iOS-SDK"
 	s.license      = { :type => "MIT", :file => "LICENSE" }
-	s.author             = { "Aviasales iOS Team" => "support@aviasales.ru" }
+	s.author       = { "Aviasales iOS Team" => "support@aviasales.ru" }
 	s.platform     = :ios, "7.0"
-	s.source       = { :git => "https://github.com/KosyanMedia/Aviasales-iOS-SDK.git", :branch =>"1.3.3-beta1", :tag => "1.3.3-beta1" }
+	s.source       = { :git => "https://github.com/KosyanMedia/Aviasales-iOS-SDK.git", :branch =>"1.3.3-beta2", :tag => "1.3.3-beta2" }
 	s.source_files = "AviasalesLib/**/*.{h,m}"
 	s.vendored_libraries = "AviasalesLib/libAviasales.a"
 
