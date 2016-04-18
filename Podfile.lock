@@ -50,7 +50,7 @@ PODS:
     - UnityAds (~> 1.5.3)
     - VungleSDK-iOS (~> 3.2)
     - YandexMobileAds (~> 2.0)
-  - AviasalesSDK (1.3.3-beta3)
+  - AviasalesSDK (1.3.3-beta4)
   - Avocarrot (3.4.3)
   - ChartboostSDK (6.4.0)
   - CocoaLumberjack (2.2.0):
@@ -97,14 +97,10 @@ PODS:
 
 DEPENDENCIES:
   - Appodeal (~> 0.10.0)
-  - AviasalesSDK (from `.`)
+  - AviasalesSDK (~> 1.3.3-beta4)
   - NMRangeSlider (~> 1.2)
   - SDVersion (~> 2.6)
   - SDWebImage (~> 3.7)
-
-EXTERNAL SOURCES:
-  AviasalesSDK:
-    :path: .
 
 SPEC CHECKSUMS:
   AdColony: a9859672fee49d9a81017d1fffa3133bf8538bd8
@@ -112,7 +108,7 @@ SPEC CHECKSUMS:
   AmazonAds: 51d8e53c0527b6732d59e3738943307763e9620f
   AppLovin: 03f98cbd83d207ab5082be173ec6e332ec07ad02
   Appodeal: b52a3f8c673b30ce5c113af247b24dfe7b972e95
-  AviasalesSDK: 74df1bb7bd74748f0d9215e26459a1ba840e9f36
+  AviasalesSDK: 8b1a905196ff97a1ade68a2c5470a53f9a4c45a0
   Avocarrot: cd381db4f0b9e9eb70892e7c5d0f9d64e0d055e8
   ChartboostSDK: 1a7e970c983042eaeb887821452cfceebbe88c81
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
