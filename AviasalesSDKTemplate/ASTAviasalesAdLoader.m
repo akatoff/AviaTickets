@@ -41,10 +41,6 @@
     self.adManager.delegate = self;
 }
 
-- (void)dealloc {
-    
-}
-
 #pragma mark - <AviasalesAdvertisementManagerDelegate>
 - (void)advertisementManager:(AviasalesAdvertisementManager *)presenter didLoadAdvertisement:(UIView *)advertisement {
     self.callback(advertisement);
