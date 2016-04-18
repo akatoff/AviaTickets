@@ -42,7 +42,6 @@
 }
 
 - (void)initializeAppodealWithAPIKey:(NSString *)appodealAPIKey {
-    [Appodeal setTestingEnabled:YES]; //Uncomment this line to enable appodeal testing
     [Appodeal initializeWithApiKey:appodealAPIKey
                              types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd | AppodealAdTypeNonSkippableVideo | AppodealAdTypeNativeAd | AppodealAdTypeSkippableVideo];
 }
@@ -120,6 +119,13 @@
         [loaders removeObject:loader];
         callback(adView);
     }];
-    
 }
+
+- (void)setTestingEnabled:(BOOL)testingEnabled {
+#ifdef DEBUG
+    _testingEnabled = testingEnabled;
+    [Appodeal setTestingEnabled:testingEnabled];
+#endif
+}
+
 @end
