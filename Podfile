@@ -8,14 +8,16 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'AviasalesSDKTemplate' do
 
-pod 'SDWebImage', '~> 3.7'
-pod 'NMRangeSlider', '~> 1.2'
-pod 'SDVersion', '~> 2.6'
-pod 'AviasalesSDK', :path => '.' #'~> 1.3.3-beta3'
-pod 'Appodeal', '~> 0.10.0'
+	pod 'SDWebImage', '~> 3.7'
+	pod 'NMRangeSlider', '~> 1.2'
+	pod 'SDVersion', '~> 2.6'
+	pod 'AviasalesSDK', '~> 1.3.3-beta5'
+	pod 'Appodeal', '~> 0.10.0'
 
 end
 
 target 'AviasalesSDKTemplateTests' do
-    pod 'AviasalesSDK', :path => '.' #'~> 1.3.3-beta3'
+
+    pod 'AviasalesSDK', '~> 1.3.3-beta5'
+    
 end
