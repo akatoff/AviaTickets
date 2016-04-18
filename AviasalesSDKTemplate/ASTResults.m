@@ -17,18 +17,29 @@
 #import "ASTFilters.h"
 #import <AviasalesSDK/AviasalesFilter.h>
 
+#import "ASTSearchResultsList.h"
+#import "ASTAdvertisementManager.h"
+#import "ASTVideoAdPlayer.h"
+#import "ASTTableManagerUnion.h"
+#import "ASTAdvertisementTableManager.h"
+#import <Appodeal/AppodealNativeAdView.h>
+
 #define AST_SEARCH_TIME 40.0f
 #define AST_PROGRESS_UPDATE_INTERVAL 0.1f
 
 #define AST_RS_HEADER_HEIGHT 4.0f
 
-@interface ASTResults () {
-    NSTimer *_progressTimer;
-    NSArray *_currencies;
-    ASTFilters *_filtersVC;
-    AviasalesFilter *_filter;
-    NSArray *_tickets;
-}
+static const NSInteger kAppodealAdIndex = 3;
+static const NSInteger kAviasalesAdIndex = 0;
+
+@interface ASTResults () <ASTSearchResultsListDelegate>
+
+@property (strong, nonatomic) ASTSearchResultsList *resultsList;
+@property (strong, nonatomic) ASTAdvertisementTableManager *ads;
+@property (strong, nonatomic) ASTTableManagerUnion *tableManager;
+@property (strong, nonatomic) id<ASTVideoAdPlayer> waitingAdPlayer;
+@property (assign, nonatomic) BOOL appodealAdLoaded;
+@property (strong, nonatomic) AviasalesSearchParams *searchParams;
 
 - (void)updateCurrencyButton;
 - (NSArray *)filteredTickets;
@@ -36,18 +47,25 @@
 
 @end
 
-@implementation ASTResults
+@implementation ASTResults{
+    NSTimer *_progressTimer;
+    NSArray *_currencies;
+    ASTFilters *_filtersVC;
+    AviasalesFilter *_filter;
+    NSArray *_tickets;
+}
 
-/**
- Nib name for ticket cell in results. Depends on oneway or return ticket.
- */
-static NSString *NibName = nil;
-static NSIndexPath *selectedIndexPath;
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    return [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil searchParams:nil];
+}
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil
+                         bundle:(NSBundle *)nibBundleOrNil
+                   searchParams:(AviasalesSearchParams *)searchParams {
+
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        _searchParams = searchParams;
         NSString *pathToCurrenciesFile = [AVIASALES_BUNDLE pathForResource:@"currencies" ofType:@"json"];
         if (pathToCurrenciesFile) {
             NSData *currenciesData = [NSData dataWithContentsOfFile:pathToCurrenciesFile options:kNilOptions error:nil];
@@ -70,8 +88,14 @@ static NSIndexPath *selectedIndexPath;
             }
             _currencies = currencies;
         }
-        
-        NibName = [ASTSearchParams sharedInstance].returnDate ? @"ASTResultsTicketCell" : @"ASTResultsTicketCellOneWay";
+
+        NSString *const nibName = [ASTSearchParams sharedInstance].returnDate ? @"ASTResultsTicketCell" : @"ASTResultsTicketCellOneWay";
+        _resultsList = [[ASTSearchResultsList alloc] initWithCellNibName:nibName];
+        _resultsList.delegate = self;
+
+        _ads = [[ASTAdvertisementTableManager alloc] init];
+
+        _tableManager = [[ASTTableManagerUnion alloc] initWithFirstManager:_resultsList secondManager:_ads secondManagerPositions:[NSIndexSet indexSet]];
     }
     return self;
 }
@@ -79,7 +103,12 @@ static NSIndexPath *selectedIndexPath;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    self.waitingAdPlayer = [[ASTAdvertisementManager sharedInstance] presentVideoAdInViewIfNeeded:self.waitingView rootViewController:self];
+
+    self.tableView.dataSource = self.tableManager;
+    self.tableView.delegate = self.tableManager;
+
     [_progressLabel setText:AVIASALES_(@"AVIASALES_SEARCHING_PROGRESS")];
     [_filters setTitle:AVIASALES_(@"AVIASALES_FILTERS")];
     [_emptyLabel setText:AVIASALES_(@"AVIASALES_FILTERS_EMPTY")];
@@ -93,6 +122,23 @@ static NSIndexPath *selectedIndexPath;
     self.navigationItem.title = [NSString stringWithFormat:@"%@ — %@", [ASTSearchParams sharedInstance].originIATA, [ASTSearchParams sharedInstance].destinationIATA];
     
     [self updateCurrencyButton];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if (!self.appodealAdLoaded) {
+        self.appodealAdLoaded = YES;
+        __weak typeof(self) bself = self;
+        
+        [[ASTAdvertisementManager sharedInstance] viewController:self loadNativeAdWithSize:(CGSize){self.view.bounds.size.width, [ASTAdvertisementTableManager appodealAdHeight]} ifNeededWithCallback:^(AppodealNativeAdView *adView) {
+            [bself didLoadAd:adView];
+        }];
+
+        [[ASTAdvertisementManager sharedInstance] loadAviasalesAdWithSearchParams:self.searchParams ifNeededWithCallback:^(UIView *adView) {
+            [bself didLoadAviasalesAd:adView];
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -110,8 +156,6 @@ static NSIndexPath *selectedIndexPath;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    [_tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
     
     if (_filter.needFiltering && [self.filteredTickets count] == 0) {
         [_emptyView setHidden:NO];
@@ -132,6 +176,9 @@ static NSIndexPath *selectedIndexPath;
     
     [UIView animateWithDuration:0.5f animations:^{
         [_waitingView setAlpha:0];
+    } completion:^(BOOL finished) {
+        [self.waitingAdPlayer stop];
+        [_waitingView removeFromSuperview];
     }];
     
     _filter = [[AviasalesFilter alloc] init];
@@ -148,54 +195,14 @@ static NSIndexPath *selectedIndexPath;
     [_filtersVC setTickets:[self filteredTickets]];
 }
 
-#pragma mark - Table view data source
+#pragma mark - <ASTSearchResultsListDelegate>
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return [[self tickets] count];
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return 1;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"ASTResultsTicketCell";
-    ASTResultsTicketCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[AVIASALES_BUNDLE loadNibNamed:NibName owner:self options:nil] objectAtIndex:0];
-    }
-    
-    [cell applyTicket:[[self tickets] objectAtIndex:indexPath.section]];
-    
-    return cell;
-}
-
-#pragma mark - Table view delegate
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 77;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 1;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    selectedIndexPath = indexPath;
+- (void)didSelectTicketAtIndex:(NSInteger)index {
     
     ASTTicketScreen *ticketVC = [[ASTTicketScreen alloc] initWithNibName:@"ASTTicketScreen" bundle:AVIASALES_BUNDLE];
     
-    ticketVC.ticket = [[self tickets] objectAtIndex:indexPath.section];
+    ticketVC.ticket = [[self tickets] objectAtIndex:index];
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:AVIASALES_(@"AVIASALES_BACK") style:UIBarButtonItemStylePlain target:nil action:nil];
     
@@ -289,4 +296,51 @@ static NSIndexPath *selectedIndexPath;
     [_filtersVC.tableView reloadData];
 }
 
+
+#pragma mark - Advertisement
+- (void)didLoadAd:(UIView *)adView {
+    if (adView == nil) {
+        return;
+    }
+
+    NSArray<UIView *> *ads = self.ads.ads ?: @[];
+    ads = [ads arrayByAddingObject:adView];
+
+    NSMutableIndexSet *const indexSet = [[NSMutableIndexSet alloc] initWithIndex:kAppodealAdIndex];
+    if (ads.count > 1) {
+        [indexSet addIndex:kAviasalesAdIndex];
+    }
+
+    [self updateAdsTableWithAds:ads atIndexes:[indexSet copy]];
+}
+
+- (void)didLoadAviasalesAd:(UIView *)adView {
+    if (adView == nil) {
+        return;
+    }
+    NSMutableArray<UIView *> *const ads = [self.ads.ads ?: @[] mutableCopy];
+    [ads insertObject:adView atIndex:0];
+
+    NSMutableIndexSet *const indexSet = [[NSMutableIndexSet alloc] initWithIndex:kAviasalesAdIndex];
+    if (ads.count > 1) {
+        [indexSet addIndex:kAppodealAdIndex];
+    }
+
+    [self updateAdsTableWithAds:ads atIndexes:[indexSet copy]];
+}
+
+- (void)updateAdsTableWithAds:(NSArray<UIView *> *)ads atIndexes:(NSIndexSet *)indexes {
+//    NSIndexSet *const oldIndexes = self.tableManager.secondManagerPositions;
+
+//    if (oldIndexes.count > 0) {//TODO: check if table has necessary indexes
+//        [self.tableView deleteSections:oldIndexes withRowAnimation:UITableViewRowAnimationFade];
+//    }
+
+//    [self.tableView insertSections:indexes withRowAnimation:UITableViewRowAnimationFade];
+
+    self.ads.ads = ads;
+    self.tableManager.secondManagerPositions = indexes;
+
+    [self.tableView reloadData];
+}
 @end

@@ -12,11 +12,27 @@
 
 #import "ASTAppDelegate.h"
 #import "ASTSearchForm.h"
+#import "ASTAdvertisementManager.h"
+
+
+// Set your appodeal api key here
+static NSString *const kAppodealApiKey = @"aa80d2e07a9324db0eee12024924236ee60c3d31434fd818";
+static NSString *const kAviasalesAPIToken = @"c6b51c32eb444d40e6a8132a430d4e98";
+static NSString *const kAviasalesMarker = @"99305";
 
 @implementation ASTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Aviasale SDK
+    [AviasalesSDK sharedInstance].APIToken = kAviasalesAPIToken;
+    [AviasalesSDK sharedInstance].marker = kAviasalesMarker;
+
+    // Advertisement initializing
+    ASTAdvertisementManager *const adManager = [ASTAdvertisementManager sharedInstance];
+    [adManager initializeAppodealWithAPIKey:kAppodealApiKey];
+
+    [adManager presentFullScreenAdFromViewControllerIfNeeded:self.window.rootViewController];
     return YES;
 }
 							

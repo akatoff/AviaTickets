@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 07082A1F1CAEC2B400CE4305 /* ASTSearchResultsList.m */; };
 		072CCA8B1CAABE73003A8834 /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7A1CAABE73003A8834 /* App.xcassets */; };
 		072CCA8C1CAABE73003A8834 /* AVSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */; };
 		072CCA8D1CAABE73003A8834 /* Aviasales_top_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7C1CAABE73003A8834 /* Aviasales_top_airports.json */; };
 		072CCA8E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA7E1CAABE73003A8834 /* AviasalesStaticLibLocalizable.strings */; };
 		072CCA8F1CAABE73003A8834 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 072CCA801CAABE73003A8834 /* AviasalesTemplateLocalizable.strings */; };
 		073E936B1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */; };
+		0756C0381CB249D60039443B /* ASTAdvertisementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0371CB249D60039443B /* ASTAdvertisementManager.m */; };
+		0756C03B1CB252860039443B /* ASTVideoAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C03A1CB252860039443B /* ASTVideoAdLoader.m */; };
+		0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C03F1CB262240039443B /* ASTVideoAdPlayerProxy.m */; };
+		0756C0431CB26C080039443B /* ASTNativeAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0421CB26C080039443B /* ASTNativeAdLoader.m */; };
+		0756C0471CB26F780039443B /* ASTNewsFeedAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */; };
+		0756C04E1CB291F70039443B /* ASTTableManagerUnion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */; };
+		0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */; };
+		077C43791CB7DCFD007A3290 /* ASTAviasalesAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 077C43781CB7DCFD007A3290 /* ASTAviasalesAdLoader.m */; };
 		07F5C20B1CAD1D0B006BDF0A /* ASTMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */; };
-		2CEC34A59CE0F148FF2BAFD5 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A932ECE8B4290A995D90FA38 /* libPods-AviasalesSDKTemplateTests.a */; };
+		8C5076CD4BC01DA26A4EDA3B /* Pods_AviasalesSDKTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */; };
+		928A76E39DB845FFA9BF2247 /* Pods_AviasalesSDKTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */; };
 		C600CECF17FD7E2300697E47 /* ASTSearchFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */; };
 		C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C604811B1814F0DE0015FFEE /* ASTTicketScreen.m */; };
 		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
@@ -69,7 +79,6 @@
 		C6BA199F1827581C00BAD465 /* ASTFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F31817C781007A4F00 /* ASTFlightCell.xib */; };
 		C6BA19A01827581C00BAD465 /* ASTStopoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63BA9F81817F206007A4F00 /* ASTStopoverCell.xib */; };
 		C6EA13D218313BB800E77589 /* ASTResults.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B74F74181EA14A00FEF5B9 /* ASTResults.xib */; };
-		DA159C833A453395FAF1CF5C /* libPods-AviasalesSDKTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD570B90FEA871F9E1907159 /* libPods-AviasalesSDKTemplate.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07082A1E1CAEC2B400CE4305 /* ASTSearchResultsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchResultsList.h; sourceTree = "<group>"; };
+		07082A1F1CAEC2B400CE4305 /* ASTSearchResultsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchResultsList.m; sourceTree = "<group>"; };
 		072CCA7A1CAABE73003A8834 /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
 		072CCA7B1CAABE73003A8834 /* AVSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVSLaunchScreen.xib; sourceTree = "<group>"; };
 		072CCA7D1CAABE73003A8834 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Aviasales_top_airports.json; sourceTree = "<group>"; };
@@ -100,13 +111,30 @@
 		073E93511CABD93200C880D7 /* AviasalesSDKTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AviasalesSDKTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		073E93551CABD93200C880D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		073E936A1CAC11B400C880D7 /* AviasalesSearchParamsUrlCoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AviasalesSearchParamsUrlCoderTests.m; sourceTree = "<group>"; };
+		0756C0361CB249D60039443B /* ASTAdvertisementManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAdvertisementManager.h; sourceTree = "<group>"; };
+		0756C0371CB249D60039443B /* ASTAdvertisementManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAdvertisementManager.m; sourceTree = "<group>"; };
+		0756C0391CB252860039443B /* ASTVideoAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTVideoAdLoader.h; sourceTree = "<group>"; };
+		0756C03A1CB252860039443B /* ASTVideoAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTVideoAdLoader.m; sourceTree = "<group>"; };
+		0756C03D1CB261E00039443B /* ASTVideoAdPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTVideoAdPlayer.h; sourceTree = "<group>"; };
+		0756C03E1CB262240039443B /* ASTVideoAdPlayerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTVideoAdPlayerProxy.h; sourceTree = "<group>"; };
+		0756C03F1CB262240039443B /* ASTVideoAdPlayerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTVideoAdPlayerProxy.m; sourceTree = "<group>"; };
+		0756C0411CB26C080039443B /* ASTNativeAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNativeAdLoader.h; sourceTree = "<group>"; };
+		0756C0421CB26C080039443B /* ASTNativeAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNativeAdLoader.m; sourceTree = "<group>"; };
+		0756C0451CB26F780039443B /* ASTNewsFeedAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTNewsFeedAdLoader.h; sourceTree = "<group>"; };
+		0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTNewsFeedAdLoader.m; sourceTree = "<group>"; };
+		0756C0491CB291770039443B /* ASTTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTableManager.h; sourceTree = "<group>"; };
+		0756C04C1CB291F70039443B /* ASTTableManagerUnion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTableManagerUnion.h; sourceTree = "<group>"; };
+		0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTableManagerUnion.m; sourceTree = "<group>"; };
+		0756C04F1CB29B830039443B /* ASTAdvertisementTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAdvertisementTableManager.h; sourceTree = "<group>"; };
+		0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAdvertisementTableManager.m; sourceTree = "<group>"; };
+		077C43771CB7DCFD007A3290 /* ASTAviasalesAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAviasalesAdLoader.h; sourceTree = "<group>"; };
+		077C43781CB7DCFD007A3290 /* ASTAviasalesAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAviasalesAdLoader.m; sourceTree = "<group>"; };
 		07F5C20A1CAD1D0B006BDF0A /* ASTMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ASTMain.storyboard; sourceTree = "<group>"; };
-		106A8292329EA2FF7BA4656E /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
-		1600BD2538F037C2EE077B30 /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E183AE246B23B8C22C93785 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
-		78F0B7295E187DDC298DDA62 /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
-		A932ECE8B4290A995D90FA38 /* libPods-AviasalesSDKTemplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD570B90FEA871F9E1907159 /* libPods-AviasalesSDKTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AviasalesSDKTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C032BE26C94F858560AB273 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		28E4DE0B12286732C167B03A /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		C600CECD17FD7E1900697E47 /* ASTSearchFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchFormOptionsCell.h; sourceTree = "<group>"; };
 		C600CECE17FD7E2300697E47 /* ASTSearchFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchFormOptionsCell.m; sourceTree = "<group>"; };
 		C600CED017FD7E2E00697E47 /* ASTSearchFormOptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormOptionsCell.xib; sourceTree = "<group>"; };
@@ -195,6 +223,7 @@
 		C6B74FC31820ED3600FEF5B9 /* ASRaitingStars.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASRaitingStars.xib; sourceTree = "<group>"; };
 		C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C6B752251824123800FEF5B9 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Defines.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F795FF0C0DFD438D1C5837DC /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CEC34A59CE0F148FF2BAFD5 /* libPods-AviasalesSDKTemplateTests.a in Frameworks */,
+				8C5076CD4BC01DA26A4EDA3B /* Pods_AviasalesSDKTemplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +243,7 @@
 				C60EC83D17E848DA00C5D52E /* CoreGraphics.framework in Frameworks */,
 				C60EC83F17E848DA00C5D52E /* UIKit.framework in Frameworks */,
 				C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */,
-				DA159C833A453395FAF1CF5C /* libPods-AviasalesSDKTemplate.a in Frameworks */,
+				928A76E39DB845FFA9BF2247 /* Pods_AviasalesSDKTemplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,15 +271,44 @@
 			path = AviasalesSDKTemplateTests;
 			sourceTree = "<group>";
 		};
-		628B762E2457AB2215DE9632 /* Pods */ = {
+		0756C0351CB249BB0039443B /* Advertisement */ = {
 			isa = PBXGroup;
 			children = (
-				78F0B7295E187DDC298DDA62 /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
-				106A8292329EA2FF7BA4656E /* Pods-AviasalesSDKTemplate.release.xcconfig */,
-				1600BD2538F037C2EE077B30 /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */,
-				3E183AE246B23B8C22C93785 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */,
+				0756C0441CB26F500039443B /* AdLoading */,
+				0756C0361CB249D60039443B /* ASTAdvertisementManager.h */,
+				0756C0371CB249D60039443B /* ASTAdvertisementManager.m */,
+				0756C03D1CB261E00039443B /* ASTVideoAdPlayer.h */,
+				0756C03E1CB262240039443B /* ASTVideoAdPlayerProxy.h */,
+				0756C03F1CB262240039443B /* ASTVideoAdPlayerProxy.m */,
+				0756C04F1CB29B830039443B /* ASTAdvertisementTableManager.h */,
+				0756C0501CB29B830039443B /* ASTAdvertisementTableManager.m */,
 			);
-			name = Pods;
+			name = Advertisement;
+			sourceTree = "<group>";
+		};
+		0756C0441CB26F500039443B /* AdLoading */ = {
+			isa = PBXGroup;
+			children = (
+				0756C0411CB26C080039443B /* ASTNativeAdLoader.h */,
+				0756C0421CB26C080039443B /* ASTNativeAdLoader.m */,
+				0756C0391CB252860039443B /* ASTVideoAdLoader.h */,
+				0756C03A1CB252860039443B /* ASTVideoAdLoader.m */,
+				0756C0451CB26F780039443B /* ASTNewsFeedAdLoader.h */,
+				0756C0461CB26F780039443B /* ASTNewsFeedAdLoader.m */,
+				077C43771CB7DCFD007A3290 /* ASTAviasalesAdLoader.h */,
+				077C43781CB7DCFD007A3290 /* ASTAviasalesAdLoader.m */,
+			);
+			name = AdLoading;
+			sourceTree = "<group>";
+		};
+		0756C0481CB291550039443B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0756C0491CB291770039443B /* ASTTableManager.h */,
+				0756C04C1CB291F70039443B /* ASTTableManagerUnion.h */,
+				0756C04D1CB291F70039443B /* ASTTableManagerUnion.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		C60EC82E17E848DA00C5D52E = {
@@ -260,7 +318,7 @@
 				073E93521CABD93200C880D7 /* AviasalesSDKTemplateTests */,
 				C60EC83917E848DA00C5D52E /* Frameworks */,
 				C60EC83817E848DA00C5D52E /* Products */,
-				628B762E2457AB2215DE9632 /* Pods */,
+				E9639D387FCAE0AD5C8F2E7C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,8 +339,8 @@
 				C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */,
 				C60EC83E17E848DA00C5D52E /* UIKit.framework */,
 				C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */,
-				BD570B90FEA871F9E1907159 /* libPods-AviasalesSDKTemplate.a */,
-				A932ECE8B4290A995D90FA38 /* libPods-AviasalesSDKTemplateTests.a */,
+				AF833DDE37796D79B772046D /* Pods_AviasalesSDKTemplate.framework */,
+				A20A852A110899FFF88D5D89 /* Pods_AviasalesSDKTemplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -290,6 +348,8 @@
 		C60EC84017E848DA00C5D52E /* AviasalesSDKTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0756C0481CB291550039443B /* Utils */,
+				0756C0351CB249BB0039443B /* Advertisement */,
 				072CCA791CAABE73003A8834 /* Resources */,
 				C67B44FE18916C72006CBA73 /* Browser */,
 				C6B750171823F30E00FEF5B9 /* Airport Picker */,
@@ -385,6 +445,8 @@
 				C6A0977A18113DD500862C71 /* ASTResultsTicketCell.m */,
 				C6A0977C18113DEA00862C71 /* ASTResultsTicketCell.xib */,
 				C62408D01848C96D008D0D63 /* ASTResultsTicketCellOneWay.xib */,
+				07082A1E1CAEC2B400CE4305 /* ASTSearchResultsList.h */,
+				07082A1F1CAEC2B400CE4305 /* ASTSearchResultsList.m */,
 			);
 			name = "Results Screen";
 			sourceTree = "<group>";
@@ -439,6 +501,17 @@
 			name = "Filters Screen";
 			sourceTree = "<group>";
 		};
+		E9639D387FCAE0AD5C8F2E7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F795FF0C0DFD438D1C5837DC /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
+				C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */,
+				28E4DE0B12286732C167B03A /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */,
+				0C032BE26C94F858560AB273 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,12 +519,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 073E935A1CABD93200C880D7 /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplateTests" */;
 			buildPhases = (
-				E9FFB58869344A6DC68DFB25 /* Check Pods Manifest.lock */,
+				41C28FC82222B18D766A6463 /* Check Pods Manifest.lock */,
 				073E934D1CABD93200C880D7 /* Sources */,
 				073E934E1CABD93200C880D7 /* Frameworks */,
 				073E934F1CABD93200C880D7 /* Resources */,
-				04FB2A1D5C3F7AF9ABB08717 /* Embed Pods Frameworks */,
-				430863308817AACB979D83F9 /* Copy Pods Resources */,
+				CB2BA65D02F33E1E7F407B92 /* Embed Pods Frameworks */,
+				99EDF53C9A4817507EC518C2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -467,12 +540,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C60EC86917E848DB00C5D52E /* Build configuration list for PBXNativeTarget "AviasalesSDKTemplate" */;
 			buildPhases = (
-				799933DAD3E5554DDC2AF21D /* Check Pods Manifest.lock */,
+				CF941CE7AF3A17A79ABA252A /* Check Pods Manifest.lock */,
 				C60EC83317E848DA00C5D52E /* Sources */,
 				C60EC83417E848DA00C5D52E /* Frameworks */,
 				C60EC83517E848DA00C5D52E /* Resources */,
-				E5E0B82FA99CFF9AD199612F /* Embed Pods Frameworks */,
-				1E1BC3E822CC29FC120ACEBB /* Copy Pods Resources */,
+				E4ABF22AB848A6C1FCF88809 /* Embed Pods Frameworks */,
+				6FE12E2A3031362B62AD9DCE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -569,22 +642,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04FB2A1D5C3F7AF9ABB08717 /* Embed Pods Frameworks */ = {
+		41C28FC82222B18D766A6463 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1E1BC3E822CC29FC120ACEBB /* Copy Pods Resources */ = {
+		6FE12E2A3031362B62AD9DCE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -599,7 +672,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		430863308817AACB979D83F9 /* Copy Pods Resources */ = {
+		99EDF53C9A4817507EC518C2 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -614,7 +687,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		799933DAD3E5554DDC2AF21D /* Check Pods Manifest.lock */ = {
+		CB2BA65D02F33E1E7F407B92 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF941CE7AF3A17A79ABA252A /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -629,7 +717,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E5E0B82FA99CFF9AD199612F /* Embed Pods Frameworks */ = {
+		E4ABF22AB848A6C1FCF88809 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,21 +730,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E9FFB58869344A6DC68DFB25 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -675,8 +748,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67B450218916CA2006CBA73 /* ASTWebBrowserViewController.m in Sources */,
+				0756C04E1CB291F70039443B /* ASTTableManagerUnion.m in Sources */,
+				0756C03B1CB252860039443B /* ASTVideoAdLoader.m in Sources */,
 				C63BA9F71817F1FD007A4F00 /* ASTStopoverCell.m in Sources */,
+				0756C0381CB249D60039443B /* ASTAdvertisementManager.m in Sources */,
 				C6B74F99181FDBBB00FEF5B9 /* ASFilterCellWithAirport.m in Sources */,
+				0756C0471CB26F780039443B /* ASTNewsFeedAdLoader.m in Sources */,
 				C6A0977B18113DD500862C71 /* ASTResultsTicketCell.m in Sources */,
 				C6B255D917F0228C00630769 /* ASTAirportPicker.m in Sources */,
 				C63BA9EC1816B56E007A4F00 /* ASTCommonFunctions.m in Sources */,
@@ -685,11 +762,16 @@
 				C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */,
 				C6B74F9F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */,
 				C63FD39B17F49292007FFBD9 /* ASTSearchFormDateCell.m in Sources */,
+				0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */,
+				0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */,
 				C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */,
+				077C43791CB7DCFD007A3290 /* ASTAviasalesAdLoader.m in Sources */,
 				C6B74FC41820ED3600FEF5B9 /* ASRaitingStars.m in Sources */,
 				C645047617EC38AB00BF9E31 /* ASTSearchForm.m in Sources */,
 				C63FD38F17F338D3007FFBD9 /* ASTAirportPickerEmptyCell.m in Sources */,
 				C63BA9F21817C778007A4F00 /* ASTFlightCell.m in Sources */,
+				0756C0431CB26C080039443B /* ASTNativeAdLoader.m in Sources */,
+				07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */,
 				C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */,
 				C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */,
 				C60EC84717E848DA00C5D52E /* main.m in Sources */,
@@ -763,7 +845,7 @@
 /* Begin XCBuildConfiguration section */
 		073E93581CABD93200C880D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1600BD2538F037C2EE077B30 /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */;
+			baseConfigurationReference = 28E4DE0B12286732C167B03A /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -785,7 +867,7 @@
 		};
 		073E93591CABD93200C880D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E183AE246B23B8C22C93785 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */;
+			baseConfigurationReference = 0C032BE26C94F858560AB273 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -838,7 +920,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -870,7 +952,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -878,7 +960,7 @@
 		};
 		C60EC86A17E848DB00C5D52E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78F0B7295E187DDC298DDA62 /* Pods-AviasalesSDKTemplate.debug.xcconfig */;
+			baseConfigurationReference = F795FF0C0DFD438D1C5837DC /* Pods-AviasalesSDKTemplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -888,7 +970,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
 				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
@@ -905,17 +987,17 @@
 		};
 		C60EC86B17E848DB00C5D52E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 106A8292329EA2FF7BA4656E /* Pods-AviasalesSDKTemplate.release.xcconfig */;
+			baseConfigurationReference = C4A5B627C937261F7641FC28 /* Pods-AviasalesSDKTemplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Go Travel Un Limited";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Prefix.pch";
 				INFOPLIST_FILE = "AviasalesSDKTemplate/AviasalesSDKTemplate-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",

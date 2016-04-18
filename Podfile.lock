@@ -1,12 +1,102 @@
 PODS:
-  - AviasalesSDK (1.3.3-beta1)
+  - AdColony (2.6.1)
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AmazonAds (2.2.13)
+  - AppLovin (3.2.2)
+  - Appodeal (0.10.2):
+    - AdColony (~> 2.5)
+    - AFNetworking (~> 2.0)
+    - AmazonAds (~> 2.2)
+    - AppLovin (~> 3.1)
+    - Avocarrot (~> 3.4)
+    - ChartboostSDK (~> 6.0)
+    - CocoaLumberjack
+    - FBAudienceNetwork (~> 4.10)
+    - Flurry-iOS-SDK/FlurryAds (~> 7.2)
+    - Flurry-iOS-SDK/FlurrySDK (~> 7.2)
+    - Godzippa (~> 1.1)
+    - Google-Mobile-Ads-SDK (~> 7.5)
+    - Haneke (~> 1.0)
+    - HCSStarRatingView (~> 1.4)
+    - InMobiSDK (= 5.2.0-fix)
+    - Mantle (~> 2.0)
+    - Masonry (~> 0.6)
+    - mopub-ios-sdk (~> 4.0)
+    - MyTarget (~> 4.0)
+    - NexageSourceKitMRAID (~> 1.0.6)
+    - PubNative (~> 1.3)
+    - StartApp (~> 3.2)
+    - SVProgressHUD (~> 1.1)
+    - UnityAds (~> 1.5.3)
+    - VungleSDK-iOS (~> 3.2)
+    - YandexMobileAds (~> 2.0)
+  - AviasalesSDK (1.3.3-beta3)
+  - Avocarrot (3.4.3)
+  - ChartboostSDK (6.4.0)
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - FBAudienceNetwork (4.11.0)
+  - Flurry-iOS-SDK/FlurryAds (7.6.0):
+    - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK/FlurrySDK (7.6.0)
+  - Godzippa (1.1.0)
+  - Google-Mobile-Ads-SDK (7.7.1)
+  - Haneke (1.0.2)
+  - HCSStarRatingView (1.4.4)
+  - InMobiSDK (5.2.0-fix)
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
+  - Masonry (0.6.4)
+  - mopub-ios-sdk (4.5.1):
+    - mopub-ios-sdk/MoPubSDK (= 4.5.1)
+  - mopub-ios-sdk/MoPubSDK (4.5.1)
+  - MyTarget (4.4.0)
+  - NexageSourceKitCommon (1.0.3)
+  - NexageSourceKitMRAID (1.0.6):
+    - NexageSourceKitCommon (~> 1.0.3)
   - NMRangeSlider (1.2.1)
+  - PubNative (1.4.0)
   - SDVersion (2.6)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - StartApp (3.3.0)
+  - SVProgressHUD (1.1.3)
+  - UnityAds (1.5.4)
+  - VungleSDK-iOS (3.2.0.1)
+  - YandexMobileAds (2.1.1):
+    - YandexMobileMetrica (<= 2.3.1, >= 2.0.0)
+  - YandexMobileMetrica (2.3.1)
 
 DEPENDENCIES:
+  - Appodeal (~> 0.10.0)
   - AviasalesSDK (from `.`)
   - NMRangeSlider (~> 1.2)
   - SDVersion (~> 2.6)
@@ -17,9 +107,37 @@ EXTERNAL SOURCES:
     :path: .
 
 SPEC CHECKSUMS:
-  AviasalesSDK: 8809677a53b6b66472fc621e8735a1d57108cef2
+  AdColony: a9859672fee49d9a81017d1fffa3133bf8538bd8
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AmazonAds: 51d8e53c0527b6732d59e3738943307763e9620f
+  AppLovin: 03f98cbd83d207ab5082be173ec6e332ec07ad02
+  Appodeal: b52a3f8c673b30ce5c113af247b24dfe7b972e95
+  AviasalesSDK: 74df1bb7bd74748f0d9215e26459a1ba840e9f36
+  Avocarrot: cd381db4f0b9e9eb70892e7c5d0f9d64e0d055e8
+  ChartboostSDK: 1a7e970c983042eaeb887821452cfceebbe88c81
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  FBAudienceNetwork: b4c154b19fc85c621f93c06813a110d0d95cee5c
+  Flurry-iOS-SDK: 9822fe709195f0e3ae3e52c785eee9ff651ff648
+  Godzippa: 21621e8ddc2f1521db473a72b48148c3f0e79d76
+  Google-Mobile-Ads-SDK: e27569901b58881d9a94b42f2c642739cfe3970a
+  Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
+  HCSStarRatingView: 25f2497549b80f71fd1b0a2ed3631e5ccaa73362
+  InMobiSDK: 0853b9fefc4e2a6301ff69aa7c748c9acde68560
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  mopub-ios-sdk: c1bed2f160479d8aeb29789bdd5f7c8a1a19001d
+  MyTarget: d75ab7b3fe4ce080b82f8cfe805dc907b7b9b27a
+  NexageSourceKitCommon: 629eff3bc2135384e817ff8462a602269b100608
+  NexageSourceKitMRAID: 143794bbd822a07d4506e222f0f72860c63fe3ec
   NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
+  PubNative: 6176beb2be298908040a8551124dabe072b4891b
   SDVersion: c036f7890279d188c17f5701b9feea0d93b9f8ee
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  StartApp: cc08b5ddc38185aa04bbf469d367bf3fe63508a9
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UnityAds: cda709cad036bc34c6fed722c1d1256f503e4d70
+  VungleSDK-iOS: e18cf2f47cf0abe096d4b162f583bd197de1ea28
+  YandexMobileAds: d6805d94f9b0bc3eaf9e561df3d05038816feddd
+  YandexMobileMetrica: f62863f47190292ed993e8aa0631adec93fbc31e
 
 COCOAPODS: 0.39.0
