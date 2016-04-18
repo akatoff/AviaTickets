@@ -19,6 +19,12 @@
 @property (assign, nonatomic) BOOL showsAdDuringSearch;
 @property (assign, nonatomic) BOOL showsAdOnSearchResults;
 
+/**
+ * Установите YES, чтобы загружать тестовую рекламу
+ * Работает только в DEBUG режиме
+ */
+@property (assign, nonatomic) BOOL testingEnabled;
+
 - (void)initializeAppodealWithAPIKey:(NSString *)appodealAPIKey;
 
 - (void)presentFullScreenAdFromViewControllerIfNeeded:(UIViewController *)viewController;
