@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JRSearchFormTravelClassCell" id="aLV-xR-dNk" customClass="JRSearchFormTravelClassCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aLV-xR-dNk" id="Szk-9k-PtH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="JRSearchFormTravelClassIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8id-DP-IIY">
+                        <rect key="frame" x="15" y="21" width="33" height="33"/>
+                    </imageView>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Эконом" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vSg-e2-YF7">
+                        <rect key="frame" x="56" y="27" width="66" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JRBaseDoubleArrow" translatesAutoresizingMaskIntoConstraints="NO" id="EgB-WU-9hl">
+                        <rect key="frame" x="297" y="29" width="8" height="17"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="8id-DP-IIY" secondAttribute="centerY" id="1cP-JL-M8Y"/>
+                    <constraint firstItem="vSg-e2-YF7" firstAttribute="leading" secondItem="8id-DP-IIY" secondAttribute="trailing" constant="8" id="8fz-ar-01M"/>
+                    <constraint firstItem="8id-DP-IIY" firstAttribute="centerY" secondItem="vSg-e2-YF7" secondAttribute="centerY" id="B3h-Ou-27o"/>
+                    <constraint firstItem="EgB-WU-9hl" firstAttribute="centerY" secondItem="8id-DP-IIY" secondAttribute="centerY" id="VHZ-LK-Ebj"/>
+                    <constraint firstItem="8id-DP-IIY" firstAttribute="leading" secondItem="Szk-9k-PtH" secondAttribute="leading" constant="15" id="rCq-7y-oAS"/>
+                    <constraint firstAttribute="trailing" secondItem="EgB-WU-9hl" secondAttribute="trailing" constant="15" id="wXL-Bo-cN1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="arrowsRightMarginConstraint" destination="wXL-Bo-cN1" id="gMA-FC-fRn"/>
+                <outlet property="imageViewLeftMarginConstraint" destination="rCq-7y-oAS" id="WRl-hP-uKZ"/>
+                <outlet property="travelClassIcon" destination="8id-DP-IIY" id="pIg-1b-5Qi"/>
+                <outlet property="travelClassImageContainer" destination="8id-DP-IIY" id="Lq9-Kw-Ujf"/>
+                <outlet property="travelClassLabel" destination="vSg-e2-YF7" id="Iau-YP-eU7"/>
+                <outlet property="travelClassLabelLeftMarginConstraint" destination="8fz-ar-01M" id="cxP-Qg-Yzv"/>
+            </connections>
+            <point key="canvasLocation" x="110" y="200"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="JRBaseDoubleArrow" width="8" height="17"/>
+        <image name="JRSearchFormTravelClassIcon" width="33" height="33"/>
+    </resources>
+</document>

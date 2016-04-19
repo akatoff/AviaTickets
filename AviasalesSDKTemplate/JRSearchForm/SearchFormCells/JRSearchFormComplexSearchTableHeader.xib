@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g7D-GX-iNa" customClass="JRSearchFormComplexSearchTableHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JRBasePatternedGradient" translatesAutoresizingMaskIntoConstraints="NO" id="GdN-87-qYK">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JRBasePatternedGradient" translatesAutoresizingMaskIntoConstraints="NO" id="f15-sJ-gsm">
+                    <rect key="frame" x="0.0" y="5" width="320" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L86-0B-Ugw">
+                    <rect key="frame" x="50" y="8" width="6" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                    <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qOZ-o1-fkh">
+                    <rect key="frame" x="157" y="8" width="6" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                    <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CDH-rh-LfD">
+                    <rect key="frame" x="262" y="8" width="6" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                    <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qOZ-o1-fkh" firstAttribute="centerY" secondItem="L86-0B-Ugw" secondAttribute="centerY" id="5FL-5c-QH1"/>
+                <constraint firstItem="f15-sJ-gsm" firstAttribute="leading" secondItem="GdN-87-qYK" secondAttribute="leading" id="B0X-Kj-bYv"/>
+                <constraint firstItem="CDH-rh-LfD" firstAttribute="centerY" secondItem="qOZ-o1-fkh" secondAttribute="centerY" id="Kp4-Xc-Uje"/>
+                <constraint firstItem="f15-sJ-gsm" firstAttribute="height" secondItem="GdN-87-qYK" secondAttribute="height" id="NaS-Xy-9xt"/>
+                <constraint firstItem="f15-sJ-gsm" firstAttribute="top" secondItem="GdN-87-qYK" secondAttribute="top" constant="5" id="P0a-9C-EZf"/>
+                <constraint firstAttribute="centerX" secondItem="qOZ-o1-fkh" secondAttribute="centerX" id="P4u-qb-VbD"/>
+                <constraint firstItem="GdN-87-qYK" firstAttribute="leading" secondItem="g7D-GX-iNa" secondAttribute="leading" id="S17-1K-Pbf"/>
+                <constraint firstAttribute="trailing" secondItem="GdN-87-qYK" secondAttribute="trailing" id="VNe-7A-kMM"/>
+                <constraint firstAttribute="centerX" secondItem="L86-0B-Ugw" secondAttribute="centerX" multiplier="3:1" id="bXO-Eu-Nj5"/>
+                <constraint firstItem="GdN-87-qYK" firstAttribute="top" secondItem="g7D-GX-iNa" secondAttribute="top" id="g5j-zg-nES"/>
+                <constraint firstAttribute="bottom" secondItem="GdN-87-qYK" secondAttribute="bottom" id="k2j-jP-MZh"/>
+                <constraint firstAttribute="centerY" secondItem="L86-0B-Ugw" secondAttribute="centerY" id="mKB-Vi-ISR"/>
+                <constraint firstItem="f15-sJ-gsm" firstAttribute="width" secondItem="GdN-87-qYK" secondAttribute="width" id="rRW-hs-bKg"/>
+                <constraint firstAttribute="centerX" secondItem="CDH-rh-LfD" secondAttribute="centerX" multiplier="0.6" constant="1" id="uzj-jR-9aB"/>
+            </constraints>
+            <connections>
+                <outlet property="dateLabel" destination="CDH-rh-LfD" id="Lvj-ao-ak5"/>
+                <outlet property="destinationLabel" destination="qOZ-o1-fkh" id="QNa-kp-j50"/>
+                <outlet property="originLabel" destination="L86-0B-Ugw" id="oIR-3M-a3v"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="JRBasePatternedGradient" width="320" height="25"/>
+    </resources>
+</document>

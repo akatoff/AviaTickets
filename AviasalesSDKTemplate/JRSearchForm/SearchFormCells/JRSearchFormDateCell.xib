@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JRSearchFormDateCell" id="QCc-X6-Qwb" customClass="JRSearchFormDateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QCc-X6-Qwb" id="gOv-k1-ngZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-oJ-Wsi">
+                        <rect key="frame" x="15" y="23" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="O1M-V2-ZqF"/>
+                            <constraint firstAttribute="height" constant="32" id="UaK-bl-cEs"/>
+                        </constraints>
+                    </imageView>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLACEHOLDER TEXT" lineBreakMode="tailTruncation" minimumScaleFactor="0.19999999999999968" translatesAutoresizingMaskIntoConstraints="NO" id="TLt-97-ZZz">
+                        <rect key="frame" x="55" y="0.0" width="171" height="77"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" minimumScaleFactor="0.19999999999999968" translatesAutoresizingMaskIntoConstraints="NO" id="nF4-nb-4jv">
+                        <rect key="frame" x="55" y="0.0" width="171" height="77"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <attributedString key="attributedText">
+                            <fragment content="DATE LABEL DATE LABEL">
+                                <attributes>
+                                    <color key="NSColor" red="0.15686274509803921" green="0.50588235294117645" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="18" name="HelveticaNeue-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tW-Oz-keA">
+                        <rect key="frame" x="234" y="0.0" width="86" height="77"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" image="JRCommonCheckBox">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="JRCommonSelectedCheckBox"/>
+                        <state key="highlighted" image="JRCommonSelectedCheckBox"/>
+                        <connections>
+                            <action selector="returnDateButtonAction:" destination="QCc-X6-Qwb" eventType="touchUpInside" id="ilM-mp-fz0"/>
+                        </connections>
+                    </button>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxxxxx" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.19999999999999968" translatesAutoresizingMaskIntoConstraints="NO" id="hL1-Go-yJq">
+                        <rect key="frame" x="234" y="31" width="46" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="1tW-Oz-keA" firstAttribute="trailing" secondItem="hL1-Go-yJq" secondAttribute="trailing" constant="40" id="4du-5r-VIK"/>
+                    <constraint firstAttribute="bottom" secondItem="nF4-nb-4jv" secondAttribute="bottom" id="7SU-If-1Tg"/>
+                    <constraint firstItem="TLt-97-ZZz" firstAttribute="leading" secondItem="c9G-oJ-Wsi" secondAttribute="trailing" constant="8" id="7r7-Nu-neC"/>
+                    <constraint firstItem="nF4-nb-4jv" firstAttribute="leading" secondItem="c9G-oJ-Wsi" secondAttribute="trailing" constant="8" id="Hsa-7H-2cy"/>
+                    <constraint firstAttribute="trailing" secondItem="1tW-Oz-keA" secondAttribute="trailing" id="Nxp-lI-as4"/>
+                    <constraint firstAttribute="bottom" secondItem="TLt-97-ZZz" secondAttribute="bottom" id="OcF-ab-oFj"/>
+                    <constraint firstItem="nF4-nb-4jv" firstAttribute="top" secondItem="gOv-k1-ngZ" secondAttribute="top" id="PTE-zu-d4d"/>
+                    <constraint firstItem="TLt-97-ZZz" firstAttribute="top" secondItem="gOv-k1-ngZ" secondAttribute="top" id="SEE-fk-Izc"/>
+                    <constraint firstItem="1tW-Oz-keA" firstAttribute="centerY" secondItem="hL1-Go-yJq" secondAttribute="centerY" id="WAK-aX-ekr"/>
+                    <constraint firstAttribute="trailing" secondItem="nF4-nb-4jv" secondAttribute="trailing" constant="94" id="XRH-Oe-Ab5"/>
+                    <constraint firstItem="hL1-Go-yJq" firstAttribute="leading" secondItem="TLt-97-ZZz" secondAttribute="trailing" constant="8" id="Xa5-en-mOZ"/>
+                    <constraint firstItem="1tW-Oz-keA" firstAttribute="top" secondItem="gOv-k1-ngZ" secondAttribute="top" id="lDj-Pr-LFe"/>
+                    <constraint firstAttribute="centerY" secondItem="c9G-oJ-Wsi" secondAttribute="centerY" constant="-0.5" id="qKJ-ZV-6dM"/>
+                    <constraint firstItem="c9G-oJ-Wsi" firstAttribute="leading" secondItem="gOv-k1-ngZ" secondAttribute="leading" constant="15" id="uy7-zu-Sb2"/>
+                    <constraint firstAttribute="bottom" secondItem="1tW-Oz-keA" secondAttribute="bottom" id="vCF-a8-DIg"/>
+                    <constraint firstItem="1tW-Oz-keA" firstAttribute="leading" secondItem="hL1-Go-yJq" secondAttribute="leading" id="yGL-km-jdX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="button" destination="1tW-Oz-keA" id="eRr-c5-ewY"/>
+                <outlet property="buttonTitle" destination="hL1-Go-yJq" id="2MF-Te-BnG"/>
+                <outlet property="dateLabel" destination="nF4-nb-4jv" id="5xv-XN-YGg"/>
+                <outlet property="iconImageView" destination="c9G-oJ-Wsi" id="qXf-tL-phv"/>
+                <outlet property="placeholderLabel" destination="TLt-97-ZZz" id="LVn-q0-xsC"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="396"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="JRCommonCheckBox" width="25" height="25"/>
+        <image name="JRCommonSelectedCheckBox" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

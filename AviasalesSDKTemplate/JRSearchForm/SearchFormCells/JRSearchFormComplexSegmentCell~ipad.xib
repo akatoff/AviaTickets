@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JRSearchFormComplexSegmentCell" id="F0z-Bv-lll" customClass="JRSearchFormComplexSegmentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F0z-Bv-lll" id="K6x-D5-uc9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkO-3z-Dzk" userLabel="Width View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="UK5-zd-2ZM"/>
+                        </constraints>
+                    </view>
+                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbB-9a-obj" userLabel="Button 1">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="JRSearchFormAirportPin">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="selectOriginAirport:" destination="F0z-Bv-lll" eventType="touchUpInside" id="2pt-N0-Lfb"/>
+                        </connections>
+                    </button>
+                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D1m-9j-U6e" userLabel="Button 2">
+                        <rect key="frame" x="107" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="JRSearchFormAirportPin">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="selectDestinationAirport:" destination="F0z-Bv-lll" eventType="touchUpInside" id="FEb-26-YJV"/>
+                        </connections>
+                    </button>
+                    <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uox-OD-djf" userLabel="Button 3">
+                        <rect key="frame" x="213" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="JRSearchFormCalendarIcon">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="selectDepartureDate:" destination="F0z-Bv-lll" eventType="touchUpInside" id="Qkj-hA-ny7"/>
+                        </connections>
+                    </button>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIr-wG-7m8" userLabel="First Line" customClass="JRLineViewWithPattern">
+                        <rect key="frame" x="76" y="21" width="60" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.69803921570000005" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="2Yd-EE-kgk"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzR-Zq-cGQ" userLabel="Second Line" customClass="JRLineViewWithPattern">
+                        <rect key="frame" x="183" y="21" width="51" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.69803921570000005" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="qE8-9x-zuG"/>
+                        </constraints>
+                    </view>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="FzW-4M-nVm">
+                        <rect key="frame" x="30" y="-2" width="45" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O_CITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="yDa-fr-BFg">
+                        <rect key="frame" x="37" y="26" width="32" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="B0w-3J-9Fp">
+                        <rect key="frame" x="137" y="-3" width="45" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D_CITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="mQU-18-7wF">
+                        <rect key="frame" x="144" y="27" width="31" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="r1B-DF-Sgs">
+                        <rect key="frame" x="235" y="-3" width="62" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000007" translatesAutoresizingMaskIntoConstraints="NO" id="INr-37-lar">
+                        <rect key="frame" x="254" y="27" width="24" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uox-OD-djf" firstAttribute="leading" secondItem="D1m-9j-U6e" secondAttribute="trailing" id="1DG-tF-C6M"/>
+                    <constraint firstItem="yDa-fr-BFg" firstAttribute="centerX" secondItem="FzW-4M-nVm" secondAttribute="centerX" id="1gI-hV-0dg"/>
+                    <constraint firstAttribute="centerY" secondItem="pIr-wG-7m8" secondAttribute="centerY" id="1tw-lt-rxZ"/>
+                    <constraint firstItem="GbB-9a-obj" firstAttribute="centerY" secondItem="D1m-9j-U6e" secondAttribute="centerY" id="3yU-UQ-qta"/>
+                    <constraint firstItem="D1m-9j-U6e" firstAttribute="centerX" secondItem="B0w-3J-9Fp" secondAttribute="centerX" id="6jl-Sd-r2D"/>
+                    <constraint firstItem="GbB-9a-obj" firstAttribute="width" secondItem="D1m-9j-U6e" secondAttribute="width" id="8pf-mt-naf"/>
+                    <constraint firstItem="FzW-4M-nVm" firstAttribute="bottom" secondItem="GbB-9a-obj" secondAttribute="centerY" multiplier="1.25" id="BQn-Nz-PVY"/>
+                    <constraint firstItem="FzW-4M-nVm" firstAttribute="centerX" secondItem="GbB-9a-obj" secondAttribute="centerX" id="CDa-3y-z4R"/>
+                    <constraint firstItem="uox-OD-djf" firstAttribute="centerX" secondItem="r1B-DF-Sgs" secondAttribute="centerX" id="Dhh-wF-Xoo"/>
+                    <constraint firstItem="mQU-18-7wF" firstAttribute="top" secondItem="B0w-3J-9Fp" secondAttribute="bottom" id="GCc-LU-dCa"/>
+                    <constraint firstItem="D1m-9j-U6e" firstAttribute="centerY" secondItem="uox-OD-djf" secondAttribute="centerY" id="GrU-KW-4mj"/>
+                    <constraint firstItem="yDa-fr-BFg" firstAttribute="top" secondItem="FzW-4M-nVm" secondAttribute="bottom" id="HkD-nI-Qgf"/>
+                    <constraint firstItem="B0w-3J-9Fp" firstAttribute="leading" secondItem="pIr-wG-7m8" secondAttribute="trailing" constant="1" id="JeC-H4-f97"/>
+                    <constraint firstItem="r1B-DF-Sgs" firstAttribute="centerX" secondItem="INr-37-lar" secondAttribute="centerX" id="Jmz-Wn-uVa"/>
+                    <constraint firstItem="KzR-Zq-cGQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D1m-9j-U6e" secondAttribute="centerX" priority="750" constant="23" id="LT8-VH-MpE"/>
+                    <constraint firstItem="pIr-wG-7m8" firstAttribute="leading" secondItem="FzW-4M-nVm" secondAttribute="trailing" constant="1" id="MFv-QY-X8s"/>
+                    <constraint firstItem="GbB-9a-obj" firstAttribute="width" secondItem="HkO-3z-Dzk" secondAttribute="width" multiplier="1:3" constant="-1.6666666666666572" id="PMr-i9-bVo"/>
+                    <constraint firstItem="uox-OD-djf" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="KzR-Zq-cGQ" secondAttribute="trailing" priority="750" constant="23" id="Q3Y-eh-sNr"/>
+                    <constraint firstItem="GbB-9a-obj" firstAttribute="top" secondItem="K6x-D5-uc9" secondAttribute="top" id="R3p-5A-dCy"/>
+                    <constraint firstItem="D1m-9j-U6e" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="pIr-wG-7m8" secondAttribute="trailing" priority="750" constant="23" id="S4f-D1-YsR"/>
+                    <constraint firstItem="D1m-9j-U6e" firstAttribute="height" secondItem="uox-OD-djf" secondAttribute="height" id="TUL-OO-WxC"/>
+                    <constraint firstItem="INr-37-lar" firstAttribute="top" secondItem="r1B-DF-Sgs" secondAttribute="bottom" id="UkJ-tY-7do"/>
+                    <constraint firstItem="B0w-3J-9Fp" firstAttribute="centerX" secondItem="mQU-18-7wF" secondAttribute="centerX" id="X8K-RE-GHZ"/>
+                    <constraint firstItem="r1B-DF-Sgs" firstAttribute="leading" secondItem="KzR-Zq-cGQ" secondAttribute="trailing" constant="1" id="XkP-hn-FDd"/>
+                    <constraint firstItem="D1m-9j-U6e" firstAttribute="width" secondItem="uox-OD-djf" secondAttribute="width" id="XuK-Wo-rup"/>
+                    <constraint firstItem="D1m-9j-U6e" firstAttribute="leading" secondItem="GbB-9a-obj" secondAttribute="trailing" constant="1" id="ZAw-x2-yCs"/>
+                    <constraint firstItem="r1B-DF-Sgs" firstAttribute="bottom" secondItem="uox-OD-djf" secondAttribute="centerY" multiplier="1.25" id="brn-Rg-otm"/>
+                    <constraint firstItem="KzR-Zq-cGQ" firstAttribute="leading" secondItem="B0w-3J-9Fp" secondAttribute="trailing" constant="1" id="cdA-eQ-Zoi"/>
+                    <constraint firstItem="pIr-wG-7m8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GbB-9a-obj" secondAttribute="centerX" priority="750" constant="23" id="ggD-h0-dL8"/>
+                    <constraint firstAttribute="centerY" secondItem="KzR-Zq-cGQ" secondAttribute="centerY" id="i6Y-7N-ccR"/>
+                    <constraint firstItem="GbB-9a-obj" firstAttribute="leading" secondItem="K6x-D5-uc9" secondAttribute="leading" id="ogS-lG-cSC"/>
+                    <constraint firstItem="HkO-3z-Dzk" firstAttribute="top" secondItem="K6x-D5-uc9" secondAttribute="top" id="pOM-12-5Si"/>
+                    <constraint firstItem="GbB-9a-obj" firstAttribute="height" secondItem="D1m-9j-U6e" secondAttribute="height" id="rG3-i6-UB1"/>
+                    <constraint firstItem="B0w-3J-9Fp" firstAttribute="bottom" secondItem="D1m-9j-U6e" secondAttribute="centerY" multiplier="1.25" id="t8I-se-HBj"/>
+                    <constraint firstAttribute="bottom" secondItem="GbB-9a-obj" secondAttribute="bottom" id="ysq-zV-JIv"/>
+                    <constraint firstItem="HkO-3z-Dzk" firstAttribute="leading" secondItem="K6x-D5-uc9" secondAttribute="leading" id="zEl-c5-mPR"/>
+                    <constraint firstAttribute="trailing" secondItem="HkO-3z-Dzk" secondAttribute="trailing" id="ziu-ks-SWN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dateLabel" destination="r1B-DF-Sgs" id="oG6-AN-pRC"/>
+                <outlet property="departureButton" destination="uox-OD-djf" id="DdA-hb-tpS"/>
+                <outlet property="destinationAirportLabel" destination="mQU-18-7wF" id="Zml-t3-QMb"/>
+                <outlet property="destinationButton" destination="D1m-9j-U6e" id="OG2-a2-9Hr"/>
+                <outlet property="destinationIATALabel" destination="B0w-3J-9Fp" id="smr-eA-oc6"/>
+                <outlet property="firstLineWithPattern" destination="pIr-wG-7m8" id="uPd-lW-iDb"/>
+                <outlet property="originAirportLabel" destination="yDa-fr-BFg" id="Zsb-5m-YrH"/>
+                <outlet property="originButton" destination="GbB-9a-obj" id="geM-mY-jLZ"/>
+                <outlet property="originIATALabel" destination="FzW-4M-nVm" id="KYS-Cn-c6q"/>
+                <outlet property="secondLineWithPattern" destination="KzR-Zq-cGQ" id="84i-cl-Obe"/>
+                <outlet property="yearLabel" destination="INr-37-lar" id="uDI-9e-DP5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="JRSearchFormAirportPin" width="42" height="42"/>
+        <image name="JRSearchFormCalendarIcon" width="42" height="42"/>
+    </resources>
+</document>

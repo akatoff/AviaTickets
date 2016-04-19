@@ -13,6 +13,9 @@
 #import "ASTAppDelegate.h"
 #import "ASTSearchForm.h"
 #import "ASTAdvertisementManager.h"
+#import "JRNavigationController.h"
+#import "JRScreenSceneController.h"
+#import "JRSearchFormVC.h"
 
 
 // Set your appodeal api key here
@@ -27,6 +30,27 @@ static NSString *const kAviasalesMarker = @"99305";
     // Aviasale SDK
     [AviasalesSDK sharedInstance].APIToken = kAviasalesAPIToken;
     [AviasalesSDK sharedInstance].marker = kAviasalesMarker;
+    
+    // Screen initializing
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *rootVC = [JRSearchFormVC new];
+    UIViewController *container = nil;
+    if (iPhone()) {
+        container = [[JRNavigationController alloc] initWithRootViewController:rootVC];
+    } else {
+        id scene = [JRScreenSceneController screenSceneWithMainViewController:rootVC
+                                                                        width:[JRScreenSceneController screenSceneControllerWideViewWidth]
+                                                      accessoryViewController:nil
+                                                                        width:kNilOptions
+                                                               exclusiveFocus:NO];
+        JRScreenSceneController *sceneController = [JRScreenSceneController new];
+        [sceneController setViewControllers:@[scene] animated:NO];
+        
+        container = sceneController;
+    }
+    
+    [self.window setRootViewController:container];
+    [self.window makeKeyAndVisible];
 
     // Advertisement initializing
     ASTAdvertisementManager *const adManager = [ASTAdvertisementManager sharedInstance];

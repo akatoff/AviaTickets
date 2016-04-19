@@ -29,7 +29,6 @@
 #define CURRENCY_DEFAULT_X 23.0f
 #define SEARCH_FORM_DARK_BG @"dark_background"
 
-#define LOAD_VIEW_FROM_NIB_NAMED(X) [[AVIASALES_BUNDLE loadNibNamed:X owner:self options:nil] objectAtIndex:0]
 #define RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2.0)
 
 @implementation ASFilterCellInfo
