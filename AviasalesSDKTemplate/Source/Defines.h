@@ -1,11 +1,9 @@
 //
 //  Defines.h
-//  aviasales
 //
-//  Created by Всеволод Биллевич on 30.10.11.
-//  Copyright 2011 CleverPumpkin. All rights reserved.
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
-//  Use this file for keeping settings and constants which are used throughout the project
 
 #ifndef AviasalesSDKTemplate_Defines_h
 #define AviasalesSDKTemplate_Defines_h

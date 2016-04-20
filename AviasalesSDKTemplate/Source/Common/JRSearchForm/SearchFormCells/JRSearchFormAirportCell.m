@@ -1,14 +1,13 @@
 //
 //  JRSearchFormAirportCell.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 16/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRC.h"
 #import "JRSearchFormAirportCell.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 
 #define kJRSearchFormAirportCellPlaceholderFont [UIFont fontWithName:@"HelveticaNeue-Medium" size:12.0]
 
@@ -77,13 +76,13 @@
 }
 
 
-- (void)setupIataLabelForSearchInfo:(ASTSearchInfo *)searchInfo item:(JRSearchFormItem *)item
+- (void)setupIataLabelForSearchInfo:(JRSearchInfo *)searchInfo item:(JRSearchFormItem *)item
 {
 	[_iataLabel setTextColor:[JRC SF_AIRPORT_IATA_LABEL_TEXT_COLOR]];
     
 	NSString *iataText = nil;
     
-	ASTTravelSegment *travelSegment = [searchInfo.travelSegments firstObject];
+	JRTravelSegment *travelSegment = [searchInfo.travelSegments firstObject];
 	if (item.type == JRSearchFormTableViewOriginAirportItem) {
 		iataText = [travelSegment originIata];
 	} else if (item.type == JRSearchFormTableViewDestinationAirportItem) {
@@ -102,7 +101,7 @@
 
 - (void)action
 {
-	ASTTravelSegment *travelSegment = [self.item.itemDelegate.searchInfo.travelSegments firstObject];
+	JRTravelSegment *travelSegment = [self.item.itemDelegate.searchInfo.travelSegments firstObject];
 	if (self.item.type == JRSearchFormTableViewOriginAirportItem) {
 		[self.item.itemDelegate selectOriginIATAForTravelSegment:travelSegment itemType:self.item.type];
 	} else if (self.item.type == JRSearchFormTableViewDestinationAirportItem) {

@@ -1,13 +1,12 @@
 //
 //  JRSearchFormPassengersView.h
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 18/04/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <UIKit/UIKit.h>
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 typedef NS_ENUM (NSUInteger, JRSearchFormPassengersViewType) {
 	JRSearchFormPassengersViewAdultsType,
@@ -26,7 +25,7 @@ typedef NS_ENUM (NSUInteger, JRSearchFormPassengersViewType) {
 @property (weak, nonatomic) IBOutlet UILabel *passengerCount;
 
 @property (weak, nonatomic) JRSearchFormPassengerPickerView *pickerView;
-@property (strong, nonatomic) ASTSearchInfo *searchInfo;
+@property (strong, nonatomic) JRSearchInfo *searchInfo;
 @property (assign, nonatomic) JRSearchFormPassengersViewType type;
 
 - (void)updateView;

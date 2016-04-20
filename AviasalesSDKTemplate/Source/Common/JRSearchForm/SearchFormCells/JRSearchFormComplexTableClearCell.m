@@ -1,14 +1,13 @@
 //
-//  JRSearchFormComplexAddConfigurationCell.m
-//  Aviasales iOS Apps
+//  JRSearchFormComplexTableClearCell.m
 //
-//  Created by Ruslan Shevchuk on 22/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormComplexTableClearCell.h"
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 
 #define JRSearchFormComplexTableClearCellMinTravelSegmentsCount 1
 #define JRSearchFormComplexTableClearCellMaxTravelSegmentsCount 8
@@ -51,7 +50,7 @@
     if (self.searchInfo.travelSegments.count >= 3) {
         [_removeButton setEnabled:YES];
     } else if (self.searchInfo.travelSegments.count == 2) {
-        ASTTravelSegment *secondTravelSegment = (self.searchInfo.travelSegments)[1];
+        JRTravelSegment *secondTravelSegment = (self.searchInfo.travelSegments)[1];
         BOOL shouldEnableButton = secondTravelSegment.originIata || secondTravelSegment.destinationIata || secondTravelSegment.departureDate;
         [_removeButton setEnabled:shouldEnableButton];
     } else {

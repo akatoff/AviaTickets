@@ -1,17 +1,16 @@
 //
 //  JRSearchFormAirportsCell.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 20/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormAirportsCell.h"
 #import "JRSearchFormSimpleSearchTableView.h"
 #import "JRLineViewWithPattern.h"
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
-#import "UIView+FadeAnimation.h"
+#import "UIImage+JRUIImage.h"
+#import "UIView+JRFadeAnimation.h"
 #import "NSObject+Accessibility.h"
 
 #define JRSearchFormAirportsCellAnimationDuration 0.3
@@ -76,7 +75,7 @@
 
 - (IBAction)chageAction:(UIButton *)sender
 {
-	ASTTravelSegment *travelSegment = self.searchInfo.travelSegments.firstObject;
+	JRTravelSegment *travelSegment = self.searchInfo.travelSegments.firstObject;
 	NSString *originIata = travelSegment.originIata;
 	travelSegment.originIata = travelSegment.destinationIata;
 	travelSegment.destinationIata = originIata;
@@ -86,7 +85,7 @@
 
 - (BOOL)changeButtonIsAvalible
 {
-	ASTTravelSegment *travelSegment = self.searchInfo.travelSegments.firstObject;
+	JRTravelSegment *travelSegment = self.searchInfo.travelSegments.firstObject;
 	if ((travelSegment.originIata || travelSegment.destinationIata) &&
 	    ![travelSegment.originIata isEqualToString:travelSegment.destinationIata]) {
 		return YES;

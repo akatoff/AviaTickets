@@ -1,13 +1,12 @@
 //
 //  JRSearchFormTravelClassPickerVC.h
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 24/03/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRViewController.h"
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 @protocol JRSearchFormTravelClassPickerDelegate <NSObject>
 - (void)classPickerDidSelectTravelClass;
@@ -17,7 +16,7 @@
 @interface JRSearchFormTravelClassPickerVC : JRViewController
 
 - (id)initWithDelegate:(id<JRSearchFormTravelClassPickerDelegate>)delegate
-            searchInfo:(ASTSearchInfo *)searchInfo;
+            searchInfo:(JRSearchInfo *)searchInfo;
 
 - (CGSize)contentSize;
 

@@ -37,10 +37,10 @@
 		C56173331CC53B6C0049E2EE /* JRC.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173321CC53B6C0049E2EE /* JRC.m */; };
 		C56173381CC53BCC0049E2EE /* NSLayoutConstraint+JRConstraintMake.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173371CC53BCC0049E2EE /* NSLayoutConstraint+JRConstraintMake.m */; };
 		C561733C1CC53C020049E2EE /* JRLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C561733B1CC53C020049E2EE /* JRLayoutConstraint.m */; };
-		C56173401CC53C6C0049E2EE /* UIImage+ASUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C561733F1CC53C6C0049E2EE /* UIImage+ASUIImage.m */; };
+		C56173401CC53C6C0049E2EE /* UIImage+JRUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C561733F1CC53C6C0049E2EE /* UIImage+JRUIImage.m */; };
 		C56173431CC627F60049E2EE /* Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173421CC627F60049E2EE /* Defines.m */; };
 		C56173481CC62C2F0049E2EE /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173471CC62C2F0049E2EE /* DateUtil.m */; };
-		C561734C1CC633450049E2EE /* UIView+FadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C561734B1CC633450049E2EE /* UIView+FadeAnimation.m */; };
+		C561734C1CC633450049E2EE /* UIView+JRFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C561734B1CC633450049E2EE /* UIView+JRFadeAnimation.m */; };
 		C561735D1CC634F50049E2EE /* JRDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C561734F1CC634F50049E2EE /* JRDatePickerDayCell.m */; };
 		C561735E1CC634F50049E2EE /* JRDatePickerDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173511CC634F50049E2EE /* JRDatePickerDayView.m */; };
 		C561735F1CC634F50049E2EE /* JRDatePickerDayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C56173521CC634F50049E2EE /* JRDatePickerDayView.xib */; };
@@ -72,24 +72,24 @@
 		C56173C41CC666560049E2EE /* JRSwipeDeletionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173C21CC666560049E2EE /* JRSwipeDeletionTableViewCell.m */; };
 		C56173D41CC667030049E2EE /* NSObject+Accessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173C71CC667030049E2EE /* NSObject+Accessibility.m */; };
 		C56173D51CC667030049E2EE /* UIButton+States.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173CA1CC667030049E2EE /* UIButton+States.m */; };
-		C56173D61CC667030049E2EE /* UINavigationItem+CustomBarItems.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173CD1CC667030049E2EE /* UINavigationItem+CustomBarItems.m */; };
-		C56173D71CC667030049E2EE /* UIViewController+AddChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173D01CC667030049E2EE /* UIViewController+AddChildViewController.m */; };
+		C56173D61CC667030049E2EE /* UINavigationItem+JRCustomBarItems.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173CD1CC667030049E2EE /* UINavigationItem+JRCustomBarItems.m */; };
+		C56173D71CC667030049E2EE /* UIViewController+JRAddChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173D01CC667030049E2EE /* UIViewController+JRAddChildViewController.m */; };
 		C56173D81CC667030049E2EE /* UIWindow+TopMostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173D31CC667030049E2EE /* UIWindow+TopMostViewController.m */; };
 		C56173DC1CC667690049E2EE /* JRActivityIndicatorBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173DB1CC667690049E2EE /* JRActivityIndicatorBar.m */; };
 		C56173E01CC66BBB0049E2EE /* UIView+NSLS.m in Sources */ = {isa = PBXBuildFile; fileRef = C56173DF1CC66BBB0049E2EE /* UIView+NSLS.m */; };
 		C56173E21CC66E980049E2EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C56173E11CC66E980049E2EE /* Localizable.strings */; };
-		C580DB191CC52BC6009CA04B /* ASTAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB021CC52BC6009CA04B /* ASTAirline.m */; };
-		C580DB1A1CC52BC6009CA04B /* ASTAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB041CC52BC6009CA04B /* ASTAirport.m */; };
-		C580DB1B1CC52BC6009CA04B /* ASTAlliance.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB061CC52BC6009CA04B /* ASTAlliance.m */; };
-		C580DB1C1CC52BC6009CA04B /* ASTCurrencyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB081CC52BC6009CA04B /* ASTCurrencyRate.m */; };
-		C580DB1D1CC52BC6009CA04B /* ASTFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB0A1CC52BC6009CA04B /* ASTFlight.m */; };
-		C580DB1E1CC52BC6009CA04B /* ASTFlightSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB0C1CC52BC6009CA04B /* ASTFlightSegment.m */; };
-		C580DB1F1CC52BC6009CA04B /* ASTGate.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB0E1CC52BC6009CA04B /* ASTGate.m */; };
-		C580DB201CC52BC6009CA04B /* ASTPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB101CC52BC6009CA04B /* ASTPaymentMethod.m */; };
-		C580DB211CC52BC6009CA04B /* ASTPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB121CC52BC6009CA04B /* ASTPrice.m */; };
-		C580DB221CC52BC6009CA04B /* ASTSearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB141CC52BC6009CA04B /* ASTSearchInfo.m */; };
-		C580DB231CC52BC6009CA04B /* ASTTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB161CC52BC6009CA04B /* ASTTicket.m */; };
-		C580DB241CC52BC6009CA04B /* ASTTravelSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB181CC52BC6009CA04B /* ASTTravelSegment.m */; };
+		C580DB191CC52BC6009CA04B /* JRAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB021CC52BC6009CA04B /* JRAirline.m */; };
+		C580DB1A1CC52BC6009CA04B /* JRAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB041CC52BC6009CA04B /* JRAirport.m */; };
+		C580DB1B1CC52BC6009CA04B /* JRAlliance.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB061CC52BC6009CA04B /* JRAlliance.m */; };
+		C580DB1C1CC52BC6009CA04B /* JRCurrencyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB081CC52BC6009CA04B /* JRCurrencyRate.m */; };
+		C580DB1D1CC52BC6009CA04B /* JRFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB0A1CC52BC6009CA04B /* JRFlight.m */; };
+		C580DB1E1CC52BC6009CA04B /* JRFlightSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB0C1CC52BC6009CA04B /* JRFlightSegment.m */; };
+		C580DB1F1CC52BC6009CA04B /* JRGate.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB0E1CC52BC6009CA04B /* JRGate.m */; };
+		C580DB201CC52BC6009CA04B /* JRPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB101CC52BC6009CA04B /* JRPaymentMethod.m */; };
+		C580DB211CC52BC6009CA04B /* JRPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB121CC52BC6009CA04B /* JRPrice.m */; };
+		C580DB221CC52BC6009CA04B /* JRSearchInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB141CC52BC6009CA04B /* JRSearchInfo.m */; };
+		C580DB231CC52BC6009CA04B /* JRTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB161CC52BC6009CA04B /* JRTicket.m */; };
+		C580DB241CC52BC6009CA04B /* JRTravelSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB181CC52BC6009CA04B /* JRTravelSegment.m */; };
 		C580DB2B1CC52BE1009CA04B /* JRSearchFormVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB281CC52BE1009CA04B /* JRSearchFormVC.m */; };
 		C580DB2C1CC52BE1009CA04B /* JRSearchFormVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C580DB291CC52BE1009CA04B /* JRSearchFormVC.xib */; };
 		C580DB2D1CC52BE1009CA04B /* JRSearchFormVC~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C580DB2A1CC52BE1009CA04B /* JRSearchFormVC~ipad.xib */; };
@@ -271,14 +271,14 @@
 		C56173371CC53BCC0049E2EE /* NSLayoutConstraint+JRConstraintMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+JRConstraintMake.m"; sourceTree = "<group>"; };
 		C561733A1CC53C020049E2EE /* JRLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRLayoutConstraint.h; sourceTree = "<group>"; };
 		C561733B1CC53C020049E2EE /* JRLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRLayoutConstraint.m; sourceTree = "<group>"; };
-		C561733E1CC53C6C0049E2EE /* UIImage+ASUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ASUIImage.h"; sourceTree = "<group>"; };
-		C561733F1CC53C6C0049E2EE /* UIImage+ASUIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ASUIImage.m"; sourceTree = "<group>"; };
+		C561733E1CC53C6C0049E2EE /* UIImage+JRUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JRUIImage.h"; sourceTree = "<group>"; };
+		C561733F1CC53C6C0049E2EE /* UIImage+JRUIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JRUIImage.m"; sourceTree = "<group>"; };
 		C56173411CC627F60049E2EE /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		C56173421CC627F60049E2EE /* Defines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Defines.m; sourceTree = "<group>"; };
 		C56173461CC62C2F0049E2EE /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
 		C56173471CC62C2F0049E2EE /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
-		C561734A1CC633450049E2EE /* UIView+FadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FadeAnimation.h"; sourceTree = "<group>"; };
-		C561734B1CC633450049E2EE /* UIView+FadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FadeAnimation.m"; sourceTree = "<group>"; };
+		C561734A1CC633450049E2EE /* UIView+JRFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JRFadeAnimation.h"; sourceTree = "<group>"; };
+		C561734B1CC633450049E2EE /* UIView+JRFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JRFadeAnimation.m"; sourceTree = "<group>"; };
 		C561734E1CC634F50049E2EE /* JRDatePickerDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDatePickerDayCell.h; sourceTree = "<group>"; };
 		C561734F1CC634F50049E2EE /* JRDatePickerDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDatePickerDayCell.m; sourceTree = "<group>"; };
 		C56173501CC634F50049E2EE /* JRDatePickerDayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDatePickerDayView.h; sourceTree = "<group>"; };
@@ -337,10 +337,10 @@
 		C56173C71CC667030049E2EE /* NSObject+Accessibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Accessibility.m"; sourceTree = "<group>"; };
 		C56173C91CC667030049E2EE /* UIButton+States.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+States.h"; sourceTree = "<group>"; };
 		C56173CA1CC667030049E2EE /* UIButton+States.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+States.m"; sourceTree = "<group>"; };
-		C56173CC1CC667030049E2EE /* UINavigationItem+CustomBarItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CustomBarItems.h"; sourceTree = "<group>"; };
-		C56173CD1CC667030049E2EE /* UINavigationItem+CustomBarItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CustomBarItems.m"; sourceTree = "<group>"; };
-		C56173CF1CC667030049E2EE /* UIViewController+AddChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddChildViewController.h"; sourceTree = "<group>"; };
-		C56173D01CC667030049E2EE /* UIViewController+AddChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddChildViewController.m"; sourceTree = "<group>"; };
+		C56173CC1CC667030049E2EE /* UINavigationItem+JRCustomBarItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+JRCustomBarItems.h"; sourceTree = "<group>"; };
+		C56173CD1CC667030049E2EE /* UINavigationItem+JRCustomBarItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+JRCustomBarItems.m"; sourceTree = "<group>"; };
+		C56173CF1CC667030049E2EE /* UIViewController+JRAddChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JRAddChildViewController.h"; sourceTree = "<group>"; };
+		C56173D01CC667030049E2EE /* UIViewController+JRAddChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JRAddChildViewController.m"; sourceTree = "<group>"; };
 		C56173D21CC667030049E2EE /* UIWindow+TopMostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+TopMostViewController.h"; sourceTree = "<group>"; };
 		C56173D31CC667030049E2EE /* UIWindow+TopMostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+TopMostViewController.m"; sourceTree = "<group>"; };
 		C56173DA1CC667690049E2EE /* JRActivityIndicatorBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRActivityIndicatorBar.h; sourceTree = "<group>"; };
@@ -348,30 +348,30 @@
 		C56173DE1CC66BBB0049E2EE /* UIView+NSLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NSLS.h"; sourceTree = "<group>"; };
 		C56173DF1CC66BBB0049E2EE /* UIView+NSLS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NSLS.m"; sourceTree = "<group>"; };
 		C56173E11CC66E980049E2EE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		C580DB011CC52BC6009CA04B /* ASTAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirline.h; sourceTree = "<group>"; };
-		C580DB021CC52BC6009CA04B /* ASTAirline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAirline.m; sourceTree = "<group>"; };
-		C580DB031CC52BC6009CA04B /* ASTAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAirport.h; sourceTree = "<group>"; };
-		C580DB041CC52BC6009CA04B /* ASTAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAirport.m; sourceTree = "<group>"; };
-		C580DB051CC52BC6009CA04B /* ASTAlliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTAlliance.h; sourceTree = "<group>"; };
-		C580DB061CC52BC6009CA04B /* ASTAlliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTAlliance.m; sourceTree = "<group>"; };
-		C580DB071CC52BC6009CA04B /* ASTCurrencyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTCurrencyRate.h; sourceTree = "<group>"; };
-		C580DB081CC52BC6009CA04B /* ASTCurrencyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTCurrencyRate.m; sourceTree = "<group>"; };
-		C580DB091CC52BC6009CA04B /* ASTFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTFlight.h; sourceTree = "<group>"; };
-		C580DB0A1CC52BC6009CA04B /* ASTFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTFlight.m; sourceTree = "<group>"; };
-		C580DB0B1CC52BC6009CA04B /* ASTFlightSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTFlightSegment.h; sourceTree = "<group>"; };
-		C580DB0C1CC52BC6009CA04B /* ASTFlightSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTFlightSegment.m; sourceTree = "<group>"; };
-		C580DB0D1CC52BC6009CA04B /* ASTGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTGate.h; sourceTree = "<group>"; };
-		C580DB0E1CC52BC6009CA04B /* ASTGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTGate.m; sourceTree = "<group>"; };
-		C580DB0F1CC52BC6009CA04B /* ASTPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTPaymentMethod.h; sourceTree = "<group>"; };
-		C580DB101CC52BC6009CA04B /* ASTPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTPaymentMethod.m; sourceTree = "<group>"; };
-		C580DB111CC52BC6009CA04B /* ASTPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTPrice.h; sourceTree = "<group>"; };
-		C580DB121CC52BC6009CA04B /* ASTPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTPrice.m; sourceTree = "<group>"; };
-		C580DB131CC52BC6009CA04B /* ASTSearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTSearchInfo.h; sourceTree = "<group>"; };
-		C580DB141CC52BC6009CA04B /* ASTSearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTSearchInfo.m; sourceTree = "<group>"; };
-		C580DB151CC52BC6009CA04B /* ASTTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTicket.h; sourceTree = "<group>"; };
-		C580DB161CC52BC6009CA04B /* ASTTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTicket.m; sourceTree = "<group>"; };
-		C580DB171CC52BC6009CA04B /* ASTTravelSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTTravelSegment.h; sourceTree = "<group>"; };
-		C580DB181CC52BC6009CA04B /* ASTTravelSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTTravelSegment.m; sourceTree = "<group>"; };
+		C580DB011CC52BC6009CA04B /* JRAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAirline.h; sourceTree = "<group>"; };
+		C580DB021CC52BC6009CA04B /* JRAirline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAirline.m; sourceTree = "<group>"; };
+		C580DB031CC52BC6009CA04B /* JRAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAirport.h; sourceTree = "<group>"; };
+		C580DB041CC52BC6009CA04B /* JRAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAirport.m; sourceTree = "<group>"; };
+		C580DB051CC52BC6009CA04B /* JRAlliance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAlliance.h; sourceTree = "<group>"; };
+		C580DB061CC52BC6009CA04B /* JRAlliance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAlliance.m; sourceTree = "<group>"; };
+		C580DB071CC52BC6009CA04B /* JRCurrencyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRCurrencyRate.h; sourceTree = "<group>"; };
+		C580DB081CC52BC6009CA04B /* JRCurrencyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRCurrencyRate.m; sourceTree = "<group>"; };
+		C580DB091CC52BC6009CA04B /* JRFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFlight.h; sourceTree = "<group>"; };
+		C580DB0A1CC52BC6009CA04B /* JRFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFlight.m; sourceTree = "<group>"; };
+		C580DB0B1CC52BC6009CA04B /* JRFlightSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFlightSegment.h; sourceTree = "<group>"; };
+		C580DB0C1CC52BC6009CA04B /* JRFlightSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFlightSegment.m; sourceTree = "<group>"; };
+		C580DB0D1CC52BC6009CA04B /* JRGate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRGate.h; sourceTree = "<group>"; };
+		C580DB0E1CC52BC6009CA04B /* JRGate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRGate.m; sourceTree = "<group>"; };
+		C580DB0F1CC52BC6009CA04B /* JRPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPaymentMethod.h; sourceTree = "<group>"; };
+		C580DB101CC52BC6009CA04B /* JRPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPaymentMethod.m; sourceTree = "<group>"; };
+		C580DB111CC52BC6009CA04B /* JRPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPrice.h; sourceTree = "<group>"; };
+		C580DB121CC52BC6009CA04B /* JRPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPrice.m; sourceTree = "<group>"; };
+		C580DB131CC52BC6009CA04B /* JRSearchInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchInfo.h; sourceTree = "<group>"; };
+		C580DB141CC52BC6009CA04B /* JRSearchInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchInfo.m; sourceTree = "<group>"; };
+		C580DB151CC52BC6009CA04B /* JRTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTicket.h; sourceTree = "<group>"; };
+		C580DB161CC52BC6009CA04B /* JRTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTicket.m; sourceTree = "<group>"; };
+		C580DB171CC52BC6009CA04B /* JRTravelSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTravelSegment.h; sourceTree = "<group>"; };
+		C580DB181CC52BC6009CA04B /* JRTravelSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTravelSegment.m; sourceTree = "<group>"; };
 		C580DB271CC52BE1009CA04B /* JRSearchFormVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchFormVC.h; sourceTree = "<group>"; };
 		C580DB281CC52BE1009CA04B /* JRSearchFormVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchFormVC.m; sourceTree = "<group>"; };
 		C580DB291CC52BE1009CA04B /* JRSearchFormVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRSearchFormVC.xib; sourceTree = "<group>"; };
@@ -746,8 +746,8 @@
 		C561733D1CC53C6C0049E2EE /* UIImage+JRUIImage */ = {
 			isa = PBXGroup;
 			children = (
-				C561733E1CC53C6C0049E2EE /* UIImage+ASUIImage.h */,
-				C561733F1CC53C6C0049E2EE /* UIImage+ASUIImage.m */,
+				C561733E1CC53C6C0049E2EE /* UIImage+JRUIImage.h */,
+				C561733F1CC53C6C0049E2EE /* UIImage+JRUIImage.m */,
 			);
 			path = "UIImage+JRUIImage";
 			sourceTree = "<group>";
@@ -773,8 +773,8 @@
 		C56173491CC633450049E2EE /* UIView+JRFadeAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				C561734A1CC633450049E2EE /* UIView+FadeAnimation.h */,
-				C561734B1CC633450049E2EE /* UIView+FadeAnimation.m */,
+				C561734A1CC633450049E2EE /* UIView+JRFadeAnimation.h */,
+				C561734B1CC633450049E2EE /* UIView+JRFadeAnimation.m */,
 			);
 			path = "UIView+JRFadeAnimation";
 			sourceTree = "<group>";
@@ -938,8 +938,8 @@
 		C56173CB1CC667030049E2EE /* UINavigationItem+JRCustomBarItems */ = {
 			isa = PBXGroup;
 			children = (
-				C56173CC1CC667030049E2EE /* UINavigationItem+CustomBarItems.h */,
-				C56173CD1CC667030049E2EE /* UINavigationItem+CustomBarItems.m */,
+				C56173CC1CC667030049E2EE /* UINavigationItem+JRCustomBarItems.h */,
+				C56173CD1CC667030049E2EE /* UINavigationItem+JRCustomBarItems.m */,
 			);
 			path = "UINavigationItem+JRCustomBarItems";
 			sourceTree = "<group>";
@@ -947,8 +947,8 @@
 		C56173CE1CC667030049E2EE /* UIViewController+JRAddChildViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C56173CF1CC667030049E2EE /* UIViewController+AddChildViewController.h */,
-				C56173D01CC667030049E2EE /* UIViewController+AddChildViewController.m */,
+				C56173CF1CC667030049E2EE /* UIViewController+JRAddChildViewController.h */,
+				C56173D01CC667030049E2EE /* UIViewController+JRAddChildViewController.m */,
 			);
 			path = "UIViewController+JRAddChildViewController";
 			sourceTree = "<group>";
@@ -1000,30 +1000,30 @@
 		C580DB001CC52BB9009CA04B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C580DB011CC52BC6009CA04B /* ASTAirline.h */,
-				C580DB021CC52BC6009CA04B /* ASTAirline.m */,
-				C580DB031CC52BC6009CA04B /* ASTAirport.h */,
-				C580DB041CC52BC6009CA04B /* ASTAirport.m */,
-				C580DB051CC52BC6009CA04B /* ASTAlliance.h */,
-				C580DB061CC52BC6009CA04B /* ASTAlliance.m */,
-				C580DB071CC52BC6009CA04B /* ASTCurrencyRate.h */,
-				C580DB081CC52BC6009CA04B /* ASTCurrencyRate.m */,
-				C580DB091CC52BC6009CA04B /* ASTFlight.h */,
-				C580DB0A1CC52BC6009CA04B /* ASTFlight.m */,
-				C580DB0B1CC52BC6009CA04B /* ASTFlightSegment.h */,
-				C580DB0C1CC52BC6009CA04B /* ASTFlightSegment.m */,
-				C580DB0D1CC52BC6009CA04B /* ASTGate.h */,
-				C580DB0E1CC52BC6009CA04B /* ASTGate.m */,
-				C580DB0F1CC52BC6009CA04B /* ASTPaymentMethod.h */,
-				C580DB101CC52BC6009CA04B /* ASTPaymentMethod.m */,
-				C580DB111CC52BC6009CA04B /* ASTPrice.h */,
-				C580DB121CC52BC6009CA04B /* ASTPrice.m */,
-				C580DB131CC52BC6009CA04B /* ASTSearchInfo.h */,
-				C580DB141CC52BC6009CA04B /* ASTSearchInfo.m */,
-				C580DB151CC52BC6009CA04B /* ASTTicket.h */,
-				C580DB161CC52BC6009CA04B /* ASTTicket.m */,
-				C580DB171CC52BC6009CA04B /* ASTTravelSegment.h */,
-				C580DB181CC52BC6009CA04B /* ASTTravelSegment.m */,
+				C580DB011CC52BC6009CA04B /* JRAirline.h */,
+				C580DB021CC52BC6009CA04B /* JRAirline.m */,
+				C580DB031CC52BC6009CA04B /* JRAirport.h */,
+				C580DB041CC52BC6009CA04B /* JRAirport.m */,
+				C580DB051CC52BC6009CA04B /* JRAlliance.h */,
+				C580DB061CC52BC6009CA04B /* JRAlliance.m */,
+				C580DB071CC52BC6009CA04B /* JRCurrencyRate.h */,
+				C580DB081CC52BC6009CA04B /* JRCurrencyRate.m */,
+				C580DB091CC52BC6009CA04B /* JRFlight.h */,
+				C580DB0A1CC52BC6009CA04B /* JRFlight.m */,
+				C580DB0B1CC52BC6009CA04B /* JRFlightSegment.h */,
+				C580DB0C1CC52BC6009CA04B /* JRFlightSegment.m */,
+				C580DB0D1CC52BC6009CA04B /* JRGate.h */,
+				C580DB0E1CC52BC6009CA04B /* JRGate.m */,
+				C580DB0F1CC52BC6009CA04B /* JRPaymentMethod.h */,
+				C580DB101CC52BC6009CA04B /* JRPaymentMethod.m */,
+				C580DB111CC52BC6009CA04B /* JRPrice.h */,
+				C580DB121CC52BC6009CA04B /* JRPrice.m */,
+				C580DB131CC52BC6009CA04B /* JRSearchInfo.h */,
+				C580DB141CC52BC6009CA04B /* JRSearchInfo.m */,
+				C580DB151CC52BC6009CA04B /* JRTicket.h */,
+				C580DB161CC52BC6009CA04B /* JRTicket.m */,
+				C580DB171CC52BC6009CA04B /* JRTravelSegment.h */,
+				C580DB181CC52BC6009CA04B /* JRTravelSegment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1604,13 +1604,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67B450218916CA2006CBA73 /* ASTWebBrowserViewController.m in Sources */,
-				C580DB1C1CC52BC6009CA04B /* ASTCurrencyRate.m in Sources */,
+				C580DB1C1CC52BC6009CA04B /* JRCurrencyRate.m in Sources */,
 				C56173A21CC65DA60049E2EE /* JRHintViewController.m in Sources */,
 				0756C04E1CB291F70039443B /* ASTTableManagerUnion.m in Sources */,
 				C580DB5F1CC52D6E009CA04B /* JRSearchFormAirportsCell.m in Sources */,
 				C56173D51CC667030049E2EE /* UIButton+States.m in Sources */,
-				C56173D71CC667030049E2EE /* UIViewController+AddChildViewController.m in Sources */,
-				C56173D61CC667030049E2EE /* UINavigationItem+CustomBarItems.m in Sources */,
+				C56173D71CC667030049E2EE /* UIViewController+JRAddChildViewController.m in Sources */,
+				C56173D61CC667030049E2EE /* UINavigationItem+JRCustomBarItems.m in Sources */,
 				0756C03B1CB252860039443B /* ASTVideoAdLoader.m in Sources */,
 				C56173B11CC65EDE0049E2EE /* JRSimplePopoverBackgroundView.m in Sources */,
 				C63BA9F71817F1FD007A4F00 /* ASTStopoverCell.m in Sources */,
@@ -1636,37 +1636,37 @@
 				C56173AA1CC65E5E0049E2EE /* JRNavigationBar.m in Sources */,
 				C580DB5C1CC52D6E009CA04B /* JRSearchFormAirportCell.m in Sources */,
 				C56173D81CC667030049E2EE /* UIWindow+TopMostViewController.m in Sources */,
-				C580DB1D1CC52BC6009CA04B /* ASTFlight.m in Sources */,
-				C580DB241CC52BC6009CA04B /* ASTTravelSegment.m in Sources */,
+				C580DB1D1CC52BC6009CA04B /* JRFlight.m in Sources */,
+				C580DB241CC52BC6009CA04B /* JRTravelSegment.m in Sources */,
 				C56173951CC64E5E0049E2EE /* JROverlayView.m in Sources */,
-				C580DB221CC52BC6009CA04B /* ASTSearchInfo.m in Sources */,
+				C580DB221CC52BC6009CA04B /* JRSearchInfo.m in Sources */,
 				C561736F1CC635A10049E2EE /* JRSceneContainer.m in Sources */,
 				C56173BD1CC65FB80049E2EE /* JRSearchInfoUtilsDateWithIATA.m in Sources */,
-				C56173401CC53C6C0049E2EE /* UIImage+ASUIImage.m in Sources */,
+				C56173401CC53C6C0049E2EE /* UIImage+JRUIImage.m in Sources */,
 				C580DB641CC52D6E009CA04B /* JRSearchFormCell.m in Sources */,
-				C580DB1B1CC52BC6009CA04B /* ASTAlliance.m in Sources */,
+				C580DB1B1CC52BC6009CA04B /* JRAlliance.m in Sources */,
 				C561732F1CC52F910049E2EE /* JRTableViewCell.m in Sources */,
 				C56173301CC52F910049E2EE /* JRViewController.m in Sources */,
 				C561730A1CC52EF30049E2EE /* FPTouchView.m in Sources */,
 				C580DB9A1CC52DB1009CA04B /* JRSearchFormTravelClassPickerCell.m in Sources */,
-				C580DB1A1CC52BC6009CA04B /* ASTAirport.m in Sources */,
+				C580DB1A1CC52BC6009CA04B /* JRAirport.m in Sources */,
 				C56173711CC635A10049E2EE /* JRScreenSceneController.m in Sources */,
 				C63BA9EF1816BA6A007A4F00 /* ASTSearchParams.m in Sources */,
-				C580DB211CC52BC6009CA04B /* ASTPrice.m in Sources */,
+				C580DB211CC52BC6009CA04B /* JRPrice.m in Sources */,
 				C6ABB12617F0619B0086872F /* ASTAirportPickerCell.m in Sources */,
 				C6B74F9F181FDBBB00FEF5B9 /* ASFilterCellWithTwoThumbsSlider.m in Sources */,
 				C56173D41CC667030049E2EE /* NSObject+Accessibility.m in Sources */,
 				C56173821CC648CC0049E2EE /* UIViewController+JRScreenSceneController.m in Sources */,
-				C561734C1CC633450049E2EE /* UIView+FadeAnimation.m in Sources */,
+				C561734C1CC633450049E2EE /* UIView+JRFadeAnimation.m in Sources */,
 				C56173431CC627F60049E2EE /* Defines.m in Sources */,
 				C63FD39B17F49292007FFBD9 /* ASTSearchFormDateCell.m in Sources */,
 				0756C0511CB29B830039443B /* ASTAdvertisementTableManager.m in Sources */,
 				0756C0401CB262240039443B /* ASTVideoAdPlayerProxy.m in Sources */,
 				C6B74F75181EA14A00FEF5B9 /* ASTResults.m in Sources */,
-				C580DB1E1CC52BC6009CA04B /* ASTFlightSegment.m in Sources */,
+				C580DB1E1CC52BC6009CA04B /* JRFlightSegment.m in Sources */,
 				C56173BC1CC65FB80049E2EE /* JRSearchInfoUtils.m in Sources */,
 				C56173081CC52EF30049E2EE /* FPPopoverController.m in Sources */,
-				C580DB201CC52BC6009CA04B /* ASTPaymentMethod.m in Sources */,
+				C580DB201CC52BC6009CA04B /* JRPaymentMethod.m in Sources */,
 				C56173481CC62C2F0049E2EE /* DateUtil.m in Sources */,
 				077C43791CB7DCFD007A3290 /* ASTAviasalesAdLoader.m in Sources */,
 				C56173C41CC666560049E2EE /* JRSwipeDeletionTableViewCell.m in Sources */,
@@ -1683,15 +1683,15 @@
 				0756C0431CB26C080039443B /* ASTNativeAdLoader.m in Sources */,
 				07082A201CAEC2B400CE4305 /* ASTSearchResultsList.m in Sources */,
 				C604811D1814F0DE0015FFEE /* ASTTicketScreen.m in Sources */,
-				C580DB231CC52BC6009CA04B /* ASTTicket.m in Sources */,
+				C580DB231CC52BC6009CA04B /* JRTicket.m in Sources */,
 				C6B74F7F181FDA9100FEF5B9 /* ASTFilters.m in Sources */,
-				C580DB191CC52BC6009CA04B /* ASTAirline.m in Sources */,
+				C580DB191CC52BC6009CA04B /* JRAirline.m in Sources */,
 				C580DB741CC52D6E009CA04B /* JRSearchFormPassengersCell.m in Sources */,
 				C56173721CC635A10049E2EE /* JRScreneSceneScrollView.m in Sources */,
 				C561735E1CC634F50049E2EE /* JRDatePickerDayView.m in Sources */,
 				C580DB731CC52D6E009CA04B /* JRSearchFormItem.m in Sources */,
 				C561733C1CC53C020049E2EE /* JRLayoutConstraint.m in Sources */,
-				C580DB1F1CC52BC6009CA04B /* ASTGate.m in Sources */,
+				C580DB1F1CC52BC6009CA04B /* JRGate.m in Sources */,
 				C561732A1CC52F910049E2EE /* JRAlert.m in Sources */,
 				C60EC84717E848DA00C5D52E /* main.m in Sources */,
 				C56173631CC634F50049E2EE /* JRDatePickerStateObject.m in Sources */,

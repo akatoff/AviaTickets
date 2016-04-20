@@ -1,15 +1,14 @@
 //
 //  JRSearchFormPassengersView.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 18/04/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormPassengersView.h"
 #import "JRC.h"
 #import "JRSearchFormPassengerPickerView.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "JRAlertManager.h"
 
 @interface JRSearchFormPassengersView ()
@@ -34,7 +33,7 @@
     [_plusButton setImage:[[_plusButton imageForState:UIControlStateNormal] imageTintedWithColor:[JRC SF_PASSENGERS_BG] fraction:0.75] forState:UIControlStateHighlighted];
 }
 
-- (void)setSearchInfo:(ASTSearchInfo *)searchInfo {
+- (void)setSearchInfo:(JRSearchInfo *)searchInfo {
     _searchInfo = searchInfo;
     [self updateView];
 }

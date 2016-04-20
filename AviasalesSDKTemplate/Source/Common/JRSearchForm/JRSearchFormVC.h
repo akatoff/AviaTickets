@@ -1,19 +1,18 @@
 //
 //  JRSearchFormVC.h
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 14/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRViewController.h"
 
 
-@class ASTSearchInfo;
+@class JRSearchInfo;
 
 
 @interface JRSearchFormVC : JRViewController
 
-- (void)setSearchInfo:(ASTSearchInfo *)searchInfo;
+- (void)setSearchInfo:(JRSearchInfo *)searchInfo;
 
 @end

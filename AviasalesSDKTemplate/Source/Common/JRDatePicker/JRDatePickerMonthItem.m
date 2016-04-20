@@ -1,9 +1,8 @@
 //
 //  JRDatePickerMonthItem.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 05/02/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRDatePickerMonthItem.h"
@@ -171,11 +170,11 @@
 - (void)markFirstOrSecondSelectedDateIfNeeds:(NSDate *)date
 {
 	if (_stateObject.mode == JRDatePickerModeDefault) {
-		ASTTravelSegment *travelSegment = _stateObject.travelSegment;
+		JRTravelSegment *travelSegment = _stateObject.travelSegment;
 		[self selectedCheckWithTravelSegment:travelSegment date:date];
 	}
 	else {
-		for (ASTTravelSegment *travelSegment in _stateObject.searchInfo.travelSegments) {
+		for (JRTravelSegment *travelSegment in _stateObject.searchInfo.travelSegments) {
 			if ([_stateObject.searchInfo.travelSegments indexOfObject:travelSegment] > 1) {
 				return;
 			}
@@ -184,7 +183,7 @@
 	}
 }
 
-- (void)selectedCheckWithTravelSegment:(ASTTravelSegment *)travelSegment date:(NSDate *)date
+- (void)selectedCheckWithTravelSegment:(JRTravelSegment *)travelSegment date:(NSDate *)date
 {
 	NSDate *departureDate = travelSegment.departureDate;
 	if (departureDate) {

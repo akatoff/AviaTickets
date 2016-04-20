@@ -1,14 +1,13 @@
 //
 //  JRSimplePopoverBackgroundView.m
-//  Aviasales iOS Apps
 //
-//  Created by Dmitry Ryumin on 04/03/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSimplePopoverBackgroundView.h"
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #define JR_SIMPLE_POPOVER_CORNER_RADIUS 10.f
 #define JR_SIMPLE_POPOVER_CONTENT_INSET 6.f
 #define JR_SIMPLE_POPOVER_FROM_POINT_MARGIN 10.f

@@ -1,14 +1,13 @@
 //
-//  JRDatePickerDateViewCell.h
-//  Aviasales iOS Apps
+//  JRDatePickerDayCell.h
 //
-//  Created by Ruslan Shevchuk on 05/02/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <UIKit/UIKit.h>
 #import "JRDatePickerMonthItem.h"
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 @interface JRDatePickerDayCell : UITableViewCell
 

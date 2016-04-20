@@ -1,9 +1,8 @@
 //
 //  JRLayoutConstraint.h
-//  Aviasales iOS Apps
 //
-//  Created by Dmitry Ryumin on 03/06/15.
-//  Copyright (c) 2015 aviasales. All rights reserved.
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <UIKit/UIKit.h>

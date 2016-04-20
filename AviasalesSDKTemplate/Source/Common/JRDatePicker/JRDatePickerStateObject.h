@@ -1,13 +1,12 @@
 //
 //  JRDatePickerStateObject.h
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 10/02/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <Foundation/Foundation.h>
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 typedef enum {
 	JRDatePickerModeDeparture,
@@ -23,8 +22,8 @@ typedef enum {
 @interface JRDatePickerStateObject : NSObject
 
 @property (assign, nonatomic) JRDatePickerMode mode;
-@property (strong, nonatomic) ASTSearchInfo *searchInfo;
-@property (strong, nonatomic) ASTTravelSegment *travelSegment;
+@property (strong, nonatomic) JRSearchInfo *searchInfo;
+@property (strong, nonatomic) JRTravelSegment *travelSegment;
 @property (strong, nonatomic) NSDate *firstAvalibleForSearchDate;
 @property (strong, nonatomic) NSDate *lastAvalibleForSearchDate;
 @property (strong, nonatomic) NSDate *today;

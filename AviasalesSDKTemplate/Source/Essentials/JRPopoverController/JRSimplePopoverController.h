@@ -1,9 +1,8 @@
 //
-//  ASPopoverController.h
-//  aviasales
+//  JRSimplePopoverController.h
 //
-//  Created by Andrey Zakharevich on 04.02.13.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <UIKit/UIKit.h>

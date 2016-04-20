@@ -1,9 +1,8 @@
 //
 //  JRSearchFormPassengerPickerView.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 18/04/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormPassengerPickerView.h"
@@ -51,7 +50,7 @@
     [_passengerViews makeObjectsPerformSelector:@selector(setPickerView:) withObject:self];
 }
 
-- (void)setSearchInfo:(ASTSearchInfo *)searchInfo {
+- (void)setSearchInfo:(JRSearchInfo *)searchInfo {
     _searchInfo = searchInfo;
     [_passengerViews makeObjectsPerformSelector:@selector(setSearchInfo:) withObject:_searchInfo];
 }

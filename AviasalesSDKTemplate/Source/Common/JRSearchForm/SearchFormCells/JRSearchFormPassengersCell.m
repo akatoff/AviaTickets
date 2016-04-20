@@ -1,16 +1,15 @@
 //
 //  JRSearchFormPassengersCell.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 21/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormPassengersCell.h"
 #import "JRSearchInfoUtils.h"
 #import "JRSearchFormPassengerPickerView.h"
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "NSLayoutConstraint+JRConstraintMake.h"
 
 @interface JRSearchFormPassengersCell ()

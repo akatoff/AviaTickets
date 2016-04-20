@@ -11,7 +11,7 @@
 #import "JRDatePickerDayCell.h"
 #import "JRDatePickerMonthHeaderReusableView.h"
 #import "DateUtil.h"
-#import "UIView+FadeAnimation.h"
+#import "UIView+JRFadeAnimation.h"
 #import "JRC.h"
 #import "JRViewController+JRScreenScene.h"
 
@@ -27,8 +27,8 @@
 
 @implementation JRDatePickerVC
 
-- (instancetype)initWithSearchInfo:(ASTSearchInfo *)searchInfo
-                     travelSegment:(ASTTravelSegment *)travelSegment
+- (instancetype)initWithSearchInfo:(JRSearchInfo *)searchInfo
+                     travelSegment:(JRTravelSegment *)travelSegment
                               mode:(JRDatePickerMode)mode
            shouldShowSearchToolbar:(BOOL)shouldShowSearchToolbar {
     self = [self initWithSearchInfo:searchInfo travelSegment:travelSegment mode:mode];
@@ -38,8 +38,8 @@
     return self;
 }
 
-- (instancetype)initWithSearchInfo:(ASTSearchInfo *)searchInfo
-                     travelSegment:(ASTTravelSegment *)travelSegment
+- (instancetype)initWithSearchInfo:(JRSearchInfo *)searchInfo
+                     travelSegment:(JRTravelSegment *)travelSegment
                               mode:(JRDatePickerMode)mode
 {
 	self = [super init];
@@ -118,7 +118,7 @@ static NSString *MonthReusableHeaderViewIdentifier = @"JRDatePickerMonthHeaderRe
     
 	NSUInteger prevIndex = [_stateObject.searchInfo.travelSegments indexOfObject:_stateObject.travelSegment] - 1;
 	if (_stateObject.mode != JRDatePickerModeDeparture && _stateObject.searchInfo.travelSegments.count > prevIndex) {
-		ASTTravelSegment *segment = (_stateObject.searchInfo.travelSegments)[prevIndex];
+		JRTravelSegment *segment = (_stateObject.searchInfo.travelSegments)[prevIndex];
 		[_stateObject setBorderDate:segment.departureDate];
 	}
 	if (!_stateObject.borderDate) {

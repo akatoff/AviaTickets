@@ -1,14 +1,13 @@
 //
 //  JRSearchFormCell.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 21/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormCell.h"
 #import "JRSearchFormComplexSegmentCell.h"
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 #import "JRC.h"
 
 @interface JRSearchFormCell ()
@@ -23,7 +22,7 @@
 	[self updateCell];
 }
 
-- (ASTSearchInfo *)searchInfo
+- (JRSearchInfo *)searchInfo
 {
 	return [_item.itemDelegate searchInfo];
 }

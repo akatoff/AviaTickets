@@ -9,7 +9,7 @@
 #import "JRC.h"
 #import "DateUtil.h"
 #import "JRSearchFormDateCell.h"
-#import "UIView+FadeAnimation.h"
+#import "UIView+JRFadeAnimation.h"
 
 #define JRSearchFormDateCellFontSize 18
 #define kJRSearchFormTravelClassCellAnimationDuration 0.1
@@ -113,7 +113,7 @@
 {
 	NSUInteger objectAtIndex = 1;
     
-	ASTTravelSegment *travelSegment = self.searchInfo.travelSegments.count > objectAtIndex ?
+	JRTravelSegment *travelSegment = self.searchInfo.travelSegments.count > objectAtIndex ?
     (self.searchInfo.travelSegments)[objectAtIndex] : nil;
     
 	if (travelSegment.departureDate) {
@@ -125,7 +125,7 @@
 
 - (void)action
 {
-	ASTTravelSegment *travelSegment = nil;
+	JRTravelSegment *travelSegment = nil;
 	if (self.item.type == JRSearchFormTableViewDirectDateItem) {
 		travelSegment = [self.searchInfo.travelSegments firstObject];
 	} else if (self.item.type == JRSearchFormTableViewReturnDateItem) {

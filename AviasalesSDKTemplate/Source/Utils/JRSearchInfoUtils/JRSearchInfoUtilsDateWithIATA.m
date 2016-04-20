@@ -1,9 +1,8 @@
 //
 //  JRSearchInfoUtilsDateWithIATA.m
-//  Aviasales iOS Apps
 //
-//  Created by work on 5/14/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchInfoUtilsDateWithIATA.h"

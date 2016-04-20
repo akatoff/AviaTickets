@@ -1,9 +1,8 @@
 //
 //  NSObject+Accessibility.m
-//  Aviasales iOS Apps
 //
-//  Created by Dmitry Ryumin on 24/09/14.
-//  Copyright (c) 2014 aviasales. All rights reserved.
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "NSObject+Accessibility.h"

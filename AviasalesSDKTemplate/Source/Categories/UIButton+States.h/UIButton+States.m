@@ -1,13 +1,12 @@
 //
 //  UIButton+States.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 08/04/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "UIButton+States.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 
 #define kkJRFilterButtonHiAlpha 0.4
 #define kkJRFilterButtonDisAlpha 0.25

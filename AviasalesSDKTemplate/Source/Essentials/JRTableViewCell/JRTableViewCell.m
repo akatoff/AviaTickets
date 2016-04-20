@@ -1,13 +1,12 @@
 //
 //  JRTableViewCell.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 31/03/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRTableViewCell.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "JRC.h"
 #import "NSLayoutConstraint+JRConstraintMake.h"
 #import "Defines.h"

@@ -1,15 +1,14 @@
 //
-//  JRSearchFormComplexConfigurationCell.m
-//  Aviasales iOS Apps
+//  JRSearchFormComplexSegmentCell.m
 //
-//  Created by Ruslan Shevchuk on 22/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormComplexSegmentCell.h"
 #import "JRLineViewWithPattern.h"
-#import "UIView+FadeAnimation.h"
-#import "UIImage+ASUIImage.h"
+#import "UIView+JRFadeAnimation.h"
+#import "UIImage+JRUIImage.h"
 #import "JRC.h"
 #import "DateUtil.h"
 
@@ -49,7 +48,7 @@
 	[self updateCell];
 }
 
-- (void)setTravelSegment:(ASTTravelSegment *)travelSegment
+- (void)setTravelSegment:(JRTravelSegment *)travelSegment
 {
 	_travelSegment = travelSegment;
 	[self updateCell];
@@ -73,7 +72,7 @@
 
 - (void)setupLabels
 {
-    ASTTravelSegment *travelSegment = self.travelSegment;
+    JRTravelSegment *travelSegment = self.travelSegment;
 	[self setupIataLabel:_originIATALabel iata:travelSegment.originIata];
 	[self setupIataLabel:_destinationIATALabel iata:self.travelSegment.destinationIata];
 	[self setupAirportLabel:_originAirportLabel iata:travelSegment.originIata];

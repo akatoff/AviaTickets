@@ -1,17 +1,16 @@
 //
 //  JRScreenScene.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 25/12/13.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRScreenScene.h"
 #import "JRViewController.h"
-#import "UIViewController+AddChildViewController.h"
+#import "UIViewController+JRAddChildViewController.h"
 #import "JRC.h"
 #import "JROverlayView.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "JRC.h"
 #import "JRScreneSceneScrollView.h"
 #import "JRViewController+JRScreenScene.h"

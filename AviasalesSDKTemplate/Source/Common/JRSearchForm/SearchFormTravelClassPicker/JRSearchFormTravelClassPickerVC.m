@@ -1,15 +1,14 @@
 //
 //  JRSearchFormTravelClassPickerVC.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 24/03/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormTravelClassPickerVC.h"
-#import "UIView+FadeAnimation.h"
+#import "UIView+JRFadeAnimation.h"
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "JRTableViewCell.h"
 #import "JRSearchInfoUtils.h"
 #import "JRSearchFormTravelClassPickerCell.h"
@@ -24,14 +23,14 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *items;
 
-@property (weak, nonatomic) ASTSearchInfo *searchInfo;
+@property (weak, nonatomic) JRSearchInfo *searchInfo;
 
 @end
 
 @implementation JRSearchFormTravelClassPickerVC
 
 - (id)initWithDelegate:(id<JRSearchFormTravelClassPickerDelegate>)delegate
-            searchInfo:(ASTSearchInfo *)searchInfo {
+            searchInfo:(JRSearchInfo *)searchInfo {
     self = [super init];
 	if (self) {
 		_delegate = delegate;

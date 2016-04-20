@@ -1,23 +1,22 @@
 //
-//  ASTSearchInfoUtils.m
-//  Aviasales iOS Apps
+//  JRSearchInfoUtils.m
 //
-//  Created by Anton Chebotov on 19/12/13.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchInfoUtils.h"
-#import "ASTSearchInfo.h"
-#import "ASTAirport.h"
+#import "JRSearchInfo.h"
+#import "JRAirport.h"
 #import "DateUtil.h"
-#import "ASTTravelSegment.h"
+#import "JRTravelSegment.h"
 
 @implementation JRSearchInfoUtils
 
-+ (NSArray *)getDirectionIATAsForSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSArray *)getDirectionIATAsForSearchInfo:(JRSearchInfo *)searchInfo
 {
 	NSMutableArray *iatas = [NSMutableArray new];
-	for (ASTTravelSegment *travelSegment in searchInfo.travelSegments) {
+	for (JRTravelSegment *travelSegment in searchInfo.travelSegments) {
 		NSString *originIATA = travelSegment.originIata;
 		if (originIATA) {
 			[iatas addObject:originIATA];
@@ -37,7 +36,7 @@
 	}
 }
 
-+ (NSArray *)getMainIATAsForSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSArray *)getMainIATAsForSearchInfo:(JRSearchInfo *)searchInfo
 {
 	NSMutableArray *iatasForSearchInfo = [[self getDirectionIATAsForSearchInfo:searchInfo] mutableCopy];
 	NSMutableArray *mainIATAsForSearchInfo = [NSMutableArray new];
@@ -50,11 +49,11 @@
 	return mainIATAsForSearchInfo;
 }
 
-+ (NSArray *)datesForSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSArray *)datesForSearchInfo:(JRSearchInfo *)searchInfo
 {
 	NSMutableArray *dates = [NSMutableArray new];
     
-	for (ASTTravelSegment *travelSegment in searchInfo.travelSegments) {
+	for (JRTravelSegment *travelSegment in searchInfo.travelSegments) {
 		NSDate *departureDate = travelSegment.departureDate;
 		if (departureDate) {
 			[dates addObject:departureDate];
@@ -64,7 +63,7 @@
 }
 
 
-+ (NSString *)shortDirectionIATAStringForSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSString *)shortDirectionIATAStringForSearchInfo:(JRSearchInfo *)searchInfo
 {
 	NSArray *iatas = [self getDirectionIATAsForSearchInfo:searchInfo];
     
@@ -72,10 +71,10 @@
 	return [NSString stringWithFormat:@"%@ %@ %@", iatas.firstObject, separator, iatas.lastObject];
 }
 
-+ (NSString *)fullDirectionIATAStringForSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSString *)fullDirectionIATAStringForSearchInfo:(JRSearchInfo *)searchInfo
 {
     NSMutableString *directionString = [NSMutableString new];
-    for (ASTTravelSegment *travelSegment in searchInfo.travelSegments) {
+    for (JRTravelSegment *travelSegment in searchInfo.travelSegments) {
         if (travelSegment != searchInfo.travelSegments.firstObject) {
             [directionString appendString:@"  "];
         }
@@ -84,7 +83,7 @@
 	return directionString;
 }
 
-+ (NSString *)fullDirectionCityStringForSearchInfo:(ASTSearchInfo *)searchInfo {
++ (NSString *)fullDirectionCityStringForSearchInfo:(JRSearchInfo *)searchInfo {
     NSArray *iatas = [self getDirectionIATAsForSearchInfo:searchInfo];
     NSMutableString *directionString = [NSMutableString new];
 	for (NSInteger i = 0; i < iatas.count; i++) {
@@ -99,7 +98,7 @@
 	return directionString;
 }
 
-+ (NSString *)datesIntervalStringWithSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSString *)datesIntervalStringWithSearchInfo:(JRSearchInfo *)searchInfo
 {
 	NSString *datesString;
     
@@ -114,20 +113,20 @@
 	return datesString;
 }
 
-+ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(JRSearchInfo *)searchInfo
 {
     NSString *passengersCountStringWithSearchInfo = [JRSearchInfoUtils passengersCountStringWithSearchInfo:searchInfo];
     return [NSString stringWithFormat:@"%@, %@", passengersCountStringWithSearchInfo, [JRSearchInfoUtils travelClassStringWithSearchInfo:searchInfo].lowercaseString];
 }
 
-+ (NSString *)passengersCountStringWithSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSString *)passengersCountStringWithSearchInfo:(JRSearchInfo *)searchInfo
 {
 	NSInteger passengers = searchInfo.adults + searchInfo.children  + searchInfo.infants;
     NSString *format = NSLSP(@"JR_SEARCHINFO_PASSENGERS", passengers);
 	return [NSString stringWithFormat:format, passengers];
 }
 
-+ (NSString *)travelClassStringWithSearchInfo:(ASTSearchInfo *)searchInfo
++ (NSString *)travelClassStringWithSearchInfo:(JRSearchInfo *)searchInfo
 {
     return [self travelClassStringWithTravelClass:searchInfo.travelClass];
 }

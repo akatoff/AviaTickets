@@ -1,3 +1,10 @@
+//
+//  JRC.m
+//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
+//
+
 #define COLOR_WITH_WHITE(A) [[UIColor alloc] initWithWhite : ((float)A/255.0f)alpha : 1]
 #define COLOR_WITH_RED(A, B, C) [[UIColor alloc] initWithRed : (float)A/255.0f green : (float)B/255.0f blue : (float)C/255.0f alpha : 1.0f]
 #define COLOR_WITH_ALPHA(A, B, C, D) [[UIColor alloc] initWithRed : (float)A/255.0f green : (float)B/255.0f blue : (float)C/255.0f alpha : (float)D]

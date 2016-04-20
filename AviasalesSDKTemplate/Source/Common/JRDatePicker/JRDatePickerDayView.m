@@ -1,17 +1,16 @@
 //
 //  JRDatePickerDayView.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 07/02/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRDatePickerDayView.h"
 #import "NSLayoutConstraint+JRConstraintMake.h"
 #import "JRC.h"
-#import "UIView+FadeAnimation.h"
+#import "UIView+JRFadeAnimation.h"
 #import "JRC.h" 
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "DateUtil.h"
 
 @interface JRDatePickerDayView ()

@@ -1,15 +1,14 @@
 //
-//  ASPopoverController.m
-//  aviasales
+//  JRSimplePopoverController.m
 //
-//  Created by Andrey Zakharevich on 04.02.13.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSimplePopoverController.h"
 #import "JRSimplePopoverBackgroundView.h"
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 
 @implementation JRSimplePopoverController
 {

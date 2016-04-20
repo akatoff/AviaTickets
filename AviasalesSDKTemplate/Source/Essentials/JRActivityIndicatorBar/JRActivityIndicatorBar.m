@@ -1,15 +1,14 @@
 //
 //  JRActivityIndicatorBar.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 06/03/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRActivityIndicatorBar.h"
 #import "JRC.h"
 #import "NSLayoutConstraint+JRConstraintMake.h"
-#import "UIView+FadeAnimation.h"
+#import "UIView+JRFadeAnimation.h"
 
 #define kJRActivityIndicatorBarMinDotHeightFactor   0.35
 #define kJRActivityIndicatorBarMaxDotHeightFactor   0.9

@@ -1,9 +1,8 @@
 //
 //  DateUtil.m
-//  aviasales
 //
-//  Created by Nikita Kabardin on 10/9/11.
-//  Copyright (c) 2011 Cleverpumpkin. All rights reserved.
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "DateUtil.h"

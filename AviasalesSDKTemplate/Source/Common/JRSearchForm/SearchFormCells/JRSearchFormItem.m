@@ -1,9 +1,8 @@
 //
-//  JRSearchFormTableViewItem.m
-//  Aviasales iOS Apps
+//  JRSearchFormItem.m
 //
-//  Created by Ruslan Shevchuk on 20/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormAirportCell.h"

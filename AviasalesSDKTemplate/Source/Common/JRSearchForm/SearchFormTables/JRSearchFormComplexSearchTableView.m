@@ -1,9 +1,8 @@
 //
 //  JRSearchFormComplexSearchTable.m
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 22/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormComplexSearchTableView.h"
@@ -11,7 +10,7 @@
 #import "JRSearchFormComplexTableClearCell.h"
 #import "JRSearchFormComplexSegmentCell.h"
 #import "JRSearchFormTravelClassAndPassengersCell.h"
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 #define kJRSearchFormSimpleSearchTableViewBottomInset 8
 #define kJRSearchFormSimpleSearchTableViewHeightForHeader 30
@@ -85,13 +84,13 @@ static void * JRComplexTableContentSizeChangeContext = &JRComplexTableContentSiz
 
 - (void)addTravelSegment {
     
-    ASTSearchInfo *searchInfo = self.itemDelegate.searchInfo;
+    JRSearchInfo *searchInfo = self.itemDelegate.searchInfo;
     while (searchInfo.travelSegments.count <= 1) {
-        ASTTravelSegment *travelSegment = [ASTTravelSegment new];
+        JRTravelSegment *travelSegment = [JRTravelSegment new];
         [searchInfo addTravelSegment:travelSegment];
     }
     
-    ASTTravelSegment *travelSegment = [ASTTravelSegment new];
+    JRTravelSegment *travelSegment = [JRTravelSegment new];
     [searchInfo addTravelSegment:travelSegment];
     
     [self updateItems];
@@ -122,7 +121,7 @@ static void * JRComplexTableContentSizeChangeContext = &JRComplexTableContentSiz
 
 - (void)removeLastSegment
 {
-	ASTSearchInfo *searchInfo = self.itemDelegate.searchInfo;
+	JRSearchInfo *searchInfo = self.itemDelegate.searchInfo;
     [searchInfo removeTravelSegment:searchInfo.travelSegments.lastObject];
     [self updateItems];
     
@@ -151,7 +150,7 @@ static void * JRComplexTableContentSizeChangeContext = &JRComplexTableContentSiz
     }
 }
 
-- (void)deleteTravelSegment:(ASTTravelSegment *)travelSegmentToDelete {
+- (void)deleteTravelSegment:(JRTravelSegment *)travelSegmentToDelete {
     [self.itemDelegate.searchInfo removeTravelSegment:travelSegmentToDelete];
     [self reloadData];
 }
@@ -181,7 +180,7 @@ static void * JRComplexTableContentSizeChangeContext = &JRComplexTableContentSiz
     [items addObject:secondComplexConfigurationItem];
     
 	
-    [self.itemDelegate.searchInfo.travelSegments enumerateObjectsUsingBlock:^(ASTTravelSegment *obj, NSUInteger idx, BOOL *stop) {
+    [self.itemDelegate.searchInfo.travelSegments enumerateObjectsUsingBlock:^(JRTravelSegment *obj, NSUInteger idx, BOOL *stop) {
         
         if (idx > 1) {
             JRSearchFormItem *complexConfigurationItem = [[JRSearchFormItem alloc] initWithType:JRSearchFormTableViewComplexSegmentItem
@@ -211,8 +210,8 @@ static void * JRComplexTableContentSizeChangeContext = &JRComplexTableContentSiz
 	}
     
 	if ([cell isKindOfClass:[JRSearchFormComplexSegmentCell class]]) {
-		ASTSearchInfo *searchInfo = self.itemDelegate.searchInfo;
-		ASTTravelSegment *travelSegment = nil;
+		JRSearchInfo *searchInfo = self.itemDelegate.searchInfo;
+		JRTravelSegment *travelSegment = nil;
         if (searchInfo.travelSegments.count > indexPath.row) {
             travelSegment = (searchInfo.travelSegments)[indexPath.row];
         }

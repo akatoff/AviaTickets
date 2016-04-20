@@ -1,28 +1,27 @@
 //
 //  JRSearchInfoUtils.h
-//  Aviasales iOS Apps
 //
-//  Created by Anton Chebotov on 19/12/13.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <Foundation/Foundation.h>
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 @interface JRSearchInfoUtils : NSObject
 
-+ (NSArray *)getDirectionIATAsForSearchInfo:(ASTSearchInfo *)searchInfo;
-+ (NSArray *)getMainIATAsForSearchInfo:(ASTSearchInfo *)searchInfo;
++ (NSArray *)getDirectionIATAsForSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSArray *)getMainIATAsForSearchInfo:(JRSearchInfo *)searchInfo;
 
-+ (NSArray *)datesForSearchInfo:(ASTSearchInfo *)searchInfo;
++ (NSArray *)datesForSearchInfo:(JRSearchInfo *)searchInfo;
 
-+ (NSString *)shortDirectionIATAStringForSearchInfo:(ASTSearchInfo *)searchInfo;
-+ (NSString *)fullDirectionIATAStringForSearchInfo:(ASTSearchInfo *)searchInfo;
-+ (NSString *)fullDirectionCityStringForSearchInfo:(ASTSearchInfo *)searchInfo;
++ (NSString *)shortDirectionIATAStringForSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)fullDirectionIATAStringForSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)fullDirectionCityStringForSearchInfo:(JRSearchInfo *)searchInfo;
 
-+ (NSString *)datesIntervalStringWithSearchInfo:(ASTSearchInfo *)searchInfo;
-+ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(ASTSearchInfo *)searchInfo;
-+ (NSString *)passengersCountStringWithSearchInfo:(ASTSearchInfo *)searchInfo;
-+ (NSString *)travelClassStringWithSearchInfo:(ASTSearchInfo *)searchInfo;
++ (NSString *)datesIntervalStringWithSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)passengersCountStringWithSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)travelClassStringWithSearchInfo:(JRSearchInfo *)searchInfo;
 + (NSString *)travelClassStringWithTravelClass:(JRSDKTravelClass)travelClass;
 @end

@@ -1,15 +1,14 @@
 //
-//  JRSearchResultsSortCell.m
-//  Aviasales iOS Apps
+//  JRSearchFormTravelClassPickerCell.m
 //
-//  Created by Ruslan Shevchuk on 24/03/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRSearchFormTravelClassPickerCell.h"
 
 #import "JRC.h"
-#import "UIImage+ASUIImage.h"
+#import "UIImage+JRUIImage.h"
 #import "JRSearchInfoUtils.h"
 
 @interface JRSearchFormTravelClassPickerCell ()

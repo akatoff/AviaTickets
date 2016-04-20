@@ -6,8 +6,8 @@
 //
 //
 
-#import "ASTSearchInfo.h"
-#import "ASTAirport.h"
+#import "JRSearchInfo.h"
+#import "JRAirport.h"
 #import "NSLayoutConstraint+JRConstraintMake.h"
 #import "JRAlert.h"
 #import "JRAlertManager.h"
@@ -21,11 +21,11 @@
 #import "JRSearchFormSimpleSearchTableView.h"
 #import "JRSearchFormTravelClassPickerVC.h"
 #import "JRSearchFormVC.h"
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 #import "JRSegmentedControl.h"
 #import "JRSimplePopoverController.h"
-#import "UIImage+ASUIImage.h"
-#import "UIView+FadeAnimation.h"
+#import "UIImage+JRUIImage.h"
+#import "UIView+JRFadeAnimation.h"
 #import "JRNavigationController.h"
 #import "JRScreenScene.h"
 #import "JRScreenSceneController.h"
@@ -59,9 +59,9 @@ typedef NS_ENUM (NSUInteger, JRSearchFormMode) {
 
 @property (assign, nonatomic) JRSearchFormMode searchFormMode;
 @property (strong, nonatomic) JRFPPopoverController *popover;
-@property (strong, nonatomic) ASTSearchInfo *searchInfo;
+@property (strong, nonatomic) JRSearchInfo *searchInfo;
 @property (strong, nonatomic) JRSegmentedControl *segmentedControl;
-@property (strong, nonatomic) ASTTravelSegment *savedTravelSegment;
+@property (strong, nonatomic) JRTravelSegment *savedTravelSegment;
 @property (strong, nonatomic) NSLayoutConstraint *simpleSearchTableLeadingConstaint;
 @property (strong, nonatomic) NSLayoutConstraint *travelClassAndPassengersLeadingTableViewConstraint;
 @property (strong, nonatomic) NSLayoutConstraint *travelClassAndPassengersLeadingViewConstraint;
@@ -104,7 +104,7 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
         return emptyOriginErrorPopover;
     }
     
-    for (ASTTravelSegment *travelSegment in _searchInfo.travelSegments) {
+    for (JRTravelSegment *travelSegment in _searchInfo.travelSegments) {
         if (_searchFormMode == JRSearchFormModeSimple && [_searchInfo.travelSegments indexOfObject:travelSegment] == 1) {
             return nil;
         }
@@ -224,16 +224,16 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
     
 }
 
-- (void)setSearchInfo:(ASTSearchInfo *)searchInfoToCopy
+- (void)setSearchInfo:(JRSearchInfo *)searchInfoToCopy
 {
     if (searchInfoToCopy == nil) {
         return;
     }
-    ASTSearchInfo *searchInfo = [searchInfoToCopy copyWithTravelSegments];
+    JRSearchInfo *searchInfo = [searchInfoToCopy copyWithTravelSegments];
     [searchInfo setAdjustSearchInfo:YES];
 	_searchInfo = searchInfo;
     while (_searchInfo.travelSegments.count <= 1) {
-        ASTTravelSegment *travelSegment = [ASTTravelSegment new];
+        JRTravelSegment *travelSegment = [JRTravelSegment new];
         [_searchInfo addTravelSegment:travelSegment];
     }
 	[self reloadSearchFormAnimated:NO];
@@ -267,8 +267,8 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 // TODO: search prefill
 //- (void)searchPrefillerCanPrefill:(SearchPrefill *)prefill {
 //    
-//    ASTTravelSegment *directTravelSegment = _searchInfo.travelSegments.firstObject;
-//    ASTTravelSegment *returnTravelSegment = nil;
+//    JRTravelSegment *directTravelSegment = _searchInfo.travelSegments.firstObject;
+//    JRTravelSegment *returnTravelSegment = nil;
 //    if (_searchInfo.travelSegments.count > 1) {
 //        returnTravelSegment = [_searchInfo.travelSegments objectAtIndex:1];
 //    }
@@ -278,7 +278,7 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 //    
 //    if (directTravelSegment.originIata == nil) {
 //        if (directTravelSegment == nil) {
-//            directTravelSegment = [ASTTravelSegment MR_createInContext:_searchInfo.managedObjectContext];
+//            directTravelSegment = [JRTravelSegment MR_createInContext:_searchInfo.managedObjectContext];
 //            [_searchInfo addTravelSegment:directTravelSegment];
 //        }
 //        
@@ -292,7 +292,7 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 //                    [directTravelSegment setDestinationIata:prefill.destinationIATA];
 //                    
 //                    if (returnTravelSegment == nil) {
-//                        returnTravelSegment = [ASTTravelSegment MR_createInContext:_searchInfo.managedObjectContext];
+//                        returnTravelSegment = [JRTravelSegment MR_createInContext:_searchInfo.managedObjectContext];
 //                        [_searchInfo addTravelSegment:returnTravelSegment];
 //                    }
 //                    
@@ -330,8 +330,8 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
         [self adjustSearchFormMode];
 	} else {
         // TODO: implement storage
-        ASTSearchInfo *searchInfoFromUserSettings = nil; //[ASTSearchInfo lastUsedSearchInfo];
-		ASTSearchInfo *searchInfo = searchInfoFromUserSettings ? searchInfoFromUserSettings : [ASTSearchInfo new];
+        JRSearchInfo *searchInfoFromUserSettings = nil; //[JRSearchInfo lastUsedSearchInfo];
+		JRSearchInfo *searchInfo = searchInfoFromUserSettings ? searchInfoFromUserSettings : [JRSearchInfo new];
 		[self setSearchInfo:searchInfo];
     }
     
@@ -517,10 +517,10 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
     }
 }
 
-- (void)selectOriginIATAForTravelSegment:(ASTTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type
+- (void)selectOriginIATAForTravelSegment:(JRTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type
 {
     if (!travelSegment) {
-        travelSegment = [ASTTravelSegment new];
+        travelSegment = [JRTravelSegment new];
         [_searchInfo addTravelSegment:travelSegment];
     }
     
@@ -533,10 +533,10 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 //	}
 }
 
-- (void)selectDestinationIATAForTravelSegment:(ASTTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type
+- (void)selectDestinationIATAForTravelSegment:(JRTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type
 {
     if (!travelSegment) {
-        travelSegment = [ASTTravelSegment new];
+        travelSegment = [JRTravelSegment new];
         [_searchInfo addTravelSegment:travelSegment];
     }
     
@@ -622,7 +622,7 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 {
 	NSUInteger objectAtIndex = 1;
     
-	ASTTravelSegment *travelSegment = self.searchInfo.travelSegments.count > objectAtIndex ?
+	JRTravelSegment *travelSegment = self.searchInfo.travelSegments.count > objectAtIndex ?
     (self.searchInfo.travelSegments)[objectAtIndex] : nil;
 	if (travelSegment) {
 		_savedTravelSegment = travelSegment;
@@ -635,17 +635,17 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 {
 	NSUInteger objectAtIndex = 1;
     
-	ASTTravelSegment *firstTravelSegment  = _searchInfo.travelSegments.firstObject;
-	ASTTravelSegment *travelSegment = self.searchInfo.travelSegments.count > objectAtIndex ?
+	JRTravelSegment *firstTravelSegment  = _searchInfo.travelSegments.firstObject;
+	JRTravelSegment *travelSegment = self.searchInfo.travelSegments.count > objectAtIndex ?
     (self.searchInfo.travelSegments)[objectAtIndex] : nil;
     
 	if (firstTravelSegment && _savedTravelSegment) {
 		BOOL shouldRestoreDate = [firstTravelSegment.departureDate compare:_savedTravelSegment.departureDate] != NSOrderedDescending;
         
 		if (shouldRestoreDate) {
-			ASTTravelSegment *newTravelSegment = travelSegment;
+			JRTravelSegment *newTravelSegment = travelSegment;
 			if (!newTravelSegment) {
-				newTravelSegment = [ASTTravelSegment new];
+				newTravelSegment = [JRTravelSegment new];
 			}
 			[newTravelSegment setDepartureDate:_savedTravelSegment.departureDate];
 			BOOL shouldRestoreOrigin = [firstTravelSegment.destinationIata isEqualToString:_savedTravelSegment.originIata];
@@ -666,10 +666,10 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 	[self selectDepartureDateForTravelSegment:travelSegment itemType:JRSearchFormTableViewReturnDateItem];
 }
 
-- (void)selectDepartureDateForTravelSegment:(ASTTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type
+- (void)selectDepartureDateForTravelSegment:(JRTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type
 {
     if (!travelSegment) {
-        travelSegment = [ASTTravelSegment new];
+        travelSegment = [JRTravelSegment new];
         [_searchInfo addTravelSegment:travelSegment];
     }
     
@@ -678,7 +678,7 @@ void * JRComplexTableSizeChangeContext = &JRComplexTableSizeChangeContext;
 		mode = JRDatePickerModeDeparture;
 	} else if (type == JRSearchFormTableViewReturnDateItem) {
         while (_searchInfo.travelSegments.count < 2) {
-            travelSegment = [ASTTravelSegment new];
+            travelSegment = [JRTravelSegment new];
             [_searchInfo addTravelSegment:travelSegment];
         }
 		mode = JRDatePickerModeReturn;

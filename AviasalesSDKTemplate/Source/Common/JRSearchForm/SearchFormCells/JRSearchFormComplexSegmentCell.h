@@ -1,9 +1,8 @@
 //
-//  JRSearchFormComplexConfigurationCell.h
-//  Aviasales iOS Apps
+//  JRSearchFormComplexSegmentCell.h
 //
-//  Created by Ruslan Shevchuk on 22/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,11 +11,11 @@
 @protocol JRSearchFormComplexSegmentCellDelegate <NSObject>
 
 @required
-- (void)deleteTravelSegment:(ASTTravelSegment *)travelSegmentToDelete;
+- (void)deleteTravelSegment:(JRTravelSegment *)travelSegmentToDelete;
 @end
 
 @interface JRSearchFormComplexSegmentCell : JRSearchFormCell
-@property (strong, nonatomic) ASTTravelSegment *travelSegment;
+@property (strong, nonatomic) JRTravelSegment *travelSegment;
 @property (weak, nonatomic) id <JRSearchFormComplexSegmentCellDelegate> segmentCellDelegate;
 
 @end

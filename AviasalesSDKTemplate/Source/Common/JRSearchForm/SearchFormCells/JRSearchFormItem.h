@@ -1,13 +1,12 @@
 //
-//  JRSearchFormTableViewItem.h
-//  Aviasales iOS Apps
+//  JRSearchFormItem.h
 //
-//  Created by Ruslan Shevchuk on 20/01/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <Foundation/Foundation.h>
-#import "ASTSearchInfo.h"
+#import "JRSearchInfo.h"
 
 typedef NS_ENUM (NSUInteger, JRSearchFormItemType) {
 	JRSearchFormTableViewItemAirportsType,
@@ -29,11 +28,11 @@ typedef NS_ENUM (NSUInteger, JRSearchFormItemType) {
 
 @protocol JRSearchFormItemDelegate<NSObject>
 @optional
-- (ASTSearchInfo *)searchInfo;
+- (JRSearchInfo *)searchInfo;
 - (CGFloat)tableView:(id)tableView heightForItemWithType:(JRSearchFormItemType)type;
-- (void)selectOriginIATAForTravelSegment:(ASTTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type;
-- (void)selectDestinationIATAForTravelSegment:(ASTTravelSegment *)travelSegment itemType:(JRSearchFormItemType)typ;
-- (void)selectDepartureDateForTravelSegment:(ASTTravelSegment *)travelSegment itemType:(JRSearchFormItemType)typ;
+- (void)selectOriginIATAForTravelSegment:(JRTravelSegment *)travelSegment itemType:(JRSearchFormItemType)type;
+- (void)selectDestinationIATAForTravelSegment:(JRTravelSegment *)travelSegment itemType:(JRSearchFormItemType)typ;
+- (void)selectDepartureDateForTravelSegment:(JRTravelSegment *)travelSegment itemType:(JRSearchFormItemType)typ;
 - (void)travelClassDidSelect;
 - (void)saveReturnFlightTravelSegment;
 - (void)restoreReturnFlightTravelSegment;

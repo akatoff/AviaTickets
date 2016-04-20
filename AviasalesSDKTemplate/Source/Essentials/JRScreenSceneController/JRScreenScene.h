@@ -1,9 +1,8 @@
 //
 //  JRScreenScene.h
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 25/12/13.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <UIKit/UIKit.h>

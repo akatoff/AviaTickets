@@ -1,9 +1,8 @@
 //
 //  JRDatePickerVC.h
-//  Aviasales iOS Apps
 //
-//  Created by Ruslan Shevchuk on 04/02/14.
-//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import "JRViewController.h"
@@ -13,17 +12,17 @@
 
 @protocol JRDatePickerDelegate <NSObject>
 @optional
-- (void)datePicker:(JRDatePickerVC *)datePickerVC didSelectDepartDate:(NSDate *)departDate inTravelSegment:(ASTTravelSegment *)travelSegment;
+- (void)datePicker:(JRDatePickerVC *)datePickerVC didSelectDepartDate:(NSDate *)departDate inTravelSegment:(JRTravelSegment *)travelSegment;
 @end
 
 @interface JRDatePickerVC : JRViewController
 
-- (instancetype)initWithSearchInfo:(ASTSearchInfo *)searchInfo
-                     travelSegment:(ASTTravelSegment *)travelSegment
+- (instancetype)initWithSearchInfo:(JRSearchInfo *)searchInfo
+                     travelSegment:(JRTravelSegment *)travelSegment
                               mode:(JRDatePickerMode)mode;
 
-- (instancetype)initWithSearchInfo:(ASTSearchInfo *)searchInfo
-                     travelSegment:(ASTTravelSegment *)travelSegment
+- (instancetype)initWithSearchInfo:(JRSearchInfo *)searchInfo
+                     travelSegment:(JRTravelSegment *)travelSegment
                               mode:(JRDatePickerMode)mode
            shouldShowSearchToolbar:(BOOL)shouldShowSearchToolbar;
 
