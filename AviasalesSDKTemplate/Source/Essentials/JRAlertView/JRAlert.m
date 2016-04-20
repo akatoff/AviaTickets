@@ -469,7 +469,7 @@ static NSMutableArray *visibleAlertsTags;
     return [[_prevKeyWindow topMostController] shouldAutorotate];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return [[_prevKeyWindow topMostController] supportedInterfaceOrientations];
 }

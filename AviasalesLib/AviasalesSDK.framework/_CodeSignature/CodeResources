@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Aviasales_airports.json</key>
+		<data>
+		MzPwaK4jcdLjgYN2RBqcBAYoUTM=
+		</data>
+		<key>Aviasales_short_airports.json</key>
+		<data>
+		zqAM8IS4yf0bW8KDYsjzJu6IGHs=
+		</data>
 		<key>Headers/AviasalesAdvertisementManager.h</key>
 		<data>
 		xVD0S/oDPD9lWVbyf0LGjT4HPxE=
@@ -18,7 +26,7 @@
 		</data>
 		<key>Headers/AviasalesAirportsStorage.h</key>
 		<data>
-		v0pXNkaCdU74yHkNQtheRF8pTsI=
+		+VuN+oN2uXInv9n4ymiYeuBG2Dc=
 		</data>
 		<key>Headers/AviasalesFilter.h</key>
 		<data>
@@ -203,6 +211,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Aviasales_airports.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MzPwaK4jcdLjgYN2RBqcBAYoUTM=
+			</data>
+			<key>hash2</key>
+			<data>
+			VhOPw/2uxfJENZkTwImCNIwvKh6H3IO6Wpn1rWhBYAk=
+			</data>
+		</dict>
+		<key>Aviasales_short_airports.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zqAM8IS4yf0bW8KDYsjzJu6IGHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			6wRAtCzFVqQl1f+ULRwMAjJWgfz+jLZwm+SuGozG9c8=
+			</data>
+		</dict>
 		<key>Headers/AviasalesAdvertisementManager.h</key>
 		<dict>
 			<key>hash</key>
@@ -240,11 +270,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v0pXNkaCdU74yHkNQtheRF8pTsI=
+			+VuN+oN2uXInv9n4ymiYeuBG2Dc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LInoUm9lSMij0vCtyNJuW7UeLd+5IdgRQCHPzEHOFvA=
+			cS+wJ2ALt+xMjuIC+rDLIGkFyV8/vng7S2Exf2471r0=
 			</data>
 		</dict>
 		<key>Headers/AviasalesFilter.h</key>
