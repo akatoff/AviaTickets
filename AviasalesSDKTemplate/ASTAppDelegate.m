@@ -1,9 +1,8 @@
 //
 //  ASTAppDelegate.m
-//  AviasalesSDKTemplate
 //
-//  Created by Seva Billevich on 17.09.13.
-//  Copyright (c) 2013 Go Travel Un Limited. All rights reserved.
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
 //
 
 #import <SDVersion/SDVersion.h>
@@ -13,6 +12,9 @@
 #import "ASTAppDelegate.h"
 #import "ASTSearchForm.h"
 #import "ASTAdvertisementManager.h"
+#import "JRNavigationController.h"
+#import "JRScreenSceneController.h"
+#import "JRSearchFormVC.h"
 
 
 // Set your appodeal api key here
@@ -27,6 +29,27 @@ static NSString *const kAviasalesMarker = @"99305";
     // Aviasale SDK
     [AviasalesSDK sharedInstance].APIToken = kAviasalesAPIToken;
     [AviasalesSDK sharedInstance].marker = kAviasalesMarker;
+    
+    // Screen initializing
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIViewController *rootVC = [JRSearchFormVC new];
+    UIViewController *container = nil;
+    if (iPhone()) {
+        container = [[JRNavigationController alloc] initWithRootViewController:rootVC];
+    } else {
+        id scene = [JRScreenSceneController screenSceneWithMainViewController:rootVC
+                                                                        width:[JRScreenSceneController screenSceneControllerWideViewWidth]
+                                                      accessoryViewController:nil
+                                                                        width:kNilOptions
+                                                               exclusiveFocus:NO];
+        JRScreenSceneController *sceneController = [JRScreenSceneController new];
+        [sceneController setViewControllers:@[scene] animated:NO];
+        
+        container = sceneController;
+    }
+    
+    [self.window setRootViewController:container];
+    [self.window makeKeyAndVisible];
 
     // Advertisement initializing
     ASTAdvertisementManager *const adManager = [ASTAdvertisementManager sharedInstance];

@@ -11,13 +11,15 @@ target 'AviasalesSDKTemplate' do
 	pod 'SDWebImage', '~> 3.7'
 	pod 'NMRangeSlider', '~> 1.2'
 	pod 'SDVersion', '~> 2.6'
-	pod 'AviasalesSDK', '~> 1.3.3-beta5'
+	pod 'AviasalesSDK', '~> 1.3.3-beta6'
 	pod 'Appodeal', '~> 0.10.0'
+	pod 'Smartling.i18n', '~> 1.0'
+	pod 'FXBlurView', '~> 1.6'
 
 end
 
 target 'AviasalesSDKTemplateTests' do
 
-    pod 'AviasalesSDK', '~> 1.3.3-beta5'
+    pod 'AviasalesSDK', '~> 1.3.3-beta6'
     
 end

@@ -50,7 +50,7 @@ PODS:
     - UnityAds (~> 1.5.3)
     - VungleSDK-iOS (~> 3.2)
     - YandexMobileAds (~> 2.0)
-  - AviasalesSDK (1.3.3-beta5)
+  - AviasalesSDK (1.3.3-beta6)
   - Avocarrot (3.4.3)
   - ChartboostSDK (6.4.0)
   - CocoaLumberjack (2.2.0):
@@ -65,6 +65,7 @@ PODS:
   - Flurry-iOS-SDK/FlurryAds (7.6.0):
     - Flurry-iOS-SDK/FlurrySDK
   - Flurry-iOS-SDK/FlurrySDK (7.6.0)
+  - FXBlurView (1.6.4)
   - Godzippa (1.1.0)
   - Google-Mobile-Ads-SDK (7.7.1)
   - Haneke (1.0.2)
@@ -87,6 +88,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - Smartling.i18n (1.0.11)
   - StartApp (3.3.0)
   - SVProgressHUD (1.1.3)
   - UnityAds (1.5.4)
@@ -97,10 +99,12 @@ PODS:
 
 DEPENDENCIES:
   - Appodeal (~> 0.10.0)
-  - AviasalesSDK (~> 1.3.3-beta5)
+  - AviasalesSDK (~> 1.3.3-beta6)
+  - FXBlurView (~> 1.6)
   - NMRangeSlider (~> 1.2)
   - SDVersion (~> 2.6)
   - SDWebImage (~> 3.7)
+  - Smartling.i18n (~> 1.0)
 
 SPEC CHECKSUMS:
   AdColony: a9859672fee49d9a81017d1fffa3133bf8538bd8
@@ -108,12 +112,13 @@ SPEC CHECKSUMS:
   AmazonAds: 51d8e53c0527b6732d59e3738943307763e9620f
   AppLovin: 03f98cbd83d207ab5082be173ec6e332ec07ad02
   Appodeal: b52a3f8c673b30ce5c113af247b24dfe7b972e95
-  AviasalesSDK: 1fb739c15f7c9794bd70223536840cbb3d412adc
+  AviasalesSDK: 8b13e8f8304e70f9fd4e88c799c1dc446ecb84e2
   Avocarrot: cd381db4f0b9e9eb70892e7c5d0f9d64e0d055e8
   ChartboostSDK: 1a7e970c983042eaeb887821452cfceebbe88c81
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   FBAudienceNetwork: b4c154b19fc85c621f93c06813a110d0d95cee5c
   Flurry-iOS-SDK: 9822fe709195f0e3ae3e52c785eee9ff651ff648
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   Godzippa: 21621e8ddc2f1521db473a72b48148c3f0e79d76
   Google-Mobile-Ads-SDK: e27569901b58881d9a94b42f2c642739cfe3970a
   Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
@@ -129,6 +134,7 @@ SPEC CHECKSUMS:
   PubNative: 6176beb2be298908040a8551124dabe072b4891b
   SDVersion: c036f7890279d188c17f5701b9feea0d93b9f8ee
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  Smartling.i18n: 9d24e105ae674678e1ae4d1c78bcabf524f0636b
   StartApp: cc08b5ddc38185aa04bbf469d367bf3fe63508a9
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
   UnityAds: cda709cad036bc34c6fed722c1d1256f503e4d70

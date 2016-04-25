@@ -15,4 +15,5 @@
     #import <Foundation/Foundation.h>
     #import <AviasalesSDK/AviasalesLib.h>
     #import "Defines.h"
+    #import "NSObject+Accessibility.h"
 #endif

@@ -1,0 +1,574 @@
+//
+//  JRC.m
+//
+//  Copyright 2016 Go Travel Un Limited
+//  This code is distributed under the terms and conditions of the MIT license.
+//
+
+#define COLOR_WITH_WHITE(A) [[UIColor alloc] initWithWhite : ((float)A/255.0f)alpha : 1]
+#define COLOR_WITH_RED(A, B, C) [[UIColor alloc] initWithRed : (float)A/255.0f green : (float)B/255.0f blue : (float)C/255.0f alpha : 1.0f]
+#define COLOR_WITH_ALPHA(A, B, C, D) [[UIColor alloc] initWithRed : (float)A/255.0f green : (float)B/255.0f blue : (float)C/255.0f alpha : (float)D]
+#define COLOR_WITH_PATTERN(A) [[UIColor alloc] initWithPatternImage :[UIImage imageNamed:A]]
+
+#import "JRC.h"
+
+@implementation JRC
+
+//  Appearance
+
+//------------------------
+#pragma mark Colors
+//------------------------
+
++ (UIColor *)CLEAR_COLOR {
+    return [UIColor clearColor];
+}
++ (UIColor *)BLACK_COLOR {
+    return [UIColor blackColor];
+}
++ (UIColor *)WHITE_COLOR {
+    return [UIColor whiteColor];
+}
++ (UIColor *)AIRLINES_AIRLINE_IATA {
+    return [JRC COMMON_HIGHLIGHTED_TEXT];
+}
++ (UIColor *)AIRPORT_PICKER_AIRPORT_CITY_LABEL_TEXT_COLOR {
+    return COLOR_WITH_WHITE (102);
+}
++ (UIColor *)AIRPORT_PICKER_AIRPORT_COUNTRY_TEXT_COLOR {
+    return COLOR_WITH_WHITE (155);
+}
++ (UIColor *)AIRPORT_PICKER_AIRPORT_IATA_LABEL_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)AIRPORT_PICKER_AIRPORT_IATA_LABEL_COLOR_ANY {
+    return [JRC COMMON_ORANGE_COLOR];
+}
++ (UIColor *)ALERT_BORDER {
+    return COLOR_WITH_WHITE(210);
+}
++ (UIColor *)ALERT_BUTTON {
+    return COLOR_WITH_WHITE(128);
+}
++ (UIColor *)ALERT_MESSAGE {
+    return COLOR_WITH_WHITE(125);
+}
++ (UIColor *)BAR_DARK_BOTTOM_BORDER {
+    return COLOR_WITH_RED(2, 156, 195);
+}
++ (UIColor *)BAR_LIGHT_BOTTOM_BORDER {
+    return [[JRC WHITE_COLOR] colorWithAlphaComponent:0.4];
+}
++ (UIColor *)CELL_SWIPE_DELETE_BG {
+    return COLOR_WITH_RED(242, 108, 79);
+}
++ (UIColor *)COMMON_BACKGROUND {
+    return COLOR_WITH_WHITE (249);
+}
++ (UIColor *)COMMON_BLACK_POPOVER_TINT {
+    return [[JRC BLACK_COLOR] colorWithAlphaComponent:0.7];
+}
++ (UIColor *)COMMON_CELL_SELECTED_BACKGROUND_COLOR {
+    return [[JRC THEME_COLOR] colorWithAlphaComponent:0.15];
+}
++ (UIColor *)COMMON_CELL_SELECTED_BACKGROUND_COLOR_OPAQUE {
+    return COLOR_WITH_RED (217, 243, 250);
+}
++ (UIColor *)COMMON_HELPER_VIEW_BG_COLOR {
+    return [[JRC THEME_COLOR] colorWithAlphaComponent:0.15];
+}
++ (UIColor *)COMMON_HIGHLIGHTED_TEXT {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)COMMON_HINT_POPOVER_BLUR_TINT {
+    return [[JRC BLACK_COLOR] colorWithAlphaComponent:0.75];
+}
++ (UIColor *)COMMON_HYPERLINK_TEXT {
+    return [JRC COMMON_HIGHLIGHTED_TEXT];
+}
++ (UIColor *)COMMON_LIGHT_TEXT {
+    return COLOR_WITH_WHITE(170);
+}
++ (UIColor *)COMMON_ORANGE_COLOR {
+    return COLOR_WITH_RED (253, 204, 80);
+}
++ (UIColor *)COMMON_POPOVER_BACKGROUND {
+    return [COLOR_WITH_RED(0, 0, 0) colorWithAlphaComponent:0.7];
+}
++ (UIColor *)COMMON_POPUP_BACKGROUND_COLOR {
+    return [UIColor darkGrayColor];
+}
++ (UIColor *)COMMON_POPUP_TITLE_COLOR {
+    return COLOR_WITH_WHITE (66);
+}
++ (UIColor *)COMMON_SEARCHBAR_BOTTOM_BORDER {
+    return COLOR_WITH_RED(2, 156, 195);
+}
++ (UIColor *)COMMON_SEARCHBAR_TOP_BORDER {
+    return COLOR_WITH_RED(128, 216, 238);
+}
++ (UIColor *)COMMON_TABLECELL_SEPARATOR {
+    return COLOR_WITH_WHITE (220);
+}
++ (UIColor *)COMMON_TABLE_HEADER_TEXT {
+    return COLOR_WITH_WHITE (155);
+}
++ (UIColor *)COMMON_TEXT {
+    return COLOR_WITH_WHITE (75);
+}
++ (UIColor *)COMMON_UNACTIVE_TEXT {
+    return COLOR_WITH_WHITE (133);
+}
++ (UIColor *)DATE_PICKER_NORMAL_DATE_COLOR {
+    return COLOR_WITH_WHITE (102);
+}
++ (UIColor *)DATE_PICKER_NORMAL_SELECTED_DATE_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)DATE_PICKER_TODAY_LABEL_COLOR {
+    return COLOR_WITH_WHITE (178);
+}
++ (UIColor *)DELETE_BUTTON_DISABLED_TITLE {
+    return COLOR_WITH_RED(255, 198, 178);
+}
++ (UIColor *)DELETE_BUTTON_TITLE {
+    return COLOR_WITH_RED(242, 110, 63);
+}
++ (UIColor *)FAVOURITES_HEADER_TEXT_COLOR {
+    return (iPhone() ? COLOR_WITH_WHITE (102) : COLOR_WITH_WHITE (169));
+}
++ (UIColor *)FEEDBACK_BUTTONS {
+    return COLOR_WITH_RED(243, 253, 255);
+}
++ (UIColor *)FILTER_SECTION_HEADER_TITLE {
+    return COLOR_WITH_WHITE(136);
+}
++ (UIColor *)FILTER_CELL_TITLE {
+    return COLOR_WITH_WHITE(98);
+}
++ (UIColor *)FILTER_DISABLED_LABEL_TEXT {
+    return COLOR_WITH_WHITE(155);
+}
++ (UIColor *)FILTER_LABEL_TEXT {
+    return COLOR_WITH_WHITE(102);
+}
++ (UIColor *)FILTER_PRICE_TOOLBAR_LINE {
+    return COLOR_WITH_WHITE(200);
+}
++ (UIColor *)FILTER_RESET_BUTTON_TEXT_COLOR_IPAD {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SECOND_THEME_COLOR {
+    return COLOR_WITH_RED (126, 202, 221);
+}
++ (UIColor *)INFORMATION_TABLE_CELL_TITLE_COLOR {
+    return COLOR_WITH_WHITE(112);
+}
++ (UIColor *)INFORMATION_FAQ_CELL_SEPARATOR {
+    return COLOR_WITH_WHITE(190);
+}
++ (UIColor *)MAGIC_FARE_COLOR {
+    return COLOR_WITH_RED(74, 193, 91);
+}
++ (UIColor *)MAIN_SCREEN_BACKGROUND_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)MAP_ANY_SEASON_PLACEHOLDER {
+    return COLOR_WITH_WHITE(175);
+}
++ (UIColor *)MAP_CALLOUT_SEPARATOR {
+    return COLOR_WITH_WHITE(216);
+}
++ (UIColor *)MAP_CALLOUT_TEXT {
+    return COLOR_WITH_WHITE(88);
+}
++ (UIColor *)MAP_COUNT_TEXT {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)MAP_LABEL_BG {
+    return [COLOR_WITH_RED(46, 189, 224) colorWithAlphaComponent:0.81];
+}
++ (UIColor *)MAP_MULTIPLE_CALLOUT_CITY {
+    return COLOR_WITH_WHITE(112);
+}
++ (UIColor *)MAP_NAVIGATION_BAR {
+    return [[JRC NAVIGATION_BAR_BACKGROUND_COLOR] colorWithAlphaComponent:0.9];
+}
++ (UIColor *)MAP_ORIGIN_LABEL_BG {
+    return [COLOR_WITH_RED(251, 191, 74) colorWithAlphaComponent:0.81];
+}
++ (UIColor *)MAP_SC_NORMAL_TITLE_COLOR {
+    return COLOR_WITH_RED(163, 163, 163);
+}
++ (UIColor *)MAP_SC_NORMAL_TITLE_COLOR_IPAD {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)MAP_SC_SELECTED_TITLE_COLOR {
+    return COLOR_WITH_RED(102, 102, 102);
+}
++ (UIColor *)MAP_SC_SELECTED_TITLE_COLOR_IPAD {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)MAP_SC_STROKE {
+    return COLOR_WITH_RED(225, 225, 225);
+}
++ (UIColor *)MAP_SC_STROKE_IPAD {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)MAP_UNACTUAL_LABEL_BG {
+    return [COLOR_WITH_RED(163, 175, 178) colorWithAlphaComponent:0.81];
+}
++ (UIColor *)MENU_BACKGROUND_COLOR {
+    return COLOR_WITH_WHITE (51);
+}
++ (UIColor *)MENU_ITEM_IMAGE_TINT_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)MENU_ITEM_LABEL_HIGHLIGHTED_TEXT_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)MENU_ITEM_LABEL_TEXT_COLOR {
+    return COLOR_WITH_RED (137, 137, 137);
+}
++ (UIColor *)MENU_SEPARATOR_COLOR {
+    return COLOR_WITH_WHITE (77);
+}
++ (UIColor *)NAVIGATION_BAR_BACKGROUND_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)PASSENGERS_EMPTY_PLACEHOLDER {
+    return COLOR_WITH_WHITE(175);
+}
++ (UIColor *)PASSENGERS_FORM_SEPARATOR {
+    return COLOR_WITH_WHITE(200);
+}
++ (UIColor *)PASSENGERS_FORM_SUBTITLE {
+    return COLOR_WITH_WHITE(118);
+}
++ (UIColor *)PASSENGERS_FORM_WRONG_FIELD {
+    return COLOR_WITH_RED(242, 110, 63);
+}
++ (UIColor *)PASSENGERS_LIST_DOCUMENT_TYPE {
+    return COLOR_WITH_WHITE(172);
+}
++ (UIColor *)PASSENGER_OCR_HELP_HINT_BG {
+    return COLOR_WITH_RED(96, 91, 92);
+}
++ (UIColor *)PASSENGER_LIST_CELL_MALE_BG {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)PASSENGER_LIST_CELL_FEMALE_BG {
+    return COLOR_WITH_RED(245, 152, 157);
+}
++ (UIColor *)PRICE_CALENDAR_CHART_BORDER {
+    return COLOR_WITH_RED(135, 211, 230);
+}
++ (UIColor *)PRICE_CALENDAR_DAY {
+    return [JRC COMMON_TEXT];
+}
++ (UIColor *)PRICE_CALENDAR_MINIMAL_PRICE_LABEL {
+    return COLOR_WITH_RED(163, 211, 156);
+}
++ (UIColor *)PRICE_CALENDAR_POINTS {
+    return COLOR_WITH_WHITE(175);
+}
++ (UIColor *)PRICE_CALENDAR_PRICE {
+    return COLOR_WITH_RED(255, 170, 6);
+}
++ (UIColor *)PRICE_CALENDAR_PRICE_IPAD {
+    return [JRC COMMON_TEXT];
+}
++ (UIColor *)PRICE_CALENDAR_SWITCHER {
+    return COLOR_WITH_RED(135, 211, 230);
+}
++ (UIColor *)PRICE_CALENDAR_WEEKDAY {
+    return COLOR_WITH_WHITE(140);
+}
++ (UIColor *)PRICE_CALENDAR_SELECTED_VIEW_PATTERN {
+    return COLOR_WITH_PATTERN(@"JRPriceCalendarPriceLevel");
+}
+
++ (UIColor *)SCENE_SHADOW_COLOR {
+    return COLOR_WITH_RED (0, 126, 161);
+}
++ (UIColor *)SEARCH_BAR_CANCEL_HI_TITLE_COLOR {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)SEARCH_BAR_CANCEL_TITLE_COLOR {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)SEARCH_RESULTS_BEST_CHEAP {
+    return COLOR_WITH_RED(12, 176, 222);
+}
++ (UIColor *)SEARCH_RESULTS_BEST_COMFORT {
+    return COLOR_WITH_RED(254, 191, 123);
+}
++ (UIColor *)SEARCH_RESULTS_BEST_QUICK {
+    return COLOR_WITH_RED(138, 195, 131);
+}
++ (UIColor *)SEARCH_RESULTS_MAGIC_FARE_PRICE_COLOR {
+    return [JRC MAGIC_FARE_COLOR];
+}
++ (UIColor *)SEARCH_RESULTS_MAGIC_FARE_STRIKE_THROUGH_COLOR {
+    return [JRC COMMON_ORANGE_COLOR];
+}
++ (UIColor *)SEARCH_RESULTS_PRICE_DELTA_NEGATIVE_COLOR {
+    return COLOR_WITH_RED(130, 202, 156);
+}
++ (UIColor *)SEARCH_RESULTS_PRICE_DELTA_POSITIVE_COLOR {
+    return COLOR_WITH_RED(234, 104, 74);
+}
++ (UIColor *)SEARCH_RESULTS_PRICE_LABEL_COLOR {
+    return [JRC COMMON_ORANGE_COLOR];
+}
++ (UIColor *)SEARCH_RESULTS_PRICE_LABEL_DIS {
+    return COLOR_WITH_RED(217, 217, 217);
+}
++ (UIColor *)SEARCH_RESULTS_FULL_PRICE_LABEL {
+    return COLOR_WITH_WHITE(183);
+}
++ (UIColor *)SEARCH_RESULTS_PROGRESS_BAR_COLOR {
+    return [JRC SECOND_THEME_COLOR];
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_LIGHT_MONOCHROME {
+    return COLOR_WITH_WHITE(236);
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_LIGHT_NORMAL {
+    return COLOR_WITH_WHITE(170);
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_LIGHT_NORMAL_IPAD {
+    return COLOR_WITH_WHITE(169);
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_MONOCHROME {
+    return COLOR_WITH_WHITE(169);
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_NORMAL {
+    return COLOR_WITH_WHITE(102);
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_NORMAL_IPAD {
+    return COLOR_WITH_WHITE(169);
+}
++ (UIColor *)SEARCH_RESULTS_SEGMENT_TRANSFERS_LABEL_NORMAL {
+    return COLOR_WITH_RED(133, 215, 238);
+}
++ (UIColor *)SEARCH_RESULT_OFFER_AIRPORT_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_OFFER_TEXT_COLOR {
+    return [COLOR_WITH_WHITE(77) colorWithAlphaComponent:0.75];
+}
++ (UIColor *)SEARCH_RESULT_SC_SEGMENT_NORMAL_TITLE {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_SC_SEGMENT_RIBBON {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_SC_SEGMENT_STROKE {
+    return iPhone() ? [JRC SECOND_THEME_COLOR] : [JRC WHITE_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_SC_SEGMENT_TITLE {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_SC_STROKE {
+    return iPhone() ? [JRC SECOND_THEME_COLOR] : [JRC WHITE_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_TICKET_DATE_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SEARCH_RESULT_TICKET_DOTS_COLOR {
+    return COLOR_WITH_WHITE(126);
+}
++ (UIColor *)SORT_CHECK_BOX_COLOR {
+    return iPhone() ? [JRC WHITE_COLOR] : COLOR_WITH_WHITE(112);
+}
++ (UIColor *)SF_CELL_IMAGES_TINT {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SF_AIRPORT_CELL_PLACEHOLDER_COLOR {
+    return COLOR_WITH_WHITE (166);
+}
++ (UIColor *)SF_AIRPORT_CITY_LABEL_TEXT_COLOR {
+    return COLOR_WITH_WHITE (102);
+}
++ (UIColor *)SF_AIRPORT_COUNTRY_TEXT_COLOR {
+    return COLOR_WITH_WHITE (155);
+}
++ (UIColor *)SF_AIRPORT_IATA_LABEL_TEXT_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SF_BACKGROUND_COLOR {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)SF_CELL_HIGHLIGHTED_COLOR {
+    return [[JRC THEME_COLOR] colorWithAlphaComponent:0.1];
+}
++ (UIColor *)SF_DATE_CELL_LABEL_TEXT_COLOR {
+    return COLOR_WITH_WHITE (102);
+}
++ (UIColor *)SF_PASSENGERS_COUNT_ACTIVE {
+    return COLOR_WITH_RED(40, 129, 151);
+}
++ (UIColor *)SF_PASSENGERS_BG {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SF_SEGMENTED_CONTROL_BACKGROUND_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SF_SEGMENTED_CONTROL_SEGMENT_RIBBON {
+    return [JRC SECOND_THEME_COLOR];
+}
++ (UIColor *)SF_SEGMENTED_CONTROL_SEGMENT_TITLE_IPAD {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SF_SEGMENTED_CONTROL_SEGMENT_TITLE_IPHONE {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)SF_SEGMENTED_CONTROL_SEGMENT_TITLE_TINT {
+    return COLOR_WITH_WHITE (209);
+}
++ (UIColor *)SF_VOICE_SEARCH_ELLIPSE_BORDER {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)SF_DATES_BACKGROUND_TINT {
+    return COLOR_WITH_RED(17, 133, 153);
+}
++ (UIColor *)SF_DATES_TEXT_COLOR {
+    return COLOR_WITH_RED(17, 133, 153);
+}
++ (UIColor *)SUBSCRIPTIONS_DELETE_BUTTON_TITLE {
+    return COLOR_WITH_RED(242, 110, 63);
+}
++ (UIColor *)SUBSCRIPTIONS_DELTA_PRICE_DOWN {
+    return COLOR_WITH_RED(130, 202, 156);
+}
++ (UIColor *)SUBSCRIPTIONS_DELTA_PRICE_UP {
+    return COLOR_WITH_RED(242, 108, 79);
+}
++ (UIColor *)SUBSCRIPTIONS_FLEX_SEARCH_NOTE {
+    return COLOR_WITH_WHITE(142);
+}
++ (UIColor *)SUBSCRIPTIONS_PLACEHOLDER_DISABLED_PUSH_TEXT {
+    return COLOR_WITH_WHITE(177);
+}
++ (UIColor *)SUBSCRIPTIONS_PLACEHOLDER_TEXT {
+    return COLOR_WITH_WHITE(177);
+}
++ (UIColor *)SUBSCRIPTIONS_PRICE {
+    return COLOR_WITH_RED(250, 183, 55);
+}
++ (UIColor *)SUBSCRIPTIONS_PASSENGERS_IMG {
+    return COLOR_WITH_RED(129, 134, 136);
+}
++ (UIColor *)THEME_COLOR {
+    return COLOR_WITH_RED(47, 163, 179);
+}
++ (UIColor *)TICKET_FLIGHT_SEGMENT_HEADER_AIRPLANE_IMAGE {
+    return COLOR_WITH_WHITE(136);
+}
++ (UIColor *)TICKET_FLIGHT_STATS_BUTTON {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)TICKET_FLIGHT_STATS_COMMON_COLOR {
+    return COLOR_WITH_WHITE(109);
+}
++ (UIColor *)TICKET_FLIGHT_STATS_DELAY_COLOR {
+    return COLOR_WITH_RED(130, 202, 156);
+}
++ (UIColor *)TICKET_FLIGHT_STATS_ON_TIME_COLOR {
+    return COLOR_WITH_RED(246, 142, 86);
+}
++ (UIColor *)TICKET_HEADER_BACKGROUND_COLOR {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)TICKET_MAGIC_FARE_PRICE_COLOR {
+    return [JRC MAGIC_FARE_COLOR];
+}
++ (UIColor *)TICKET_ACTIVE_GATE_NAME_COLOR {
+    return COLOR_WITH_WHITE(112);
+}
++ (UIColor *)TICKET_INACTIVE_PRICE_COLOR {
+    return COLOR_WITH_WHITE(180);
+}
++ (UIColor *)WHITE_NAVIGATION_BAR_COMMON_CONTENT_COLOR {
+    return COLOR_WITH_WHITE(136);
+}
++ (UIColor *)WHITE_NAVIGATION_BAR_COMMON_BORDER_COLOR {
+    return COLOR_WITH_WHITE(222);
+}
++ (UIColor *)TICKET_PRICES_CELL_SEL_BG {
+    return [[JRC WHITE_COLOR] colorWithAlphaComponent:0.2];
+}
++ (UIColor *)TICKET_PRICES_POPOVER_BLUR {
+    return [[JRC WHITE_COLOR] colorWithAlphaComponent:0.8];
+}
++ (UIColor *)WAITING_ANNOTATION_TEXT_COLOR {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)WAITING_BACKGROUND {
+    return COLOR_WITH_RED(240, 235, 212);
+}
++ (UIColor *)WAITING_BAR_COLOR_IPAD {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)WAITING_BAR_COLOR_IPHONE {
+    return [JRC THEME_COLOR];
+}
++ (UIColor *)WAITING_DOTS_COLOR {
+    return COLOR_WITH_WHITE (135);
+}
++ (UIColor *)WAITING_TOP_PROGRESS_BAR_LINE_COLOR {
+    return iPhone() ? [JRC BAR_DARK_BOTTOM_BORDER] : COLOR_WITH_WHITE(150);
+}
+
++ (UIColor *)HISTORY_DATES_COLOR {
+    return [JRC THEME_COLOR];
+}
+
++ (UIColor *)WIDGET_BUTTON_BACKGROUND_COLOR {
+    return [[JRC BLACK_COLOR] colorWithAlphaComponent:0.1];
+}
+
++ (UIColor *)WIDGET_TEXT {
+    return COLOR_WITH_WHITE(195);
+}
+
++ (UIColor *)WIDGET_TEXT_BUTTON {
+    return [JRC THEME_COLOR];
+}
+
++ (UIColor *)BROWSER_NAV_BUTTON_TEXT_NORMAL {
+    return [JRC WHITE_COLOR];
+}
++ (UIColor *)BROWSER_NAV_BUTTON_TEXT_DISABLED {
+    return COLOR_WITH_RED(35, 195, 210);
+}
+
++ (UIColor *)COMPACT_SF_HIGHLIGHTED_CELL {
+    return COLOR_WITH_RED(243, 243, 243);
+}
+
++ (UIColor *)COMPACT_SF_TEXT {
+    return COLOR_WITH_RED(129, 129, 129);
+}
+
++ (UIColor *)COMPACT_SF_FOOTER_LINE {
+    return COLOR_WITH_RED(216, 216, 216);
+}
+
++ (UIColor *)COMPACT_SF_CHECKBOX {
+    return COLOR_WITH_RED(218, 218, 218);
+}
+
++ (UIColor *)WATCH_DELTA_UP_COLOR {
+    return COLOR_WITH_RED(242, 108, 79);
+}
+
++ (UIColor *)WATCH_DELTA_DOWN_COLOR {
+    return COLOR_WITH_RED(140, 210, 60);
+}
+
++ (UIColor *)JR_OFFER_AS_CLOSE_BUTTON_COLOR {
+    return COLOR_WITH_RED(131, 131, 131);
+}
+
+@end

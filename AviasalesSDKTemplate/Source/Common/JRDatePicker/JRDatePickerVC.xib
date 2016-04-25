@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JRDatePickerVC">
+            <connections>
+                <outlet property="searchButtonToolbar" destination="kCl-8I-nF7" id="aqf-h7-uDC"/>
+                <outlet property="tableView" destination="FtS-n9-YFI" id="w67-7L-qcq"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FtS-n9-YFI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nFX-dn-p8E"/>
+                        <outlet property="delegate" destination="-1" id="Xi6-5Y-np5"/>
+                    </connections>
+                </tableView>
+                <view opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCl-8I-nF7">
+                    <rect key="frame" x="0.0" y="481" width="320" height="87"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsm-qA-6Zd">
+                            <rect key="frame" x="10" y="22" width="300" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="LjS-km-Xqr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal" title="Button" backgroundImage="JRBaseOrangeButton">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_DATE_PICKER_SEARCH_TICKETS_BUTTON"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="searchButtonAction:" destination="-1" eventType="touchUpInside" id="UAR-OA-QNQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.97761747262773724" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="4Ed-nn-SRg"/>
+                        <constraint firstItem="Tsm-qA-6Zd" firstAttribute="leading" secondItem="kCl-8I-nF7" secondAttribute="leading" constant="10" id="CCG-cw-0cN"/>
+                        <constraint firstAttribute="centerY" secondItem="Tsm-qA-6Zd" secondAttribute="centerY" constant="-0.5" id="UEF-Eb-JM1"/>
+                        <constraint firstAttribute="trailing" secondItem="Tsm-qA-6Zd" secondAttribute="trailing" constant="10" id="mei-Rt-pGj"/>
+                        <constraint firstAttribute="centerX" secondItem="Tsm-qA-6Zd" secondAttribute="centerX" id="uWd-RL-CvZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kCl-8I-nF7" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="2Ci-01-ItY"/>
+                <constraint firstAttribute="trailing" secondItem="kCl-8I-nF7" secondAttribute="trailing" id="Wss-8d-fD5"/>
+                <constraint firstAttribute="trailing" secondItem="FtS-n9-YFI" secondAttribute="trailing" id="Xzk-t0-h1s"/>
+                <constraint firstAttribute="bottom" secondItem="FtS-n9-YFI" secondAttribute="bottom" id="dgf-zj-dFf"/>
+                <constraint firstItem="FtS-n9-YFI" firstAttribute="top" secondItem="1" secondAttribute="top" id="die-L9-Sb5"/>
+                <constraint firstItem="FtS-n9-YFI" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="kuW-Bl-1lV"/>
+                <constraint firstAttribute="bottom" secondItem="kCl-8I-nF7" secondAttribute="bottom" id="tQE-y0-d4G"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="JRBaseOrangeButton" width="6" height="5"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

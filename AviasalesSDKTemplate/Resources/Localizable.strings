@@ -1,0 +1,57 @@
+
+//3.0 LOCALIZABLE STRING
+
+"LANGUAGE"                                          = "EN";
+
+"SHORT_TIME_FORMAT"                                 = "%@h %@m";
+"LONG_TIME_FORMAT"                                  = "%@ h %@ min";
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE"               = "Departure date";
+"JR_DATE_PICKER_RETURN_DATE_TITLE"                  = "Return date";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE"                  = "Flight dates";
+"JR_DATE_PICKER_TODAY_DATE_TITLE"                   = "Today";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON"              = "Search tickets";
+"JR_BACK_BTN_TITLE_ACC"                             = "Back";
+"JR_SEARCHINFO_BUSINESS"                            = "Business";
+"JR_SEARCHINFO_ECONOMY"                             = "Economy";
+"JR_SEARCHINFO_PREMIUM_ECONOMY"                     = "Premium Economy";
+"JR_SEARCHINFO_FIRST"                               = "First Class";
+"JR_SEARCHINFO_PASSENGERS##{one}"                   = "%d passenger";
+"JR_SEARCHINFO_PASSENGERS##{few}"                   = "%d passengers";
+"JR_SEARCHINFO_PASSENGERS##{many}"                  = "%d passengers";
+"JR_SEARCHINFO_PASSENGERS##{other}"                 = "%d passengers";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION"     = "Arrival city";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN"          = "Departure city";
+"JR_SEARCH_FORM_COMPLEX_DATE"                       = "DATE";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION"                = "TO";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN"                     = "FROM";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE"       = "Multi-city";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT"             = "Depart";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN"             = "Return";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE"      = "return";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE"        = "basic";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE"= "One-way";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Round-Trip";
+"JR_SEARCH_FORM_TITLE"                              = "Search tickets";
+"JR_SEARCH_FORM_SEARCH_BUTTON"                      = "SEARCH TICKETS";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "The number of infants traveling without seat may not exceed the number of accompanying adults.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR"         = "Please enter departure airport";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR"    = "Please enter arrival airport";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR"      = "Departure and arrival airports should be different.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE"       = "Please enter departure date";
+"JR_SEARCH_FORM_CHANGE_BTN_TITLE_ACC"               = "Swap departure and arrival airports";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Select";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT"                 = "ADD";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT"              = "DELETE";
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC"  = "Reduce the number of passengers %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC"  = "Increase the number of passengers %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC"               = "%@ passengers %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12"           = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS"      = "UNDER 12";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS"           = "UNDER 2";
+
+"ALERT_DEFAULT_BUTTON" = "OK";
+
+"ACTIVITY_INDICATOR_DEFAULT_TITLE" = "Loading...";
