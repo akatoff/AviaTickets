@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    return YES;
+[ASTSearchForm setMarker:@"24261" andAPIToken:@"56c774bfc6eaddbfe832d313147f19ae"];
+        return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
